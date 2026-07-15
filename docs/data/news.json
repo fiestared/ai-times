@@ -9,7 +9,7 @@
       "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
     },
     "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 model/tool/katsuyo/kasegu は裏取り済みのものが出来次第 追加(fail closed)。"
+    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 tool/katsuyo/kasegu は裏取り済みのものが出来次第 追加(fail closed)。"
   },
   "lead": null,
   "wire": [
@@ -22,7 +22,29 @@
   "topics": [
     { "id": "kasegu", "name": "AIで稼ぐ", "jp": "個人・企業がAIで収益を上げた話", "items": [] },
     { "id": "katsuyo", "name": "企業のAI活用", "jp": "会社がAIをどう業務に入れているか", "items": [] },
-    { "id": "model", "name": "モデル・技術", "jp": "新モデル・価格・性能", "items": [] },
+    {
+      "id": "model",
+      "name": "モデル・技術",
+      "jp": "新モデル・価格・性能",
+      "items": [
+        {
+          "topic_flag": "API価格",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2026-08-31まで導入価格",
+          "title": "Claude Sonnet 5、8/31まで導入価格 入力$2・出力$10 — 9/1から標準の$3・$15へ",
+          "summary": "Anthropicの公式価格ページによると、Claude Sonnet 5 は100万トークンあたり入力$2・出力$10の導入価格が2026年8月31日まで有効で、9月1日以降は標準価格の入力$3・出力$15に切り替わる（同ページ原文: introductory pricing of $2/$10 … through August 31, 2026, after which the standard pricing of $3/$15）。ただし同ページは Sonnet 5 が新しいトークナイザーを採用し『同じ文章でも約30%多くトークンを生成する』と明記しており、単価が下がっても実コストは表示ほど下がらない点に注意（Sonnet 4.6以前は旧トークナイザー）。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2025-10-01",
+          "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
+          "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
+        }
+      ]
+    },
     { "id": "tool", "name": "ツール・プロダクト", "jp": "新しいAIツールの登場・更新", "items": [] },
     {
       "id": "kisei",

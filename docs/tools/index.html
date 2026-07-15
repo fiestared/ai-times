@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIツール｜主要ツールの用途と料金を公式ページと照合 — AI TIMES</title>
+<meta name="description" content="Claude・Cursor・ElevenLabs・HeyGen・Descript・Hugging Face など、主要AIツールの用途と料金（月額）を各社の公式価格ページと照合した検証済み一覧。裏取りできない価格は載せません（fail closed）。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/tools/">
+<!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZV2EZYGDP');
+</script>
+<!-- Google AdSense（keiri-tools と同一の発行者ID。1アカウントで複数サイト可） -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2635067516563578"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="mono" id="today">—</span>
+    <span class="sp"></span>
+    <span class="mono" id="freshness">公式ページと照合</span>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="../"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="../">一面</a>
+  <a href="../#kasegu">AIで稼ぐ</a>
+  <a href="../#katsuyo">企業のAI活用</a>
+  <a href="../#model">モデル・技術</a>
+  <a href="../soba/">AI相場</a>
+  <a href="./" aria-current="page">AIツール</a>
+</nav>
+
+<main class="wrap">
+  <section>
+    <div class="sec-title">AIツール <span class="jp">— 何に使うか・いくらか（公式ページと照合）</span></div>
+    <p class="dek">主要なAIツールの<b>用途</b>と<b>料金（月額）</b>を、各社の公式価格ページと照合した一覧です。掲載価格は各ツールの<b>公式ページに実在する数字だけ</b>を載せています（curlで生取得して確認）。<b>裏取りできない価格は載せません</b>（ChatGPT・Gemini・Perplexity・Midjourney などは公式ページがcurlを拒否/JS描画のため、確認でき次第 追加します＝fail closed）。$は米ドルです。</p>
+    <div id="toolsMount" style="margin-top:14px"><p class="loading">読み込み中…</p></div>
+    <p class="mono" id="pending" style="margin-top:16px;color:var(--ink-3);font-size:11px"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="../news/">速報</a><a href="../soba/">AI相場</a><a href="../tools/">AIツール</a><a href="../kasegu/">AIで稼ぐ</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
+
+  fetch("../data/tools.json", { cache: "no-cache" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status); return r.json();
+  }).then(function (d) {
+    var rows = (d.tools || []).filter(function (t) { return t.verified && t.price; });
+    var mount = document.getElementById("toolsMount");
+    document.getElementById("today").textContent = fmtDate(d._meta && d._meta.as_of);
+    if (!rows.length) { mount.innerHTML = placeholder("AIツールの一覧は公式ページとの照合中です。裏取り済みのものだけを掲載します（推測値は載せません）。"); return; }
+    document.getElementById("freshness").textContent = "更新: " + (d._meta.as_of || "");
+    var body = rows.map(function (t) {
+      var href = t.affiliate || t.url || "#";
+      var src = t.source_url ? '<a href="' + esc(t.source_url) + '" rel="noopener" target="_blank">出典 ↗</a>' : '—';
+      var cat = t.category ? '<span class="tagx">' + esc(t.category) + '</span>' : '';
+      var detail = t.price_detail ? '<div class="pv" style="margin-top:3px">' + esc(t.price_detail) + '</div>' : '';
+      return '<tr>' +
+        '<td><a class="m" href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(t.name) + '</a> ' +
+          '<span class="pv">' + esc(t.provider) + '</span>' +
+          '<div class="pv" style="margin-top:3px">' + esc(t.desc) + '</div></td>' +
+        '<td>' + cat + '</td>' +
+        '<td class="n"><b>' + esc(t.price) + '</b>' + detail + '</td>' +
+        '<td class="mono" style="font-size:11px">' + src + '</td></tr>';
+    }).join("");
+    mount.innerHTML = '<div class="market"><div class="mh"><b>AI Tools Index — 全' + rows.length + '件</b>' +
+      '<span class="as mono">as of ' + esc(d._meta.as_of) + '</span></div><div class="scroll">' +
+      '<table class="data"><thead><tr><th>ツール</th><th>種類</th><th class="n">料金</th><th>出典</th></tr></thead><tbody>' +
+      body + '</tbody></table></div></div>';
+    // 裏取り待ち（fail closed の明示）
+    var pend = (d._meta && d._meta.pending_verify) || [];
+    if (pend.length) {
+      document.getElementById("pending").innerHTML = "裏取り待ち（公式ページがcurl拒否/JS描画のため未掲載）: " +
+        pend.map(function (p) { return esc(p.name) + "（" + esc(p.provider) + "）"; }).join(" ・ ") +
+        "。確認でき次第 追加します。";
+    }
+  }).catch(function () {
+    document.getElementById("toolsMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
+  });
+
+  function fmtDate(iso) {
+    if (!iso) return "—";
+    var p = iso.split("-"); if (p.length < 3) return iso;
+    var wd = ["日","月","火","水","木","金","土"];
+    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
+    return p[0] + "年" + (+p[1]) + "月" + (+p[2]) + "日（" + wd[dt.getDay()] + "）";
+  }
+})();
+</script>
+</body>
+</html>

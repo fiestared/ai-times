@@ -1,10 +1,114 @@
 {
   "_meta": {
-    "title": "AIツール — 世界中のAIツールを分類",
+    "title": "AIツール — 主要ツールの用途と料金（公式ページと照合）",
     "as_of": "2026-07-15",
-    "status": "seed_empty",
-    "note": "何に使うか・いくらか・提供元を、事実として載せる。アフィリエイトのリンクがある場合は affiliate に入れ、無ければ公式サイトへ。price は『無料 / $N/mo / 従量 / 買い切り$N』の実額。ツール名・価格は公式ページで裏取りする。",
-    "categories": ["文章", "画像", "動画", "音声・文字起こし", "コード", "エージェント", "検索・RAG", "業務自動化"]
+    "last_full_check": "2026-07-15",
+    "status": "verified",
+    "note": "各ツールの料金は、公式の価格ページを curl で生取得し、掲載価格が本文に実在することを確認した『裏取り済み』のみを載せる。price の $ は米ドル、標準的な個人向け有料プランの月額。年払い割引・従量課金・企業向けは price_detail を参照。ChatGPT(OpenAI)・Gemini(Google)・Perplexity・Midjourney など、公式価格ページが curl を拒否(403)またはJS描画のみで裏取りできないツールは、確認でき次第 追加する（推測値は載せない＝fail closed）。",
+    "categories": ["文章", "画像", "動画", "音声・文字起こし", "コード", "エージェント", "検索・RAG", "業務自動化"],
+    "pending_verify": [
+      { "name": "ChatGPT", "provider": "OpenAI", "reason": "openai.com/chatgpt/pricing が curl 403" },
+      { "name": "Gemini", "provider": "Google", "reason": "one.google.com はJS描画で月額が本文に出ない" },
+      { "name": "Perplexity", "provider": "Perplexity", "reason": "curl 403" },
+      { "name": "Midjourney", "provider": "Midjourney", "reason": "curl 403" }
+    ]
   },
-  "tools": []
+  "tools": [
+    {
+      "name": "Claude",
+      "provider": "Anthropic",
+      "category": "文章",
+      "desc": "文章・要約・コード・分析に使えるAIアシスタント。大きな文脈（長文の読み込み）に強い",
+      "price": "$20/月〜",
+      "plan": "Pro",
+      "price_detail": "無料 / Pro $20/月 / Max $100・$200/月",
+      "url": "https://claude.ai/",
+      "affiliate": null,
+      "source_url": "https://www.anthropic.com/pricing",
+      "source_name": "anthropic.com/pricing",
+      "source_quote": "$20 ... if billed monthly",
+      "verified": true,
+      "as_of": "2026-07-15"
+    },
+    {
+      "name": "Cursor",
+      "provider": "Anysphere",
+      "category": "コード",
+      "desc": "AIが組み込まれたコードエディタ。補完・チャット・エージェントでコーディングを高速化",
+      "price": "$20/月〜",
+      "plan": "Pro",
+      "price_detail": "Hobby 無料 / Pro $20/月 / Pro+ $60/月 / Ultra $200/月 / Teams $40/人・月",
+      "url": "https://cursor.com/",
+      "affiliate": null,
+      "source_url": "https://cursor.com/pricing",
+      "source_name": "cursor.com/pricing",
+      "source_quote": "Pro price \"20\"（ページ内の料金JSON）",
+      "verified": true,
+      "as_of": "2026-07-15"
+    },
+    {
+      "name": "ElevenLabs",
+      "provider": "ElevenLabs",
+      "category": "音声・文字起こし",
+      "desc": "文章から自然な音声を生成（読み上げ・ナレーション・多言語・声の複製）",
+      "price": "$6/月〜",
+      "plan": "Starter",
+      "price_detail": "無料 / Starter $6/月 / Creator $22/月 / Pro $99/月 / Scale $299/月",
+      "url": "https://elevenlabs.io/",
+      "affiliate": null,
+      "source_url": "https://elevenlabs.io/pricing",
+      "source_name": "elevenlabs.io/pricing",
+      "source_quote": "Starter $6 (30,000 credits); Creator $22; Pro $99; Scale $299",
+      "verified": true,
+      "as_of": "2026-07-15"
+    },
+    {
+      "name": "HeyGen",
+      "provider": "HeyGen",
+      "category": "動画",
+      "desc": "テキストからAIアバターの動画を生成。多言語のリップシンク・翻訳に対応",
+      "price": "$29/月〜",
+      "plan": "Creator",
+      "price_detail": "無料 / Creator $29/月（年払い$24/月）/ Pro $49/月〜",
+      "url": "https://www.heygen.com/",
+      "affiliate": null,
+      "source_url": "https://www.heygen.com/pricing",
+      "source_name": "heygen.com/pricing",
+      "source_quote": "Creator plan costs $29/month (or $24/month if you pay annually). Pro starts at $49/month",
+      "verified": true,
+      "as_of": "2026-07-15"
+    },
+    {
+      "name": "Descript",
+      "provider": "Descript",
+      "category": "動画",
+      "desc": "音声・動画を『文字を編集する感覚』で編集。文字起こし・ノイズ除去・話者分離",
+      "price": "$16/月〜",
+      "plan": "有料プラン",
+      "price_detail": "無料あり / 有料プラン $16/月〜",
+      "url": "https://www.descript.com/",
+      "affiliate": null,
+      "source_url": "https://www.descript.com/pricing",
+      "source_name": "descript.com/pricing",
+      "source_quote": "Descript pricing starts free, with paid plans from $16/month",
+      "verified": true,
+      "as_of": "2026-07-15"
+    },
+    {
+      "name": "Hugging Face",
+      "provider": "Hugging Face",
+      "category": "コード",
+      "desc": "AIモデル・データセットの共有基盤。推論API・Spaces・開発ツールを提供",
+      "price": "$9/月",
+      "plan": "PRO",
+      "price_detail": "無料 / PRO $9/月",
+      "url": "https://huggingface.co/",
+      "affiliate": null,
+      "source_url": "https://huggingface.co/pricing",
+      "source_name": "huggingface.co/pricing",
+      "source_quote": "Upgrade your HF experience for $9/month",
+      "verified": true,
+      "as_of": "2026-07-15"
+    }
+  ]
 }

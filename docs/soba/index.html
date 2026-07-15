@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI相場｜主要モデルのAPI価格を毎日照合 — AI TIMES</title>
+<meta name="description" content="Claude・GPT・Geminiなど主要AIモデルのAPI価格（入力・出力・文脈長）を、各社の公式価格ページと逐語照合した検証済みの一覧。標準・短コンテキストの通常料金。推測値は載せません。毎日再照合。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/soba/">
+<!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZV2EZYGDP');
+</script>
+<!-- Google AdSense（keiri-tools と同一の発行者ID。1アカウントで複数サイト可） -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2635067516563578"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="mono" id="today">—</span>
+    <span class="sp"></span>
+    <span class="mono" id="freshness">毎日照合</span>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="../"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="../">一面</a>
+  <a href="../#kasegu">AIで稼ぐ</a>
+  <a href="../#katsuyo">企業のAI活用</a>
+  <a href="../#model">モデル・技術</a>
+  <a href="./" aria-current="page">AI相場</a>
+  <a href="../tools/">AIツール</a>
+</nav>
+
+<main class="wrap">
+  <section>
+    <div class="sec-title">AI相場 <span class="jp">— 主要モデルのAPI価格（$ / 1M トークン・毎日照合）</span></div>
+    <p class="dek">主要AIモデルのAPI価格を、各社の公式価格ページ・モデルドキュメントと<b>逐語照合</b>した一覧です。掲載値は<b>標準・短コンテキスト（≤200K）の通常入出力料金</b>で、キャッシュ・バッチ・優先処理・長コンテキスト割増は含みません。<b>推測値は載せません</b>（裏取り済みのものだけを表示します）。価格は頻繁に変わるため、毎日再照合します。</p>
+    <div id="sobaMount" style="margin-top:14px"><p class="loading">読み込み中…</p></div>
+    <p class="mono" id="sources" style="margin-top:16px;color:var(--ink-3);font-size:11px"></p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="../news/">速報</a><a href="../soba/">AI相場</a><a href="../tools/">AIツール</a><a href="../kasegu/">AIで稼ぐ</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
+
+  fetch("../data/soba.json", { cache: "no-cache" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status); return r.json();
+  }).then(function (d) {
+    var rows = (d.models || []).filter(function (m) { return m.verified && m.input != null; });
+    var mount = document.getElementById("sobaMount");
+    document.getElementById("today").textContent = fmtDate(d._meta && d._meta.as_of);
+    if (!rows.length) { mount.innerHTML = placeholder("AI相場は公開前の最終照合中です。各社の公式価格を裏取りしてから掲載します（推測値は載せません）。"); return; }
+    document.getElementById("freshness").textContent = "更新: " + (d._meta.as_of || "");
+    // 価格の安い順（入力）で並べたい人向けに、まず入力の高い＝上位モデル順で表示（既定はデータ順）
+    var body = rows.map(function (m) {
+      var chg = m.delta ? '<span class="chg"><span class="ar">' + esc(m.delta.mark || "") + '</span> ' + esc(m.delta.text) + '</span>' :
+        (m.tag ? '<span class="tagx">' + esc(m.tag) + '</span>' : '<span class="chg" style="color:var(--ink-3)">— 据置</span>');
+      var srcLink = m.src ? '<a href="' + esc(m.src) + '" rel="noopener" target="_blank">出典 ↗</a>' : '—';
+      var note = m.note ? '<div class="pv" style="margin-top:3px">' + esc(m.note) + '</div>' : '';
+      return '<tr><td><span class="m">' + esc(m.name) + '</span> <span class="pv">' + esc(m.provider) + '</span>' + note + '</td>' +
+        '<td class="n">$' + esc(m.input) + '</td><td class="n">$' + esc(m.output) + '</td>' +
+        '<td class="n">' + esc(m.context_k) + 'K</td><td>' + chg + '</td>' +
+        '<td class="mono" style="font-size:11px">' + srcLink + '</td></tr>';
+    }).join("");
+    mount.innerHTML = '<div class="market"><div class="mh"><b>Model &amp; Price Index — 全' + rows.length + '件</b>' +
+      '<span class="as mono">as of ' + esc(d._meta.as_of) + '</span></div><div class="scroll">' +
+      '<table class="data"><thead><tr><th>モデル</th><th class="n">入力 $/1M</th><th class="n">出力 $/1M</th><th class="n">文脈</th><th>直近</th><th>出典</th></tr></thead><tbody>' +
+      body + '</tbody></table></div></div>';
+    // 出典まとめ
+    var vs = (d._meta && d._meta.verify_sources) || {};
+    var links = [];
+    ["anthropic", "openai", "google"].forEach(function (k) { if (vs[k]) links.push('<a href="' + esc(vs[k]) + '" rel="noopener" target="_blank">' + esc(k) + '</a>'); });
+    document.getElementById("sources").innerHTML = "一次情報（公式価格ページ）: " + links.join(" ・ ") +
+      "。掲載値は " + esc(d._meta.last_full_check || d._meta.as_of || "") + " に照合。";
+  }).catch(function () {
+    document.getElementById("sobaMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
+  });
+
+  function fmtDate(iso) {
+    if (!iso) return "—";
+    var p = iso.split("-"); if (p.length < 3) return iso;
+    var wd = ["日","月","火","水","木","金","土"];
+    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
+    return p[0] + "年" + (+p[1]) + "月" + (+p[2]) + "日（" + wd[dt.getDay()] + "）";
+  }
+})();
+</script>
+</body>
+</html>

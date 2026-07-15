@@ -1,16 +1,41 @@
 {
   "_meta": {
     "title": "AIツール — 主要ツールの用途と料金（公式ページと照合）",
-    "as_of": "2026-07-15",
-    "last_full_check": "2026-07-15",
+    "as_of": "2026-07-16",
+    "last_full_check": "2026-07-16",
     "status": "verified",
     "note": "各ツールの料金は、公式の価格ページを curl で生取得し、掲載価格が本文に実在することを確認した『裏取り済み』のみを載せる。price の $ は米ドル、標準的な個人向け有料プランの月額。年払い割引・従量課金・企業向けは price_detail を参照。ChatGPT(OpenAI)・Gemini(Google)・Perplexity・Midjourney など、公式価格ページが curl を拒否(403)またはJS描画のみで裏取りできないツールは、確認でき次第 追加する（推測値は載せない＝fail closed）。",
-    "categories": ["文章", "画像", "動画", "音声・文字起こし", "コード", "エージェント", "検索・RAG", "業務自動化"],
+    "categories": [
+      "文章",
+      "画像",
+      "動画",
+      "音声・文字起こし",
+      "コード",
+      "エージェント",
+      "検索・RAG",
+      "業務自動化"
+    ],
     "pending_verify": [
-      { "name": "ChatGPT", "provider": "OpenAI", "reason": "openai.com/chatgpt/pricing が curl 403" },
-      { "name": "Gemini", "provider": "Google", "reason": "one.google.com はJS描画で月額が本文に出ない" },
-      { "name": "Perplexity", "provider": "Perplexity", "reason": "curl 403" },
-      { "name": "Midjourney", "provider": "Midjourney", "reason": "curl 403" }
+      {
+        "name": "ChatGPT",
+        "provider": "OpenAI",
+        "reason": "openai.com/chatgpt/pricing が curl 403"
+      },
+      {
+        "name": "Gemini",
+        "provider": "Google",
+        "reason": "one.google.com はJS描画で月額が本文に出ない"
+      },
+      {
+        "name": "Perplexity",
+        "provider": "Perplexity",
+        "reason": "curl 403"
+      },
+      {
+        "name": "Midjourney",
+        "provider": "Midjourney",
+        "reason": "curl 403"
+      }
     ]
   },
   "tools": [
@@ -109,6 +134,54 @@
       "source_quote": "Upgrade your HF experience for $9/month",
       "verified": true,
       "as_of": "2026-07-15"
+    },
+    {
+      "name": "Runway",
+      "provider": "Runway",
+      "category": "動画",
+      "desc": "テキストや画像から短い動画を生成するAI（Gen-4）。映像制作・編集・合成向け",
+      "price": "$12/月〜",
+      "plan": "Standard",
+      "price_detail": "無料（125クレジット）/ Standard $12/月（年払い・月払いは$15）/ Pro $28/月 / Unlimited $76/月",
+      "url": "https://runwayml.com/",
+      "affiliate": null,
+      "source_url": "https://runwayml.com/pricing",
+      "source_name": "runwayml.com/pricing",
+      "source_quote": "Standard $12 /mo（625 credits/mo, Billed annually. Save $36）; Pro $28 /mo; Max $76 /mo",
+      "verified": true,
+      "as_of": "2026-07-16"
+    },
+    {
+      "name": "Suno",
+      "provider": "Suno",
+      "category": "音声・文字起こし",
+      "desc": "テキストから楽曲（歌・BGM）を生成するAI。作詞・作曲・ボーカルまで作れる",
+      "price": "$8/月〜",
+      "plan": "Pro",
+      "price_detail": "無料 / Pro $8/月（年払い・月払いは約$10）/ Premier $24/月（年払い・月払いは約$30）",
+      "url": "https://suno.com/",
+      "affiliate": null,
+      "source_url": "https://suno.com/pricing",
+      "source_name": "suno.com/pricing",
+      "source_quote": "Free Plan $0 /mo; Pro Plan Most Popular $8 /mo（Saves $24 by billing yearly）; Premier Plan Best Value $24 /mo（Saves $72 by billing yearly）",
+      "verified": true,
+      "as_of": "2026-07-16"
+    },
+    {
+      "name": "Synthesia",
+      "provider": "Synthesia",
+      "category": "動画",
+      "desc": "テキストからAIアバターのナレーション動画を生成。多言語・研修/マニュアル向け",
+      "price": "$29/月〜",
+      "plan": "Starter",
+      "price_detail": "Starter $29/月（年払いは$264/年 ≒ $22/月）/ Creator $89/月",
+      "url": "https://www.synthesia.io/",
+      "affiliate": null,
+      "source_url": "https://www.synthesia.io/pricing",
+      "source_name": "synthesia.io/pricing",
+      "source_quote": "Starter plan users, Synthesia costs $29 per month or $264 if you go with an annual plan. For Creator plan users, Synthesia costs $89/mo",
+      "verified": true,
+      "as_of": "2026-07-16"
     }
   ]
 }

@@ -9,7 +9,7 @@
    "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
   },
   "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。"
+  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。"
  },
  "lead": {
   "title": "ユナイテッドアローズ、店舗の「売れた理由」を拾う独自AIエージェント「SMART」をAWSと共同開発",
@@ -47,17 +47,17 @@
   {
    "time": "2026-07-14",
    "flag": "業界",
+   "title": "孫正義氏、「2040年に世界GDPの約2割がAI・AIエージェント100兆個」— SoftBank World 2026"
+  },
+  {
+   "time": "2026-07-14",
+   "flag": "業界",
    "title": "Google Cloud調査、83%が「本番運用のAIエージェントにはインフラ刷新が必要」"
   },
   {
    "time": "2026-07-14",
    "flag": "ツール",
    "title": "Dropbox、Anthropic「Claude」と連携開始（コネクタ＋Cowork／Code）"
-  },
-  {
-   "time": "2026-07-14",
-   "flag": "規制",
-   "title": "ハサビスCEO、米主導の「フロンティアAI標準化機関」設立を提唱"
   }
  ],
  "topics": [
@@ -119,6 +119,14 @@
      "time": "2026-07-15",
      "title": "Anthropic×Blackstone、AI導入専業「Ode」を始動 — “次の1兆ドルはモデルでなく実装”に賭ける",
      "summary": "AnthropicがBlackstoneやGoldman Sachsらと組み、企業へのAI導入を専門にする合弁会社「Ode with Anthropic」（評価額15億ドル、5月設立）を立ち上げた（TechCrunch、2026年7月15日）。買収したAIエンジニアリング企業Fractional AIを土台に約100人のエンジニアが顧客の業務に合わせたシステムを構築する。OpenAIも同様の『The Deployment Company』を持ち、フロンティアラボ各社が“良いモデルを出すだけでは企業顧客を取れない”と認め始めた形。★AI TIMESの見立て（価値は実装・保守にある）と重なる動き。"
+    },
+    {
+     "topic_flag": "業界動向",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000194/",
+     "time": "2026-07-15",
+     "title": "孫正義氏「2040年に世界GDPの約2割がAI・AIエージェント100兆個」— SoftBank World 2026",
+     "summary": "ソフトバンクグループ孫正義会長が7月14日の「SoftBank World 2026」で、2040年には世界のGDP（3京7000兆円）の約2割をAI産業が占め、自律的に働くAIエージェントが100兆個、人型ロボットが10億台稼働するとの持論を示した。AI事業には年間800兆円規模の投資が必要とし、投資成果を3年先で測る指標「ROA（Return on AI）」を提唱。「AIが仕事を奪うのではない。AIを使う企業が使わない企業から仕事を奪う」と述べた。なぜ重要か: 国内最大級のAI投資家が示す長期シナリオで、経営のAI活用を促す象徴的メッセージ（ITmedia AI＋、2026年7月15日）。"
     }
    ]
   },
@@ -142,6 +150,14 @@
      "time": "2025-10-01",
      "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
      "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
+    },
+    {
+     "topic_flag": "キャンペーン",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000195/",
+     "time": "2026-07-15",
+     "title": "OpenAI、「GPT-5.6」の感想をXに投稿で100ドル分クレジット — 先着1万人・Anthropicを意識",
+     "summary": "OpenAIが最新モデル「GPT-5.6」の感想や生成物をXに投稿した有料プラン（Go／Plus／Pro）ユーザーへ、ChatGPTで使える100ドル分のクレジットを先着1万人に配るキャンペーンを始めた。幹部ティボ・ソティオ氏が7月15日にXで告知し、「Claudeの解約画面を送ればCodexを1カ月無料に」というユーザー投稿を引用するなどAnthropicとの競争を強く意識。特設サイトはChatGPTの新機能「Sites」で作られ同機能の宣伝も兼ねる。なぜ重要か: モデル競争が性能・価格だけでなく“利用者の囲い込み”施策にまで及び始めた（ITmedia AI＋、2026年7月15日）。"
     }
    ]
   },
@@ -197,6 +213,14 @@
      "time": "2026-07-14",
      "title": "Anthropic、米K-12教員向け「Claude for Teachers」を無料提供 — 全50州の学習指導基準に対応、Claude Code/Coworkも",
      "summary": "Anthropicが7月14日（現地時間）、米国の幼稚園〜高校（K-12）教員向けサービス「Claude for Teachers」を発表した（ITmedia AI＋）。認証された教員は、Claudeのプレミアム機能・授業づくり用の『スキル』ライブラリ・全50州の学習指導基準にマップされた教材へ無料でアクセスでき、エージェント機能のClaude CodeやCoworkで出席データの分析や定型業務の自動化もできる。データはモデル学習に使わずFERPA準拠で、2027年6月30日までの登録で1年間無料。★学校・学区向けプランは近日提供予定。"
+    },
+    {
+     "topic_flag": "ツール更新",
+     "source_name": "ITmedia キーマンズネット",
+     "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/15/news021.html",
+     "time": "2026-07-15",
+     "title": "ナレッジセンス、AIエージェント「Cowork」にデスクトップ操作機能 — “RPA負債”の解消狙う",
+     "summary": "法人向け生成AI「ChatSense」を提供するナレッジセンスが、ブラウザ操作AIエージェント「Cowork」に、Windowsのローカルファイルやデスクトップアプリを自然言語の指示で操作できる「デスクトップ機能」の追加を発表した。事前にシナリオを作らずAIが画面を認識して操作するため、画面変更で止まりやすい従来RPAの保守負担（RPA負債）を抑える狙い。ChatSenseは東証プライム企業を含む500社超が導入済みで、ベータ版を月額・1人単位から提供する。なぜ重要か: AIエージェント型RPAが国産SaaSでも実装段階に入り、定型業務の自動化対象がブラウザ外へ広がっている（キーマンズネット、2026年7月15日）。"
     }
    ]
   },
@@ -252,6 +276,14 @@
      "time": "2026-07-14",
      "title": "Google DeepMindのハサビスCEO、米国主導の「フロンティアAI標準化機関」設立を提唱",
      "summary": "Google DeepMindのデミス・ハサビスCEOが7月14日（現地時間）、自身のSubstackでフロンティアAIの枠組みを論じるエッセイを公開し、金融のFINRAをモデルにした官民の『フロンティアAI標準化機関』の設立を提案した（ITmedia AI＋）。評価プロトコルを策定し、フロンティアラボは公開の最大30日前に自主的にモデルを提出してレビューを受ける仕組みで、実効性が示せれば審査通過を米国市場での展開要件にすることも視野に入れるという。★資金は主に業界が拠出し、深刻時にはラボ間の開発減速の調整も担うとした自主規制型の構想。"
+    },
+    {
+     "topic_flag": "安全性",
+     "source_name": "＠IT",
+     "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/14/news031.html",
+     "time": "2026-07-14",
+     "title": "AIコーディングエージェントが「ホームディレクトリ全削除」— Docker、境界なきシェル実行を警告",
+     "summary": "＠ITが、AIコーディングエージェント（Claude Code／Cursor／Replit等）が開発者本人の権限でシェルを直接実行し、確認なしの「rm -rf ~/」でホームディレクトリを丸ごと消した実例を解説した（原典はDockerの連載「Coding Agent Horror Stories」第2弾・2026年6月1日）。Redditで報告された2025年12月の事例など複数のインシデントに共通するのは、AIの賢さではなく“推論と実行の間に承認の境界がない”構造だと指摘。対策として、エージェントをmicroVMで隔離する「Docker Sandboxes」が提案されている。なぜ重要か: Claude Code等を業務で使う開発現場に直結する安全設計の教訓（＠IT、2026年7月14日）。"
     }
    ]
   }

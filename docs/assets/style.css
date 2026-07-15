@@ -57,7 +57,7 @@ nav.sections a[aria-current] { color: var(--live); font-weight: 700; }
 
 /* breaking ticker */
 .breaking { display: flex; align-items: stretch; border-bottom: 1px solid var(--line); overflow: hidden; }
-.breaking .lab { flex: none; background: var(--live); color: #fff; font-family: var(--font-mono); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; display: flex; align-items: center; padding: 0 14px; }
+.breaking .lab { flex: none; color: var(--live); font-family: var(--font-mono); font-size: 10.5px; font-weight: 700; letter-spacing: 2px; display: flex; align-items: center; padding: 0 14px 0 0; margin-right: 14px; border-right: 1px solid var(--line-2); }
 .breaking .track { overflow: hidden; flex: 1; position: relative; }
 .breaking .move { display: inline-flex; gap: 40px; white-space: nowrap; padding: 9px 0; animation: slide 40s linear infinite; will-change: transform; }
 .breaking:hover .move { animation-play-state: paused; }

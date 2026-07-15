@@ -9,11 +9,12 @@
       "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
     },
     "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 tool/katsuyo/kasegu は裏取り済みのものが出来次第 追加(fail closed)。"
+    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。"
   },
   "lead": null,
   "wire": [
     { "time": "2025-09-01", "title": "AI推進法（人工知能関連技術の研究開発及び活用の推進に関する法律）が施行", "flag": "制度" },
+    { "time": "2025-07-07", "title": "パナソニック コネクト、社内AI「ConnectAI」で2024年に44.8万時間を削減（前年比2.4倍）", "flag": "活用" },
     { "time": "2024-07-31", "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表", "flag": "制度" },
     { "time": "2024-04-19", "title": "経産省・総務省「AI事業者ガイドライン」初版を公表（現行は第1.1版）", "flag": "制度" },
     { "time": "2024-03-15", "title": "文化庁「AIと著作権に関する考え方について」を取りまとめ", "flag": "制度" },
@@ -21,7 +22,21 @@
   ],
   "topics": [
     { "id": "kasegu", "name": "AIで稼ぐ", "jp": "個人・企業がAIで収益を上げた話", "items": [] },
-    { "id": "katsuyo", "name": "企業のAI活用", "jp": "会社がAIをどう業務に入れているか", "items": [] },
+    {
+      "id": "katsuyo",
+      "name": "企業のAI活用",
+      "jp": "会社がAIをどう業務に入れているか",
+      "items": [
+        {
+          "topic_flag": "国内事例",
+          "source_name": "パナソニック コネクト（公式プレスリリース）",
+          "source_url": "https://news.panasonic.com/jp/press/jn250707-2",
+          "time": "2025-07-07",
+          "title": "パナソニック コネクト、社内AI「ConnectAI」で年間44.8万時間を削減 — 効いたのは『質問』より『作業を頼む』使い方",
+          "summary": "パナソニック コネクトが2025年7月7日に公表した公式発表によると、主要3社の大規模言語モデルを使って自社開発したAIアシスタント「ConnectAI」（2023年2月に業務利用を開始）は、2024年の1年間で44.8万時間（前年比2.4倍）の労働時間削減を達成した。利用回数は240万回（前年比約1.7倍）、1回あたりの削減時間は平均28分（画像を使う用途では36分）、社員の月間ユニークユーザー率は49.1％（前年比14.3ポイント増）。同社は削減が大きく伸びた要因を、AIの使い方が答えを『聞く』段階から、コード全体の生成・リファクタリング／作業手順書や各種基準の作成／資料レビューやアンケートのコメント分析といった作業を『頼む』段階へシフトしたためと説明している。★数字が伸びたのは利用人数を増やしたからではなく“任せる作業の重さ”を上げたためで、生成AIを社内に入れても効果が出ない組織との差はここに出やすい。"
+        }
+      ]
+    },
     {
       "id": "model",
       "name": "モデル・技術",

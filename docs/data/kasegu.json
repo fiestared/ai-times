@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "AIで稼ぐ — 世界の事例キュレーション",
-    "as_of": "2026-07-15",
+    "as_of": "2026-07-16",
     "status": "seed",
     "note": "世の中の『AIで稼いだ』実例を集めて、誰が・何で・月いくら を事実として表にする。★著作権★ 収益報告の本文を転載しない。載せるのは (1)公開された数字(月商・累計・課金額) (2)手法の1〜2行要約 (3)必ず出典URL。数字は必ず出典に実在することを確認してから載せる(AIは金額を捏造しがち)。日本の事例(note/X/個人開発)も海外(Indie Hackers/HN/Reddit)も両方集める。金額は現地通貨のまま+概算円。ランキングは月商(または月商相当)の降順。",
     "flags": ["拡張機能", "SaaS", "アプリ", "コンテンツ", "受託", "素材", "国内", "海外"]
@@ -13,7 +13,8 @@
     { "name": "Easy Folders", "who": "個人", "what": "ChatGPT/Claudeにフォルダ・検索を足す拡張", "monthly_usd": 3700, "model": "フリーミアム（月額＋買い切り）", "flag": "拡張機能・海外", "source_url": "https://www.indiehackers.com/product/easy-folders/6-months-post-launch-my-chrome-extension-has-hit-3-700-in-mrr-and-42-000-in-total-revenue--O3qs28VAnAkcJw0j--M", "source_name": "Indie Hackers", "note": "公開6か月で月商$3,700・累計$42,000。" },
     { "name": "BlackMagic.so", "who": "個人（Tony Dinh）", "what": "X(Twitter)の分析拡張", "monthly_usd": 3000, "model": "サブスク $8/月〜", "flag": "拡張機能・海外", "source_url": "https://news.ycombinator.com/item?id=29803817", "source_name": "Hacker News (Show HN)", "note": "3か月で$60/月→さらに5か月で$3k/月。$400/月で会社を辞めた。" },
     { "name": "IsTalk（けい）", "who": "個人（エンジニア／AI開発会社経営）", "what": "スマホアプリ「IsTalk - トーク分析」をAIコーディングツール(Cursor)で個人開発", "monthly_jpy": 2500000, "model": "サブスク＋広告（有料サブスク4,600人超）", "flag": "アプリ・国内", "source_url": "https://note.com/keitaaaan/n/n6b4ff16d9835", "source_name": "note（本人の収益公開）", "note": "「昨今のAI時代が苦手意識を変えた」としてAIエディタCursorで開発。iOS/Android合計60万DL超・App Storeランキング1位（2024年10月時点・本人公開。売上であって利益ではない）。" },
+    { "name": "iDM（ぶべ）", "who": "個人（ShiftB校長・bubekichi inc. 代表／立川修平）", "what": "Instagram DMを自動化するチャットボットツールを個人開発", "monthly_jpy": 300000, "model": "サブスク 月額数千円（海外競合は月$99〜$299）", "flag": "SaaS・国内", "source_url": "https://shiftb.dev/articles/indie-dev-success-stories", "source_name": "ShiftB（開発者本人の解説記事）", "note": "本人が「月30万円弱のMRR（月間経常収益）」と公開（記事の表では約30万円）。自身のInstagram発信の実体験から開発し、口コミで拡散。海外の競合が月額$99〜$299のところ月額数千円で提供。IsTalk（¥250万）とLearning Next（初週¥3万）の中間＝国内の“現実的な中位”の実例。自己申告（校長本人の事例記事・2026-04-06公開）。" },
     { "name": "Learning Next（とまだ）", "who": "個人（未経験からエンジニア／AI駆動開発教育者）", "what": "プログラミング学習サイトをCursorで個人開発", "monthly_jpy": null, "cumulative_jpy": 30000, "model": "月額サブスク $10〜20（月1,500〜3,000円）", "flag": "SaaS・国内", "source_url": "https://note.com/tomada/n/n2b5898ca86d7", "source_name": "note（本人の実体験記事）", "note": "2025年6月15日リリース→リリースから1週間で約3万円（初週の売上。月次の継続収益ではない）。本人が見出しで『Cursorで作った個人開発アプリ』と明記。250万円級とは対照的に、小さく始めた現実的な初速の実例。" }
   ],
-  "todo_jp": "国内2件目（Learning Next／とまだ・note実体験記事）を追加。金額は初週の売上（約3万円）と正直に注記。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の確定額が公開されている事例を優先。"
+  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。"
 }

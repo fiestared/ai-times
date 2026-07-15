@@ -1,174 +1,220 @@
 {
- "_meta": {
-  "title": "AI TIMES — 速報・トピック別ニュース",
-  "as_of": "2026-07-15",
-  "status": "verified",
-  "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
-  "sources": {
-   "rss": "各AIメディア/企業ブログのRSSをワーカーが毎日巡回し、見出し+要点をAIが自分の言葉で要約(全文転載しない)",
-   "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
+  "_meta": {
+    "title": "AI TIMES — 速報・トピック別ニュース",
+    "as_of": "2026-07-15",
+    "status": "verified",
+    "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
+    "sources": {
+      "rss": "各AIメディア/企業ブログのRSSをワーカーが毎日巡回し、見出し+要点をAIが自分の言葉で要約(全文転載しない)",
+      "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
+    },
+    "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
+    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。"
   },
-  "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。"
- },
- "lead": null,
- "wire": [
-  {
-   "time": "2026-07-10",
-   "title": "Cursor 3.11 公開 — メイン作業を止めない「サイドチャット」と会話全文検索（Cmd+K）を追加",
-   "flag": "ツール"
+  "lead": {
+    "title": "Anthropic×Blackstone、AI導入専業「Ode」を始動 — “次の1兆ドルはモデルでなく実装”に賭ける",
+    "dek": "フロンティアラボ各社が『良いモデルを出すだけでは企業顧客を取れない』と認め始めた。Anthropicは評価額15億ドルの導入専業会社Odeを立ち上げ、約100人のエンジニアが企業ごとの実装を担う（TechCrunch）。",
+    "time": "2026-07-15",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/"
   },
-  {
-   "time": "2025-12-23",
-   "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員に導入。85部門150名のAI推進リーダーが3か月で約500件のカスタムGPTを内製",
-   "flag": "活用"
-  },
-  {
-   "time": "2025-09-01",
-   "title": "AI推進法（人工知能関連技術の研究開発及び活用の推進に関する法律）が施行",
-   "flag": "制度"
-  },
-  {
-   "time": "2025-07-07",
-   "title": "パナソニック コネクト、社内AI「ConnectAI」で2024年に44.8万時間を削減（前年比2.4倍）",
-   "flag": "活用"
-  },
-  {
-   "time": "2024-07-31",
-   "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表",
-   "flag": "制度"
-  },
-  {
-   "time": "2024-04-19",
-   "title": "経産省・総務省「AI事業者ガイドライン」初版を公表（現行は第1.1版）",
-   "flag": "制度"
-  },
-  {
-   "time": "2024-03-15",
-   "title": "文化庁「AIと著作権に関する考え方について」を取りまとめ",
-   "flag": "制度"
-  },
-  {
-   "time": "2023-06-02",
-   "title": "個人情報保護委員会、生成AI利用の注意喚起とOpenAIへの要請",
-   "flag": "制度"
-  }
- ],
- "topics": [
-  {
-   "id": "kasegu",
-   "name": "AIで稼ぐ",
-   "jp": "個人・企業がAIで収益を上げた話",
-   "items": []
-  },
-  {
-   "id": "katsuyo",
-   "name": "企業のAI活用",
-   "jp": "会社がAIをどう業務に入れているか",
-   "items": [
+  "wire": [
     {
-     "topic_flag": "国内事例",
-     "source_name": "三井不動産（公式ニュースリリース）",
-     "source_url": "https://www.mitsuifudosan.co.jp/corporate/news/2025/1223/",
-     "time": "2025-12-23",
-     "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員へ導入 — 85部門・150名の『AI推進リーダー』が3か月で約500件のカスタムGPTを内製",
-     "summary": "三井不動産が2025年12月23日に公表した公式ニュースリリースによると、同社は2025年10月1日にOpenAI社のChatGPT Enterpriseライセンスを取得し、約2,000人の全社員へ展開した。特徴はトップダウンのライセンス配布ではなく“現場起点（ボトムアップ）”の体制で、全社85部門から選ばれた約150名の「AI推進リーダー」が主体となり、利用開始から約3か月で約500件の「カスタムGPT」（プログラミング不要で作れる部門・業務専用アシスタント）を運用している（2025年12月23日時点）。全社員対象のChatGPT Enterprise研修には延べ1,300人が参加。ユースケース例として物件情報の参照・要約、経理処理アシスタント、プレスリリース下書き支援などが挙げられている。さらに内製AI開発環境（Microsoft Azure上）で「社長AIエージェント」（2025年12月に全社トライアル利用を開始）「DX本部長AIエージェント」「資料自動生成AI」など自社特化のプロダクトを開発し、カスタムGPTとの両輪で今後全社で業務削減時間10％以上を目指すとしている。★ライセンスを配って終わりにせず、各部門の実務を理解した150名のリーダーが“使える形”のGPTを量産する体制に投資している点が、生成AIを導入しても使われない組織との差になりやすい（＝現場が自分でツールを作る）。"
+      "time": "2026-07-15",
+      "title": "Anthropic×Blackstone、AI導入専業「Ode」始動 — “次の1兆ドルはモデルでなく実装”",
+      "flag": "業界"
     },
     {
-     "topic_flag": "国内事例",
-     "source_name": "パナソニック コネクト（公式プレスリリース）",
-     "source_url": "https://news.panasonic.com/jp/press/jn250707-2",
-     "time": "2025-07-07",
-     "title": "パナソニック コネクト、社内AI「ConnectAI」で年間44.8万時間を削減 — 効いたのは『質問』より『作業を頼む』使い方",
-     "summary": "パナソニック コネクトが2025年7月7日に公表した公式発表によると、主要3社の大規模言語モデルを使って自社開発したAIアシスタント「ConnectAI」（2023年2月に業務利用を開始）は、2024年の1年間で44.8万時間（前年比2.4倍）の労働時間削減を達成した。利用回数は240万回（前年比約1.7倍）、1回あたりの削減時間は平均28分（画像を使う用途では36分）、社員の月間ユニークユーザー率は49.1％（前年比14.3ポイント増）。同社は削減が大きく伸びた要因を、AIの使い方が答えを『聞く』段階から、コード全体の生成・リファクタリング／作業手順書や各種基準の作成／資料レビューやアンケートのコメント分析といった作業を『頼む』段階へシフトしたためと説明している。★数字が伸びたのは利用人数を増やしたからではなく“任せる作業の重さ”を上げたためで、生成AIを社内に入れても効果が出ない組織との差はここに出やすい。"
+      "time": "2026-07-15",
+      "title": "AIコーディングのEmergent、1.3億ドル調達でユニコーンに（評価額15億ドル）",
+      "flag": "ツール"
+    },
+    {
+      "time": "2026-07-15",
+      "title": "音声AIのRime、2400万ドル調達（M13 Ventures主導）",
+      "flag": "ツール"
+    },
+    {
+      "time": "2026-07-14",
+      "title": "Anthropic、米K-12教員向け「Claude for Teachers」を無料提供",
+      "flag": "ツール"
+    },
+    {
+      "time": "2026-07-14",
+      "title": "ハサビスCEO、米主導の「フロンティアAI標準化機関」設立を提唱",
+      "flag": "規制"
+    },
+    {
+      "time": "2026-07-10",
+      "title": "Cursor 3.11 公開 — サイドチャットと会話全文検索（Cmd+K）",
+      "flag": "ツール"
+    },
+    {
+      "time": "2025-12-23",
+      "title": "三井不動産、ChatGPT Enterpriseを全社員約2,000人へ導入",
+      "flag": "国内"
+    },
+    {
+      "time": "2025-07-07",
+      "title": "パナソニック コネクト、社内AIで2024年に44.8万時間を削減",
+      "flag": "国内"
     }
-   ]
-  },
-  {
-   "id": "model",
-   "name": "モデル・技術",
-   "jp": "新モデル・価格・性能",
-   "items": [
+  ],
+  "topics": [
     {
-     "topic_flag": "API価格",
-     "source_name": "Anthropic（公式Pricing）",
-     "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-     "time": "2026-08-31まで導入価格",
-     "title": "Claude Sonnet 5、8/31まで導入価格 入力$2・出力$10 — 9/1から標準の$3・$15へ",
-     "summary": "Anthropicの公式価格ページによると、Claude Sonnet 5 は100万トークンあたり入力$2・出力$10の導入価格が2026年8月31日まで有効で、9月1日以降は標準価格の入力$3・出力$15に切り替わる（同ページ原文: introductory pricing of $2/$10 … through August 31, 2026, after which the standard pricing of $3/$15）。ただし同ページは Sonnet 5 が新しいトークナイザーを採用し『同じ文章でも約30%多くトークンを生成する』と明記しており、単価が下がっても実コストは表示ほど下がらない点に注意（Sonnet 4.6以前は旧トークナイザー）。"
+      "id": "kasegu",
+      "name": "AIで稼ぐ",
+      "jp": "個人・企業がAIで収益を上げた話",
+      "items": []
     },
     {
-     "topic_flag": "新モデル",
-     "source_name": "Anthropic（公式Pricing）",
-     "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-     "time": "2025-10-01",
-     "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
-     "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
+      "id": "katsuyo",
+      "name": "企業のAI活用",
+      "jp": "会社がAIをどう業務に入れているか",
+      "items": [
+        {
+          "topic_flag": "国内事例",
+          "source_name": "三井不動産（公式ニュースリリース）",
+          "source_url": "https://www.mitsuifudosan.co.jp/corporate/news/2025/1223/",
+          "time": "2025-12-23",
+          "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員へ導入 — 85部門・150名の『AI推進リーダー』が3か月で約500件のカスタムGPTを内製",
+          "summary": "三井不動産が2025年12月23日に公表した公式ニュースリリースによると、同社は2025年10月1日にOpenAI社のChatGPT Enterpriseライセンスを取得し、約2,000人の全社員へ展開した。特徴はトップダウンのライセンス配布ではなく“現場起点（ボトムアップ）”の体制で、全社85部門から選ばれた約150名の「AI推進リーダー」が主体となり、利用開始から約3か月で約500件の「カスタムGPT」（プログラミング不要で作れる部門・業務専用アシスタント）を運用している（2025年12月23日時点）。全社員対象のChatGPT Enterprise研修には延べ1,300人が参加。ユースケース例として物件情報の参照・要約、経理処理アシスタント、プレスリリース下書き支援などが挙げられている。さらに内製AI開発環境（Microsoft Azure上）で「社長AIエージェント」（2025年12月に全社トライアル利用を開始）「DX本部長AIエージェント」「資料自動生成AI」など自社特化のプロダクトを開発し、カスタムGPTとの両輪で今後全社で業務削減時間10％以上を目指すとしている。★ライセンスを配って終わりにせず、各部門の実務を理解した150名のリーダーが“使える形”のGPTを量産する体制に投資している点が、生成AIを導入しても使われない組織との差になりやすい（＝現場が自分でツールを作る）。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "パナソニック コネクト（公式プレスリリース）",
+          "source_url": "https://news.panasonic.com/jp/press/jn250707-2",
+          "time": "2025-07-07",
+          "title": "パナソニック コネクト、社内AI「ConnectAI」で年間44.8万時間を削減 — 効いたのは『質問』より『作業を頼む』使い方",
+          "summary": "パナソニック コネクトが2025年7月7日に公表した公式発表によると、主要3社の大規模言語モデルを使って自社開発したAIアシスタント「ConnectAI」（2023年2月に業務利用を開始）は、2024年の1年間で44.8万時間（前年比2.4倍）の労働時間削減を達成した。利用回数は240万回（前年比約1.7倍）、1回あたりの削減時間は平均28分（画像を使う用途では36分）、社員の月間ユニークユーザー率は49.1％（前年比14.3ポイント増）。同社は削減が大きく伸びた要因を、AIの使い方が答えを『聞く』段階から、コード全体の生成・リファクタリング／作業手順書や各種基準の作成／資料レビューやアンケートのコメント分析といった作業を『頼む』段階へシフトしたためと説明している。★数字が伸びたのは利用人数を増やしたからではなく“任せる作業の重さ”を上げたためで、生成AIを社内に入れても効果が出ない組織との差はここに出やすい。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+          "time": "2026-07-15",
+          "title": "Anthropic×Blackstone、AI導入専業「Ode」を始動 — “次の1兆ドルはモデルでなく実装”に賭ける",
+          "summary": "AnthropicがBlackstoneやGoldman Sachsらと組み、企業へのAI導入を専門にする合弁会社「Ode with Anthropic」（評価額15億ドル、5月設立）を立ち上げた（TechCrunch、2026年7月15日）。買収したAIエンジニアリング企業Fractional AIを土台に約100人のエンジニアが顧客の業務に合わせたシステムを構築する。OpenAIも同様の『The Deployment Company』を持ち、フロンティアラボ各社が“良いモデルを出すだけでは企業顧客を取れない”と認め始めた形。★AI TIMESの見立て（価値は実装・保守にある）と重なる動き。"
+        }
+      ]
+    },
+    {
+      "id": "model",
+      "name": "モデル・技術",
+      "jp": "新モデル・価格・性能",
+      "items": [
+        {
+          "topic_flag": "API価格",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2026-08-31まで導入価格",
+          "title": "Claude Sonnet 5、8/31まで導入価格 入力$2・出力$10 — 9/1から標準の$3・$15へ",
+          "summary": "Anthropicの公式価格ページによると、Claude Sonnet 5 は100万トークンあたり入力$2・出力$10の導入価格が2026年8月31日まで有効で、9月1日以降は標準価格の入力$3・出力$15に切り替わる（同ページ原文: introductory pricing of $2/$10 … through August 31, 2026, after which the standard pricing of $3/$15）。ただし同ページは Sonnet 5 が新しいトークナイザーを採用し『同じ文章でも約30%多くトークンを生成する』と明記しており、単価が下がっても実コストは表示ほど下がらない点に注意（Sonnet 4.6以前は旧トークナイザー）。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2025-10-01",
+          "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
+          "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
+        }
+      ]
+    },
+    {
+      "id": "tool",
+      "name": "ツール・プロダクト",
+      "jp": "新しいAIツールの登場・更新",
+      "items": [
+        {
+          "topic_flag": "ツール更新",
+          "source_name": "Cursor（公式Changelog）",
+          "source_url": "https://www.cursor.com/changelog",
+          "time": "2026-07-10",
+          "title": "Cursor 3.11 公開 — メインのエージェント作業を止めずに脇道を調べる「サイドチャット」と会話全文検索を追加",
+          "summary": "AIコードエディタCursorのバージョンV3.11が2026年7月10日に公開された（公式Changelog）。目玉は「サイドチャット」で、メインのエージェント会話を中断せずに、その脇で別の会話を並行して開ける。/side・/btw かチャット上部の＋ボタンで作成でき、メインの文脈を引き継いだ独立の会話として残り、後から@メンションでメインへ結果を戻せる。既定では読み取り・検索・回答に集中する設計で、「本筋の作業を走らせたまま、別案を調べたり判断を確認したりする」用途を想定している。あわせて、Agents Windowのコマンドパレット（Cmd+K）から過去のエージェント会話の本文まで横断検索する会話検索（ローカル索引で数千会話に対応）と、会話内検索（Cmd+F）、プロジェクト／リポジトリ選択画面の刷新も入った。"
+        },
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+          "time": "2026-07-15",
+          "title": "AIコーディングのEmergent、1.3億ドル調達でユニコーンに — 評価額15億ドル・年換算売上1.2億ドル",
+          "summary": "インドのAIコーディング新興Emergentが、Creaegis主導のシリーズCで1.3億ドルを調達し、ポストマネー評価額15億ドル（半年で5倍）に達した（TechCrunch、2026年7月15日）。累計調達は2.3億ドル、年換算売上（ARR）は1.2億ドル・有料顧客は20万超で、Lovable・Replit・Cursorがひしめく市場で起業家や中小企業を主な標的にする。★AIコーディングは競争が激しくても資金と売上が急拡大しており、参入の中心が『開発者向け』から『非エンジニアの事業立ち上げ』へ広がっている。"
+        },
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
+          "time": "2026-07-15",
+          "title": "音声AIのRimeが2400万ドル調達 — 自前の録音データで“ブランド名や専門用語の発音”に特化",
+          "summary": "企業の電話応対（営業・サポート）向け音声AIを手がける米Rimeが、M13 Ventures主導のシリーズAで2400万ドルを調達した（TechCrunch、2026年7月15日）。Web上の音声を集めるのではなく自社スタジオで会話データを録音し、音素ベースの構成でブランド名・業界用語の発音を作り込むのが特徴。★ElevenLabsやDeepgramらがひしめく音声AIでも、企業はなお旧来のIVRを好むとされ、精度と“作り込みの手間の少なさ”が競争軸になっている。"
+        },
+        {
+          "topic_flag": "新サービス",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000193/",
+          "time": "2026-07-14",
+          "title": "Anthropic、米K-12教員向け「Claude for Teachers」を無料提供 — 全50州の学習指導基準に対応、Claude Code/Coworkも",
+          "summary": "Anthropicが7月14日（現地時間）、米国の幼稚園〜高校（K-12）教員向けサービス「Claude for Teachers」を発表した（ITmedia AI＋）。認証された教員は、Claudeのプレミアム機能・授業づくり用の『スキル』ライブラリ・全50州の学習指導基準にマップされた教材へ無料でアクセスでき、エージェント機能のClaude CodeやCoworkで出席データの分析や定型業務の自動化もできる。データはモデル学習に使わずFERPA準拠で、2027年6月30日までの登録で1年間無料。★学校・学区向けプランは近日提供予定。"
+        }
+      ]
+    },
+    {
+      "id": "kisei",
+      "name": "規制・制度",
+      "jp": "法律・ガイドライン・著作権",
+      "items": [
+        {
+          "topic_flag": "法律",
+          "source_name": "e-Gov 法令検索（法律本文）",
+          "source_url": "https://laws.e-gov.go.jp/law/507AC0000000053",
+          "time": "2025-09-01 施行",
+          "title": "AI推進法が施行 — 国に「人工知能戦略本部」、政府は基本計画を策定",
+          "summary": "「人工知能関連技術の研究開発及び活用の推進に関する法律」（令和7年法律第53号）。2025年6月4日公布・9月1日施行。基本理念を定め、内閣に本部長を内閣総理大臣とする人工知能戦略本部を設置し、政府が人工知能基本計画を閣議決定して推進する枠組み。罰則で縛る規制型ではなく、研究開発と活用の“推進”を軸にした基本法。"
+        },
+        {
+          "topic_flag": "著作権",
+          "source_name": "文化庁（AIと著作権について）",
+          "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
+          "time": "2024-03-15",
+          "title": "文化庁「AIと著作権に関する考え方について」— 学習と生成を分けて整理",
+          "summary": "文化審議会 著作権分科会 法制度小委員会が2024年3月15日に取りまとめ。AIの“学習段階”は著作権法30条の4（情報解析のための利用）で原則許容されうる一方、「享受」目的が併存する場合や著作権者の利益を不当に害する場合は権利制限が及ばないとする。“生成・利用段階”は通常の著作権侵害と同じ枠組みで判断する、という基本的な考え方を示した。"
+        },
+        {
+          "topic_flag": "実務指針",
+          "source_name": "文化庁（AIと著作権について）",
+          "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
+          "time": "2024-07-31",
+          "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表",
+          "summary": "2024年7月31日公表。上記「考え方」を、AIの開発・提供者と、利用者、クリエイター/権利者がそれぞれ実務で使えるよう、チェックリスト形式でかみ砕いた解説資料。制度そのものの変更ではなく、判断の当てはめ方を示す実務向けのガイダンス。"
+        },
+        {
+          "topic_flag": "ガイドライン",
+          "source_name": "経済産業省（AI事業者ガイドライン）",
+          "source_url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html",
+          "time": "2024-04-19（初版）／現行 第1.1版",
+          "title": "経産省・総務省「AI事業者ガイドライン」— 開発・提供・利用の3者に共通指針",
+          "summary": "従来3つに分かれていたAI関連ガイドラインを統合し、2024年4月19日に初版（第1.0版）を公表。その後 第1.1版に改定（本ページで現行版を確認）。AIの開発者・提供者・利用者という立場ごとに、人間中心・安全性・公平性・透明性・アカウンタビリティなどの原則と実践を示す“ソフトロー”。法的義務ではなく自主的取組の指針という位置づけ。"
+        },
+        {
+          "topic_flag": "個人情報",
+          "source_name": "個人情報保護委員会（報道発表資料）",
+          "source_url": "https://www.ppc.go.jp/news/press/2023/230602kouhou/",
+          "time": "2023-06-02",
+          "title": "個人情報保護委員会、生成AI利用の注意喚起 — 事業者・行政・利用者の3者へ、OpenAIには要請",
+          "summary": "個人情報保護委員会が2023年6月2日に公表。(1)個人情報取扱事業者は、個人情報を含むプロンプトを入力する際に利用目的の範囲内かを確認すること、本人の同意なく個人データを入力して応答結果の出力以外（機械学習等）に使われると個人情報保護法違反となる恐れがあるため、提供事業者が学習に使わないこと等を十分に確認すること、(2)行政機関等も同様、(3)一般の利用者は、入力した個人情報が機械学習に使われ不正確に出力されうるリスクや応答自体が不正確な可能性を踏まえ、規約・プライバシーポリシーを確認して判断すること、と注意喚起。あわせてChatGPTを提供するOpenAIに対し、個人情報保護法147条に基づき、本人同意なく要配慮個人情報を取得しないこと・利用目的を日本語で通知/公表することを要請した。"
+        },
+        {
+          "topic_flag": "制度提案",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000192/",
+          "time": "2026-07-14",
+          "title": "Google DeepMindのハサビスCEO、米国主導の「フロンティアAI標準化機関」設立を提唱",
+          "summary": "Google DeepMindのデミス・ハサビスCEOが7月14日（現地時間）、自身のSubstackでフロンティアAIの枠組みを論じるエッセイを公開し、金融のFINRAをモデルにした官民の『フロンティアAI標準化機関』の設立を提案した（ITmedia AI＋）。評価プロトコルを策定し、フロンティアラボは公開の最大30日前に自主的にモデルを提出してレビューを受ける仕組みで、実効性が示せれば審査通過を米国市場での展開要件にすることも視野に入れるという。★資金は主に業界が拠出し、深刻時にはラボ間の開発減速の調整も担うとした自主規制型の構想。"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "tool",
-   "name": "ツール・プロダクト",
-   "jp": "新しいAIツールの登場・更新",
-   "items": [
-    {
-     "topic_flag": "ツール更新",
-     "source_name": "Cursor（公式Changelog）",
-     "source_url": "https://www.cursor.com/changelog",
-     "time": "2026-07-10",
-     "title": "Cursor 3.11 公開 — メインのエージェント作業を止めずに脇道を調べる「サイドチャット」と会話全文検索を追加",
-     "summary": "AIコードエディタCursorのバージョンV3.11が2026年7月10日に公開された（公式Changelog）。目玉は「サイドチャット」で、メインのエージェント会話を中断せずに、その脇で別の会話を並行して開ける。/side・/btw かチャット上部の＋ボタンで作成でき、メインの文脈を引き継いだ独立の会話として残り、後から@メンションでメインへ結果を戻せる。既定では読み取り・検索・回答に集中する設計で、「本筋の作業を走らせたまま、別案を調べたり判断を確認したりする」用途を想定している。あわせて、Agents Windowのコマンドパレット（Cmd+K）から過去のエージェント会話の本文まで横断検索する会話検索（ローカル索引で数千会話に対応）と、会話内検索（Cmd+F）、プロジェクト／リポジトリ選択画面の刷新も入った。"
-    }
-   ]
-  },
-  {
-   "id": "kisei",
-   "name": "規制・制度",
-   "jp": "法律・ガイドライン・著作権",
-   "items": [
-    {
-     "topic_flag": "法律",
-     "source_name": "e-Gov 法令検索（法律本文）",
-     "source_url": "https://laws.e-gov.go.jp/law/507AC0000000053",
-     "time": "2025-09-01 施行",
-     "title": "AI推進法が施行 — 国に「人工知能戦略本部」、政府は基本計画を策定",
-     "summary": "「人工知能関連技術の研究開発及び活用の推進に関する法律」（令和7年法律第53号）。2025年6月4日公布・9月1日施行。基本理念を定め、内閣に本部長を内閣総理大臣とする人工知能戦略本部を設置し、政府が人工知能基本計画を閣議決定して推進する枠組み。罰則で縛る規制型ではなく、研究開発と活用の“推進”を軸にした基本法。"
-    },
-    {
-     "topic_flag": "著作権",
-     "source_name": "文化庁（AIと著作権について）",
-     "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
-     "time": "2024-03-15",
-     "title": "文化庁「AIと著作権に関する考え方について」— 学習と生成を分けて整理",
-     "summary": "文化審議会 著作権分科会 法制度小委員会が2024年3月15日に取りまとめ。AIの“学習段階”は著作権法30条の4（情報解析のための利用）で原則許容されうる一方、「享受」目的が併存する場合や著作権者の利益を不当に害する場合は権利制限が及ばないとする。“生成・利用段階”は通常の著作権侵害と同じ枠組みで判断する、という基本的な考え方を示した。"
-    },
-    {
-     "topic_flag": "実務指針",
-     "source_name": "文化庁（AIと著作権について）",
-     "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
-     "time": "2024-07-31",
-     "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表",
-     "summary": "2024年7月31日公表。上記「考え方」を、AIの開発・提供者と、利用者、クリエイター/権利者がそれぞれ実務で使えるよう、チェックリスト形式でかみ砕いた解説資料。制度そのものの変更ではなく、判断の当てはめ方を示す実務向けのガイダンス。"
-    },
-    {
-     "topic_flag": "ガイドライン",
-     "source_name": "経済産業省（AI事業者ガイドライン）",
-     "source_url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html",
-     "time": "2024-04-19（初版）／現行 第1.1版",
-     "title": "経産省・総務省「AI事業者ガイドライン」— 開発・提供・利用の3者に共通指針",
-     "summary": "従来3つに分かれていたAI関連ガイドラインを統合し、2024年4月19日に初版（第1.0版）を公表。その後 第1.1版に改定（本ページで現行版を確認）。AIの開発者・提供者・利用者という立場ごとに、人間中心・安全性・公平性・透明性・アカウンタビリティなどの原則と実践を示す“ソフトロー”。法的義務ではなく自主的取組の指針という位置づけ。"
-    },
-    {
-     "topic_flag": "個人情報",
-     "source_name": "個人情報保護委員会（報道発表資料）",
-     "source_url": "https://www.ppc.go.jp/news/press/2023/230602kouhou/",
-     "time": "2023-06-02",
-     "title": "個人情報保護委員会、生成AI利用の注意喚起 — 事業者・行政・利用者の3者へ、OpenAIには要請",
-     "summary": "個人情報保護委員会が2023年6月2日に公表。(1)個人情報取扱事業者は、個人情報を含むプロンプトを入力する際に利用目的の範囲内かを確認すること、本人の同意なく個人データを入力して応答結果の出力以外（機械学習等）に使われると個人情報保護法違反となる恐れがあるため、提供事業者が学習に使わないこと等を十分に確認すること、(2)行政機関等も同様、(3)一般の利用者は、入力した個人情報が機械学習に使われ不正確に出力されうるリスクや応答自体が不正確な可能性を踏まえ、規約・プライバシーポリシーを確認して判断すること、と注意喚起。あわせてChatGPTを提供するOpenAIに対し、個人情報保護法147条に基づき、本人同意なく要配慮個人情報を取得しないこと・利用目的を日本語で通知/公表することを要請した。"
-    }
-   ]
-  }
- ],
- "as_of": "2026-07-15"
+  ],
+  "as_of": "2026-07-15"
 }

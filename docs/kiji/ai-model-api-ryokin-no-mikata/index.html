@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>主要AIモデルのAPI料金の見方【2026年7月】 — AI TIMES</title>
+<meta name="description" content="Claude・GPT・Geminiなど主要AIモデルのAPI料金を、入力・出力・文脈長の3項目で読み解く早見表と解説。単価が安く見えても実コストが下がらない落とし穴、導入価格の期限まで。各社公式と逐語照合、2026年7月16日時点。">
+<meta name="card-desc" content="入力・出力・文脈長の3項目で読む早見表。単価が安く見えても実コストが下がらない落とし穴まで。2026年7月時点・各社公式と照合。">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/kiji/ai-model-api-ryokin-no-mikata/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "主要AIモデルのAPI料金の見方【2026年7月】",
+      "description": "主要AIモデルのAPI料金を、入力・出力・文脈長の3項目で読み解く早見表と解説。各社公式と逐語照合。",
+      "datePublished": "2026-07-16",
+      "dateModified": "2026-07-16",
+      "inLanguage": "ja",
+      "author": {
+        "@type": "Organization",
+        "name": "AI TIMES",
+        "url": "https://aitimes.jp/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AI TIMES",
+        "url": "https://aitimes.jp/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aitimes.jp/kiji/ai-model-api-ryokin-no-mikata/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://aitimes.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "記事",
+          "item": "https://aitimes.jp/kiji/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "主要AIモデルのAPI料金の見方",
+          "item": "https://aitimes.jp/kiji/ai-model-api-ryokin-no-mikata/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Q. 入力と出力、どちらの料金を重く見るべき？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A. 多くの用途で出力のほうが高く（例：Claude Opus 4.8 は入力$5に対し出力$25と5倍）、返答が長いほど効きます。要約や文章生成が中心なら出力単価を、長い資料を大量に読ませるなら入力単価を重視します。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q. 単価がいちばん安いモデルを選べば最安ですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A. いいえ。料金は「単価 × 消費トークン数」で、トークナイザーが変わると同じ文章でも消費トークン数が変わります（例：Claude Sonnet 5 は新トークナイザーで約30%多く生成）。単価だけでなく実際の消費トークンまで見ないと、実コストは判断できません。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q. 掲載の価格はいつ時点のものですか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A. 2026年7月16日時点で、各社公式価格ページと毎日照合しているAI TIMESの「AI相場」データ（soba.json）に一致させています。価格は頻繁に変わるため、契約・実装の前に各社公式で最新をご確認ください。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Q. 文脈長（コンテキスト）が長いと料金は上がりますか？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A. 表の単価は標準・短コンテキスト（≤200K）の通常料金です。多くの提供元は長コンテキストやキャッシュ・バッチで別料金を設けるため、上限近くまで使う場合は割増の有無を各社ドキュメントで確認してください。"
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZV2EZYGDP');
+</script>
+<!-- Google AdSense（keiri-tools と同一の発行者ID。1アカウントで複数サイト可） -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2635067516563578"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="mono">記事 ・ AI相場・料金</span>
+    <span class="sp"></span>
+    <span class="mono">as of 2026-07-16</span>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="../../"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="../../">一面</a>
+  <a href="../" aria-current="page">記事</a>
+  <a href="../../soba/">AI相場</a>
+  <a href="../../tools/">AIツール</a>
+  <a href="../../kasegu/">AIで稼ぐ</a>
+  <a href="../../news/">速報</a>
+</nav>
+
+<main class="wrap">
+  <nav class="breadcrumb"><a href="../../">ホーム</a><span class="sep">›</span><a href="../">記事</a><span class="sep">›</span>主要AIモデルのAPI料金の見方</nav>
+
+  <article class="kiji">
+    <h1>主要AIモデルのAPI料金の見方【2026年7月】</h1>
+    <p class="article-meta"><span><b>公開</b> 2026年7月16日</span><span><b>照合</b> 各社公式価格ページ／AI相場データ</span><span><b>カテゴリ</b> AI相場・料金</span></p>
+
+    <p class="lead">結論から言うと、AIモデルのAPI料金は<b>「入力 $/100万トークン」「出力 $/100万トークン」「文脈長」</b>の3つを並べて読むと、ほぼ一目で見当がつきます。同じ「最上位」でも、Claude Opus 4.8 は入力$5・出力$25、GPT-5.6 は入力$5・出力$30 と、出力側で差が出ます。</p>
+    <p class="lead">ただし<b>単価がいちばん安いモデル＝最安、ではありません</b>。トークナイザー（文章をトークンに刻む仕組み）が変わると、同じ文章でも消費トークン数が変わるためです。この記事では料金表の3項目の読み方と、見落としやすい落とし穴、無料/有料の分かれ目までを、各社公式価格と逐語照合した数値でまとめます。数値は2026年7月16日時点で、毎日照合している<a href="../../soba/">AI相場</a>データと一致させています。</p>
+
+    <nav class="toc">
+      <div class="toc-title">目次</div>
+      <ol>
+        <li><a href="#mikata">料金表の1行の読み方（入力・出力・文脈長）</a></li>
+        <li><a href="#hikaku">主要モデルのAPI料金 比較【2026年7月】</a></li>
+        <li><a href="#tsukaiwake">安さの落とし穴と、モデルの使い分け</a></li>
+        <li><a href="#faq">よくある質問</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="mikata">料金表の1行の読み方（入力・出力・文脈長）</h2>
+    <p>各社のAPI料金は、たいてい「入力トークン $/1M」「出力トークン $/1M」「文脈長（コンテキストウィンドウ）」の3項目で示されます。トークンは単語より細かい文字のかたまりで、料金はこの<b>トークン数</b>にかかります。1M＝100万トークンあたりの米ドル、というのが単価の単位です。</p>
+    <p>ポイントは、<b>入力と出力で単価が違う</b>こと。多くのモデルは出力（生成した返答）のほうが入力（送ったプロンプト）より数倍高く設定されています。たとえば Claude Opus 4.8 は入力$5に対して出力$25と、出力が5倍です。長い返答を大量に作る用途ほど、出力単価が効いてきます。</p>
+
+    <figure class="figure">
+      <svg viewBox="0 0 640 210" role="img" aria-label="料金表の1行を、モデル名・入力単価・出力単価・文脈長の4項目に分けて読む図解">
+        <!-- table -->
+        <rect x="20" y="24" width="600" height="60" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <line x1="20" y1="54" x2="620" y2="54" stroke="currentColor" stroke-width="1"/>
+        <line x1="300" y1="24" x2="300" y2="84" stroke="currentColor" stroke-width="1" stroke-opacity="0.35"/>
+        <line x1="413" y1="24" x2="413" y2="84" stroke="currentColor" stroke-width="1" stroke-opacity="0.35"/>
+        <line x1="526" y1="24" x2="526" y2="84" stroke="currentColor" stroke-width="1" stroke-opacity="0.35"/>
+        <!-- header -->
+        <text x="32" y="44" font-family="monospace" font-size="11" fill="currentColor" fill-opacity="0.6">モデル</text>
+        <text x="312" y="44" font-family="monospace" font-size="11" fill="currentColor" fill-opacity="0.6">入力 $/1M ①</text>
+        <text x="425" y="44" font-family="monospace" font-size="11" fill="currentColor" fill-opacity="0.6">出力 $/1M ②</text>
+        <text x="538" y="44" font-family="monospace" font-size="11" fill="currentColor" fill-opacity="0.6">文脈 ③</text>
+        <!-- data -->
+        <text x="32" y="73" font-family="serif" font-size="14" font-weight="700" fill="currentColor">Claude Opus 4.8</text>
+        <text x="356" y="73" font-family="monospace" font-size="14" fill="currentColor" text-anchor="middle">$5</text>
+        <text x="469" y="73" font-family="monospace" font-size="14" fill="currentColor" text-anchor="middle">$25</text>
+        <text x="573" y="73" font-family="monospace" font-size="14" fill="currentColor" text-anchor="middle">1000K</text>
+        <!-- legend -->
+        <text x="24" y="118" font-family="sans-serif" font-size="12.5" fill="currentColor"><tspan font-weight="700">① 入力</tspan> ＝ モデルに送るトークン（プロンプト）。長い資料を読ませるほど増える。</text>
+        <text x="24" y="146" font-family="sans-serif" font-size="12.5" fill="currentColor"><tspan font-weight="700">② 出力</tspan> ＝ モデルが生成するトークン（返答）。ふつう入力より数倍高い。</text>
+        <text x="24" y="174" font-family="sans-serif" font-size="12.5" fill="currentColor"><tspan font-weight="700">③ 文脈長</tspan> ＝ 一度に扱えるトークンの上限。1000K ≒ 文庫本 数冊分。</text>
+      </svg>
+      <figcaption>料金表の1行は「モデル名／入力単価／出力単価／文脈長」に分けて読む。単価は100万トークンあたりの米ドル。数値は Claude Opus 4.8（各社公式・2026-07-16照合）の例。</figcaption>
+    </figure>
+
+    <p>3つめの<b>文脈長</b>は、一度に扱えるトークンの上限です。長い資料をまるごと読ませたい用途では重要ですが、掲載単価は通常「標準・短コンテキスト（≤200K）」の料金であることが多く、上限近くまで使うと長コンテキストの割増が別にかかる提供元もあります。上限だけで選ばず、割増の有無まで見るのが安全です。</p>
+
+    <h2 id="hikaku">主要モデルのAPI料金 比較【2026年7月】</h2>
+    <p>主要7モデルを入力単価の高い順に並べたのが下の表です。単価は<b>標準・短コンテキストの通常入出力料金</b>で、キャッシュ・バッチ・優先処理・長コンテキスト割増は含みません（それらは別料金）。数値は各社公式価格ページと、毎日照合している<a href="../../soba/">AI相場</a>データ（soba.json）に一致させています。</p>
+    <div class="scroll-wrap">
+      <table>
+        <thead>
+          <tr><th>モデル</th><th>提供元</th><th class="n">入力 $/1M</th><th class="n">出力 $/1M</th><th class="n">文脈</th><th>位置づけ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><b>Claude Opus 4.8</b></td><td>Anthropic</td><td class="n">$5</td><td class="n">$25</td><td class="n">1000K</td><td>最上位・長文/エージェント</td></tr>
+          <tr><td><b>GPT-5.6</b></td><td>OpenAI</td><td class="n">$5</td><td class="n">$30</td><td class="n">1050K</td><td>最上位（既定 gpt-5.6）</td></tr>
+          <tr><td><b>Claude Sonnet 5</b></td><td>Anthropic</td><td class="n">$3</td><td class="n">$15</td><td class="n">1000K</td><td>中位（導入価格あり／下記）</td></tr>
+          <tr><td><b>Gemini 3.1 Pro</b></td><td>Google</td><td class="n">$2</td><td class="n">$12</td><td class="n">1000K</td><td>上位・低価格</td></tr>
+          <tr><td><b>Gemini 3.5 Flash</b></td><td>Google</td><td class="n">$1.5</td><td class="n">$9</td><td class="n">1000K</td><td>上位Flash</td></tr>
+          <tr><td><b>Claude Haiku 4.5</b></td><td>Anthropic</td><td class="n">$1</td><td class="n">$5</td><td class="n">200K</td><td>高速・低コスト</td></tr>
+          <tr><td><b>Gemini 3 Flash</b></td><td>Google</td><td class="n">$0.5</td><td class="n">$3</td><td class="n">1000K</td><td>最安クラス</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>入力単価は $5 から $0.5 まで10倍の開きがありますが、<b>出力単価まで見ると順位が変わる</b>のが分かります。GPT-5.6 は入力こそ Opus 4.8 と同じ$5ですが、出力は$30と最も高く、長い返答を作らせる用途では総額が伸びやすい設計です。逆に Gemini 3 Flash は入力$0.5・出力$3で、大量処理のコストを最優先する用途に向きます。</p>
+
+    <h2 id="tsukaiwake">安さの落とし穴と、モデルの使い分け</h2>
+    <p>単価表だけで最安を決めると外すことがあります。理由は主に3つです。</p>
+    <div class="callout">
+      <b>落とし穴①：単価×消費トークンで見ないと実コストは分からない</b>
+      料金は「単価 × 消費トークン数」。トークナイザーが変わると同じ文章でも消費トークン数が変わります。たとえば Claude Sonnet 5 は新しいトークナイザーで、同じ文章でも従来比 約30%多くトークンを生成します。単価が下がっても、消費トークンが増えれば実コストは単価ほど下がりません。
+    </div>
+    <div class="callout">
+      <b>落とし穴②：導入価格・割引の「期限」を見落とす</b>
+      Claude Sonnet 5 は 2026-08-31 までは導入価格（入力$2／出力$10）が有効で、9/1 から標準の入力$3／出力$15 になります。「今の請求額」と「継続後の請求額」は別物です。時限の割引・導入価格は、必ず適用期限まで確認します。
+    </div>
+    <p>落とし穴③は<b>キャッシュ・バッチ・長コンテキストの別料金</b>です。表の単価は標準・短コンテキストの通常料金なので、プロンプトキャッシュやバッチ処理を使うと単価が下がり、逆に上限近い長文入力では割増がかかることがあります。想定する使い方に合った行を各社ドキュメントで確認しましょう。</p>
+    <div class="summary-box">
+      <div class="sb-title">使い分けの目安</div>
+      <ul>
+        <li><b>難しい推論・長文・エージェント：</b>最上位（Claude Opus 4.8／GPT-5.6）。出力が高いので、返答を短く保つほど効く。</li>
+        <li><b>バランス（多くの業務）：</b>中位（Claude Sonnet 5／Gemini 3.1 Pro）。品質とコストの折り合い。</li>
+        <li><b>高速・大量・単純処理：</b>低コスト帯（Claude Haiku 4.5／Gemini 3 Flash）。分類・要約・抽出など。</li>
+      </ul>
+    </div>
+    <p>最新の全モデルの単価は、毎日各社公式と照合している一覧で確認できます。</p>
+
+    <a class="tool-cta" href="../../soba/">
+      <div class="tc-body">
+        <div class="tc-k">DATA ・ 毎日照合</div>
+        <div class="tc-t">AI相場 — 主要モデルのAPI価格 全一覧</div>
+      </div>
+      <span class="tc-arrow">→</span>
+    </a>
+
+    <h2 id="faq">よくある質問</h2>
+    <h3>Q. 入力と出力、どちらの料金を重く見るべき？</h3>
+    <p>A. 多くの用途で出力のほうが高く（例：Claude Opus 4.8 は入力$5に対し出力$25と5倍）、返答が長いほど効きます。要約や文章生成が中心なら出力単価を、長い資料を大量に読ませるなら入力単価を重視します。</p>
+    <h3>Q. 単価がいちばん安いモデルを選べば最安ですか？</h3>
+    <p>A. いいえ。料金は「単価 × 消費トークン数」で、トークナイザーが変わると同じ文章でも消費トークン数が変わります（例：Claude Sonnet 5 は新トークナイザーで約30%多く生成）。単価だけでなく実際の消費トークンまで見ないと、実コストは判断できません。</p>
+    <h3>Q. 掲載の価格はいつ時点のものですか？</h3>
+    <p>A. 2026年7月16日時点で、各社公式価格ページと毎日照合しているAI TIMESの「AI相場」データ（soba.json）に一致させています。価格は頻繁に変わるため、契約・実装の前に各社公式で最新をご確認ください。</p>
+    <h3>Q. 文脈長（コンテキスト）が長いと料金は上がりますか？</h3>
+    <p>A. 表の単価は標準・短コンテキスト（≤200K）の通常料金です。多くの提供元は長コンテキストやキャッシュ・バッチで別料金を設けるため、上限近くまで使う場合は割増の有無を各社ドキュメントで確認してください。</p>
+
+    <section class="related">
+      <div class="rel-title">関連</div>
+      <div class="tool-grid">
+        <a class="tool-card" href="../../soba/"><div class="tk-k">DATA</div><div class="tk-t">AI相場</div><div class="tk-d">主要モデルのAPI価格を毎日、各社公式と逐語照合した全一覧。</div></a>
+        <a class="tool-card" href="../../tools/"><div class="tk-k">DATA</div><div class="tk-t">AIツール</div><div class="tk-d">用途と料金（月額）を公式ページと照合。何に使うか・いくらか。</div></a>
+        <a class="tool-card" href="../../kasegu/"><div class="tk-k">DATA</div><div class="tk-t">AIで稼ぐ</div><div class="tk-d">個人・企業がAIで収益を上げた実例を、出典つきで。</div></a>
+        <a class="tool-card" href="../"><div class="tk-k">INDEX</div><div class="tk-t">記事一覧</div><div class="tk-d">AI相場・料金／企業のAI活用／AIで稼ぐ の記事。</div></a>
+      </div>
+    </section>
+
+    <h2 class="sources-h">出典</h2>
+    <ol class="sources">
+      <li>Anthropic「Pricing」 <a href="https://docs.anthropic.com/en/docs/about-claude/pricing" rel="noopener" target="_blank">docs.anthropic.com/en/docs/about-claude/pricing</a></li>
+      <li>OpenAI「Pricing」 <a href="https://platform.openai.com/docs/pricing" rel="noopener" target="_blank">platform.openai.com/docs/pricing</a></li>
+      <li>Google Cloud「Vertex AI generative AI pricing」 <a href="https://cloud.google.com/vertex-ai/generative-ai/pricing" rel="noopener" target="_blank">cloud.google.com/vertex-ai/generative-ai/pricing</a></li>
+      <li>AI TIMES「AI相場」 <a href="../../soba/">aitimes.jp/soba/</a>（各社公式と毎日逐語照合した検証済みデータ soba.json）</li>
+    </ol>
+
+    <p class="disclaimer">本記事の料金は掲載時点（2026年7月16日）の各社公式価格に基づく、標準・短コンテキストの通常料金の概観です。キャッシュ・バッチ・優先処理・長コンテキスト割増は含みません。価格・仕様は予告なく変わるため、契約・実装の前に必ず各社の公式価格ページで最新をご確認ください。特定サービスの推奨・投資助言ではありません。</p>
+  </article>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="../">記事</a><a href="../../soba/">AI相場</a><a href="../../tools/">AIツール</a><a href="../../kasegu/">AIで稼ぐ</a><a href="../../news/">速報</a>
+  </div>
+</footer>
+</body>
+</html>

@@ -174,3 +174,103 @@ footer { border-top: 3px solid var(--rule); margin-top: 30px; padding: 22px 0 48
 .krow2 .kx-amt { text-align: right; white-space: nowrap; }
 .krow2 .kx-amt b { display: block; font-family: var(--font-mono); font-size: 17px; font-variant-numeric: tabular-nums; }
 .krow2 .kx-amt span { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); }
+
+/* ============================================================
+   記事（kiji）— 白黒新聞体の記事本文。色は本文黒＋速報赤のみ。
+   ページ内<style>は書かない。記事はこのクラスだけで組む。
+   ============================================================ */
+
+/* パンくず */
+nav.breadcrumb { font-family: var(--font-mono); font-size: 11px; letter-spacing: .3px; color: var(--ink-3); padding: 14px 0 0; }
+nav.breadcrumb a:hover { color: var(--live); }
+nav.breadcrumb .sep { color: var(--ink-faint); margin: 0 6px; }
+
+/* 記事本体 */
+article.kiji { max-width: 720px; margin: 0 auto; padding: 8px 0 30px; }
+article.kiji h1 { font-family: var(--font-serif); font-weight: 700; font-size: clamp(26px, 4.6vw, 40px); line-height: 1.15; letter-spacing: -.5px; margin: 14px 0 10px; text-wrap: balance; }
+article.kiji .article-meta { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-3); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 9px 0; margin: 0 0 22px; display: flex; gap: 14px; flex-wrap: wrap; }
+article.kiji .article-meta b { color: var(--ink); font-weight: 700; }
+article.kiji .lead { font-size: 16.5px; line-height: 1.85; color: var(--ink); margin: 0 0 16px; }
+article.kiji .lead b { font-weight: 700; }
+article.kiji p { font-size: 15.5px; line-height: 1.9; color: var(--ink); margin: 0 0 16px; }
+article.kiji h2 { font-family: var(--font-serif); font-weight: 700; font-size: 23px; line-height: 1.3; letter-spacing: -.2px; margin: 38px 0 12px; padding-bottom: 7px; border-bottom: 2px solid var(--rule); scroll-margin-top: 16px; }
+article.kiji h3 { font-family: var(--font-sans); font-weight: 800; font-size: 16.5px; margin: 24px 0 8px; }
+article.kiji a { text-decoration: underline; text-decoration-color: var(--line-2); text-underline-offset: 2px; }
+article.kiji a:hover { text-decoration-color: var(--live); color: var(--live); }
+article.kiji ul, article.kiji ol { font-size: 15.5px; line-height: 1.85; color: var(--ink); padding-left: 1.4em; margin: 0 0 16px; }
+article.kiji li { margin: 4px 0; }
+article.kiji strong, article.kiji b { font-weight: 700; }
+
+/* 目次 */
+nav.toc { border: 1px solid var(--line-2); background: var(--paper-2); padding: 15px 18px; margin: 0 0 26px; }
+nav.toc .toc-title { font-family: var(--font-mono); font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+nav.toc ol { list-style: decimal; padding-left: 1.4em; margin: 0; font-size: 13.5px; line-height: 1.7; }
+nav.toc a { text-decoration: none; color: var(--ink-2); }
+nav.toc a:hover { color: var(--live); }
+
+/* 図解（figure内インラインSVG） */
+article.kiji figure.figure { margin: 24px 0; border: 1px solid var(--line-2); padding: 18px 18px 12px; background: var(--paper); }
+article.kiji figure.figure svg { display: block; width: 100%; height: auto; color: var(--ink); }
+article.kiji figure.figure figcaption { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--line); line-height: 1.6; }
+
+/* callout（注意・補足ボックス。<b>が見出し） */
+article.kiji .callout { border-left: 3px solid var(--live); background: var(--paper-2); padding: 13px 16px; margin: 0 0 18px; font-size: 14px; line-height: 1.8; }
+article.kiji .callout b { display: block; font-weight: 800; margin-bottom: 3px; }
+
+/* まとめボックス */
+article.kiji .summary-box { border: 2px solid var(--rule); padding: 16px 18px; margin: 0 0 22px; }
+article.kiji .summary-box .sb-title { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--live); margin-bottom: 8px; }
+article.kiji .summary-box ul { margin: 0; }
+
+/* 記事内の表（相場データ等） */
+article.kiji .scroll-wrap { overflow-x: auto; margin: 0 0 20px; }
+article.kiji table { width: 100%; border-collapse: collapse; font-size: 13.5px; min-width: 460px; }
+article.kiji table th { font-family: var(--font-mono); font-size: 10.5px; letter-spacing: .5px; text-transform: uppercase; color: var(--ink-3); text-align: left; padding: 9px 12px; border-bottom: 2px solid var(--rule); font-weight: 500; }
+article.kiji table th.n, article.kiji table td.n { text-align: right; font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
+article.kiji table td { padding: 10px 12px; border-bottom: 1px solid var(--line); }
+article.kiji table tr:last-child td { border-bottom: 0; }
+article.kiji table td .pv { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); }
+
+/* ツールへのCTA / 関連導線 */
+article.kiji .tool-cta { display: flex; align-items: center; gap: 12px; border: 2px solid var(--rule); padding: 14px 16px; margin: 0 0 22px; text-decoration: none; }
+article.kiji .tool-cta:hover { background: var(--paper-2); color: inherit; }
+article.kiji .tool-cta .tc-body { flex: 1; }
+article.kiji .tool-cta .tc-k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--live); }
+article.kiji .tool-cta .tc-t { font-family: var(--font-serif); font-size: 17px; font-weight: 700; margin-top: 2px; }
+article.kiji .tool-cta .tc-arrow { font-family: var(--font-mono); font-size: 18px; color: var(--ink-3); }
+
+article.kiji section.related { border-top: 2px solid var(--rule); margin: 30px 0 0; padding-top: 8px; }
+article.kiji section.related > .rel-title { font-family: var(--font-serif); font-size: 15px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; padding: 8px 0; }
+.tool-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 30px; }
+@media (max-width: 640px) { .tool-grid { grid-template-columns: 1fr; } }
+.tool-card { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); text-decoration: none; }
+.tool-card:hover .tk-t { color: var(--live); }
+.tool-card .tk-k { font-family: var(--font-mono); font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: var(--ink-3); }
+.tool-card .tk-t { font-weight: 700; font-size: 14px; margin: 2px 0; }
+.tool-card .tk-d { font-size: 12px; color: var(--ink-2); line-height: 1.55; }
+
+/* 出典 */
+article.kiji h2.sources-h { font-size: 18px; }
+article.kiji .sources { font-family: var(--font-mono); font-size: 11.5px; color: var(--ink-2); line-height: 1.9; padding-left: 1.3em; }
+article.kiji .disclaimer { font-size: 11.5px; color: var(--ink-3); line-height: 1.7; border-top: 1px solid var(--line); margin-top: 24px; padding-top: 14px; }
+
+/* ============================================================
+   記事一覧（kiji/index.html）— カテゴリ別セクション
+   ============================================================ */
+.kiji-intro { font-size: 14px; color: var(--ink-2); line-height: 1.75; max-width: 64ch; margin: 0 0 18px; }
+nav.cat-nav { display: flex; flex-wrap: wrap; gap: 0; border-top: 2px solid var(--rule); border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+nav.cat-nav a { font-family: var(--font-mono); font-size: 12px; letter-spacing: .5px; color: var(--ink-2); padding: 10px 16px; border-right: 1px solid var(--line); }
+nav.cat-nav a:first-child { border-left: 1px solid var(--line); }
+nav.cat-nav a:hover { background: var(--paper-2); color: var(--live); }
+nav.cat-nav a span { color: var(--ink-faint); margin-left: 4px; }
+section.cat { padding: 22px 0 8px; }
+section.cat > h2 { font-family: var(--font-serif); font-size: 20px; font-weight: 700; letter-spacing: .3px; margin: 0 0 2px; padding-bottom: 7px; border-bottom: 2px solid var(--rule); display: flex; align-items: baseline; gap: 8px; scroll-margin-top: 12px; }
+section.cat > h2 .cat-n { font-family: var(--font-mono); font-size: 12px; font-weight: 400; color: var(--ink-3); }
+section.cat .cat-desc { font-size: 12.5px; color: var(--ink-3); line-height: 1.65; margin: 8px 0 4px; max-width: 66ch; }
+.post-list { display: block; }
+.post-list > a { display: grid; grid-template-columns: 84px 1fr; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--line); text-decoration: none; align-items: baseline; }
+.post-list > a:hover .p-title { color: var(--live); }
+.post-list .p-date { font-family: var(--font-mono); font-size: 11px; color: var(--ink-3); white-space: nowrap; padding-top: 2px; }
+.post-list .p-title { font-family: var(--font-serif); font-size: 18px; font-weight: 700; line-height: 1.3; letter-spacing: -.2px; }
+.post-list .p-desc { font-size: 12.5px; color: var(--ink-2); line-height: 1.6; margin-top: 3px; }
+@media (max-width: 560px) { .post-list > a { grid-template-columns: 1fr; gap: 3px; } }

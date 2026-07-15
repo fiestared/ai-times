@@ -9,10 +9,15 @@
    "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
   },
   "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。"
+  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。"
  },
  "lead": null,
  "wire": [
+  {
+   "time": "2026-07-10",
+   "title": "Cursor 3.11 公開 — メイン作業を止めない「サイドチャット」と会話全文検索（Cmd+K）を追加",
+   "flag": "ツール"
+  },
   {
    "time": "2025-12-23",
    "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員に導入。85部門150名のAI推進リーダーが3か月で約500件のカスタムGPTを内製",
@@ -106,7 +111,16 @@
    "id": "tool",
    "name": "ツール・プロダクト",
    "jp": "新しいAIツールの登場・更新",
-   "items": []
+   "items": [
+    {
+     "topic_flag": "ツール更新",
+     "source_name": "Cursor（公式Changelog）",
+     "source_url": "https://www.cursor.com/changelog",
+     "time": "2026-07-10",
+     "title": "Cursor 3.11 公開 — メインのエージェント作業を止めずに脇道を調べる「サイドチャット」と会話全文検索を追加",
+     "summary": "AIコードエディタCursorのバージョンV3.11が2026年7月10日に公開された（公式Changelog）。目玉は「サイドチャット」で、メインのエージェント会話を中断せずに、その脇で別の会話を並行して開ける。/side・/btw かチャット上部の＋ボタンで作成でき、メインの文脈を引き継いだ独立の会話として残り、後から@メンションでメインへ結果を戻せる。既定では読み取り・検索・回答に集中する設計で、「本筋の作業を走らせたまま、別案を調べたり判断を確認したりする」用途を想定している。あわせて、Agents Windowのコマンドパレット（Cmd+K）から過去のエージェント会話の本文まで横断検索する会話検索（ローカル索引で数千会話に対応）と、会話内検索（Cmd+F）、プロジェクト／リポジトリ選択画面の刷新も入った。"
+    }
+   ]
   },
   {
    "id": "kisei",

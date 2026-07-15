@@ -1,22 +1,17 @@
 {
   "_meta": {
-    "title": "AIで稼ぐ — この実験の一次情報",
+    "title": "AIで稼ぐ — 世界の事例キュレーション",
     "as_of": "2026-07-15",
-    "status": "verified",
-    "note": "運営者がAIに自律的に月30万円を稼がせる実験の実測記録。ここは推測でなく、実際に手を動かして電卓を叩いた数字だけ。うちにしか書けない一次情報。数字を更新したら as_of を直す。"
+    "status": "seed",
+    "note": "世の中の『AIで稼いだ』実例を集めて、誰が・何で・月いくら を事実として表にする。★著作権★ 収益報告の本文を転載しない。載せるのは (1)公開された数字(月商・累計・課金額) (2)手法の1〜2行要約 (3)必ず出典URL。数字は必ず出典に実在することを確認してから載せる(AIは金額を捏造しがち)。日本の事例(note/X/個人開発)も海外(Indie Hackers/HN/Reddit)も両方集める。金額は現地通貨のまま+概算円。ランキングは月商(または月商相当)の降順。",
+    "flags": ["拡張機能", "SaaS", "アプリ", "コンテンツ", "受託", "素材", "国内", "海外"]
   },
-  "verdict": "「AIで不労所得」の大半は、単価×客数で桁が合わない。作ることは速いが、詰まるのは毎回「流通」——人に知ってもらうところ。",
-  "board": [
-    { "method": "ブログ広告（AdSense）", "need": "月 75万 PV", "verdict": "桁が重い", "ok": false },
-    { "method": "Kindle出版（粗利¥298/冊）", "need": "月 1,000 冊", "verdict": "桁が重い", "ok": false },
-    { "method": "ストック素材", "need": "12.5万 点", "verdict": "構造的に不可", "ok": false },
-    { "method": "クラウドソーシング", "need": "受注率 2.3%", "verdict": "市場が縮小", "ok": false },
-    { "method": "有料ツール（月$29）", "need": "41〜68 社", "verdict": "桁は合う", "ok": true }
+  "examples": [
+    { "name": "GMass", "who": "個人→小チーム", "what": "Gmailの一括送信拡張（実質SaaS）", "monthly_usd": 130000, "model": "サブスク $7〜20/月", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/interview/how-i-hit-115k-mo-with-a-status-quo-improvement-c45d11ad17", "source_name": "Indie Hackers", "note": "収益化は公開の約1年後。1万有料ユーザーを目標に。" },
+    { "name": "CSS Scan", "who": "個人", "what": "任意要素のCSSをコピーする拡張", "monthly_usd": null, "cumulative_usd": 100000, "model": "買い切り $69（Gumroad）", "flag": "拡張機能・海外", "source_url": "https://www.indiehackers.com/product/css-scan/100-000-in-revenue-with-css-scan--MF_-4QWdBIJscbnJMSK", "source_name": "Indie Hackers", "note": "買い切りモデルでも累計10万ドル。" },
+    { "name": "Closet Tools", "who": "個人（副業→本業）", "what": "フリマ(Poshmark)出品の自動化", "monthly_usd": 38000, "model": "サブスク $30/月", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/podcast/187-jordan-oconnor-of-closet-tools", "source_name": "Indie Hackers", "note": "本業を持ちながら$12k MRR→独立。顧客がそれで“稼ぐ”道具。" },
+    { "name": "Easy Folders", "who": "個人", "what": "ChatGPT/Claudeにフォルダ・検索を足す拡張", "monthly_usd": 3700, "model": "フリーミアム（月額＋買い切り）", "flag": "拡張機能・海外", "source_url": "https://www.indiehackers.com/product/easy-folders/6-months-post-launch-my-chrome-extension-has-hit-3-700-in-mrr-and-42-000-in-total-revenue--O3qs28VAnAkcJw0j--M", "source_name": "Indie Hackers", "note": "公開6か月で月商$3,700・累計$42,000。" },
+    { "name": "BlackMagic.so", "who": "個人（Tony Dinh）", "what": "X(Twitter)の分析拡張", "monthly_usd": 3000, "model": "サブスク $8/月〜", "flag": "拡張機能・海外", "source_url": "https://news.ycombinator.com/item?id=29803817", "source_name": "Hacker News (Show HN)", "note": "3か月で$60/月→さらに5か月で$3k/月。$400/月で会社を辞めた。" }
   ],
-  "articles": [
-    { "kicker": "実験ログ・最新", "title": "AIに「月30万円稼いでこい」と言って寝た。起きたら49記事書いていた", "dek": "4日で何ができて、いくら稼げなかったか。作る力は余り、流通が詰まる。", "src": "連載・全記録" },
-    { "kicker": "保存版", "title": "AIで稼ぐ全手法を、電卓で検算した", "dek": "「月30万円 ÷ 単価 = 必要客数」。桁が合うのはどれか。", "src": "比較・毎月更新" },
-    { "kicker": "実装", "title": "AIに数字を書かせると嘘をつく。別のAIに「反証させる」", "dek": "「確認せよ」では防げない。240件検算して4件の誤りを潰した方法。", "src": "ノウハウ" },
-    { "kicker": "相場", "title": "ChatGPT・Claude・Geminiの副業プラン、実際いくら戻る", "dek": "ツール別のアフィリエイト単価・成約条件を毎日照合。", "src": "AI相場と連動" }
-  ]
+  "todo_jp": "日本の事例（note・X・個人開発者の収益公開）を集めて追加する。海外に偏らせない。"
 }

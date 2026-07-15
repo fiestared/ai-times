@@ -16,11 +16,9 @@
 <body>
 <div class="util">
   <div class="wrap util-row">
-    <span class="live">LIVE</span>
     <span class="mono" id="today">—</span>
     <span class="sp"></span>
-    <span class="mono" id="freshness">更新: 準備中</span>
-    <button class="tbtn" id="themeBtn" type="button" aria-label="テーマ切替">◐ 反転</button>
+    <span class="mono" id="freshness">毎日更新</span>
   </div>
 </div>
 
@@ -37,10 +35,11 @@
 
 <nav class="sections" aria-label="セクション">
   <a href="./" aria-current="page">一面</a>
-  <a href="news/">速報</a>
+  <a href="#kasegu">AIで稼ぐ</a>
+  <a href="#katsuyo">企業のAI活用</a>
+  <a href="#model">モデル・技術</a>
   <a href="soba/">AI相場</a>
   <a href="tools/">AIツール</a>
-  <a href="kasegu/">AIで稼ぐ</a>
 </nav>
 
 <div class="breaking" aria-label="速報" id="breaking" hidden>
@@ -51,6 +50,9 @@
 <main class="wrap">
   <!-- 一面 + 速報ワイヤー -->
   <div id="frontMount"></div>
+
+  <!-- トピック別ニュース（企業のAI活用・モデル・規制…をここに描画） -->
+  <div id="topicsMount"></div>
 
   <!-- AI相場 -->
   <section>
@@ -66,7 +68,7 @@
 
   <!-- AIで稼ぐ -->
   <section id="kasegu">
-    <div class="sec-title">AIで稼ぐ <span class="jp">— 「AIで月30万円」を、私たち自身が実験して電卓で検算した記録</span><a class="more" href="kasegu/">連載 →</a></div>
+    <div class="sec-title">AIで稼ぐ <span class="jp">— 世界の「AIで稼いだ」実例。誰が・何で・月いくら</span><a class="more" href="kasegu/">一覧 →</a></div>
     <div id="kaseguMount"></div>
   </section>
 
@@ -90,13 +92,6 @@
 
 <script>
 (function () {
-  var root = document.documentElement;
-  document.getElementById("themeBtn").addEventListener("click", function () {
-    var cur = root.getAttribute("data-theme");
-    if (!cur) cur = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    root.setAttribute("data-theme", cur === "dark" ? "light" : "dark");
-  });
-
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
@@ -129,12 +124,30 @@
       '<h2>' + esc(lead.title) + '</h2><p class="dek">' + esc(lead.dek) + '</p>' +
       '<div class="meta"><span>公開 <b>' + esc(lead.time) + '</b></span><span>出典 <b>' + esc(lead.source_name) + '</b></span></div></article>'
     ) : '<article class="lead">' + placeholder("一面は準備中です。") + '</article>';
-    var wireHtml = '<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono" style="color:var(--live)">● LIVE</span></div>' +
+    var wireHtml = '<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono">最新順</span></div>' +
       (wire.length ? wire.slice(0, 7).map(function (w) {
         return '<div class="wi"><div class="tm">' + esc(w.time) + '</div><div class="hl">' + esc(w.title) +
           (w.flag ? ' <span class="fl">' + esc(w.flag) + '</span>' : '') + '</div></div>';
       }).join("") : placeholder("準備中")) + '</aside>';
     m.innerHTML = '<div class="front">' + leadHtml + wireHtml + '</div>';
+    // トピック別セクション
+    var tm = document.getElementById("topicsMount");
+    var topics = (d.topics || []).filter(function (t) { return (t.items || []).length; });
+    // 「AIで稼ぐ」トピックは専用のキュレーション(examples)で別に出すので、ここでは記事型トピックだけ
+    topics = topics.filter(function (t) { return t.id !== "kasegu"; });
+    if (topics.length) {
+      tm.innerHTML = topics.map(function (t) {
+        var stories = t.items.slice(0, 6).map(function (a) {
+          return '<div class="story"><div class="sk">' + esc(a.source_name || "") +
+            (a.time ? ' ・ ' + esc(a.time) : '') + '</div><h3>' + esc(a.title) + '</h3>' +
+            '<p>' + esc(a.summary || "") + '</p>' +
+            (a.source_url ? '<div class="src"><a href="' + esc(a.source_url) + '" rel="noopener" target="_blank">出典 ↗</a></div>' : '') +
+            '</div>';
+        }).join("");
+        return '<section id="' + esc(t.id) + '"><div class="sec-title">' + esc(t.name) +
+          ' <span class="jp">— ' + esc(t.jp || "") + '</span></div><div class="grid2">' + stories + '</div></section>';
+      }).join("");
+    }
   }).catch(function () {
     document.getElementById("frontMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
   });
@@ -175,24 +188,29 @@
     document.getElementById("toolsMount").innerHTML = placeholder("読み込みに失敗しました。");
   });
 
-  // --- AIで稼ぐ ---
+  // --- AIで稼ぐ（世界の事例キュレーション） ---
   get("data/kasegu.json").then(function (d) {
     var mount = document.getElementById("kaseguMount");
-    var board = (d.board || []).map(function (b) {
-      return '<div class="krow"><span class="nm">' + esc(b.method) + '</span><span class="need">' + esc(b.need) + '</span>' +
-        '<span class="vd ' + (b.ok ? "mb" : "no") + '">' + esc(b.verdict) + '</span></div>';
+    var ex = (d.examples || []);
+    if (!ex.length) { mount.innerHTML = placeholder("事例を収集中です。世界と日本の『AIで稼いだ』実例を、出典つきで集めています。"); return; }
+    var yen = function (usd) { return usd ? "≈ ¥" + Math.round(usd * 155 / 10000) + "万" : ""; };
+    var amt = function (e) {
+      if (e.monthly_usd) return { big: "$" + e.monthly_usd.toLocaleString() + "/月", sub: yen(e.monthly_usd) + "/月" };
+      if (e.cumulative_usd) return { big: "$" + e.cumulative_usd.toLocaleString(), sub: yen(e.cumulative_usd) + "・累計" };
+      return { big: "—", sub: "" };
+    };
+    var rank = ex.slice().sort(function (a, b) { return (b.monthly_usd || b.cumulative_usd/12 || 0) - (a.monthly_usd || a.cumulative_usd/12 || 0); });
+    var rows = rank.map(function (e) {
+      var a = amt(e);
+      return '<a class="krow2" href="' + esc(e.source_url) + '" rel="noopener" target="_blank">' +
+        '<div class="kx-main"><div class="kx-nm">' + esc(e.name) +
+        (e.flag ? ' <span class="fl">' + esc(e.flag) + '</span>' : '') + '</div>' +
+        '<div class="kx-ds">' + esc(e.what) + (e.note ? ' — ' + esc(e.note) : '') + '</div>' +
+        '<div class="kx-src">出典: ' + esc(e.source_name) + ' ↗</div></div>' +
+        '<div class="kx-amt"><b>' + esc(a.big) + '</b><span>' + esc(a.sub) + '</span></div></a>';
     }).join("");
-    var arts = (d.articles || []).map(function (a) {
-      return '<div class="story"><div class="sk">' + esc(a.kicker) + '</div><h3>' + esc(a.title) + '</h3>' +
-        '<p>' + esc(a.dek) + '</p><div class="src">' + esc(a.src) + '</div></div>';
-    }).join("");
-    mount.innerHTML = '<div class="grid2"><div>' +
-      '<div class="verdict"><div class="lab">検証レポート ・ 実測</div><h3>' + esc(d.verdict) + '</h3>' +
-      '<p>このサイトの運営者は、AIに自律的に月30万円を稼がせる実験を続けています。手法ごとに「月30万円に必要な数」を実データで割り出し、更新します。宣伝ではなく、失敗込みの実測値です。</p></div>' +
-      '<div style="margin-top:16px"><div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding-bottom:7px;border-bottom:2px solid var(--rule)">手法別・月30万円に必要な規模</div>' +
-      board + '</div></div><div>' +
-      '<div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding-bottom:7px;border-bottom:2px solid var(--rule)">記事</div>' +
-      arts + '</div></div>';
+    mount.innerHTML = '<div class="kasegu-note">世の中で公開されている「AIで稼いだ」実例を集めています。金額はすべて本人の公開値で、各行から出典に飛べます。宣伝ではありません。</div>' +
+      '<div class="klist">' + rows + '</div>';
   }).catch(function () {
     document.getElementById("kaseguMount").innerHTML = placeholder("読み込みに失敗しました。");
   });

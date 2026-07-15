@@ -161,3 +161,16 @@ footer { border-top: 3px solid var(--rule); margin-top: 30px; padding: 22px 0 48
 .frow a:hover { color: var(--ink); }
 .frow .brand { font-family: var(--font-serif); font-size: 15px; color: var(--ink); }
 :focus-visible { outline: 2px solid var(--live); outline-offset: 2px; }
+
+/* AIで稼ぐ（事例キュレーション） */
+.kasegu-note { font-size: 13px; color: var(--ink-2); line-height: 1.7; margin-bottom: 14px; max-width: 60ch; }
+.klist { border-top: 2px solid var(--rule); }
+.krow2 { display: flex; align-items: center; gap: 18px; padding: 15px 0; border-bottom: 1px solid var(--line); }
+.krow2:hover { background: var(--paper-2); }
+.krow2 .kx-main { flex: 1; min-width: 0; }
+.krow2 .kx-nm { font-family: var(--font-serif); font-size: 18px; font-weight: 700; letter-spacing: -.2px; }
+.krow2 .kx-ds { font-size: 12.5px; color: var(--ink-2); line-height: 1.55; margin-top: 3px; }
+.krow2 .kx-src { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint); margin-top: 5px; letter-spacing: .3px; }
+.krow2 .kx-amt { text-align: right; white-space: nowrap; }
+.krow2 .kx-amt b { display: block; font-family: var(--font-mono); font-size: 17px; font-variant-numeric: tabular-nums; }
+.krow2 .kx-amt span { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-3); }

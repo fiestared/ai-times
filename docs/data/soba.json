@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "title": "AI相場 — 主要モデルのAPI価格",
+    "unit": "USD / 1M tokens",
+    "as_of": "2026-07-15",
+    "status": "seed_unverified",
+    "note": "★これは骨組み用の種データ。公開前に、各社の公式価格ページを curl で読み、input/output/context/released を1件ずつ裏取りして status を verified にすること。価格は毎週変わるので、ワーカーが毎日照合する。推測値を公開しない。",
+    "verify_sources": {
+      "openai": "https://openai.com/api/pricing/",
+      "anthropic": "https://www.anthropic.com/pricing",
+      "google": "https://ai.google.dev/pricing",
+      "note": "各社UIはJS描画のことがある。取れなければ公式ドキュメント/APIリファレンスの価格表を読む"
+    }
+  },
+  "models": [
+    { "name": "（検証待ち）Frontier級・最上位", "provider": "Provider A", "input": null, "output": null, "context_k": null, "released": null, "delta": null, "verified": false },
+    { "name": "（検証待ち）汎用・主力", "provider": "Provider B", "input": null, "output": null, "context_k": null, "released": null, "delta": null, "verified": false },
+    { "name": "（検証待ち）軽量・高速", "provider": "Provider B", "input": null, "output": null, "context_k": null, "released": null, "delta": null, "verified": false },
+    { "name": "（検証待ち）OSS", "provider": "Provider C", "input": null, "output": null, "context_k": null, "released": null, "delta": null, "verified": false },
+    { "name": "（検証待ち）国産LLM", "provider": "国産・J", "input": null, "output": null, "context_k": null, "released": null, "delta": null, "verified": false }
+  ]
+}

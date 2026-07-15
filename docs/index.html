@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI TIMES｜日本と世界のAIを、最速で。AI相場・ツール・稼ぎ方</title>
+<meta name="description" content="日本と世界のAIニュースを最速で。主要モデルのAPI価格を毎日照合する「AI相場」、世界中のAIツールの分類、そして『AIで月30万円』を実測する連載。事実だけ、出典つき。">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/">
+<!-- TODO(公開前): この新ドメイン用の GA4 プロパティと AdSense を作り、下のIDを差し替える。
+     keiri-tools のIDを流用しない（別サイトの計測が混ざる）。
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+-->
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="live">LIVE</span>
+    <span class="mono" id="today">—</span>
+    <span class="sp"></span>
+    <span class="mono" id="freshness">更新: 準備中</span>
+    <button class="tbtn" id="themeBtn" type="button" aria-label="テーマ切替">◐ 反転</button>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="./"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="./" aria-current="page">一面</a>
+  <a href="news/">速報</a>
+  <a href="soba/">AI相場</a>
+  <a href="tools/">AIツール</a>
+  <a href="kasegu/">AIで稼ぐ</a>
+</nav>
+
+<div class="breaking" aria-label="速報" id="breaking" hidden>
+  <div class="lab">速報</div>
+  <div class="track"><div class="move" id="breakingMove"></div></div>
+</div>
+
+<main class="wrap">
+  <!-- 一面 + 速報ワイヤー -->
+  <div id="frontMount"></div>
+
+  <!-- AI相場 -->
+  <section>
+    <div class="sec-title">AI相場 <span class="jp">— 主要モデルのAPI価格（$ / 1M トークン・毎日照合）</span><a class="more" href="soba/">全て見る →</a></div>
+    <div id="sobaMount"></div>
+  </section>
+
+  <!-- AIツール -->
+  <section>
+    <div class="sec-title">AIツール <span class="jp">— 何に使うか・いくらか</span><a class="more" href="tools/">一覧 →</a></div>
+    <div id="toolsMount"></div>
+  </section>
+
+  <!-- AIで稼ぐ -->
+  <section id="kasegu">
+    <div class="sec-title">AIで稼ぐ <span class="jp">— 「AIで月30万円」を、私たち自身が実験して電卓で検算した記録</span><a class="more" href="kasegu/">連載 →</a></div>
+    <div id="kaseguMount"></div>
+  </section>
+
+  <!-- なぜAI TIMESか -->
+  <section>
+    <div class="why">
+      <div class="w"><div class="num">01</div><div class="t">事実だけ、意見なし</div><div class="d">「すごい」「衝撃」は書きません。価格・日付・仕様という、誰が見ても同じになる数字だけを、必ず一次情報にリンクして載せます。</div></div>
+      <div class="w"><div class="num">02</div><div class="t">毎日、自動で照合</div><div class="d">AIの価格や仕様は毎週変わります。人は追えません。ここは毎日、全項目を出典と突き合わせ直し、古い数字を放置しません。</div></div>
+      <div class="w"><div class="num">03</div><div class="t">日本と世界を、同じ紙面で</div><div class="d">海外の速報は日本を拾わず、国内メディアは海外が遅れます。両方を1つの物差しで並べます。</div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="news/">速報</a><a href="soba/">AI相場</a><a href="tools/">AIツール</a><a href="kasegu/">AIで稼ぐ</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  document.getElementById("themeBtn").addEventListener("click", function () {
+    var cur = root.getAttribute("data-theme");
+    if (!cur) cur = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    root.setAttribute("data-theme", cur === "dark" ? "light" : "dark");
+  });
+
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
+
+  var get = function (url) {
+    return fetch(url, { cache: "no-cache" }).then(function (r) {
+      if (!r.ok) throw new Error(r.status); return r.json();
+    });
+  };
+
+  // 日付
+  get("data/kasegu.json").catch(function(){return null;});
+
+  // --- 速報 + 一面 ---
+  get("data/news.json").then(function (d) {
+    var wire = (d.wire || []), lead = d.lead;
+    // ティッカー
+    if (wire.length) {
+      var mv = document.getElementById("breakingMove");
+      mv.innerHTML = wire.slice(0, 6).map(function (w) {
+        return '<span><span class="t">' + esc(w.time) + '</span> <b>' + esc(w.title) + '</b></span>';
+      }).join("");
+      document.getElementById("breaking").hidden = false;
+    }
+    // 一面
+    var m = document.getElementById("frontMount");
+    if (!lead && !wire.length) { m.innerHTML = placeholder("一面は準備中です。まもなく最新の発表を要約してお届けします。"); return; }
+    var leadHtml = lead ? (
+      '<article class="lead"><div class="kicker"><span class="sq"></span> 本日の一面 ・ TOP STORY</div>' +
+      '<h2>' + esc(lead.title) + '</h2><p class="dek">' + esc(lead.dek) + '</p>' +
+      '<div class="meta"><span>公開 <b>' + esc(lead.time) + '</b></span><span>出典 <b>' + esc(lead.source_name) + '</b></span></div></article>'
+    ) : '<article class="lead">' + placeholder("一面は準備中です。") + '</article>';
+    var wireHtml = '<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono" style="color:var(--live)">● LIVE</span></div>' +
+      (wire.length ? wire.slice(0, 7).map(function (w) {
+        return '<div class="wi"><div class="tm">' + esc(w.time) + '</div><div class="hl">' + esc(w.title) +
+          (w.flag ? ' <span class="fl">' + esc(w.flag) + '</span>' : '') + '</div></div>';
+      }).join("") : placeholder("準備中")) + '</aside>';
+    m.innerHTML = '<div class="front">' + leadHtml + wireHtml + '</div>';
+  }).catch(function () {
+    document.getElementById("frontMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
+  });
+
+  // --- AI相場 ---
+  get("data/soba.json").then(function (d) {
+    var rows = (d.models || []).filter(function (m) { return m.verified && m.input != null; });
+    var mount = document.getElementById("sobaMount");
+    document.getElementById("today").textContent = fmtDate(d._meta && d._meta.as_of);
+    if (!rows.length) { mount.innerHTML = placeholder("AI相場は公開前の最終照合中です。各社の公式価格を裏取りしてから掲載します（推測値は載せません）。"); return; }
+    document.getElementById("freshness").textContent = "更新: " + (d._meta.as_of || "");
+    var body = rows.map(function (m) {
+      var d2 = m.delta ? '<span class="chg"><span class="ar">' + esc(m.delta.mark || "") + '</span> ' + esc(m.delta.text) + '</span>' :
+        (m.tag ? '<span class="tagx">' + esc(m.tag) + '</span>' : '<span class="chg" style="color:var(--ink-3)">— 据置</span>');
+      return '<tr><td><span class="m">' + esc(m.name) + '</span> <span class="pv">' + esc(m.provider) + '</span></td>' +
+        '<td class="n">' + esc(m.input) + '</td><td class="n">' + esc(m.output) + '</td>' +
+        '<td class="n">' + esc(m.context_k) + 'K</td><td>' + d2 + '</td></tr>';
+    }).join("");
+    mount.innerHTML = '<div class="market"><div class="mh"><b>Model &amp; Price Index</b>' +
+      '<span class="as mono">as of ' + esc(d._meta.as_of) + '</span></div><div class="scroll">' +
+      '<table class="data"><thead><tr><th>モデル</th><th class="n">入力</th><th class="n">出力</th><th class="n">文脈</th><th>直近</th></tr></thead><tbody>' +
+      body + '</tbody></table></div></div>';
+  }).catch(function () {
+    document.getElementById("sobaMount").innerHTML = placeholder("読み込みに失敗しました。");
+  });
+
+  // --- AIツール ---
+  get("data/tools.json").then(function (d) {
+    var t = (d.tools || []), mount = document.getElementById("toolsMount");
+    if (!t.length) { mount.innerHTML = placeholder("AIツールの一覧は準備中です。世界中のツールを分類して掲載します。"); return; }
+    mount.innerHTML = '<div class="tools">' + t.slice(0, 8).map(function (x) {
+      var href = x.affiliate || x.url || "#";
+      return '<a class="tool" href="' + esc(href) + '" rel="noopener"><span class="ic">' + esc((x.name || "?").slice(0, 1)) + '</span>' +
+        '<div><div class="nm">' + esc(x.name) + '</div><div class="ds">' + esc(x.desc) + '</div></div>' +
+        '<span class="pr">' + esc(x.price) + '</span></a>';
+    }).join("") + '</div>';
+  }).catch(function () {
+    document.getElementById("toolsMount").innerHTML = placeholder("読み込みに失敗しました。");
+  });
+
+  // --- AIで稼ぐ ---
+  get("data/kasegu.json").then(function (d) {
+    var mount = document.getElementById("kaseguMount");
+    var board = (d.board || []).map(function (b) {
+      return '<div class="krow"><span class="nm">' + esc(b.method) + '</span><span class="need">' + esc(b.need) + '</span>' +
+        '<span class="vd ' + (b.ok ? "mb" : "no") + '">' + esc(b.verdict) + '</span></div>';
+    }).join("");
+    var arts = (d.articles || []).map(function (a) {
+      return '<div class="story"><div class="sk">' + esc(a.kicker) + '</div><h3>' + esc(a.title) + '</h3>' +
+        '<p>' + esc(a.dek) + '</p><div class="src">' + esc(a.src) + '</div></div>';
+    }).join("");
+    mount.innerHTML = '<div class="grid2"><div>' +
+      '<div class="verdict"><div class="lab">検証レポート ・ 実測</div><h3>' + esc(d.verdict) + '</h3>' +
+      '<p>このサイトの運営者は、AIに自律的に月30万円を稼がせる実験を続けています。手法ごとに「月30万円に必要な数」を実データで割り出し、更新します。宣伝ではなく、失敗込みの実測値です。</p></div>' +
+      '<div style="margin-top:16px"><div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding-bottom:7px;border-bottom:2px solid var(--rule)">手法別・月30万円に必要な規模</div>' +
+      board + '</div></div><div>' +
+      '<div style="font-family:var(--font-mono);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding-bottom:7px;border-bottom:2px solid var(--rule)">記事</div>' +
+      arts + '</div></div>';
+  }).catch(function () {
+    document.getElementById("kaseguMount").innerHTML = placeholder("読み込みに失敗しました。");
+  });
+
+  function fmtDate(iso) {
+    if (!iso) return "—";
+    var p = iso.split("-"); if (p.length < 3) return iso;
+    var wd = ["日","月","火","水","木","金","土"];
+    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
+    return p[0] + "年" + (+p[1]) + "月" + (+p[2]) + "日（" + wd[dt.getDay()] + "）";
+  }
+})();
+</script>
+</body>
+</html>

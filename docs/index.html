@@ -114,6 +114,16 @@
   // --- 速報 + 一面 ---
   get("data/news.json").then(function (d) {
     var wire = (d.wire || []), lead = d.lead;
+    // lead が未設定なら、全トピックの中で一番新しい項目を自動で一面にする（空白を作らない）
+    if (!lead) {
+      var all = [];
+      (d.topics || []).forEach(function (t) { (t.items || []).forEach(function (i) { all.push(i); }); });
+      all.sort(function (a, b) { return String(b.time || "").localeCompare(String(a.time || "")); });
+      if (all.length) {
+        var top = all[0];
+        lead = { title: top.title, dek: top.summary, time: top.time, source_name: top.source_name, source_url: top.source_url };
+      }
+    }
     // ティッカー
     if (wire.length) {
       var mv = document.getElementById("breakingMove");
@@ -143,7 +153,10 @@
     topics = topics.filter(function (t) { return t.id !== "kasegu"; });
     if (topics.length) {
       tm.innerHTML = topics.map(function (t) {
-        var stories = t.items.slice(0, 6).map(function (a) {
+        var items = t.items.slice().sort(function (a, b) {
+          return String(b.time || "").localeCompare(String(a.time || ""));
+        });
+        var stories = items.slice(0, 6).map(function (a) {
           return '<div class="story"><div class="sk">' + esc(a.source_name || "") +
             (a.time ? ' ・ ' + esc(a.time) : '') + '</div><h3>' + esc(a.title) + '</h3>' +
             '<p>' + esc(a.summary || "") + '</p>' +

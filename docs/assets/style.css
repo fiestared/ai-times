@@ -102,7 +102,7 @@ section { padding: 30px 0; }
 .story .sk b { color: var(--live); }
 .story .sk.reg b { color: var(--ink); }
 .story h3 { font-family: var(--font-serif); font-size: 19px; font-weight: 700; line-height: 1.25; margin: 0 0 5px; letter-spacing: -.2px; }
-.story p { margin: 0; font-size: 13px; color: var(--ink-2); line-height: 1.6; }
+.story p { margin: 0; font-size: 13px; color: var(--ink-2); line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .story .src { font-family: var(--font-mono); font-size: 10.5px; color: var(--ink-faint); margin-top: 6px; }
 
 /* market data box */

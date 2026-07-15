@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-15",
+    "as_of": "2026-07-16",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -11,13 +11,14 @@
       "google": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む"
     },
-    "last_full_check": "2026-07-15"
+    "last_full_check": "2026-07-16"
   },
   "models": [
     { "name": "Claude Opus 4.8", "provider": "Anthropic", "input": 5, "output": 25, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing" },
     { "name": "GPT-5.6", "provider": "OpenAI", "input": 5, "output": 30, "context_k": 1050, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://platform.openai.com/docs/pricing", "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金" },
     { "name": "Gemini 3.1 Pro", "provider": "Google", "input": 2, "output": 12, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/vertex-ai/generative-ai/pricing", "note": "Vertex表記は Gemini 3.1 Pro Preview。入力≤200Kの通常料金" },
     { "name": "Claude Sonnet 5", "provider": "Anthropic", "input": 3, "output": 15, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing", "note": "掲載は標準料金。2026-08-31までは導入価格 入力$2/出力$10 が有効(9/1から標準$3/$15)。新トークナイザーで同じ文章でも約30%多くトークンを生成するため実コストは単価ほど下がらない。" },
+    { "name": "Gemini 3.5 Flash", "provider": "Google", "input": 1.5, "output": 9, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/vertex-ai/generative-ai/pricing", "note": "Vertex表記は Gemini 3.5 Flash。掲載はGlobalエンドポイントの標準料金（Non-globalは入力$1.65/出力$9.90）。下位の Gemini 3 Flash ($0.5/$3) より高性能・高価格の上位Flash。" },
     { "name": "Gemini 3 Flash", "provider": "Google", "input": 0.5, "output": 3, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/vertex-ai/generative-ai/pricing", "note": "Vertex表記は Gemini 3 Flash Preview" },
     { "name": "Claude Haiku 4.5", "provider": "Anthropic", "input": 1, "output": 5, "context_k": 200, "released": "2025-10-01", "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing" }
   ]

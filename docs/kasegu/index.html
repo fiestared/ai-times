@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIで稼ぐ｜「AIで稼いだ」実例を出典つきで — AI TIMES</title>
+<meta name="description" content="個人・企業が実際にAIで収益を上げた事例を、誰が・何で・月いくら の形で出典つきに集めた一覧。金額はすべて本人が公開した数字で、各行から一次情報に飛べます。国内（note等）・海外（Indie Hackers/HN）の両方を集めています。宣伝ではありません。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/kasegu/">
+<!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZV2EZYGDP');
+</script>
+<!-- Google AdSense（keiri-tools と同一の発行者ID。1アカウントで複数サイト可） -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2635067516563578"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="mono" id="today">—</span>
+    <span class="sp"></span>
+    <span class="mono" id="freshness">本人の公開値・出典つき</span>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="../"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="../">一面</a>
+  <a href="./" aria-current="page">AIで稼ぐ</a>
+  <a href="../#katsuyo">企業のAI活用</a>
+  <a href="../#model">モデル・技術</a>
+  <a href="../soba/">AI相場</a>
+  <a href="../tools/">AIツール</a>
+</nav>
+
+<main class="wrap">
+  <section>
+    <div class="sec-title">AIで稼ぐ <span class="jp">— 誰が・何で・月いくら（本人の公開値・出典つき）</span></div>
+    <p class="dek">個人・企業が実際に<b>AIで収益を上げた事例</b>を集めた一覧です。金額は<b>本人が公開した数字だけ</b>を載せ、各行から<b>一次情報（本人の記事・投稿）</b>に飛べます。裏取りできない金額は載せません（fail closed）。<b>国内（note 等）と海外（Indie Hackers／HN）の両方</b>を集めています。宣伝ではありません。$は米ドル・¥は日本円です。</p>
+    <div id="kaseguMount" style="margin-top:14px"><p class="loading">読み込み中…</p></div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="../news/">速報</a><a href="../soba/">AI相場</a><a href="../tools/">AIツール</a><a href="../kasegu/">AIで稼ぐ</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+  var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
+  var man = function (v) { return "¥" + Math.round(v / 10000).toLocaleString() + "万"; };
+  var USDJPY = 155; // 概算換算レート（海外事例のドル→円のめやす）
+
+  // 金額の表示（現地通貨をそのまま主表示に。円はめやす）
+  var amt = function (e) {
+    if (e.monthly_jpy)    return { big: man(e.monthly_jpy) + "/月", sub: "" };
+    if (e.cumulative_jpy) return { big: man(e.cumulative_jpy),      sub: "累計" };
+    if (e.monthly_usd)    return { big: "$" + e.monthly_usd.toLocaleString() + "/月", sub: "≈ " + man(e.monthly_usd * USDJPY) + "/月" };
+    if (e.cumulative_usd) return { big: "$" + e.cumulative_usd.toLocaleString(),      sub: "≈ " + man(e.cumulative_usd * USDJPY) + "・累計" };
+    return { big: "—", sub: "" };
+  };
+  // 並び順は「月商相当の円換算」の降順（累計は 1/12 でならす）
+  var yenRank = function (e) {
+    return (e.monthly_jpy || 0) + (e.monthly_usd || 0) * USDJPY +
+           ((e.cumulative_jpy || 0) + (e.cumulative_usd || 0) * USDJPY) / 12;
+  };
+
+  fetch("../data/kasegu.json", { cache: "no-cache" }).then(function (r) {
+    if (!r.ok) throw new Error(r.status); return r.json();
+  }).then(function (d) {
+    var mount = document.getElementById("kaseguMount");
+    var ex = (d.examples || []);
+    document.getElementById("today").textContent = fmtDate(d._meta && d._meta.as_of);
+    if (!ex.length) { mount.innerHTML = placeholder("事例を収集中です。世界と日本の『AIで稼いだ』実例を、出典つきで集めています。"); return; }
+    if (d._meta && d._meta.as_of) document.getElementById("freshness").textContent = "更新: " + d._meta.as_of;
+    var rank = ex.slice().sort(function (a, b) { return yenRank(b) - yenRank(a); });
+    var rows = rank.map(function (e) {
+      var a = amt(e);
+      return '<a class="krow2" href="' + esc(e.source_url) + '" rel="noopener" target="_blank">' +
+        '<div class="kx-main"><div class="kx-nm">' + esc(e.name) +
+        (e.flag ? ' <span class="fl">' + esc(e.flag) + '</span>' : '') + '</div>' +
+        '<div class="kx-ds">' + esc(e.what) + (e.note ? ' — ' + esc(e.note) : '') + '</div>' +
+        '<div class="kx-src">出典: ' + esc(e.source_name) + ' ↗</div></div>' +
+        '<div class="kx-amt"><b>' + esc(a.big) + '</b><span>' + esc(a.sub) + '</span></div></a>';
+    }).join("");
+    mount.innerHTML = '<div class="kasegu-note">世の中で公開されている「AIで稼いだ」実例を集めています。金額はすべて本人の公開値で、各行から出典に飛べます。宣伝ではありません（as of ' + esc(d._meta && d._meta.as_of) + '・全' + ex.length + '件）。</div>' +
+      '<div class="klist">' + rows + '</div>';
+  }).catch(function () {
+    document.getElementById("kaseguMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
+  });
+
+  function fmtDate(iso) {
+    if (!iso) return "—";
+    var p = iso.split("-"); if (p.length < 3) return iso;
+    var wd = ["日","月","火","水","木","金","土"];
+    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
+    return p[0] + "年" + (+p[1]) + "月" + (+p[2]) + "日（" + wd[dt.getDay()] + "）";
+  }
+})();
+</script>
+</body>
+</html>

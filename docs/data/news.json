@@ -22,17 +22,22 @@
   {
    "time": "2026-07-16",
    "flag": "国内",
+   "title": "富士通×川崎重工×ファナック×安川電機、「フィジカルAI」で協業 — NVIDIAはCosmos Coalitionを日本拡大"
+  },
+  {
+   "time": "2026-07-16",
+   "flag": "国内",
    "title": "国産AI開発企業「Noetra」本格始動 — 44社出資・NVIDIA「Rubin」2万7500基へ"
+  },
+  {
+   "time": "2026-07-16",
+   "flag": "海外",
+   "title": "Anthropic「Claude」利用制限を全リセット — OpenAIもCodex／ChatGPT Workで即応酬、2度目の“リセット合戦”"
   },
   {
    "time": "2026-07-16",
    "flag": "ツール",
    "title": "Google「Gemini Spark」日本上陸 — 24時間働くAIエージェント、まずUltraから"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "国内",
-   "title": "238社調査、現場が支持するAIサービスは「Claude」が最多 — \"最新\"より\"成果\"へ"
   },
   {
    "time": "2026-07-16",
@@ -42,22 +47,17 @@
   {
    "time": "2026-07-16",
    "flag": "国内",
+   "title": "238社調査、現場が支持するAIサービスは「Claude」が最多 — “最新”より“成果”へ"
+  },
+  {
+   "time": "2026-07-16",
+   "flag": "国内",
    "title": "Anthropicと組んだNEC、森田社長が語る「4つの主権」— 日本企業初のグローバルパートナー"
   },
   {
    "time": "2026-07-15",
    "flag": "海外",
-   "title": "OpenAI、自動レッドチームAI「GPT-Red」— 攻撃成功率84%（人間の専門家13%）"
-  },
-  {
-   "time": "2026-07-15",
-   "flag": "海外",
-   "title": "AI作曲Sunoにハッキング — YouTube等からのスクレイピングを示すコード流出と報道"
-  },
-  {
-   "time": "2026-07-15",
-   "flag": "国内",
-   "title": "ユナイテッドアローズ、店舗の「売れた理由」を拾う独自AIエージェント「SMART」をAWSと共同開発"
+   "title": "Thinking Machines、初のAIモデル「Inkling」公開 — 9750億パラメータ・Apache 2.0のオープンウェイト"
   }
  ],
  "topics": [
@@ -182,6 +182,14 @@
      "time": "2026-07-15",
      "title": "OpenAI、自動レッドチームAI「GPT-Red」発表 — 未知シナリオの攻撃成功率84%（人間の専門家は13%）",
      "summary": "OpenAIは7月15日（現地時間）、自社モデルの弱点を自動で探すレッドチーミング専用モデル「GPT-Red」を発表した。自己対戦型の強化学習で攻撃側と防御側を同時に訓練し、未知シナリオの間接プロンプトインジェクションでは人間の専門家の成功率13%に対し84%で攻撃に成功。この攻撃データで敵対的訓練した「GPT-5.6 Sol」は、最難関ベンチマークの失敗率を4カ月前の最良モデルの6分の1に減らした。GPT-Red自体は悪用防止のため社内専用とする（ITmedia AI＋）。"
+    },
+    {
+     "topic_flag": "新モデル",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000197/",
+     "time": "2026-07-15",
+     "title": "Thinking Machines、初のAIモデル「Inkling」公開 — 総パラメータ9750億のオープンウェイト、Apache 2.0で全公開",
+     "summary": "元OpenAI CTOミラ・ムラティ氏のThinking Machines Labが7月15日（現地時間）、初のAIモデル「Inkling」を発表した。テキスト・画像・音声を入力できる総パラメータ9750億（アクティブ410億）のMoE型で、最大100万トークン対応・45兆トークンで事前学習し、Apache 2.0で全ウェイトをHugging Faceに公開。同社は「現在利用できる最強のモデルではない」と明言し、自社のファインチューニング基盤Tinker（期間限定50%割引）で「自分のものにできる」カスタマイズ前提の基盤と位置づけ、軽量版Inkling-Small（総2760億・アクティブ120億）のプレビューも公開した。★フロンティア性能の競争から降り、「カスタマイズできるオープンウェイト」に賭ける初の大型参入。"
     }
    ]
   },
@@ -277,6 +285,30 @@
      "time": "2026-07-16",
      "title": "Google「Gemini Spark」が日本上陸 — 24時間クラウドで働くパーソナルAIエージェント、まずUltraから",
      "summary": "Googleは7月16日、パーソナルAIエージェント「Gemini Spark」の日本提供を開始した。まず月額1万4500円〜の「Ultra」加入者向けβ版で、基盤はGemini 3.5とエージェント開発基盤「Antigravity」。GmailやカレンダーなどWorkspaceとパートナーアプリ、カスタムMCPに接続し、端末の電源が切れていてもクラウド上で24時間タスクを実行する。担当副社長はPro（月額2900円）への拡大も示唆した（ITmedia AI＋）。"
+    },
+    {
+     "topic_flag": "業界動向",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000201/",
+     "time": "2026-07-16",
+     "title": "Anthropic、「Claude」の利用制限を全リセット — OpenAIもCodex／ChatGPT Workで即応酬、2度目の“リセット合戦”",
+     "summary": "Anthropicは7月16日（日本時間）、Claudeの5時間および1週間の利用制限をリセットしたと発表。直後にOpenAI幹部がX上でChatGPT WorkとCodexの週次利用制限のリセットを表明した。両社は7月9日にも同様のリセットを実施しており、これで2度目の“リセット合戦”。★ユーザー獲得競争が「値下げ」でなく「利用制限緩和の応酬」という形で表面化している。"
+    },
+    {
+     "topic_flag": "業界動向",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000203/",
+     "time": "2026-07-16",
+     "title": "富士通、川崎重工・ファナック・安川電機と「フィジカルAI」で協業 — NVIDIAは「Cosmos Coalition」を日本へ拡大",
+     "summary": "富士通は7月16日、川崎重工業・ファナック・安川電機とフィジカルAI開発での協業を発表した。次世代CPU「FUJITSU-MONAKA」やAI向けOS「Fujitsu Kozuchi Physical OS」にNVIDIAの「Omniverse」「Isaac」を組み合わせ、ロボットを協調制御する基盤を開発。9月末から笠島工場（石川県かほく市）に実装し、2026年内に各社へ展開・オープンな基盤として提供する。同日NVIDIAはフィジカルAI共同プロジェクト「Cosmos Coalition」の日本拡大も発表し、日立製作所・本田技術研究所・ソフトバンクなどが参画する。★日本のロボット大手が一斉にNVIDIA陣営でフィジカルAIに乗った——製造業の現場が次の主戦場になる。"
+    },
+    {
+     "topic_flag": "業界動向",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+     "time": "2026-07-15",
+     "title": "Microsoft、営業にOpenAI・Anthropic製品を否定的に比較させる方針と報道 — CopilotをClaudeと直接比較",
+     "summary": "Bloomberg報道（TechCrunchが7月15日に紹介）によると、Microsoftは新会計年度の社内戦略会議で、営業チームがOpenAI・Google・Anthropicの製品を自社製品と否定的に比較して売り込む方針を示した。Copilot担当EVPはOfficeアプリ内でのClaudeを「遅く、精度が低く、適切なセキュリティ統合を欠く」と直接比較。WordやExcelから両社モデルを自社モデルに置き換える動きに続くもので、長年モデル供給を頼ってきた相手を名指しで標的にする形だ。★Microsoftとモデル供給2社の関係悪化が、営業現場のトークまで下りてきた。"
     }
    ]
   },

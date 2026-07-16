@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI TIMESについて｜運営者と編集方針</title>
+<meta name="description" content="AI TIMESの運営者と編集方針。運営者Masahiro Yasuが、主要AIモデルのAPI価格を各社公式ページとcurlで逐語照合し、推測値を載せず、出典つきの事実だけを毎日更新しています。">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="canonical" href="https://aitimes.jp/about/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AboutPage",
+      "url": "https://aitimes.jp/about/",
+      "mainEntity": { "@id": "https://aitimes.jp/about/#operator" }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://aitimes.jp/about/#operator",
+      "name": "Masahiro Yasu",
+      "url": "https://aitimes.jp/about/",
+      "description": "クリニックとEC事業の経営者。AIを業務に組み込んで運用してきた実務者で、AI TIMESでは主要モデルのAPI価格を毎日、各社の公式資料と逐語照合している。",
+      "knowsAbout": ["生成AI", "大規模言語モデル", "AI APIの価格", "AIツール", "業務へのAI導入"],
+      "sameAs": ["https://keiri-tools.com/about/"],
+      "worksFor": { "@type": "Organization", "name": "AI TIMES", "url": "https://aitimes.jp/" }
+    }
+  ]
+}
+</script>
+<!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KZV2EZYGDP');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2635067516563578"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="util">
+  <div class="wrap util-row">
+    <span class="mono">AI TIMES</span>
+    <span class="sp"></span>
+    <span class="mono">事実だけ、出典つき</span>
+  </div>
+</div>
+
+<header class="wrap mast">
+  <hr class="rule-heavy">
+  <div style="padding:14px 0 12px">
+    <a class="h1" href="../"><h1>AI&#8202;TIMES</h1></a>
+    <div class="en">エーアイ・タイムズ ・ JAPAN &amp; WORLD</div>
+    <div class="tag">日本と世界のAIを、最速で。</div>
+  </div>
+  <hr class="rule-heavy">
+  <hr class="rule-thin">
+</header>
+
+<nav class="sections" aria-label="セクション">
+  <a href="../">一面</a>
+  <a href="../kiji/">記事</a>
+  <a href="../#kasegu">AIで稼ぐ</a>
+  <a href="../#katsuyo">企業のAI活用</a>
+  <a href="../#model">モデル・技術</a>
+  <a href="../soba/">AI相場</a>
+  <a href="../tools/">AIツール</a>
+</nav>
+
+<main class="wrap">
+<article>
+  <div class="sec-title">AI TIMESについて</div>
+  <p class="dek" style="margin-bottom:20px">最終更新: 2026年7月17日</p>
+
+  <p>AI TIMESは、<b>移り変わりの速いAIの「価格・ツール・稼ぎ方」を、毎日照合して事実だけを出す</b>メディアです。AIモデルのAPI価格や仕様は週単位で変わり、誰も最新に保てません。ここは毎日、一次情報にあたって更新し続けます。</p>
+
+  <div class="sec-title" style="margin-top:28px">編集方針</div>
+
+  <p><b>1. 数値は一次情報と逐語照合してから載せる。</b>主要モデルのAPI価格は、各社の公式価格ページ・モデルドキュメントを<b>curlで生取得して1件ずつ突き合わせ</b>てから掲載します。AIは数値や固有名詞を平気で間違えるため、「確認する」ではなく「<b>反証する</b>」姿勢で検算しています。</p>
+
+  <p><b>2. 推測値は載せない。</b>裏取りできていない価格・仕様は公開しません（AI相場の一覧は、検証済みの項目だけを表示する設計です）。「たぶんこの値段」は載せないということです。</p>
+
+  <p><b>3. 転載しない。要約して、出典を付ける。</b>他社の記事の見出し・本文・画像はそのまま載せません。掲載するのは、①公式発表・プレスリリース・公式ドキュメントを<b>自分の言葉で要約</b>したもの、②事実（価格・日付・仕様）、③一次情報へのリンク、に限ります。</p>
+
+  <p><b>4. 年月日・更新日をデータに持たせて画面に出す。</b>古い数字が黙って残らないよう、価格には照合した日付（as of）を必ず添えます。</p>
+
+  <div class="sec-title" style="margin-top:28px">運営者</div>
+
+  <p>AI TIMESは <b>Masahiro Yasu</b> が個人で運営しています。クリニックとEC（ネット通販）事業を経営し、その中で<b>AIを実際の業務に組み込んで運用してきた実務者</b>です。「毎日、各社の価格を機械的に照合して最新に保つ」という、人手ではやりたがらない作業を仕組み化して回しているのが、このサイトの中身です。</p>
+
+  <p>もう一つの経理・労務の計算ツールサイト <a href="https://keiri-tools.com/about/" rel="noopener">経理ミニツールズ</a> も同じ運営者によるものです。</p>
+
+  <div class="sec-title" style="margin-top:28px">免責</div>
+
+  <p>当サイトは<b>情報提供を行うものであり、投資助言・特定サービスの推奨・個別の相談に応じるものではありません</b>。掲載する価格・仕様は変更されることがあり、正確性を保証するものではありません。実際の料金・契約条件は、必ず各提供元の公式ページでご確認ください。アフィリエイトリンクを含む場合があります。</p>
+
+  <div class="sec-title" style="margin-top:28px">誤りを見つけたら</div>
+
+  <p>価格の反映漏れや事実誤認があり得ます。見つけられた場合は <a href="../contact/">お問い合わせ</a> からご指摘ください。具体的な項目と正しいはずの値・出典を添えていただければ、確認して直します。</p>
+</article>
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <span class="brand">AI TIMES</span>
+    <span class="sp"></span>
+    <a href="../kiji/">記事</a><a href="../soba/">AI相場</a><a href="../tools/">AIツール</a><a href="../about/">運営者</a><a href="../privacy/">プライバシー</a><a href="../contact/">お問い合わせ</a>
+  </div>
+</footer>
+</body>
+</html>

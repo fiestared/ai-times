@@ -56,7 +56,7 @@ const CATEGORIES = [
 ];
 
 /** sitemap に載せる固定ページ（記事は自動で追加される） */
-const STATIC_PAGES = ["", "news/", "soba/", "tools/", "kasegu/", "kiji/"];
+const STATIC_PAGES = ["", "news/", "soba/", "tools/", "kasegu/", "kiji/", "about/", "privacy/", "contact/"];
 
 const strip = (s) => s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")

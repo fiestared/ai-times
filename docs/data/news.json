@@ -22,6 +22,11 @@
   {
    "time": "2026-07-17",
    "flag": "海外",
+   "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflareと連携しrobots.txt無視のスクレイパーを遮断"
+  },
+  {
+   "time": "2026-07-17",
+   "flag": "海外",
    "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90が新興ネオクラウドGeneral Computeに融資、GPUベース比16倍をうたう"
   },
   {
@@ -53,11 +58,6 @@
    "time": "2026-07-16",
    "flag": "国内",
    "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "海外",
-   "title": "EU、GoogleにAndroidと検索データの「ライバル開放」を命令 — 違反なら世界売上の最大10%"
   }
  ],
  "topics": [
@@ -413,6 +413,14 @@
    "name": "規制・制度",
    "jp": "法律・ガイドライン・著作権",
    "items": [
+    {
+     "topic_flag": "権利",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
+     "time": "2026-07-17",
+     "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflare連携でrobots.txt無視のスクレイパーを遮断",
+     "summary": "TechCrunch（2026年7月17日）によると、クリエイター支援サイトPatreonは、robots.txtで「学習しないで」と依頼する従来方式をやめ、CloudflareのAI Crawl Control技術と連携してAI学習用クローラーを実際に遮断し始めた。検証では対象クローラーの週次アクセス試行が「数千回からゼロ」に落ち、robots.txtを無視した収集の実態が浮かんだ（同社ブログ「同意は、スクレイパーが行儀よく振る舞うかどうかに左右されるべきではない」）。ただしユーザーをPatreonへ送り返す検索インデックス目的のボットは引き続き許可する方針で、クリエイターのコンテンツをAI学習からどう守るかを巡る攻防の一例。"
+    },
     {
      "topic_flag": "政策",
      "source_name": "ITmedia NEWS",

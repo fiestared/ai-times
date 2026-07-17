@@ -20,6 +20,16 @@
  },
  "wire": [
   {
+   "time": "2026-07-17",
+   "flag": "国内",
+   "title": "ソフトバンク×安川電機、「寝ている間に上達する」ロボット学習ループを実証 — 買ったときが一番性能低い"
+  },
+  {
+   "time": "2026-07-17",
+   "flag": "国内",
+   "title": "富士通MAAF、業務データからAIエージェントチームを自動生成 — イオンフードスタイルで店長支援AI実証へ"
+  },
+  {
    "time": "2026-07-16",
    "flag": "国内",
    "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」"
@@ -31,28 +41,18 @@
   },
   {
    "time": "2026-07-16",
+   "flag": "ツール",
+   "title": "Google検索「AIモード」、検索結果から離れずアプリ操作 — Canva・YouTube Music・Instacartと連携"
+  },
+  {
+   "time": "2026-07-16",
    "flag": "海外",
    "title": "Apple Intelligence、中国での提供が承認 — Alibaba「Qwen」統合・Baiduも協業"
   },
   {
    "time": "2026-07-16",
-   "flag": "ツール",
-   "title": "Google、NotebookLMを「Gemini Notebook」に改名 — 検索のAI Modeにも統合へ"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "ツール",
-   "title": "Claude、1Passwordの資格情報で「代わりにログイン」— AIにパスワードは見せない設計"
-  },
-  {
-   "time": "2026-07-16",
    "flag": "海外",
    "title": "中国Moonshot「Kimi K3」、Opus 4.8と同等以上とFT報道 — 2〜3兆パラメータのオープンウェイト"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "国内",
-   "title": "富士通×川崎重工×ファナック×安川電機、「フィジカルAI」で協業 — NVIDIAはCosmos Coalitionを日本拡大"
   },
   {
    "time": "2026-07-16",
@@ -72,6 +72,22 @@
    "name": "企業のAI活用",
    "jp": "会社がAIをどう業務に入れているか",
    "items": [
+    {
+     "topic_flag": "国内実証",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/",
+     "time": "2026-07-17",
+     "title": "「買ったときが一番性能低い」ロボットへ — ソフトバンク×安川電機、寝ている間に上達する学習ループを実証",
+     "summary": "ソフトバンクの湧川隆次CTOは7月14日の「SoftBank World 2026」講演で、強化学習で使うほど賢くなるロボットへの転換を「大きなパラダイムシフト」と表現。形状が変わるワイヤハーネスの箱詰めを題材に、実機データ→NVIDIA「Cosmos」で合成データ生成→「Omniverse」で評価→実機展開のサイクルが自動で回る学習ループを安川電機と実証し、「寝ている間に学習して、今朝はさらに上手になっていた」（安川電機・久保田由美恵氏）。現場を判断するVLM（視覚言語モデル）はソフトバンクのインフラ側、動作を生成するVLA（視覚言語行動モデル）はロボット側で動かす役割分担。★ロボットが「経年劣化する機械」から「使うほど賢くなる機械」へ変わる転換点の国内実演（ITmedia AI＋、2026年7月17日）。"
+    },
+    {
+     "topic_flag": "国内実証",
+     "source_name": "MONOist",
+     "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/17/news044.html",
+     "time": "2026-07-17",
+     "title": "富士通、業務データから「AIエージェントチーム」を自動生成するMAAFを披露 — イオンフードスタイルと店長支援AIの実証も",
+     "summary": "富士通は7月14日、「Fujitsu Experience Day 2026」のメディア見学会で、社内規定や稟議書などの業務データを投入するとシステム自身が最適なAIエージェント構成案を自動生成するフレームワーク「Fujitsu Kozuchi Multi AI Agent Framework（MAAF、7月13日発表）」を披露した。デモでは稟議書から「契約特化」「稟議特化」など4つのエージェントチームが自動結成され、互いに確認し合って判定を下した。小売ではイオンフードスタイルと店舗運営支援AI（棚割りレイアウト生成・ポップ作成、プロトタイプ4エージェントを約10日で構築）の実証を7月に開始。★「人がエージェントを設計する」から「AIがチームを編成する」段階に進んだ国内事例（MONOist、2026年7月17日）。"
+    },
     {
      "topic_flag": "業界動向",
      "source_name": "ITmedia エンタープライズ",
@@ -206,6 +222,14 @@
    "name": "ツール・プロダクト",
    "jp": "新しいAIツールの登場・更新",
    "items": [
+    {
+     "topic_flag": "新機能",
+     "source_name": "ITmedia NEWS",
+     "source_url": "https://www.itmedia.co.jp/news/articles/2607/17/news061.html",
+     "time": "2026-07-16",
+     "title": "Google検索「AIモード」、検索結果から離れずアプリで作業完了 — まずCanva・YouTube Music・Instacart",
+     "summary": "Googleは7月16日（現地時間）、Google検索の「AIモード」で外部アプリと直接連携できる機能の提供開始を発表、米国で今週から順次展開する。プレイリストをAIモードで作ってそのままYouTube Musicに保存、買い物リストの食材をInstacartのカートへ直接追加など、検索結果から離れずにタスクを完了できる。「Gemini」アプリの連携機能を検索本体へ拡大した形で、ユーザーの文脈を踏まえる「Personal Intelligence」との組み合わせでパーソナライズ回答も提示する。★検索ページ自体がタスク完了の場になる流れで、「クリックしてサイト訪問」というSEOの前提がさらに崩れる（ITmedia NEWS、2026年7月17日）。"
+    },
     {
      "topic_flag": "ツール更新",
      "source_name": "The Verge",

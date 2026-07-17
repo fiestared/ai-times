@@ -46,7 +46,9 @@ const CATEGORIES = [
     id: "katsuyo",
     name: "企業のAI活用 事例",
     desc: "国内企業が生成AIを実際の業務にどう入れたか。導入の狙い・使ったツール・効果を、公表事例と出典つきでまとめる。",
-    slugs: [],
+    slugs: [
+      "seisei-ai-katsuyo-jirei",
+    ],
   },
   {
     id: "kasegu",

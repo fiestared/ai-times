@@ -39,6 +39,7 @@ const CATEGORIES = [
     desc: "主要AIモデルのAPI料金の見方・比較、各社の値付けと使い分け。毎日照合する「AI相場」のデータに接続する。",
     slugs: [
       "ai-model-api-ryokin-no-mikata",
+      "claude-ryokin",
     ],
   },
   {

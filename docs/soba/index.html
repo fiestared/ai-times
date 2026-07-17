@@ -158,6 +158,11 @@
     </ul>
     <p>なお、この表が米ドル表記なのは各社の公式価格がドル建てのためです。円での目安は当日の為替レートを掛けて計算してください。</p>
 
+    <h2 id="shisan">この価格で実際にいくら？ — タスク1回あたりの試算</h2>
+    <p>単価だけでは実感しにくいので、<b>入力1万トークン・出力2千トークン</b>（長めの文書を1本読ませ、要約や回答を1つ返す程度）のタスクを1回・1,000回動かしたときの概算費用を、上の表の単価から計算しました。<b>安い順</b>です。最上位モデルと最軽量モデルとで<b>1タスクあたりの費用が桁で変わる</b>ことが、金額で見るとはっきり分かります。</p>
+    <div id="costMount" style="margin-top:12px"><div class="market"><div class="mh"><b>タスク1回あたりの費用（入力1万・出力2千トークン／安い順）</b><span class="as mono">as of 2026-07-18</span></div><div class="scroll"><table class="data"><thead><tr><th>モデル</th><th class="n">1回</th><th class="n">1,000回</th></tr></thead><tbody><tr><td><span class="m">Gemini 3.1 Flash-Lite</span> <span class="pv">Google</span></td><td class="n">$0.0055</td><td class="n">$5.50</td></tr><tr><td><span class="m">Gemini 3 Flash</span> <span class="pv">Google</span></td><td class="n">$0.0110</td><td class="n">$11.00</td></tr><tr><td><span class="m">Claude Haiku 4.5</span> <span class="pv">Anthropic</span></td><td class="n">$0.0200</td><td class="n">$20.00</td></tr><tr><td><span class="m">Gemini 3.5 Flash</span> <span class="pv">Google</span></td><td class="n">$0.0330</td><td class="n">$33.00</td></tr><tr><td><span class="m">Gemini 3.1 Pro</span> <span class="pv">Google</span></td><td class="n">$0.0440</td><td class="n">$44.00</td></tr><tr><td><span class="m">Claude Sonnet 5</span> <span class="pv">Anthropic</span></td><td class="n">$0.0600</td><td class="n">$60.00</td></tr><tr><td><span class="m">Claude Opus 4.8</span> <span class="pv">Anthropic</span></td><td class="n">$0.1000</td><td class="n">$100.00</td></tr><tr><td><span class="m">GPT-5.6</span> <span class="pv">OpenAI</span></td><td class="n">$0.1100</td><td class="n">$110.00</td></tr></tbody></table></div></div></div>
+    <p class="pv" id="costnote" style="margin-top:8px;color:var(--ink-3)">※ すべてのモデルで同じトークン数と仮定した単純比較です。実際のトークン数は言語やモデルのトークナイザーで変わり（同じ文章でも日本語は英語より多く、Sonnet 5 は新トークナイザーで約30%多くなります＝表の注記参照）、キャッシュ・バッチ・長コンテキスト割増などの割引・割増も含みません。正確な費用は各行の出典（公式ページ）で確認してください。</p>
+
     <h2 id="faq">よくある質問</h2>
     <h3>Q. この価格はどこから取っていますか？</h3>
     <p>A. Anthropic・OpenAI・Google（Vertex AI）の公式価格ページとモデルドキュメントです。掲載前に原文と逐語照合し、照合できた値だけを載せます。照合日は表の右上（as of）に表示しています。</p>

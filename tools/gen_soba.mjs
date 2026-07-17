@@ -59,6 +59,26 @@ if (!rows.length) {
     `<th class="n">文脈</th><th>直近</th><th>出典</th></tr></thead><tbody>${body}</tbody></table></div></div>`;
 }
 
+// --- 用途別コスト試算(入力1万・出力2千トークンのタスク1回/1,000回。単価は表と同じsoba.jsonが正本) ---
+let cost;
+if (!rows.length) {
+  cost = "";
+} else {
+  const IN = 10000, OUT = 2000; // 長めの文書を1本読ませ、要約/回答を1つ返す想定
+  const calc = rows.map((m) => ({
+    name: m.name, provider: m.provider,
+    per: (Number(m.input) * IN + Number(m.output) * OUT) / 1e6, // USD/1回
+  })).sort((a, b) => a.per - b.per); // 安い順(=どれが安いかの検索意図に答える)
+  const body = calc.map((c) =>
+    `<tr><td><span class="m">${esc(c.name)}</span> <span class="pv">${esc(c.provider)}</span></td>` +
+    `<td class="n">$${c.per.toFixed(4)}</td><td class="n">$${(c.per * 1000).toFixed(2)}</td></tr>`
+  ).join("");
+  cost = `<div class="market"><div class="mh"><b>タスク1回あたりの費用（入力1万・出力2千トークン／安い順）</b>` +
+    `<span class="as mono">as of ${esc(meta.as_of)}</span></div><div class="scroll">` +
+    `<table class="data"><thead><tr><th>モデル</th><th class="n">1回</th><th class="n">1,000回</th></tr></thead>` +
+    `<tbody>${body}</tbody></table></div></div>`;
+}
+
 // --- 出典 ---
 const vs = meta.verify_sources || {};
 const links = ["anthropic", "openai", "google"]
@@ -76,6 +96,9 @@ const before = html;
 html = html.replace(/(<div id="sobaMount"[^>]*>)[\s\S]*?(<\/div>\s*<p class="mono" id="sources")/,
                     (_, g1, g2) => g1 + table + g2);
 html = html.replace(/(<p class="mono" id="sources"[^>]*>)[\s\S]*?(<\/p>)/, (_, g1, g2) => g1 + sources + g2);
+// コスト試算テーブルも soba.json から生成(終端は後続の注記 p#costnote に固定＝内部の </div> で切れないように)
+html = html.replace(/(<div id="costMount"[^>]*>)[\s\S]*?(<\/div>\s*<p class="pv" id="costnote")/,
+                    (_, g1, g2) => g1 + cost + g2);
 html = html.replace(/(<span class="mono" id="today">)[^<]*(<\/span>)/, `$1${fmtDate(meta.as_of)}$2`);
 html = html.replace(/(<span class="mono" id="freshness">)[^<]*(<\/span>)/,
                     `$1更新: ${esc(meta.as_of || "")}$2`);

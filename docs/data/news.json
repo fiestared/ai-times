@@ -9,7 +9,7 @@
    "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
   },
   "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。"
+  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。"
  },
  "lead": {
   "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」",
@@ -19,6 +19,11 @@
   "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news107.html"
  },
  "wire": [
+  {
+   "time": "2026-07-17",
+   "flag": "海外",
+   "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90が新興ネオクラウドGeneral Computeに融資、GPUベース比16倍をうたう"
+  },
   {
    "time": "2026-07-17",
    "flag": "海外",
@@ -53,11 +58,6 @@
    "time": "2026-07-16",
    "flag": "海外",
    "title": "EU、GoogleにAndroidと検索データの「ライバル開放」を命令 — 違反なら世界売上の最大10%"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "ツール",
-   "title": "Google検索「AIモード」、検索結果から離れずアプリ操作 — Canva・YouTube Music・Instacartと連携"
   }
  ],
  "topics": [
@@ -238,6 +238,14 @@
    "name": "ツール・プロダクト",
    "jp": "新しいAIツールの登場・更新",
    "items": [
+    {
+     "topic_flag": "資金調達",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+     "time": "2026-07-17",
+     "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90「GPUの次」に賭ける",
+     "summary": "TechCrunch（2026年7月17日）によると、元ゴールドマン・サックスのクオンツ出身ビリー・リビー氏率いる投資会社Upper90が、推論特化の新興クラウド「General Compute」に4億ドルの“チップ担保”融資を実行した。同社はIntel出資のSambaNova製推論チップ「SN50」でネオクラウドを構築中で、水冷不要・省電力ゆえGPUより速く各地のデータセンターへ展開でき、GPUベース比16倍の推論速度をうたう。★高騰するAIの利用料金への市場の答えが「フロンティアLLMより安くオープンソースを回す推論インフラ」へ向かい始めた、という相場のシグナル。"
+    },
     {
      "topic_flag": "新機能",
      "source_name": "TechCrunch",

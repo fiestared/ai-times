@@ -21,6 +21,11 @@
  "wire": [
   {
    "time": "2026-07-17",
+   "flag": "海外",
+   "title": "Gartner、2027年までに企業の40%が自律型AIエージェントを格下げ・廃止と予測 — 導入の半数が“戦力外”に"
+  },
+  {
+   "time": "2026-07-17",
    "flag": "国内",
    "title": "ソフトバンク×安川電機、「寝ている間に上達する」ロボット学習ループを実証 — 買ったときが一番性能低い"
   },
@@ -53,11 +58,6 @@
    "time": "2026-07-16",
    "flag": "ツール",
    "title": "Google検索「AIモード」、検索結果から離れずアプリ操作 — Canva・YouTube Music・Instacartと連携"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "海外",
-   "title": "Apple Intelligence、中国での提供が承認 — Alibaba「Qwen」統合・Baiduも協業"
   }
  ],
  "topics": [
@@ -72,6 +72,14 @@
    "name": "企業のAI活用",
    "jp": "会社がAIをどう業務に入れているか",
    "items": [
+    {
+     "topic_flag": "海外調査",
+     "source_name": "＠IT（ITmedia）",
+     "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html",
+     "time": "2026-07-17",
+     "title": "Gartner予測「2027年までに企業の40%が自律型AIエージェントを格下げ・廃止」— 導入した半数が“戦力外”に",
+     "summary": "調査会社Gartnerは、2027年までに企業の40％が導入済みの自律型（エージェント型）AIを格下げ、または廃止すると予測した。導入したAIエージェントの約半数が期待した成果を上げられず“戦力外”になりかねないという厳しい見方で、＠ITはGartnerが指摘する「2つの失敗モード」を軸に、なぜ企業がAIエージェントを使いこなせないのかを解説している。★前週のGoogle Cloud調査（本番運用には83%がインフラ刷新が必要）と合わせ、AIエージェント導入の“熱狂”に冷や水を浴びせる警告として読める（＠IT／ITmedia、2026年7月17日）。"
+    },
     {
      "topic_flag": "国内実証",
      "source_name": "ITmedia AI＋",

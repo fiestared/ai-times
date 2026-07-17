@@ -79,6 +79,8 @@ html = html.replace(/(<p class="mono" id="sources"[^>]*>)[\s\S]*?(<\/p>)/, (_, g
 html = html.replace(/(<span class="mono" id="today">)[^<]*(<\/span>)/, `$1${fmtDate(meta.as_of)}$2`);
 html = html.replace(/(<span class="mono" id="freshness">)[^<]*(<\/span>)/,
                     `$1更新: ${esc(meta.as_of || "")}$2`);
+// JSON-LD(Dataset)の dateModified も as_of に同期（構造化データだけ古い日付を名乗るのを防ぐ）
+html = html.replace(/("dateModified":\s*")[^"]*(")/, `$1${esc(meta.as_of || "")}$2`);
 // フェッチJSを撤去(静的化済み。失敗時に静的表を消す catch もろとも除く)。既に無ければ無変化。
 html = html.replace(/<script>\s*\(function \(\) \{[\s\S]*?fetch\("\.\.\/data\/soba\.json"[\s\S]*?\}\)\(\);\s*<\/script>/,
                     "<!-- AI相場は tools/gen_soba.mjs で静的生成（soba.json が正本） -->");

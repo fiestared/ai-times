@@ -113,8 +113,12 @@ const uncategorized = articles.filter((a) => !catOf.has(a.slug));
 // ---- sitemap.xml ----
 // lastmod は git のコミット日から採る（中身が変わっていないのに「今日更新」と嘘をつくと、
 // Google が lastmod を信用しなくなる）。未追跡/変更中のファイルだけ今日（本当に今変わっている）。
+// ★末尾の空白だけ落とす。`.trim()` にすると status --porcelain の**1行目の先頭スペース**
+//   (` M path` の状態カラム)まで削れ、**dirty一覧の先頭ファイルだけ** slice(3) が path を
+//   1文字食う(`docs/…`→`ocs/…`)→照合が外れ lastmod が古いまま/新規ページなら丸ごと落ちる
+//   (keiri-tools で 2026-07-17 に実発生・d21a8cf と同型修正)。
 const git = (...a) => {
-  try { return execFileSync("git", a, { cwd: DOCS, encoding: "utf8" }).trim(); }
+  try { return execFileSync("git", a, { cwd: DOCS, encoding: "utf8" }).replace(/\s+$/, ""); }
   catch { return ""; }
 };
 const TODAY = new Date().toLocaleDateString("sv-SE", { timeZone: "Asia/Tokyo" }); // YYYY-MM-DD

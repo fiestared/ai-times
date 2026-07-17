@@ -12,13 +12,18 @@
     "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。 | 2026-07-17(深夜): news +1 (kisei:AppleがOpenAIを企業秘密侵害で提訴・年内IPO計画に影)。TechCrunch Equity回(videoページ+podcastページの2ソース)の本文をcurl生読みで逐語照合 — 『Apple filed a trade secrets lawsuit against OpenAI last Friday』『a pattern of misconduct reaching all the way up to OpenAI's chief hardware officer』『more than 400 former Apple employees now work at the company』『OpenAI's response so far has been carefully hedged』『reportedly eyeing an IPO as early as later this year』を2ページで同一確認。leadをFRONTia(07-16)から本件(07-17・最新かつ非ニッチの大型ニュース)へ更新、wire先頭に追加しFRONTia(07-16)を繰り出して8件維持(FRONTiaはkisei topicに残置)。"
   },
   "lead": {
-    "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 —4-6月出荷10%減、6年ぶりの落ち込み",
-    "dek": "TechCrunch（2026年7月17日）によると、Samsung・SK Hynix・MicronがAIアクセラレータ向けの高利益なHBM（広帯域メモリ）へ生産を振り向けた影響で汎用メモリが品薄・値上がりし、スマートフォン価格を押し上げている。世界2位の市場インドでは2026年4-6月の出荷が前年比10%減（Counterpoint調べ）と6年ぶりの大きな落ち込みで、市場の約6割を占める₹20,000（約$210）未満の廉価帯が最も打撃を受けた。買い替えサイクルは約3.5年から4年へ延び、AIデータセンター需要が世界の民生機器のコストにまで波及し始めたことを示す。",
+    "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論",
+    "dek": "TechCrunch（2026年7月17日）によると、データ/AI基盤のDatabricksがCoatue主導の新ラウンドで評価額$1,880億に到達した（2026年2月の$1,340億から5か月での急伸）。同社は同時に、CEO Ali Ghodsiが自社エンジニア3,000人の実タスクで測った社内ベンチマークを公開し、中国発のオープンウェイトモデルGLM 5.2が最難関のコーディングでもAnthropic・OpenAIの商用モデルより総コストが安いと結論づけた。モデルを包む『ハーネス』（Codex・Claude Code等）の選択もコストを同等に左右するといい、AIの勝負が『どのモデルを・どの道具で・いくらで動かすか』というコスト設計へ移りつつあることを示す。",
     "time": "2026-07-17",
     "source_name": "TechCrunch",
-    "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
+    "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
   },
   "wire": [
+    {
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論"
+    },
     {
       "time": "2026-07-17",
       "flag": "海外",
@@ -53,11 +58,6 @@
       "time": "2026-07-17",
       "flag": "海外",
       "title": "Gartner、2027年までに企業の40%が自律型AIエージェントを格下げ・廃止と予測 — 導入の半数が“戦力外”に"
-    },
-    {
-      "time": "2026-07-17",
-      "flag": "国内",
-      "title": "ソフトバンク×安川電機、「寝ている間に上達する」ロボット学習ループを実証 — 買ったときが一番性能低い"
     }
   ],
   "topics": [
@@ -175,6 +175,14 @@
       "name": "モデル・技術",
       "jp": "新モデル・価格・性能",
       "items": [
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/",
+          "time": "2026-07-17",
+          "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論",
+          "summary": "データ/AI基盤のDatabricksが、Coatue主導の新ラウンドで評価額$1,880億に到達したと発表した（調達額は非開示・他社報道では約$30億）。2026年2月の$1,340億（Series L）から5か月での急伸で、2024年12月は$620億だった。★同時にCEO Ali Ghodsiが公開した社内ベンチ（自社エンジニア3,000人の実タスク）では、中国発オープンウェイトのGLM 5.2が最難関のコーディングもこなし、Anthropic・OpenAIの商用モデルより総コストが安いと結論。さらにモデルを包む『ハーネス』（Codex・Claude Code等のエージェント型ツール）の選択もコストを同等に左右し、オープンソースのPiが低コストだったという（TechCrunch／2026年7月17日）。"
+        },
         {
           "topic_flag": "AI半導体",
           "source_name": "TechCrunch",

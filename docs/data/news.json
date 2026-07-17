@@ -9,16 +9,21 @@
    "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
   },
   "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。"
+  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。 | 2026-07-17(深夜): news +1 (kisei:AppleがOpenAIを企業秘密侵害で提訴・年内IPO計画に影)。TechCrunch Equity回(videoページ+podcastページの2ソース)の本文をcurl生読みで逐語照合 — 『Apple filed a trade secrets lawsuit against OpenAI last Friday』『a pattern of misconduct reaching all the way up to OpenAI's chief hardware officer』『more than 400 former Apple employees now work at the company』『OpenAI's response so far has been carefully hedged』『reportedly eyeing an IPO as early as later this year』を2ページで同一確認。leadをFRONTia(07-16)から本件(07-17・最新かつ非ニッチの大型ニュース)へ更新、wire先頭に追加しFRONTia(07-16)を繰り出して8件維持(FRONTiaはkisei topicに残置)。"
  },
  "lead": {
-  "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」",
-  "dek": "経済産業省は7月16日、フィジカルAI向けの国産マルチモーダル基盤モデル構築を目指す「FRONTia Project」を開始した。国内44社が共同出資するAI開発企業Noetraと産総研を中心に、2030年での「実世界ネイティブAI」実現が目標。キックオフイベントには赤沢経産相とNVIDIAのジェンスン・フアンCEOが登壇し、フアン氏は「日本は国家の知性をアウトソースすることはできない。ジャパンAIを所有し、改善し、守り、展開しなければならない」と述べた（ITmedia NEWS）。",
-  "time": "2026-07-16",
-  "source_name": "ITmedia NEWS",
-  "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news107.html"
+  "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影",
+  "dek": "TechCrunch（Equityポッドキャスト、2026年7月17日）によると、Appleは先週金曜（7月10日）にOpenAIを企業秘密（トレードシークレット）侵害で提訴した。訴状はOpenAIの最高ハードウェア責任者にまで及ぶ不正のパターンを主張し、400人を超える元Apple社員が現在OpenAIで働いていると述べている。OpenAIの反応は慎重に言葉を選んだもので、同社が年内にもIPO（新規株式公開）を目指すと報じられる中、番組は「タイミングは最悪」と指摘。訴訟はOpenAIのハードウェア事業とIPOの時期に影を落としかねない。",
+  "time": "2026-07-17",
+  "source_name": "TechCrunch",
+  "source_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"
  },
  "wire": [
+  {
+   "time": "2026-07-17",
+   "flag": "海外",
+   "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影"
+  },
   {
    "time": "2026-07-17",
    "flag": "海外",
@@ -53,11 +58,6 @@
    "time": "2026-07-16",
    "flag": "ツール",
    "title": "Roblox、テキスト1文でゲーム生成「Build」— 7/28からNZで公開アルファ"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "国内",
-   "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」"
   }
  ],
  "topics": [
@@ -413,6 +413,14 @@
    "name": "規制・制度",
    "jp": "法律・ガイドライン・著作権",
    "items": [
+    {
+     "topic_flag": "訴訟",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+     "time": "2026-07-17",
+     "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影",
+     "summary": "TechCrunch（Equityポッドキャスト、2026年7月17日）によると、Appleは先週金曜（7月10日）、OpenAIを企業秘密（トレードシークレット）侵害で提訴した。訴状はOpenAIの最高ハードウェア責任者にまで及ぶ不正のパターンを主張し、400人を超える元Apple社員が現在OpenAIで働いていると述べる。OpenAIの反応は慎重に言葉を選んだもので、同社が年内にもIPO（新規株式公開）を検討していると報じられる中、番組ホスト陣は「タイミングは最悪」とし、訴訟がOpenAIのハードウェア事業とIPOの時期に影を落としかねないと分析した。★『利用者はAI企業に自分のデータをどこまで預けてよいか』という今週の底流とも重なる論点。"
+    },
     {
      "topic_flag": "権利",
      "source_name": "TechCrunch",

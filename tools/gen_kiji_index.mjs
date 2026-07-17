@@ -54,7 +54,9 @@ const CATEGORIES = [
     id: "kasegu",
     name: "AIで稼ぐ 事例・方法",
     desc: "個人・企業がAIで収益を上げた実例と、その手法。金額は本人の公開値、各事例に出典。稼ぎ方の「型」を集める。",
-    slugs: [],
+    slugs: [
+      "ai-de-kasegu-jirei",
+    ],
   },
 ];
 

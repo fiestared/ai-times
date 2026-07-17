@@ -30,6 +30,16 @@
    "title": "富士通MAAF、業務データからAIエージェントチームを自動生成 — イオンフードスタイルで店長支援AI実証へ"
   },
   {
+   "time": "2026-07-17",
+   "flag": "海外",
+   "title": "「スマホで動く」初の27BクラスLLM「Bonsai 27B」— 1-bit量子化3.9GB・iPhoneで実行可能"
+  },
+  {
+   "time": "2026-07-16",
+   "flag": "ツール",
+   "title": "Roblox、テキスト1文でゲーム生成「Build」— 7/28からNZで公開アルファ"
+  },
+  {
    "time": "2026-07-16",
    "flag": "国内",
    "title": "経産省、国産フィジカルAI「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」"
@@ -48,16 +58,6 @@
    "time": "2026-07-16",
    "flag": "海外",
    "title": "Apple Intelligence、中国での提供が承認 — Alibaba「Qwen」統合・Baiduも協業"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "海外",
-   "title": "中国Moonshot「Kimi K3」、Opus 4.8と同等以上とFT報道 — 2〜3兆パラメータのオープンウェイト"
-  },
-  {
-   "time": "2026-07-16",
-   "flag": "国内",
-   "title": "国産AI開発企業「Noetra」本格始動 — 44社出資・NVIDIA「Rubin」2万7500基へ"
   }
  ],
  "topics": [
@@ -169,6 +169,14 @@
    "items": [
     {
      "topic_flag": "新モデル",
+     "source_name": "ITmedia AI＋",
+     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
+     "time": "2026-07-17",
+     "title": "「スマホで動く」初の27BクラスLLM「Bonsai 27B」登場 — 1-bit量子化で3.9GB、iPhoneで実行可能",
+     "summary": "ITmedia（2026年7月17日）によると、米カリフォルニア工科大学発のPrismMLは7月15日（現地時間）、スマートフォン上で動作する初の27BクラスをうたうLLM「Bonsai 27B」を発表した。「Qwen3.6 27B」ベースのマルチモーダル対応で、商用可のApache 2.0オープンソース。重みを−1/+1の2値にした1-bit版は3.9GBでフル精度の90%、3値のTernary版（5.9GB・ノートPC向け）は95%の性能を15ベンチマークで維持したとする。★27Bクラスは4ビット量子化でも約18GB必要でスマホには載らなかった — 端末内で動くAIの水準が一段上がる。"
+    },
+    {
+     "topic_flag": "新モデル",
      "source_name": "TechCrunch",
      "source_url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
      "time": "2026-07-16",
@@ -222,6 +230,22 @@
    "name": "ツール・プロダクト",
    "jp": "新しいAIツールの登場・更新",
    "items": [
+    {
+     "topic_flag": "新機能",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+     "time": "2026-07-16",
+     "title": "Roblox、スマホからテキスト1文でゲームを作れる「Build」を発表 — 7月28日からNZで公開アルファ",
+     "summary": "Robloxは7月16日、モバイルアプリからテキストプロンプトだけで基本的なゲームを生成できる新機能「Build」を発表した（TechCrunch）。オープンソースと自社製を組み合わせた複数のAIモデルが、ゲームメカニクス・環境・キャラクター・ビジュアル・音まで生成する。7月28日からニュージーランドの9歳以上（年齢確認済み）で公開アルファを開始し、16歳以上は全世界への公開も可能。★GDC調査では業界人の52%が「生成AIは業界に悪影響」と回答 — Robloxはプレイヤー継続率ベースのランキングで「遊ばれないAIゲームは表に出ない」設計で低品質量産批判に対抗する。"
+    },
+    {
+     "topic_flag": "新機能",
+     "source_name": "TechCrunch",
+     "source_url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+     "time": "2026-07-16",
+     "title": "Google Vids、本人そっくりの「パーソナルAIアバター」動画に対応 — Gemini Omni統合・SynthID透かし入り",
+     "summary": "Googleは7月16日、Workspaceの動画作成ツール「Vids」の大型更新を発表した（TechCrunch）。本人の姿を学習したカスタムAIアバターに台本を読ませる動画が作れるほか、マルチモーダルモデル「Gemini Omni」の統合でプロンプト＋参照画像からの動画生成と段階的な編集に対応。アバターは本人のGoogleアカウントに紐付き、不可視のSynthID透かしが入る（18歳以上・一部地域限定）。★プレゼン補助だったVidsが動画作成プラットフォームに拡張 — アカウント紐付け＋透かしの「なりすまし防止つきアバター」は職場利用の型になる。"
+    },
     {
      "topic_flag": "新機能",
      "source_name": "ITmedia NEWS",

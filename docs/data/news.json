@@ -1,532 +1,540 @@
 {
- "_meta": {
-  "title": "AI TIMES — 速報・トピック別ニュース",
-  "as_of": "2026-07-17",
-  "status": "verified",
-  "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
-  "sources": {
-   "rss": "各AIメディア/企業ブログのRSSをワーカーが毎日巡回し、見出し+要点をAIが自分の言葉で要約(全文転載しない)",
-   "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
+  "_meta": {
+    "title": "AI TIMES — 速報・トピック別ニュース",
+    "as_of": "2026-07-17",
+    "status": "verified",
+    "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
+    "sources": {
+      "rss": "各AIメディア/企業ブログのRSSをワーカーが毎日巡回し、見出し+要点をAIが自分の言葉で要約(全文転載しない)",
+      "official": "OpenAI/Anthropic/Google/Meta/国内企業/官公庁(経産省・総務省・文化庁)の公式発表を一次情報で裏取り"
+    },
+    "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
+    "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。 | 2026-07-17(深夜): news +1 (kisei:AppleがOpenAIを企業秘密侵害で提訴・年内IPO計画に影)。TechCrunch Equity回(videoページ+podcastページの2ソース)の本文をcurl生読みで逐語照合 — 『Apple filed a trade secrets lawsuit against OpenAI last Friday』『a pattern of misconduct reaching all the way up to OpenAI's chief hardware officer』『more than 400 former Apple employees now work at the company』『OpenAI's response so far has been carefully hedged』『reportedly eyeing an IPO as early as later this year』を2ページで同一確認。leadをFRONTia(07-16)から本件(07-17・最新かつ非ニッチの大型ニュース)へ更新、wire先頭に追加しFRONTia(07-16)を繰り出して8件維持(FRONTiaはkisei topicに残置)。"
   },
-  "topics_def": "各トピックは id/name/jp/items。itemsは {topic_flag, source_name, source_url, time, title(要約見出し), summary(1-2行の要約)}",
-  "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。 | 2026-07-17(深夜): news +1 (kisei:AppleがOpenAIを企業秘密侵害で提訴・年内IPO計画に影)。TechCrunch Equity回(videoページ+podcastページの2ソース)の本文をcurl生読みで逐語照合 — 『Apple filed a trade secrets lawsuit against OpenAI last Friday』『a pattern of misconduct reaching all the way up to OpenAI's chief hardware officer』『more than 400 former Apple employees now work at the company』『OpenAI's response so far has been carefully hedged』『reportedly eyeing an IPO as early as later this year』を2ページで同一確認。leadをFRONTia(07-16)から本件(07-17・最新かつ非ニッチの大型ニュース)へ更新、wire先頭に追加しFRONTia(07-16)を繰り出して8件維持(FRONTiaはkisei topicに残置)。"
- },
- "lead": {
-  "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 —4-6月出荷10%減、6年ぶりの落ち込み",
-  "dek": "TechCrunch（2026年7月17日）によると、Samsung・SK Hynix・MicronがAIアクセラレータ向けの高利益なHBM（広帯域メモリ）へ生産を振り向けた影響で汎用メモリが品薄・値上がりし、スマートフォン価格を押し上げている。世界2位の市場インドでは2026年4-6月の出荷が前年比10%減（Counterpoint調べ）と6年ぶりの大きな落ち込みで、市場の約6割を占める₹20,000（約$210）未満の廉価帯が最も打撃を受けた。買い替えサイクルは約3.5年から4年へ延び、AIデータセンター需要が世界の民生機器のコストにまで波及し始めたことを示す。",
-  "time": "2026-07-17",
-  "source_name": "TechCrunch",
-  "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
- },
- "wire": [
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル"
+  "lead": {
+    "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 —4-6月出荷10%減、6年ぶりの落ち込み",
+    "dek": "TechCrunch（2026年7月17日）によると、Samsung・SK Hynix・MicronがAIアクセラレータ向けの高利益なHBM（広帯域メモリ）へ生産を振り向けた影響で汎用メモリが品薄・値上がりし、スマートフォン価格を押し上げている。世界2位の市場インドでは2026年4-6月の出荷が前年比10%減（Counterpoint調べ）と6年ぶりの大きな落ち込みで、市場の約6割を占める₹20,000（約$210）未満の廉価帯が最も打撃を受けた。買い替えサイクルは約3.5年から4年へ延び、AIデータセンター需要が世界の民生機器のコストにまで波及し始めたことを示す。",
+    "time": "2026-07-17",
+    "source_name": "TechCrunch",
+    "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
   },
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflareと連携しrobots.txt無視のスクレイパーを遮断"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90が新興ネオクラウドGeneral Computeに融資、GPUベース比16倍をうたう"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "海外",
-   "title": "Gartner、2027年までに企業の40%が自律型AIエージェントを格下げ・廃止と予測 — 導入の半数が“戦力外”に"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "国内",
-   "title": "ソフトバンク×安川電機、「寝ている間に上達する」ロボット学習ループを実証 — 買ったときが一番性能低い"
-  },
-  {
-   "time": "2026-07-17",
-   "flag": "国内",
-   "title": "富士通MAAF、業務データからAIエージェントチームを自動生成 — イオンフードスタイルで店長支援AI実証へ"
-  }
- ],
- "topics": [
-  {
-   "id": "kasegu",
-   "name": "AIで稼ぐ",
-   "jp": "個人・企業がAIで収益を上げた話",
-   "items": []
-  },
-  {
-   "id": "katsuyo",
-   "name": "企業のAI活用",
-   "jp": "会社がAIをどう業務に入れているか",
-   "items": [
+  "wire": [
     {
-     "topic_flag": "海外調査",
-     "source_name": "＠IT（ITmedia）",
-     "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html",
-     "time": "2026-07-17",
-     "title": "Gartner予測「2027年までに企業の40%が自律型AIエージェントを格下げ・廃止」— 導入した半数が“戦力外”に",
-     "summary": "調査会社Gartnerは、2027年までに企業の40％が導入済みの自律型（エージェント型）AIを格下げ、または廃止すると予測した。導入したAIエージェントの約半数が期待した成果を上げられず“戦力外”になりかねないという厳しい見方で、＠ITはGartnerが指摘する「2つの失敗モード」を軸に、なぜ企業がAIエージェントを使いこなせないのかを解説している。★前週のGoogle Cloud調査（本番運用には83%がインフラ刷新が必要）と合わせ、AIエージェント導入の“熱狂”に冷や水を浴びせる警告として読める（＠IT／ITmedia、2026年7月17日）。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル"
     },
     {
-     "topic_flag": "国内実証",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/",
-     "time": "2026-07-17",
-     "title": "「買ったときが一番性能低い」ロボットへ — ソフトバンク×安川電機、寝ている間に上達する学習ループを実証",
-     "summary": "ソフトバンクの湧川隆次CTOは7月14日の「SoftBank World 2026」講演で、強化学習で使うほど賢くなるロボットへの転換を「大きなパラダイムシフト」と表現。形状が変わるワイヤハーネスの箱詰めを題材に、実機データ→NVIDIA「Cosmos」で合成データ生成→「Omniverse」で評価→実機展開のサイクルが自動で回る学習ループを安川電機と実証し、「寝ている間に学習して、今朝はさらに上手になっていた」（安川電機・久保田由美恵氏）。現場を判断するVLM（視覚言語モデル）はソフトバンクのインフラ側、動作を生成するVLA（視覚言語行動モデル）はロボット側で動かす役割分担。★ロボットが「経年劣化する機械」から「使うほど賢くなる機械」へ変わる転換点の国内実演（ITmedia AI＋、2026年7月17日）。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み"
     },
     {
-     "topic_flag": "国内実証",
-     "source_name": "MONOist",
-     "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/17/news044.html",
-     "time": "2026-07-17",
-     "title": "富士通、業務データから「AIエージェントチーム」を自動生成するMAAFを披露 — イオンフードスタイルと店長支援AIの実証も",
-     "summary": "富士通は7月14日、「Fujitsu Experience Day 2026」のメディア見学会で、社内規定や稟議書などの業務データを投入するとシステム自身が最適なAIエージェント構成案を自動生成するフレームワーク「Fujitsu Kozuchi Multi AI Agent Framework（MAAF、7月13日発表）」を披露した。デモでは稟議書から「契約特化」「稟議特化」など4つのエージェントチームが自動結成され、互いに確認し合って判定を下した。小売ではイオンフードスタイルと店舗運営支援AI（棚割りレイアウト生成・ポップ作成、プロトタイプ4エージェントを約10日で構築）の実証を7月に開始。★「人がエージェントを設計する」から「AIがチームを編成する」段階に進んだ国内事例（MONOist、2026年7月17日）。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "TikTok、AIによる「なりすまし肖像」検出ツールをテスト — 米国一部クリエイター向け、Jumioで本人確認"
     },
     {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia エンタープライズ",
-     "source_url": "https://www.itmedia.co.jp/enterprise/articles/2607/14/news039.html",
-     "time": "2026-07-14",
-     "title": "「AIエージェントの本番運用は既存インフラでは動かない」 — Google Cloud調査、83%がインフラ刷新が必要と回答",
-     "summary": "ITmedia エンタープライズ（2026年7月14日）が伝えたGoogle Cloudの調査（世界のIT部門リーダー1402人対象）では、83%が「本番運用レベルのAIエージェントを動かすにはITインフラのアップグレードが必要」と回答した。コスト増の主因は推論に伴う「推論税」（データ外部転送＝egress、膨れ上がるストレージ、遊休ハードの料金）で62%が実感、81%が「運用の複雑さ」を隠れコストに挙げた。★PoCは動いても本番で費用が“消える”構造を数字で示しており、これから導入する企業が最初に読むべき警告。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影"
     },
     {
-     "topic_flag": "国内事例",
-     "source_name": "ITmedia ビジネスオンライン",
-     "source_url": "https://www.itmedia.co.jp/business/articles/2607/15/news041.html",
-     "time": "2026-07-15",
-     "title": "Joshin、全事業所に顔認証の勤怠打刻を導入 — 「ピースサイン」で非接触打刻、パスワード忘れを解消",
-     "summary": "ITmedia ビジネスオンライン（2026年7月15日）によると、家電量販店のJoshinは全事業所の従業員向けに、NECの顔認証技術を使ったクラウド勤怠システム（Bio-IDiom Services＋端末UBio-N Face Pro）を導入した。共用PCでのID・パスワード入力や打刻遅延、更衣前後の打刻や衛生面の課題に対し、ピースサインなどのジェスチャーで端末に触れず「出勤／退勤」を打刻できるようにした。★AIというより顔認証の実装だが、「更衣の前後の数十秒」という現場の摩擦を消しに行った点が“従業員に絶賛される”DXの手本。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflareと連携しrobots.txt無視のスクレイパーを遮断"
     },
     {
-     "topic_flag": "国内事例",
-     "source_name": "ITmedia キーマンズネット",
-     "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/15/news011.html",
-     "time": "2026-07-15",
-     "title": "ユナイテッドアローズ、店舗の「売れた理由」を拾う独自AIエージェント「SMART」をAWSと共同開発",
-     "summary": "キーマンズネット（2026年7月15日）によると、273店舗を展開するユナイテッドアローズは、店舗スタッフの「なぜ売れたか」という気付きが週報では本部まで届かない課題を解決するため、アマゾン ウェブ サービス ジャパンと独自AIエージェント「SMART」（Store Manager Agent for Retail Tech）を共同開発した。現場の定性的な声をAIで整理し、売上データなど客観情報と組み合わせて本部の意思決定や他店舗への横展開に生かす狙い。★汎用モデルを買うのでなく「現場の暗黙知をデータに変える」自社特化エージェントを作った点が、小売のAI活用で差になりやすい。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90が新興ネオクラウドGeneral Computeに融資、GPUベース比16倍をうたう"
     },
     {
-     "topic_flag": "国内事例",
-     "source_name": "三井不動産（公式ニュースリリース）",
-     "source_url": "https://www.mitsuifudosan.co.jp/corporate/news/2025/1223/",
-     "time": "2025-12-23",
-     "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員へ導入 — 85部門・150名の『AI推進リーダー』が3か月で約500件のカスタムGPTを内製",
-     "summary": "三井不動産が2025年12月23日に公表した公式ニュースリリースによると、同社は2025年10月1日にOpenAI社のChatGPT Enterpriseライセンスを取得し、約2,000人の全社員へ展開した。特徴はトップダウンのライセンス配布ではなく“現場起点（ボトムアップ）”の体制で、全社85部門から選ばれた約150名の「AI推進リーダー」が主体となり、利用開始から約3か月で約500件の「カスタムGPT」（プログラミング不要で作れる部門・業務専用アシスタント）を運用している（2025年12月23日時点）。全社員対象のChatGPT Enterprise研修には延べ1,300人が参加。ユースケース例として物件情報の参照・要約、経理処理アシスタント、プレスリリース下書き支援などが挙げられている。さらに内製AI開発環境（Microsoft Azure上）で「社長AIエージェント」（2025年12月に全社トライアル利用を開始）「DX本部長AIエージェント」「資料自動生成AI」など自社特化のプロダクトを開発し、カスタムGPTとの両輪で今後全社で業務削減時間10％以上を目指すとしている。★ライセンスを配って終わりにせず、各部門の実務を理解した150名のリーダーが“使える形”のGPTを量産する体制に投資している点が、生成AIを導入しても使われない組織との差になりやすい（＝現場が自分でツールを作る）。"
+      "time": "2026-07-17",
+      "flag": "海外",
+      "title": "Gartner、2027年までに企業の40%が自律型AIエージェントを格下げ・廃止と予測 — 導入の半数が“戦力外”に"
     },
     {
-     "topic_flag": "国内事例",
-     "source_name": "パナソニック コネクト（公式プレスリリース）",
-     "source_url": "https://news.panasonic.com/jp/press/jn250707-2",
-     "time": "2025-07-07",
-     "title": "パナソニック コネクト、社内AI「ConnectAI」で年間44.8万時間を削減 — 効いたのは『質問』より『作業を頼む』使い方",
-     "summary": "パナソニック コネクトが2025年7月7日に公表した公式発表によると、主要3社の大規模言語モデルを使って自社開発したAIアシスタント「ConnectAI」（2023年2月に業務利用を開始）は、2024年の1年間で44.8万時間（前年比2.4倍）の労働時間削減を達成した。利用回数は240万回（前年比約1.7倍）、1回あたりの削減時間は平均28分（画像を使う用途では36分）、社員の月間ユニークユーザー率は49.1％（前年比14.3ポイント増）。同社は削減が大きく伸びた要因を、AIの使い方が答えを『聞く』段階から、コード全体の生成・リファクタリング／作業手順書や各種基準の作成／資料レビューやアンケートのコメント分析といった作業を『頼む』段階へシフトしたためと説明している。★数字が伸びたのは利用人数を増やしたからではなく“任せる作業の重さ”を上げたためで、生成AIを社内に入れても効果が出ない組織との差はここに出やすい。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
-     "time": "2026-07-15",
-     "title": "Anthropic×Blackstone、AI導入専業「Ode」を始動 — “次の1兆ドルはモデルでなく実装”に賭ける",
-     "summary": "AnthropicがBlackstoneやGoldman Sachsらと組み、企業へのAI導入を専門にする合弁会社「Ode with Anthropic」（評価額15億ドル、5月設立）を立ち上げた（TechCrunch、2026年7月15日）。買収したAIエンジニアリング企業Fractional AIを土台に約100人のエンジニアが顧客の業務に合わせたシステムを構築する。OpenAIも同様の『The Deployment Company』を持ち、フロンティアラボ各社が“良いモデルを出すだけでは企業顧客を取れない”と認め始めた形。★AI TIMESの見立て（価値は実装・保守にある）と重なる動き。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000194/",
-     "time": "2026-07-15",
-     "title": "孫正義氏「2040年に世界GDPの約2割がAI・AIエージェント100兆個」— SoftBank World 2026",
-     "summary": "ソフトバンクグループ孫正義会長が7月14日の「SoftBank World 2026」で、2040年には世界のGDP（3京7000兆円）の約2割をAI産業が占め、自律的に働くAIエージェントが100兆個、人型ロボットが10億台稼働するとの持論を示した。AI事業には年間800兆円規模の投資が必要とし、投資成果を3年先で測る指標「ROA（Return on AI）」を提唱。「AIが仕事を奪うのではない。AIを使う企業が使わない企業から仕事を奪う」と述べた。なぜ重要か: 国内最大級のAI投資家が示す長期シナリオで、経営のAI活用を促す象徴的メッセージ（ITmedia AI＋、2026年7月15日）。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia キーマンズネット",
-     "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/16/news023.html",
-     "time": "2026-07-16",
-     "title": "238社調査、現場が支持するAIサービスは「Claude」が最多 — 評価軸は\"最新\"より\"成果\"へ",
-     "summary": "キーマンズネットのIT製品・サービス認知度調査（2026年6月3〜29日・回答238件）で、企業が注目するAIサービスとして最も回答が集まったのは「Claude」シリーズだった。Claude Codeのコード生成力や「非エンジニアでも開発できるか」への期待、NotebookLMでの社内Wiki作成などの声が挙がった。選定で重視する点は「導入コスト」53.4%・「社内で定着・活用しやすいこと」50.8%で、評価軸が\"最新技術か\"から\"自社業務で成果につながるか\"へ移りつつあることを示す実データ。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia ビジネスオンライン",
-     "source_url": "https://www.itmedia.co.jp/business/articles/2607/16/news025.html",
-     "time": "2026-07-16",
-     "title": "Anthropicと組んだNEC、森田社長が語る「4つの主権」 — 日本企業初のグローバルパートナー",
-     "summary": "NECは2026年4月、日本企業として初めてAnthropicのグローバルパートナーとなり、生成AI「Claude」を業種別ソリューション開発とグループ全社の標準基盤に据える。森田隆之社長はロンドンでの直接交渉から3週間で合意した舞台裏を明かし、「日本は欧州の轍を踏むな」とデータ主権など\"4つの主権\"を守る方針を強調した。日立・富士通に続く提携で、国産ベンダーがAIネイティブ化と主権の両立に動いている。"
+      "time": "2026-07-17",
+      "flag": "国内",
+      "title": "ソフトバンク×安川電機、「寝ている間に上達する」ロボット学習ループを実証 — 買ったときが一番性能低い"
     }
-   ]
-  },
-  {
-   "id": "model",
-   "name": "モデル・技術",
-   "jp": "新モデル・価格・性能",
-   "items": [
+  ],
+  "topics": [
     {
-     "topic_flag": "AI半導体",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
-     "time": "2026-07-17",
-     "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み",
-     "summary": "半導体大手のSamsung・SK Hynix・Micronが、AIアクセラレータ向けで利益率の高いHBM（広帯域メモリ）へ生産能力を振り向けた結果、スマホやPC向けの汎用メモリが品薄・値上がりし、端末価格を押し上げている。世界2位のスマホ市場インドでは2026年4-6月の出荷が前年比10%減（Counterpoint調べ）と6年ぶりの大きな落ち込みで、市場の約6割を占める₹20,000（約$210）未満の廉価帯が最も打撃を受け、買い替えサイクルは約3.5年から4年へ延びた。★AI相場の裏側で、データセンターのメモリ争奪が世界の民生機器のコストにまで波及し始めた一例。"
+      "id": "kasegu",
+      "name": "AIで稼ぐ",
+      "jp": "個人・企業がAIで収益を上げた話",
+      "items": []
     },
     {
-     "topic_flag": "新モデル",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
-     "time": "2026-07-17",
-     "title": "「スマホで動く」初の27BクラスLLM「Bonsai 27B」登場 — 1-bit量子化で3.9GB、iPhoneで実行可能",
-     "summary": "ITmedia（2026年7月17日）によると、米カリフォルニア工科大学発のPrismMLは7月15日（現地時間）、スマートフォン上で動作する初の27BクラスをうたうLLM「Bonsai 27B」を発表した。「Qwen3.6 27B」ベースのマルチモーダル対応で、商用可のApache 2.0オープンソース。重みを−1/+1の2値にした1-bit版は3.9GBでフル精度の90%、3値のTernary版（5.9GB・ノートPC向け）は95%の性能を15ベンチマークで維持したとする。★27Bクラスは4ビット量子化でも約18GB必要でスマホには載らなかった — 端末内で動くAIの水準が一段上がる。"
+      "id": "katsuyo",
+      "name": "企業のAI活用",
+      "jp": "会社がAIをどう業務に入れているか",
+      "items": [
+        {
+          "topic_flag": "海外調査",
+          "source_name": "＠IT（ITmedia）",
+          "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/17/news053.html",
+          "time": "2026-07-17",
+          "title": "Gartner予測「2027年までに企業の40%が自律型AIエージェントを格下げ・廃止」— 導入した半数が“戦力外”に",
+          "summary": "調査会社Gartnerは、2027年までに企業の40％が導入済みの自律型（エージェント型）AIを格下げ、または廃止すると予測した。導入したAIエージェントの約半数が期待した成果を上げられず“戦力外”になりかねないという厳しい見方で、＠ITはGartnerが指摘する「2つの失敗モード」を軸に、なぜ企業がAIエージェントを使いこなせないのかを解説している。★前週のGoogle Cloud調査（本番運用には83%がインフラ刷新が必要）と合わせ、AIエージェント導入の“熱狂”に冷や水を浴びせる警告として読める（＠IT／ITmedia、2026年7月17日）。"
+        },
+        {
+          "topic_flag": "国内実証",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000196/",
+          "time": "2026-07-17",
+          "title": "「買ったときが一番性能低い」ロボットへ — ソフトバンク×安川電機、寝ている間に上達する学習ループを実証",
+          "summary": "ソフトバンクの湧川隆次CTOは7月14日の「SoftBank World 2026」講演で、強化学習で使うほど賢くなるロボットへの転換を「大きなパラダイムシフト」と表現。形状が変わるワイヤハーネスの箱詰めを題材に、実機データ→NVIDIA「Cosmos」で合成データ生成→「Omniverse」で評価→実機展開のサイクルが自動で回る学習ループを安川電機と実証し、「寝ている間に学習して、今朝はさらに上手になっていた」（安川電機・久保田由美恵氏）。現場を判断するVLM（視覚言語モデル）はソフトバンクのインフラ側、動作を生成するVLA（視覚言語行動モデル）はロボット側で動かす役割分担。★ロボットが「経年劣化する機械」から「使うほど賢くなる機械」へ変わる転換点の国内実演（ITmedia AI＋、2026年7月17日）。"
+        },
+        {
+          "topic_flag": "国内実証",
+          "source_name": "MONOist",
+          "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/17/news044.html",
+          "time": "2026-07-17",
+          "title": "富士通、業務データから「AIエージェントチーム」を自動生成するMAAFを披露 — イオンフードスタイルと店長支援AIの実証も",
+          "summary": "富士通は7月14日、「Fujitsu Experience Day 2026」のメディア見学会で、社内規定や稟議書などの業務データを投入するとシステム自身が最適なAIエージェント構成案を自動生成するフレームワーク「Fujitsu Kozuchi Multi AI Agent Framework（MAAF、7月13日発表）」を披露した。デモでは稟議書から「契約特化」「稟議特化」など4つのエージェントチームが自動結成され、互いに確認し合って判定を下した。小売ではイオンフードスタイルと店舗運営支援AI（棚割りレイアウト生成・ポップ作成、プロトタイプ4エージェントを約10日で構築）の実証を7月に開始。★「人がエージェントを設計する」から「AIがチームを編成する」段階に進んだ国内事例（MONOist、2026年7月17日）。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia エンタープライズ",
+          "source_url": "https://www.itmedia.co.jp/enterprise/articles/2607/14/news039.html",
+          "time": "2026-07-14",
+          "title": "「AIエージェントの本番運用は既存インフラでは動かない」 — Google Cloud調査、83%がインフラ刷新が必要と回答",
+          "summary": "ITmedia エンタープライズ（2026年7月14日）が伝えたGoogle Cloudの調査（世界のIT部門リーダー1402人対象）では、83%が「本番運用レベルのAIエージェントを動かすにはITインフラのアップグレードが必要」と回答した。コスト増の主因は推論に伴う「推論税」（データ外部転送＝egress、膨れ上がるストレージ、遊休ハードの料金）で62%が実感、81%が「運用の複雑さ」を隠れコストに挙げた。★PoCは動いても本番で費用が“消える”構造を数字で示しており、これから導入する企業が最初に読むべき警告。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "ITmedia ビジネスオンライン",
+          "source_url": "https://www.itmedia.co.jp/business/articles/2607/15/news041.html",
+          "time": "2026-07-15",
+          "title": "Joshin、全事業所に顔認証の勤怠打刻を導入 — 「ピースサイン」で非接触打刻、パスワード忘れを解消",
+          "summary": "ITmedia ビジネスオンライン（2026年7月15日）によると、家電量販店のJoshinは全事業所の従業員向けに、NECの顔認証技術を使ったクラウド勤怠システム（Bio-IDiom Services＋端末UBio-N Face Pro）を導入した。共用PCでのID・パスワード入力や打刻遅延、更衣前後の打刻や衛生面の課題に対し、ピースサインなどのジェスチャーで端末に触れず「出勤／退勤」を打刻できるようにした。★AIというより顔認証の実装だが、「更衣の前後の数十秒」という現場の摩擦を消しに行った点が“従業員に絶賛される”DXの手本。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "ITmedia キーマンズネット",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/15/news011.html",
+          "time": "2026-07-15",
+          "title": "ユナイテッドアローズ、店舗の「売れた理由」を拾う独自AIエージェント「SMART」をAWSと共同開発",
+          "summary": "キーマンズネット（2026年7月15日）によると、273店舗を展開するユナイテッドアローズは、店舗スタッフの「なぜ売れたか」という気付きが週報では本部まで届かない課題を解決するため、アマゾン ウェブ サービス ジャパンと独自AIエージェント「SMART」（Store Manager Agent for Retail Tech）を共同開発した。現場の定性的な声をAIで整理し、売上データなど客観情報と組み合わせて本部の意思決定や他店舗への横展開に生かす狙い。★汎用モデルを買うのでなく「現場の暗黙知をデータに変える」自社特化エージェントを作った点が、小売のAI活用で差になりやすい。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "三井不動産（公式ニュースリリース）",
+          "source_url": "https://www.mitsuifudosan.co.jp/corporate/news/2025/1223/",
+          "time": "2025-12-23",
+          "title": "三井不動産、ChatGPT Enterpriseを約2,000人の全社員へ導入 — 85部門・150名の『AI推進リーダー』が3か月で約500件のカスタムGPTを内製",
+          "summary": "三井不動産が2025年12月23日に公表した公式ニュースリリースによると、同社は2025年10月1日にOpenAI社のChatGPT Enterpriseライセンスを取得し、約2,000人の全社員へ展開した。特徴はトップダウンのライセンス配布ではなく“現場起点（ボトムアップ）”の体制で、全社85部門から選ばれた約150名の「AI推進リーダー」が主体となり、利用開始から約3か月で約500件の「カスタムGPT」（プログラミング不要で作れる部門・業務専用アシスタント）を運用している（2025年12月23日時点）。全社員対象のChatGPT Enterprise研修には延べ1,300人が参加。ユースケース例として物件情報の参照・要約、経理処理アシスタント、プレスリリース下書き支援などが挙げられている。さらに内製AI開発環境（Microsoft Azure上）で「社長AIエージェント」（2025年12月に全社トライアル利用を開始）「DX本部長AIエージェント」「資料自動生成AI」など自社特化のプロダクトを開発し、カスタムGPTとの両輪で今後全社で業務削減時間10％以上を目指すとしている。★ライセンスを配って終わりにせず、各部門の実務を理解した150名のリーダーが“使える形”のGPTを量産する体制に投資している点が、生成AIを導入しても使われない組織との差になりやすい（＝現場が自分でツールを作る）。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "パナソニック コネクト（公式プレスリリース）",
+          "source_url": "https://news.panasonic.com/jp/press/jn250707-2",
+          "time": "2025-07-07",
+          "title": "パナソニック コネクト、社内AI「ConnectAI」で年間44.8万時間を削減 — 効いたのは『質問』より『作業を頼む』使い方",
+          "summary": "パナソニック コネクトが2025年7月7日に公表した公式発表によると、主要3社の大規模言語モデルを使って自社開発したAIアシスタント「ConnectAI」（2023年2月に業務利用を開始）は、2024年の1年間で44.8万時間（前年比2.4倍）の労働時間削減を達成した。利用回数は240万回（前年比約1.7倍）、1回あたりの削減時間は平均28分（画像を使う用途では36分）、社員の月間ユニークユーザー率は49.1％（前年比14.3ポイント増）。同社は削減が大きく伸びた要因を、AIの使い方が答えを『聞く』段階から、コード全体の生成・リファクタリング／作業手順書や各種基準の作成／資料レビューやアンケートのコメント分析といった作業を『頼む』段階へシフトしたためと説明している。★数字が伸びたのは利用人数を増やしたからではなく“任せる作業の重さ”を上げたためで、生成AIを社内に入れても効果が出ない組織との差はここに出やすい。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/",
+          "time": "2026-07-15",
+          "title": "Anthropic×Blackstone、AI導入専業「Ode」を始動 — “次の1兆ドルはモデルでなく実装”に賭ける",
+          "summary": "AnthropicがBlackstoneやGoldman Sachsらと組み、企業へのAI導入を専門にする合弁会社「Ode with Anthropic」（評価額15億ドル、5月設立）を立ち上げた（TechCrunch、2026年7月15日）。買収したAIエンジニアリング企業Fractional AIを土台に約100人のエンジニアが顧客の業務に合わせたシステムを構築する。OpenAIも同様の『The Deployment Company』を持ち、フロンティアラボ各社が“良いモデルを出すだけでは企業顧客を取れない”と認め始めた形。★AI TIMESの見立て（価値は実装・保守にある）と重なる動き。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000194/",
+          "time": "2026-07-15",
+          "title": "孫正義氏「2040年に世界GDPの約2割がAI・AIエージェント100兆個」— SoftBank World 2026",
+          "summary": "ソフトバンクグループ孫正義会長が7月14日の「SoftBank World 2026」で、2040年には世界のGDP（3京7000兆円）の約2割をAI産業が占め、自律的に働くAIエージェントが100兆個、人型ロボットが10億台稼働するとの持論を示した。AI事業には年間800兆円規模の投資が必要とし、投資成果を3年先で測る指標「ROA（Return on AI）」を提唱。「AIが仕事を奪うのではない。AIを使う企業が使わない企業から仕事を奪う」と述べた。なぜ重要か: 国内最大級のAI投資家が示す長期シナリオで、経営のAI活用を促す象徴的メッセージ（ITmedia AI＋、2026年7月15日）。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia キーマンズネット",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/16/news023.html",
+          "time": "2026-07-16",
+          "title": "238社調査、現場が支持するAIサービスは「Claude」が最多 — 評価軸は\"最新\"より\"成果\"へ",
+          "summary": "キーマンズネットのIT製品・サービス認知度調査（2026年6月3〜29日・回答238件）で、企業が注目するAIサービスとして最も回答が集まったのは「Claude」シリーズだった。Claude Codeのコード生成力や「非エンジニアでも開発できるか」への期待、NotebookLMでの社内Wiki作成などの声が挙がった。選定で重視する点は「導入コスト」53.4%・「社内で定着・活用しやすいこと」50.8%で、評価軸が\"最新技術か\"から\"自社業務で成果につながるか\"へ移りつつあることを示す実データ。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia ビジネスオンライン",
+          "source_url": "https://www.itmedia.co.jp/business/articles/2607/16/news025.html",
+          "time": "2026-07-16",
+          "title": "Anthropicと組んだNEC、森田社長が語る「4つの主権」 — 日本企業初のグローバルパートナー",
+          "summary": "NECは2026年4月、日本企業として初めてAnthropicのグローバルパートナーとなり、生成AI「Claude」を業種別ソリューション開発とグループ全社の標準基盤に据える。森田隆之社長はロンドンでの直接交渉から3週間で合意した舞台裏を明かし、「日本は欧州の轍を踏むな」とデータ主権など\"4つの主権\"を守る方針を強調した。日立・富士通に続く提携で、国産ベンダーがAIネイティブ化と主権の両立に動いている。"
+        }
+      ]
     },
     {
-     "topic_flag": "新モデル",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
-     "time": "2026-07-16",
-     "title": "中国Moonshotの次期「Kimi K3」、Opus 4.8と同等以上の性能とFT報道 — 中国最大2〜3兆パラメータのオープンウェイト",
-     "summary": "TechCrunch（2026年7月16日）によると、英Financial Timesは中国Moonshot AIの次期モデル「Kimi K3」がAnthropicのOpus 4.8と同等かそれを上回る性能になると関係者の話として報じた。パラメータ数は2兆〜3兆で中国発では最大のオープンウェイトモデルとなり、「数日内」に公開見込み。Moonshotは評価額315億ドルとなる資金調達も進めているという。★公開前のリーク段階の情報だが、オープンウェイトがフロンティアに追いつく速度はAPI価格競争（AI相場）に直結する。"
+      "id": "model",
+      "name": "モデル・技術",
+      "jp": "新モデル・価格・性能",
+      "items": [
+        {
+          "topic_flag": "AI半導体",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/",
+          "time": "2026-07-17",
+          "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み",
+          "summary": "半導体大手のSamsung・SK Hynix・Micronが、AIアクセラレータ向けで利益率の高いHBM（広帯域メモリ）へ生産能力を振り向けた結果、スマホやPC向けの汎用メモリが品薄・値上がりし、端末価格を押し上げている。世界2位のスマホ市場インドでは2026年4-6月の出荷が前年比10%減（Counterpoint調べ）と6年ぶりの大きな落ち込みで、市場の約6割を占める₹20,000（約$210）未満の廉価帯が最も打撃を受け、買い替えサイクルは約3.5年から4年へ延びた。★AI相場の裏側で、データセンターのメモリ争奪が世界の民生機器のコストにまで波及し始めた一例。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/17/2000000202/",
+          "time": "2026-07-17",
+          "title": "「スマホで動く」初の27BクラスLLM「Bonsai 27B」登場 — 1-bit量子化で3.9GB、iPhoneで実行可能",
+          "summary": "ITmedia（2026年7月17日）によると、米カリフォルニア工科大学発のPrismMLは7月15日（現地時間）、スマートフォン上で動作する初の27BクラスをうたうLLM「Bonsai 27B」を発表した。「Qwen3.6 27B」ベースのマルチモーダル対応で、商用可のApache 2.0オープンソース。重みを−1/+1の2値にした1-bit版は3.9GBでフル精度の90%、3値のTernary版（5.9GB・ノートPC向け）は95%の性能を15ベンチマークで維持したとする。★27Bクラスは4ビット量子化でも約18GB必要でスマホには載らなかった — 端末内で動くAIの水準が一段上がる。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/",
+          "time": "2026-07-16",
+          "title": "中国Moonshotの次期「Kimi K3」、Opus 4.8と同等以上の性能とFT報道 — 中国最大2〜3兆パラメータのオープンウェイト",
+          "summary": "TechCrunch（2026年7月16日）によると、英Financial Timesは中国Moonshot AIの次期モデル「Kimi K3」がAnthropicのOpus 4.8と同等かそれを上回る性能になると関係者の話として報じた。パラメータ数は2兆〜3兆で中国発では最大のオープンウェイトモデルとなり、「数日内」に公開見込み。Moonshotは評価額315億ドルとなる資金調達も進めているという。★公開前のリーク段階の情報だが、オープンウェイトがフロンティアに追いつく速度はAPI価格競争（AI相場）に直結する。"
+        },
+        {
+          "topic_flag": "API価格",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2026-08-31まで導入価格",
+          "title": "Claude Sonnet 5、8/31まで導入価格 入力$2・出力$10 — 9/1から標準の$3・$15へ",
+          "summary": "Anthropicの公式価格ページによると、Claude Sonnet 5 は100万トークンあたり入力$2・出力$10の導入価格が2026年8月31日まで有効で、9月1日以降は標準価格の入力$3・出力$15に切り替わる（同ページ原文: introductory pricing of $2/$10 … through August 31, 2026, after which the standard pricing of $3/$15）。ただし同ページは Sonnet 5 が新しいトークナイザーを採用し『同じ文章でも約30%多くトークンを生成する』と明記しており、単価が下がっても実コストは表示ほど下がらない点に注意（Sonnet 4.6以前は旧トークナイザー）。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "Anthropic（公式Pricing）",
+          "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+          "time": "2025-10-01",
+          "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
+          "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
+        },
+        {
+          "topic_flag": "キャンペーン",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000195/",
+          "time": "2026-07-15",
+          "title": "OpenAI、「GPT-5.6」の感想をXに投稿で100ドル分クレジット — 先着1万人・Anthropicを意識",
+          "summary": "OpenAIが最新モデル「GPT-5.6」の感想や生成物をXに投稿した有料プラン（Go／Plus／Pro）ユーザーへ、ChatGPTで使える100ドル分のクレジットを先着1万人に配るキャンペーンを始めた。幹部ティボ・ソティオ氏が7月15日にXで告知し、「Claudeの解約画面を送ればCodexを1カ月無料に」というユーザー投稿を引用するなどAnthropicとの競争を強く意識。特設サイトはChatGPTの新機能「Sites」で作られ同機能の宣伝も兼ねる。なぜ重要か: モデル競争が性能・価格だけでなく“利用者の囲い込み”施策にまで及び始めた（ITmedia AI＋、2026年7月15日）。"
+        },
+        {
+          "topic_flag": "安全性",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000199/",
+          "time": "2026-07-15",
+          "title": "OpenAI、自動レッドチームAI「GPT-Red」発表 — 未知シナリオの攻撃成功率84%（人間の専門家は13%）",
+          "summary": "OpenAIは7月15日（現地時間）、自社モデルの弱点を自動で探すレッドチーミング専用モデル「GPT-Red」を発表した。自己対戦型の強化学習で攻撃側と防御側を同時に訓練し、未知シナリオの間接プロンプトインジェクションでは人間の専門家の成功率13%に対し84%で攻撃に成功。この攻撃データで敵対的訓練した「GPT-5.6 Sol」は、最難関ベンチマークの失敗率を4カ月前の最良モデルの6分の1に減らした。GPT-Red自体は悪用防止のため社内専用とする（ITmedia AI＋）。"
+        },
+        {
+          "topic_flag": "新モデル",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000197/",
+          "time": "2026-07-15",
+          "title": "Thinking Machines、初のAIモデル「Inkling」公開 — 総パラメータ9750億のオープンウェイト、Apache 2.0で全公開",
+          "summary": "元OpenAI CTOミラ・ムラティ氏のThinking Machines Labが7月15日（現地時間）、初のAIモデル「Inkling」を発表した。テキスト・画像・音声を入力できる総パラメータ9750億（アクティブ410億）のMoE型で、最大100万トークン対応・45兆トークンで事前学習し、Apache 2.0で全ウェイトをHugging Faceに公開。同社は「現在利用できる最強のモデルではない」と明言し、自社のファインチューニング基盤Tinker（期間限定50%割引）で「自分のものにできる」カスタマイズ前提の基盤と位置づけ、軽量版Inkling-Small（総2760億・アクティブ120億）のプレビューも公開した。★フロンティア性能の競争から降り、「カスタマイズできるオープンウェイト」に賭ける初の大型参入。"
+        }
+      ]
     },
     {
-     "topic_flag": "API価格",
-     "source_name": "Anthropic（公式Pricing）",
-     "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-     "time": "2026-08-31まで導入価格",
-     "title": "Claude Sonnet 5、8/31まで導入価格 入力$2・出力$10 — 9/1から標準の$3・$15へ",
-     "summary": "Anthropicの公式価格ページによると、Claude Sonnet 5 は100万トークンあたり入力$2・出力$10の導入価格が2026年8月31日まで有効で、9月1日以降は標準価格の入力$3・出力$15に切り替わる（同ページ原文: introductory pricing of $2/$10 … through August 31, 2026, after which the standard pricing of $3/$15）。ただし同ページは Sonnet 5 が新しいトークナイザーを採用し『同じ文章でも約30%多くトークンを生成する』と明記しており、単価が下がっても実コストは表示ほど下がらない点に注意（Sonnet 4.6以前は旧トークナイザー）。"
+      "id": "tool",
+      "name": "ツール・プロダクト",
+      "jp": "新しいAIツールの登場・更新",
+      "items": [
+        {
+          "topic_flag": "ロボット",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
+          "time": "2026-07-17",
+          "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル",
+          "summary": "二足歩行ロボの先行企業Agility Roboticsが、TeslaがOptimusを製造する予定の米フリーモントの近くに6万平方フィートの訓練施設を新設する。同社のロボ「Digit」はAmazon・GXO・Schaeffler・トヨタ（カナダ工場）などで搬送業務にすでに稼働して売上を計上し、契約受注は3億ドル、年内に逆さ合併で「純粋ヒューマノイド」初の上場企業を目指す。★共同創業者は「安全にかかわる系統は生成AIを通さない」と述べ、安全は決定論・多様な作業の実装は生成AIという分業が商用化の型になりつつある。"
+        },
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
+          "time": "2026-07-17",
+          "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90「GPUの次」に賭ける",
+          "summary": "TechCrunch（2026年7月17日）によると、元ゴールドマン・サックスのクオンツ出身ビリー・リビー氏率いる投資会社Upper90が、推論特化の新興クラウド「General Compute」に4億ドルの“チップ担保”融資を実行した。同社はIntel出資のSambaNova製推論チップ「SN50」でネオクラウドを構築中で、水冷不要・省電力ゆえGPUより速く各地のデータセンターへ展開でき、GPUベース比16倍の推論速度をうたう。★高騰するAIの利用料金への市場の答えが「フロンティアLLMより安くオープンソースを回す推論インフラ」へ向かい始めた、という相場のシグナル。"
+        },
+        {
+          "topic_flag": "新機能",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
+          "time": "2026-07-16",
+          "title": "Roblox、スマホからテキスト1文でゲームを作れる「Build」を発表 — 7月28日からNZで公開アルファ",
+          "summary": "Robloxは7月16日、モバイルアプリからテキストプロンプトだけで基本的なゲームを生成できる新機能「Build」を発表した（TechCrunch）。オープンソースと自社製を組み合わせた複数のAIモデルが、ゲームメカニクス・環境・キャラクター・ビジュアル・音まで生成する。7月28日からニュージーランドの9歳以上（年齢確認済み）で公開アルファを開始し、16歳以上は全世界への公開も可能。★GDC調査では業界人の52%が「生成AIは業界に悪影響」と回答 — Robloxはプレイヤー継続率ベースのランキングで「遊ばれないAIゲームは表に出ない」設計で低品質量産批判に対抗する。"
+        },
+        {
+          "topic_flag": "新機能",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
+          "time": "2026-07-16",
+          "title": "Google Vids、本人そっくりの「パーソナルAIアバター」動画に対応 — Gemini Omni統合・SynthID透かし入り",
+          "summary": "Googleは7月16日、Workspaceの動画作成ツール「Vids」の大型更新を発表した（TechCrunch）。本人の姿を学習したカスタムAIアバターに台本を読ませる動画が作れるほか、マルチモーダルモデル「Gemini Omni」の統合でプロンプト＋参照画像からの動画生成と段階的な編集に対応。アバターは本人のGoogleアカウントに紐付き、不可視のSynthID透かしが入る（18歳以上・一部地域限定）。★プレゼン補助だったVidsが動画作成プラットフォームに拡張 — アカウント紐付け＋透かしの「なりすまし防止つきアバター」は職場利用の型になる。"
+        },
+        {
+          "topic_flag": "新機能",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/articles/2607/17/news061.html",
+          "time": "2026-07-16",
+          "title": "Google検索「AIモード」、検索結果から離れずアプリで作業完了 — まずCanva・YouTube Music・Instacart",
+          "summary": "Googleは7月16日（現地時間）、Google検索の「AIモード」で外部アプリと直接連携できる機能の提供開始を発表、米国で今週から順次展開する。プレイリストをAIモードで作ってそのままYouTube Musicに保存、買い物リストの食材をInstacartのカートへ直接追加など、検索結果から離れずにタスクを完了できる。「Gemini」アプリの連携機能を検索本体へ拡大した形で、ユーザーの文脈を踏まえる「Personal Intelligence」との組み合わせでパーソナライズ回答も提示する。★検索ページ自体がタスク完了の場になる流れで、「クリックしてサイト訪問」というSEOの前提がさらに崩れる（ITmedia NEWS、2026年7月17日）。"
+        },
+        {
+          "topic_flag": "ツール更新",
+          "source_name": "The Verge",
+          "source_url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
+          "time": "2026-07-16",
+          "title": "Google、NotebookLMを「Gemini Notebook」に改名 — 単独アプリのまま、検索のAI Modeにも統合へ",
+          "summary": "The Verge（2026年7月16日）によると、GoogleはAIノートアプリ「NotebookLM」を「Gemini Notebook」に改名すると7月16日に発表した。単独アプリとして残る一方、GeminiとGoogle検索への統合を深め、検索のAI Modeからノートブックにアクセスできるようになる予定。★浸透してきたNotebookLMブランドを捨ててでも「AIはすべてGeminiに束ねる」というGoogleの方針徹底を示す動き。"
+        },
+        {
+          "topic_flag": "新サービス",
+          "source_name": "The Verge",
+          "source_url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
+          "time": "2026-07-16",
+          "title": "Claude、1Passwordの資格情報で「代わりにログイン」可能に — AIエージェントにパスワードは見せない設計",
+          "summary": "The Verge（2026年7月16日）によると、Anthropicと1Passwordの連携「1Password for Claude」の提供が始まった。ブラウザで作業するClaudeが保管庫の資格情報を使ってサイトにログインでき、AIがブラウザを操作する間は保管庫が自動ロックされ、そのタスクに明示的に許可された資格情報以外には触れない。まずMac向けで、両社のデスクトップアプリとブラウザ拡張が必要。支払いカード・身元情報への対応は後日。★「エージェントが人の代わりに操作する」時代の認証の型（AIに秘密を渡さず権限だけ貸す）を大手が示した例。"
+        },
+        {
+          "topic_flag": "製品動向",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
+          "time": "2026-07-16",
+          "title": "Apple Intelligence、中国での提供が承認 — Alibaba「Qwen」を統合、Baiduも協業を確認",
+          "summary": "TechCrunch（2026年7月16日）によると、中国のネット規制当局（国家インターネット情報弁公室）がAppleのAIサービスを承認したとロイターが報じた。AlibabaのAIモデル「Qwen」をiOS・iPadOS・macOS・visionOSに統合する契約が背景で、Baiduの広報も中国ユーザー向けApple Intelligence機能の開発でAppleと協業中とTechCrunchに確認した。★「海外AIが入れない規制市場×現地モデル統合」という型で、世界最大級のスマホ市場のAI競争が動き出す。"
+        },
+        {
+          "topic_flag": "新サービス",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/14/2000000190/",
+          "time": "2026-07-14",
+          "title": "Dropbox、Anthropic「Claude」との連携を開始 — コネクタ＋Cowork／Code向けプラグインの3種を同時提供",
+          "summary": "ITmedia AI＋（2026年7月14日）によると、Dropbox Japanは7月14日にClaudeとの連携を開始し、Claude向けコネクタ、「Claude Cowork」向けプラグイン、「Claude Code」向けプラグインの3種を同時提供する。Dropbox内のファイル検索・プレビューや、Claudeが生成した資料の保存、フォルダ整理・共有リンク生成までClaude側の画面で完結でき、既存のChatGPT・Geminiとの連携も拡大する。★特定のAIに縛られず「どのAIからでも使えるコンテンツ基盤」を狙う動きで、ストレージがAIのハブになりつつある。"
+        },
+        {
+          "topic_flag": "国内事例",
+          "source_name": "ITmedia MONOist",
+          "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/15/news045.html",
+          "time": "2026-07-15",
+          "title": "富士通、NVIDIA「Rubin」対応の国産AIサーバを2026年秋に製造へ — ソブリンAI需要に石川・笠島工場で一貫生産",
+          "summary": "MONOist（2026年7月15日）によると、富士通は「Fujitsu Experience Day 2026」で国産ハイエンドAIサーバを公開し、2026年秋にNVIDIA最新GPU「Rubin」対応の新モデルの製造を始めると明かした。現行機「PRIMERGY GX2550 M8s」はIntel Xeon 6を2基・NVIDIA Blackwell世代GPUを最大8基搭載でき、スパコン「富岳」の技術を持つ笠島工場（石川県かほく市）で基板組立からファーム焼き込みまで国内一貫生産する。★機密データを国外に出せない製造業・官公庁向けの「ソブリンAI」インフラで、バックドア混入を防ぐ製造の透明性を売りにした国産の勝ち筋。"
+        },
+        {
+          "topic_flag": "ツール更新",
+          "source_name": "Cursor（公式Changelog）",
+          "source_url": "https://www.cursor.com/changelog",
+          "time": "2026-07-10",
+          "title": "Cursor 3.11 公開 — メインのエージェント作業を止めずに脇道を調べる「サイドチャット」と会話全文検索を追加",
+          "summary": "AIコードエディタCursorのバージョンV3.11が2026年7月10日に公開された（公式Changelog）。目玉は「サイドチャット」で、メインのエージェント会話を中断せずに、その脇で別の会話を並行して開ける。/side・/btw かチャット上部の＋ボタンで作成でき、メインの文脈を引き継いだ独立の会話として残り、後から@メンションでメインへ結果を戻せる。既定では読み取り・検索・回答に集中する設計で、「本筋の作業を走らせたまま、別案を調べたり判断を確認したりする」用途を想定している。あわせて、Agents Windowのコマンドパレット（Cmd+K）から過去のエージェント会話の本文まで横断検索する会話検索（ローカル索引で数千会話に対応）と、会話内検索（Cmd+F）、プロジェクト／リポジトリ選択画面の刷新も入った。"
+        },
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
+          "time": "2026-07-15",
+          "title": "AIコーディングのEmergent、1.3億ドル調達でユニコーンに — 評価額15億ドル・年換算売上1.2億ドル",
+          "summary": "インドのAIコーディング新興Emergentが、Creaegis主導のシリーズCで1.3億ドルを調達し、ポストマネー評価額15億ドル（半年で5倍）に達した（TechCrunch、2026年7月15日）。累計調達は2.3億ドル、年換算売上（ARR）は1.2億ドル・有料顧客は20万超で、Lovable・Replit・Cursorがひしめく市場で起業家や中小企業を主な標的にする。★AIコーディングは競争が激しくても資金と売上が急拡大しており、参入の中心が『開発者向け』から『非エンジニアの事業立ち上げ』へ広がっている。"
+        },
+        {
+          "topic_flag": "資金調達",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
+          "time": "2026-07-15",
+          "title": "音声AIのRimeが2400万ドル調達 — 自前の録音データで“ブランド名や専門用語の発音”に特化",
+          "summary": "企業の電話応対（営業・サポート）向け音声AIを手がける米Rimeが、M13 Ventures主導のシリーズAで2400万ドルを調達した（TechCrunch、2026年7月15日）。Web上の音声を集めるのではなく自社スタジオで会話データを録音し、音素ベースの構成でブランド名・業界用語の発音を作り込むのが特徴。★ElevenLabsやDeepgramらがひしめく音声AIでも、企業はなお旧来のIVRを好むとされ、精度と“作り込みの手間の少なさ”が競争軸になっている。"
+        },
+        {
+          "topic_flag": "新サービス",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000193/",
+          "time": "2026-07-14",
+          "title": "Anthropic、米K-12教員向け「Claude for Teachers」を無料提供 — 全50州の学習指導基準に対応、Claude Code/Coworkも",
+          "summary": "Anthropicが7月14日（現地時間）、米国の幼稚園〜高校（K-12）教員向けサービス「Claude for Teachers」を発表した（ITmedia AI＋）。認証された教員は、Claudeのプレミアム機能・授業づくり用の『スキル』ライブラリ・全50州の学習指導基準にマップされた教材へ無料でアクセスでき、エージェント機能のClaude CodeやCoworkで出席データの分析や定型業務の自動化もできる。データはモデル学習に使わずFERPA準拠で、2027年6月30日までの登録で1年間無料。★学校・学区向けプランは近日提供予定。"
+        },
+        {
+          "topic_flag": "ツール更新",
+          "source_name": "ITmedia キーマンズネット",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/15/news021.html",
+          "time": "2026-07-15",
+          "title": "ナレッジセンス、AIエージェント「Cowork」にデスクトップ操作機能 — “RPA負債”の解消狙う",
+          "summary": "法人向け生成AI「ChatSense」を提供するナレッジセンスが、ブラウザ操作AIエージェント「Cowork」に、Windowsのローカルファイルやデスクトップアプリを自然言語の指示で操作できる「デスクトップ機能」の追加を発表した。事前にシナリオを作らずAIが画面を認識して操作するため、画面変更で止まりやすい従来RPAの保守負担（RPA負債）を抑える狙い。ChatSenseは東証プライム企業を含む500社超が導入済みで、ベータ版を月額・1人単位から提供する。なぜ重要か: AIエージェント型RPAが国産SaaSでも実装段階に入り、定型業務の自動化対象がブラウザ外へ広がっている（キーマンズネット、2026年7月15日）。"
+        },
+        {
+          "topic_flag": "製品動向",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news055.html",
+          "time": "2026-07-16",
+          "title": "OpenAI、初のハードウェア「Codex Micro」を230ドルで発売 — Codex専用キーパッド",
+          "summary": "OpenAIは7月15日（現地時間）、AIコーディングツール「Codex」専用キーパッド「Codex Micro」を230ドル（約3万7000円）で発売した。同社初のハードウェア製品で、キーボードメーカーWork Louderと共同開発し、エージェントの状態を示すLEDキー6つや推論レベルのダイヤル、ワークフロー切替のジョイスティックを備える。CEOサム・アルトマン氏が年内発売を予告する買収企業ioとのAIデバイスとは別物で、AIツールが物理デバイスへ広がり始めた節目。"
+        },
+        {
+          "topic_flag": "製品動向",
+          "source_name": "MONOist",
+          "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/16/news052.html",
+          "time": "2026-07-16",
+          "title": "NVIDIA、組み込みAIボード「Jetson Thor」に省メモリ版 T3000／T2000 を追加",
+          "summary": "NVIDIAは2026年7月16日、組み込みAIボード「Jetson AGX Thor」の量産モジュールに、メモリと消費電力を抑えた「Jetson T3000」「Jetson T2000」を追加すると発表した。T3000はFP4のAI処理性能865TFLOPS・メモリ容量を最上位T5000（128GB）の4分の1の32GBとし、消費電力も約半分に抑えた。メモリ価格が高騰する中、エッジ／ロボット向けにコストを抑えた選択肢を広げる狙い。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news101.html",
+          "time": "2026-07-16",
+          "title": "国産AI開発企業「Noetra」が本格始動 — ソニー・SB・NECなど44社出資、NVIDIA「Rubin」2万7500基の計算基盤へ",
+          "summary": "国内大手44社（ソニーグループ、ソフトバンク、NEC、本田技研工業など）が共同出資するAI開発企業Noetraが7月16日、本格始動を発表した。産総研やPreferred Networksなどから技術者を集め、2026年度に言語の基盤モデル、28年度からマルチモーダル基盤モデル、30年度には物理法則を理解する「実世界ネイティブAI」を目指す。27年4月にはNVIDIAの最新GPU「Rubin」約2万7500基を搭載した計算基盤の構築を始め、28年6月に稼働予定（ITmedia NEWS）。"
+        },
+        {
+          "topic_flag": "新サービス",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000200/",
+          "time": "2026-07-16",
+          "title": "Google「Gemini Spark」が日本上陸 — 24時間クラウドで働くパーソナルAIエージェント、まずUltraから",
+          "summary": "Googleは7月16日、パーソナルAIエージェント「Gemini Spark」の日本提供を開始した。まず月額1万4500円〜の「Ultra」加入者向けβ版で、基盤はGemini 3.5とエージェント開発基盤「Antigravity」。GmailやカレンダーなどWorkspaceとパートナーアプリ、カスタムMCPに接続し、端末の電源が切れていてもクラウド上で24時間タスクを実行する。担当副社長はPro（月額2900円）への拡大も示唆した（ITmedia AI＋）。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000201/",
+          "time": "2026-07-16",
+          "title": "Anthropic、「Claude」の利用制限を全リセット — OpenAIもCodex／ChatGPT Workで即応酬、2度目の“リセット合戦”",
+          "summary": "Anthropicは7月16日（日本時間）、Claudeの5時間および1週間の利用制限をリセットしたと発表。直後にOpenAI幹部がX上でChatGPT WorkとCodexの週次利用制限のリセットを表明した。両社は7月9日にも同様のリセットを実施しており、これで2度目の“リセット合戦”。★ユーザー獲得競争が「値下げ」でなく「利用制限緩和の応酬」という形で表面化している。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000203/",
+          "time": "2026-07-16",
+          "title": "富士通、川崎重工・ファナック・安川電機と「フィジカルAI」で協業 — NVIDIAは「Cosmos Coalition」を日本へ拡大",
+          "summary": "富士通は7月16日、川崎重工業・ファナック・安川電機とフィジカルAI開発での協業を発表した。次世代CPU「FUJITSU-MONAKA」やAI向けOS「Fujitsu Kozuchi Physical OS」にNVIDIAの「Omniverse」「Isaac」を組み合わせ、ロボットを協調制御する基盤を開発。9月末から笠島工場（石川県かほく市）に実装し、2026年内に各社へ展開・オープンな基盤として提供する。同日NVIDIAはフィジカルAI共同プロジェクト「Cosmos Coalition」の日本拡大も発表し、日立製作所・本田技術研究所・ソフトバンクなどが参画する。★日本のロボット大手が一斉にNVIDIA陣営でフィジカルAIに乗った——製造業の現場が次の主戦場になる。"
+        },
+        {
+          "topic_flag": "業界動向",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
+          "time": "2026-07-15",
+          "title": "Microsoft、営業にOpenAI・Anthropic製品を否定的に比較させる方針と報道 — CopilotをClaudeと直接比較",
+          "summary": "Bloomberg報道（TechCrunchが7月15日に紹介）によると、Microsoftは新会計年度の社内戦略会議で、営業チームがOpenAI・Google・Anthropicの製品を自社製品と否定的に比較して売り込む方針を示した。Copilot担当EVPはOfficeアプリ内でのClaudeを「遅く、精度が低く、適切なセキュリティ統合を欠く」と直接比較。WordやExcelから両社モデルを自社モデルに置き換える動きに続くもので、長年モデル供給を頼ってきた相手を名指しで標的にする形だ。★Microsoftとモデル供給2社の関係悪化が、営業現場のトークまで下りてきた。"
+        }
+      ]
     },
     {
-     "topic_flag": "新モデル",
-     "source_name": "Anthropic（公式Pricing）",
-     "source_url": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-     "time": "2025-10-01",
-     "title": "Anthropic、小型モデル Claude Haiku 4.5 — 入力$1・出力$5で最上位 Opus 4.8 の1/5",
-     "summary": "Claude Haiku 4.5 は100万トークンあたり入力$1・出力$5（公式価格ページで確認）。最上位の Claude Opus 4.8（入力$5・出力$25）に対し入力・出力とも1/5の価格で、コンテキスト長は20万トークン。高頻度・低コストで回したい処理向けの位置づけ。"
-    },
-    {
-     "topic_flag": "キャンペーン",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000195/",
-     "time": "2026-07-15",
-     "title": "OpenAI、「GPT-5.6」の感想をXに投稿で100ドル分クレジット — 先着1万人・Anthropicを意識",
-     "summary": "OpenAIが最新モデル「GPT-5.6」の感想や生成物をXに投稿した有料プラン（Go／Plus／Pro）ユーザーへ、ChatGPTで使える100ドル分のクレジットを先着1万人に配るキャンペーンを始めた。幹部ティボ・ソティオ氏が7月15日にXで告知し、「Claudeの解約画面を送ればCodexを1カ月無料に」というユーザー投稿を引用するなどAnthropicとの競争を強く意識。特設サイトはChatGPTの新機能「Sites」で作られ同機能の宣伝も兼ねる。なぜ重要か: モデル競争が性能・価格だけでなく“利用者の囲い込み”施策にまで及び始めた（ITmedia AI＋、2026年7月15日）。"
-    },
-    {
-     "topic_flag": "安全性",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000199/",
-     "time": "2026-07-15",
-     "title": "OpenAI、自動レッドチームAI「GPT-Red」発表 — 未知シナリオの攻撃成功率84%（人間の専門家は13%）",
-     "summary": "OpenAIは7月15日（現地時間）、自社モデルの弱点を自動で探すレッドチーミング専用モデル「GPT-Red」を発表した。自己対戦型の強化学習で攻撃側と防御側を同時に訓練し、未知シナリオの間接プロンプトインジェクションでは人間の専門家の成功率13%に対し84%で攻撃に成功。この攻撃データで敵対的訓練した「GPT-5.6 Sol」は、最難関ベンチマークの失敗率を4カ月前の最良モデルの6分の1に減らした。GPT-Red自体は悪用防止のため社内専用とする（ITmedia AI＋）。"
-    },
-    {
-     "topic_flag": "新モデル",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000197/",
-     "time": "2026-07-15",
-     "title": "Thinking Machines、初のAIモデル「Inkling」公開 — 総パラメータ9750億のオープンウェイト、Apache 2.0で全公開",
-     "summary": "元OpenAI CTOミラ・ムラティ氏のThinking Machines Labが7月15日（現地時間）、初のAIモデル「Inkling」を発表した。テキスト・画像・音声を入力できる総パラメータ9750億（アクティブ410億）のMoE型で、最大100万トークン対応・45兆トークンで事前学習し、Apache 2.0で全ウェイトをHugging Faceに公開。同社は「現在利用できる最強のモデルではない」と明言し、自社のファインチューニング基盤Tinker（期間限定50%割引）で「自分のものにできる」カスタマイズ前提の基盤と位置づけ、軽量版Inkling-Small（総2760億・アクティブ120億）のプレビューも公開した。★フロンティア性能の競争から降り、「カスタマイズできるオープンウェイト」に賭ける初の大型参入。"
+      "id": "kisei",
+      "name": "規制・制度",
+      "jp": "法律・ガイドライン・著作権",
+      "items": [
+        {
+          "topic_flag": "権利",
+          "source_name": "The Verge",
+          "source_url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool",
+          "time": "2026-07-17",
+          "title": "TikTok、AIによる「なりすまし肖像」の検出ツールをテスト — クリエイターが自分のAI生成なりすましを報告可能に",
+          "summary": "TikTokは、AIで生成された自分の“肖像（なりすまし）”をスキャンして検出し、無断のAI生成コンテンツやアカウントを運営に報告できるオプトインのツールを、まず米国の一部クリエイター向けにテスト開始した（The Verge報道）。利用にはJumio社によるリアルタイムの自撮りスキャンとID確認が必要で、TikTokは「ID書類は保持せず、顔情報は肖像の照合と無断利用の特定にのみ使う」と説明する。★YouTubeも同種のツールを最近すべての成人ユーザーに開放しており、生成AI時代の“肖像権保護”機能がプラットフォーム間で標準化しつつある（The Verge、2026年7月17日）。"
+        },
+        {
+          "topic_flag": "訴訟",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
+          "time": "2026-07-17",
+          "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影",
+          "summary": "TechCrunch（Equityポッドキャスト、2026年7月17日）によると、Appleは先週金曜（7月10日）、OpenAIを企業秘密（トレードシークレット）侵害で提訴した。訴状はOpenAIの最高ハードウェア責任者にまで及ぶ不正のパターンを主張し、400人を超える元Apple社員が現在OpenAIで働いていると述べる。OpenAIの反応は慎重に言葉を選んだもので、同社が年内にもIPO（新規株式公開）を検討していると報じられる中、番組ホスト陣は「タイミングは最悪」とし、訴訟がOpenAIのハードウェア事業とIPOの時期に影を落としかねないと分析した。★『利用者はAI企業に自分のデータをどこまで預けてよいか』という今週の底流とも重なる論点。"
+        },
+        {
+          "topic_flag": "権利",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
+          "time": "2026-07-17",
+          "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflare連携でrobots.txt無視のスクレイパーを遮断",
+          "summary": "TechCrunch（2026年7月17日）によると、クリエイター支援サイトPatreonは、robots.txtで「学習しないで」と依頼する従来方式をやめ、CloudflareのAI Crawl Control技術と連携してAI学習用クローラーを実際に遮断し始めた。検証では対象クローラーの週次アクセス試行が「数千回からゼロ」に落ち、robots.txtを無視した収集の実態が浮かんだ（同社ブログ「同意は、スクレイパーが行儀よく振る舞うかどうかに左右されるべきではない」）。ただしユーザーをPatreonへ送り返す検索インデックス目的のボットは引き続き許可する方針で、クリエイターのコンテンツをAI学習からどう守るかを巡る攻防の一例。"
+        },
+        {
+          "topic_flag": "政策",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news107.html",
+          "time": "2026-07-16",
+          "title": "経産省、国産フィジカルAIの新プロジェクト「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」",
+          "summary": "ITmedia NEWS（2026年7月16日）によると、経済産業省は7月16日、フィジカルAI向けの国産マルチモーダル基盤モデル構築を目指す「FRONTia Project」を開始した。国内44社が共同出資するNoetraと産業技術総合研究所を中心に、2030年での「実世界ネイティブAI」実現が目標。キックオフには赤沢経産相とNVIDIAのジェンスン・フアンCEOが登壇し、フアン氏は「日本は国家の知性をアウトソースすることはできない。ジャパンAIを所有し、改善し、守り、展開しなければならない」と述べた。★同日のNoetra本格始動・富士通×ロボット大手3社協業と合わせ、日本の「フィジカルAI」国家戦略が一気に立ち上がった一日。"
+        },
+        {
+          "topic_flag": "法律",
+          "source_name": "The Verge",
+          "source_url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
+          "time": "2026-07-16",
+          "title": "EU、GoogleにAndroidと検索データの「ライバル開放」を命令 — 違反なら世界売上の最大10%の制裁金",
+          "summary": "The Verge（2026年7月16日）によると、欧州委員会はデジタル市場法（DMA）に基づく2件の決定で、①AndroidでライバルのAIアシスタントにGeminiと同等のシステム機能・データアクセスを与えること、②競合検索エンジンやAIチャットボット（検索エンジンとして機能しうるものを含む）にGoogle検索が生むデータへのアクセスを認めることをGoogleに求めた。従わない場合は全世界年間売上高の最大10%の制裁金。ユーザーがChatGPTやClaude等を「深く統合されたアシスタント」としてGeminiの代わりに選べるようになる可能性がある。★米反トラスト判決の検索データ共有命令と呼応し、スマホのAIアシスタントの土俵が端末レベルで開きうる規制。"
+        },
+        {
+          "topic_flag": "法律",
+          "source_name": "e-Gov 法令検索（法律本文）",
+          "source_url": "https://laws.e-gov.go.jp/law/507AC0000000053",
+          "time": "2025-09-01 施行",
+          "title": "AI推進法が施行 — 国に「人工知能戦略本部」、政府は基本計画を策定",
+          "summary": "「人工知能関連技術の研究開発及び活用の推進に関する法律」（令和7年法律第53号）。2025年6月4日公布・9月1日施行。基本理念を定め、内閣に本部長を内閣総理大臣とする人工知能戦略本部を設置し、政府が人工知能基本計画を閣議決定して推進する枠組み。罰則で縛る規制型ではなく、研究開発と活用の“推進”を軸にした基本法。"
+        },
+        {
+          "topic_flag": "著作権",
+          "source_name": "文化庁（AIと著作権について）",
+          "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
+          "time": "2024-03-15",
+          "title": "文化庁「AIと著作権に関する考え方について」— 学習と生成を分けて整理",
+          "summary": "文化審議会 著作権分科会 法制度小委員会が2024年3月15日に取りまとめ。AIの“学習段階”は著作権法30条の4（情報解析のための利用）で原則許容されうる一方、「享受」目的が併存する場合や著作権者の利益を不当に害する場合は権利制限が及ばないとする。“生成・利用段階”は通常の著作権侵害と同じ枠組みで判断する、という基本的な考え方を示した。"
+        },
+        {
+          "topic_flag": "実務指針",
+          "source_name": "文化庁（AIと著作権について）",
+          "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
+          "time": "2024-07-31",
+          "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表",
+          "summary": "2024年7月31日公表。上記「考え方」を、AIの開発・提供者と、利用者、クリエイター/権利者がそれぞれ実務で使えるよう、チェックリスト形式でかみ砕いた解説資料。制度そのものの変更ではなく、判断の当てはめ方を示す実務向けのガイダンス。"
+        },
+        {
+          "topic_flag": "ガイドライン",
+          "source_name": "経済産業省（AI事業者ガイドライン）",
+          "source_url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html",
+          "time": "2024-04-19（初版）／現行 第1.1版",
+          "title": "経産省・総務省「AI事業者ガイドライン」— 開発・提供・利用の3者に共通指針",
+          "summary": "従来3つに分かれていたAI関連ガイドラインを統合し、2024年4月19日に初版（第1.0版）を公表。その後 第1.1版に改定（本ページで現行版を確認）。AIの開発者・提供者・利用者という立場ごとに、人間中心・安全性・公平性・透明性・アカウンタビリティなどの原則と実践を示す“ソフトロー”。法的義務ではなく自主的取組の指針という位置づけ。"
+        },
+        {
+          "topic_flag": "個人情報",
+          "source_name": "個人情報保護委員会（報道発表資料）",
+          "source_url": "https://www.ppc.go.jp/news/press/2023/230602kouhou/",
+          "time": "2023-06-02",
+          "title": "個人情報保護委員会、生成AI利用の注意喚起 — 事業者・行政・利用者の3者へ、OpenAIには要請",
+          "summary": "個人情報保護委員会が2023年6月2日に公表。(1)個人情報取扱事業者は、個人情報を含むプロンプトを入力する際に利用目的の範囲内かを確認すること、本人の同意なく個人データを入力して応答結果の出力以外（機械学習等）に使われると個人情報保護法違反となる恐れがあるため、提供事業者が学習に使わないこと等を十分に確認すること、(2)行政機関等も同様、(3)一般の利用者は、入力した個人情報が機械学習に使われ不正確に出力されうるリスクや応答自体が不正確な可能性を踏まえ、規約・プライバシーポリシーを確認して判断すること、と注意喚起。あわせてChatGPTを提供するOpenAIに対し、個人情報保護法147条に基づき、本人同意なく要配慮個人情報を取得しないこと・利用目的を日本語で通知/公表することを要請した。"
+        },
+        {
+          "topic_flag": "制度提案",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000192/",
+          "time": "2026-07-14",
+          "title": "Google DeepMindのハサビスCEO、米国主導の「フロンティアAI標準化機関」設立を提唱",
+          "summary": "Google DeepMindのデミス・ハサビスCEOが7月14日（現地時間）、自身のSubstackでフロンティアAIの枠組みを論じるエッセイを公開し、金融のFINRAをモデルにした官民の『フロンティアAI標準化機関』の設立を提案した（ITmedia AI＋）。評価プロトコルを策定し、フロンティアラボは公開の最大30日前に自主的にモデルを提出してレビューを受ける仕組みで、実効性が示せれば審査通過を米国市場での展開要件にすることも視野に入れるという。★資金は主に業界が拠出し、深刻時にはラボ間の開発減速の調整も担うとした自主規制型の構想。"
+        },
+        {
+          "topic_flag": "安全性",
+          "source_name": "＠IT",
+          "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/14/news031.html",
+          "time": "2026-07-14",
+          "title": "AIコーディングエージェントが「ホームディレクトリ全削除」— Docker、境界なきシェル実行を警告",
+          "summary": "＠ITが、AIコーディングエージェント（Claude Code／Cursor／Replit等）が開発者本人の権限でシェルを直接実行し、確認なしの「rm -rf ~/」でホームディレクトリを丸ごと消した実例を解説した（原典はDockerの連載「Coding Agent Horror Stories」第2弾・2026年6月1日）。Redditで報告された2025年12月の事例など複数のインシデントに共通するのは、AIの賢さではなく“推論と実行の間に承認の境界がない”構造だと指摘。対策として、エージェントをmicroVMで隔離する「Docker Sandboxes」が提案されている。なぜ重要か: Claude Code等を業務で使う開発現場に直結する安全設計の教訓（＠IT、2026年7月14日）。"
+        },
+        {
+          "topic_flag": "著作権",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
+          "time": "2026-07-15",
+          "title": "AI作曲Sunoにハッキング — 「YouTube等から学習音源をスクレイピング」を示すソースコード流出と報道",
+          "summary": "AI音楽生成Sunoがハッキングを受け、YouTube MusicやDeezer、Genius、ポッドキャストRSSなどから数十年分の音源を収集していたことを示すソースコードをハッカーが閲覧したと404 Mediaが報じた。Sunoは「公開されている音楽ファイル」の学習はフェアユースと主張してきたが、提訴中の大手レーベル側はYouTubeの保護回避はDMCA違反だと主張する。2025年11月の侵害では顧客のメール・電話番号・カード番号の一部も漏えいしたが、Sunoは顧客に通知していなかった（TechCrunch）。"
+        }
+      ]
     }
-   ]
-  },
-  {
-   "id": "tool",
-   "name": "ツール・プロダクト",
-   "jp": "新しいAIツールの登場・更新",
-   "items": [
-    {
-     "topic_flag": "ロボット",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/",
-     "time": "2026-07-17",
-     "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル",
-     "summary": "二足歩行ロボの先行企業Agility Roboticsが、TeslaがOptimusを製造する予定の米フリーモントの近くに6万平方フィートの訓練施設を新設する。同社のロボ「Digit」はAmazon・GXO・Schaeffler・トヨタ（カナダ工場）などで搬送業務にすでに稼働して売上を計上し、契約受注は3億ドル、年内に逆さ合併で「純粋ヒューマノイド」初の上場企業を目指す。★共同創業者は「安全にかかわる系統は生成AIを通さない」と述べ、安全は決定論・多様な作業の実装は生成AIという分業が商用化の型になりつつある。"
-    },
-    {
-     "topic_flag": "資金調達",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/17/why-the-first-gpu-financiers-are-turning-to-inference-chips-in-a-400-million-deal/",
-     "time": "2026-07-17",
-     "title": "推論特化チップに4億ドルの担保ローン — 投資家Upper90「GPUの次」に賭ける",
-     "summary": "TechCrunch（2026年7月17日）によると、元ゴールドマン・サックスのクオンツ出身ビリー・リビー氏率いる投資会社Upper90が、推論特化の新興クラウド「General Compute」に4億ドルの“チップ担保”融資を実行した。同社はIntel出資のSambaNova製推論チップ「SN50」でネオクラウドを構築中で、水冷不要・省電力ゆえGPUより速く各地のデータセンターへ展開でき、GPUベース比16倍の推論速度をうたう。★高騰するAIの利用料金への市場の答えが「フロンティアLLMより安くオープンソースを回す推論インフラ」へ向かい始めた、という相場のシグナル。"
-    },
-    {
-     "topic_flag": "新機能",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/",
-     "time": "2026-07-16",
-     "title": "Roblox、スマホからテキスト1文でゲームを作れる「Build」を発表 — 7月28日からNZで公開アルファ",
-     "summary": "Robloxは7月16日、モバイルアプリからテキストプロンプトだけで基本的なゲームを生成できる新機能「Build」を発表した（TechCrunch）。オープンソースと自社製を組み合わせた複数のAIモデルが、ゲームメカニクス・環境・キャラクター・ビジュアル・音まで生成する。7月28日からニュージーランドの9歳以上（年齢確認済み）で公開アルファを開始し、16歳以上は全世界への公開も可能。★GDC調査では業界人の52%が「生成AIは業界に悪影響」と回答 — Robloxはプレイヤー継続率ベースのランキングで「遊ばれないAIゲームは表に出ない」設計で低品質量産批判に対抗する。"
-    },
-    {
-     "topic_flag": "新機能",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/",
-     "time": "2026-07-16",
-     "title": "Google Vids、本人そっくりの「パーソナルAIアバター」動画に対応 — Gemini Omni統合・SynthID透かし入り",
-     "summary": "Googleは7月16日、Workspaceの動画作成ツール「Vids」の大型更新を発表した（TechCrunch）。本人の姿を学習したカスタムAIアバターに台本を読ませる動画が作れるほか、マルチモーダルモデル「Gemini Omni」の統合でプロンプト＋参照画像からの動画生成と段階的な編集に対応。アバターは本人のGoogleアカウントに紐付き、不可視のSynthID透かしが入る（18歳以上・一部地域限定）。★プレゼン補助だったVidsが動画作成プラットフォームに拡張 — アカウント紐付け＋透かしの「なりすまし防止つきアバター」は職場利用の型になる。"
-    },
-    {
-     "topic_flag": "新機能",
-     "source_name": "ITmedia NEWS",
-     "source_url": "https://www.itmedia.co.jp/news/articles/2607/17/news061.html",
-     "time": "2026-07-16",
-     "title": "Google検索「AIモード」、検索結果から離れずアプリで作業完了 — まずCanva・YouTube Music・Instacart",
-     "summary": "Googleは7月16日（現地時間）、Google検索の「AIモード」で外部アプリと直接連携できる機能の提供開始を発表、米国で今週から順次展開する。プレイリストをAIモードで作ってそのままYouTube Musicに保存、買い物リストの食材をInstacartのカートへ直接追加など、検索結果から離れずにタスクを完了できる。「Gemini」アプリの連携機能を検索本体へ拡大した形で、ユーザーの文脈を踏まえる「Personal Intelligence」との組み合わせでパーソナライズ回答も提示する。★検索ページ自体がタスク完了の場になる流れで、「クリックしてサイト訪問」というSEOの前提がさらに崩れる（ITmedia NEWS、2026年7月17日）。"
-    },
-    {
-     "topic_flag": "ツール更新",
-     "source_name": "The Verge",
-     "source_url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm",
-     "time": "2026-07-16",
-     "title": "Google、NotebookLMを「Gemini Notebook」に改名 — 単独アプリのまま、検索のAI Modeにも統合へ",
-     "summary": "The Verge（2026年7月16日）によると、GoogleはAIノートアプリ「NotebookLM」を「Gemini Notebook」に改名すると7月16日に発表した。単独アプリとして残る一方、GeminiとGoogle検索への統合を深め、検索のAI Modeからノートブックにアクセスできるようになる予定。★浸透してきたNotebookLMブランドを捨ててでも「AIはすべてGeminiに束ねる」というGoogleの方針徹底を示す動き。"
-    },
-    {
-     "topic_flag": "新サービス",
-     "source_name": "The Verge",
-     "source_url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration",
-     "time": "2026-07-16",
-     "title": "Claude、1Passwordの資格情報で「代わりにログイン」可能に — AIエージェントにパスワードは見せない設計",
-     "summary": "The Verge（2026年7月16日）によると、Anthropicと1Passwordの連携「1Password for Claude」の提供が始まった。ブラウザで作業するClaudeが保管庫の資格情報を使ってサイトにログインでき、AIがブラウザを操作する間は保管庫が自動ロックされ、そのタスクに明示的に許可された資格情報以外には触れない。まずMac向けで、両社のデスクトップアプリとブラウザ拡張が必要。支払いカード・身元情報への対応は後日。★「エージェントが人の代わりに操作する」時代の認証の型（AIに秘密を渡さず権限だけ貸す）を大手が示した例。"
-    },
-    {
-     "topic_flag": "製品動向",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/",
-     "time": "2026-07-16",
-     "title": "Apple Intelligence、中国での提供が承認 — Alibaba「Qwen」を統合、Baiduも協業を確認",
-     "summary": "TechCrunch（2026年7月16日）によると、中国のネット規制当局（国家インターネット情報弁公室）がAppleのAIサービスを承認したとロイターが報じた。AlibabaのAIモデル「Qwen」をiOS・iPadOS・macOS・visionOSに統合する契約が背景で、Baiduの広報も中国ユーザー向けApple Intelligence機能の開発でAppleと協業中とTechCrunchに確認した。★「海外AIが入れない規制市場×現地モデル統合」という型で、世界最大級のスマホ市場のAI競争が動き出す。"
-    },
-    {
-     "topic_flag": "新サービス",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/14/2000000190/",
-     "time": "2026-07-14",
-     "title": "Dropbox、Anthropic「Claude」との連携を開始 — コネクタ＋Cowork／Code向けプラグインの3種を同時提供",
-     "summary": "ITmedia AI＋（2026年7月14日）によると、Dropbox Japanは7月14日にClaudeとの連携を開始し、Claude向けコネクタ、「Claude Cowork」向けプラグイン、「Claude Code」向けプラグインの3種を同時提供する。Dropbox内のファイル検索・プレビューや、Claudeが生成した資料の保存、フォルダ整理・共有リンク生成までClaude側の画面で完結でき、既存のChatGPT・Geminiとの連携も拡大する。★特定のAIに縛られず「どのAIからでも使えるコンテンツ基盤」を狙う動きで、ストレージがAIのハブになりつつある。"
-    },
-    {
-     "topic_flag": "国内事例",
-     "source_name": "ITmedia MONOist",
-     "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/15/news045.html",
-     "time": "2026-07-15",
-     "title": "富士通、NVIDIA「Rubin」対応の国産AIサーバを2026年秋に製造へ — ソブリンAI需要に石川・笠島工場で一貫生産",
-     "summary": "MONOist（2026年7月15日）によると、富士通は「Fujitsu Experience Day 2026」で国産ハイエンドAIサーバを公開し、2026年秋にNVIDIA最新GPU「Rubin」対応の新モデルの製造を始めると明かした。現行機「PRIMERGY GX2550 M8s」はIntel Xeon 6を2基・NVIDIA Blackwell世代GPUを最大8基搭載でき、スパコン「富岳」の技術を持つ笠島工場（石川県かほく市）で基板組立からファーム焼き込みまで国内一貫生産する。★機密データを国外に出せない製造業・官公庁向けの「ソブリンAI」インフラで、バックドア混入を防ぐ製造の透明性を売りにした国産の勝ち筋。"
-    },
-    {
-     "topic_flag": "ツール更新",
-     "source_name": "Cursor（公式Changelog）",
-     "source_url": "https://www.cursor.com/changelog",
-     "time": "2026-07-10",
-     "title": "Cursor 3.11 公開 — メインのエージェント作業を止めずに脇道を調べる「サイドチャット」と会話全文検索を追加",
-     "summary": "AIコードエディタCursorのバージョンV3.11が2026年7月10日に公開された（公式Changelog）。目玉は「サイドチャット」で、メインのエージェント会話を中断せずに、その脇で別の会話を並行して開ける。/side・/btw かチャット上部の＋ボタンで作成でき、メインの文脈を引き継いだ独立の会話として残り、後から@メンションでメインへ結果を戻せる。既定では読み取り・検索・回答に集中する設計で、「本筋の作業を走らせたまま、別案を調べたり判断を確認したりする」用途を想定している。あわせて、Agents Windowのコマンドパレット（Cmd+K）から過去のエージェント会話の本文まで横断検索する会話検索（ローカル索引で数千会話に対応）と、会話内検索（Cmd+F）、プロジェクト／リポジトリ選択画面の刷新も入った。"
-    },
-    {
-     "topic_flag": "資金調達",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/15/indian-ai-coding-startup-emergent-becomes-a-unicorn-just-over-a-year-after-launch/",
-     "time": "2026-07-15",
-     "title": "AIコーディングのEmergent、1.3億ドル調達でユニコーンに — 評価額15億ドル・年換算売上1.2億ドル",
-     "summary": "インドのAIコーディング新興Emergentが、Creaegis主導のシリーズCで1.3億ドルを調達し、ポストマネー評価額15億ドル（半年で5倍）に達した（TechCrunch、2026年7月15日）。累計調達は2.3億ドル、年換算売上（ARR）は1.2億ドル・有料顧客は20万超で、Lovable・Replit・Cursorがひしめく市場で起業家や中小企業を主な標的にする。★AIコーディングは競争が激しくても資金と売上が急拡大しており、参入の中心が『開発者向け』から『非エンジニアの事業立ち上げ』へ広がっている。"
-    },
-    {
-     "topic_flag": "資金調達",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls/",
-     "time": "2026-07-15",
-     "title": "音声AIのRimeが2400万ドル調達 — 自前の録音データで“ブランド名や専門用語の発音”に特化",
-     "summary": "企業の電話応対（営業・サポート）向け音声AIを手がける米Rimeが、M13 Ventures主導のシリーズAで2400万ドルを調達した（TechCrunch、2026年7月15日）。Web上の音声を集めるのではなく自社スタジオで会話データを録音し、音素ベースの構成でブランド名・業界用語の発音を作り込むのが特徴。★ElevenLabsやDeepgramらがひしめく音声AIでも、企業はなお旧来のIVRを好むとされ、精度と“作り込みの手間の少なさ”が競争軸になっている。"
-    },
-    {
-     "topic_flag": "新サービス",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000193/",
-     "time": "2026-07-14",
-     "title": "Anthropic、米K-12教員向け「Claude for Teachers」を無料提供 — 全50州の学習指導基準に対応、Claude Code/Coworkも",
-     "summary": "Anthropicが7月14日（現地時間）、米国の幼稚園〜高校（K-12）教員向けサービス「Claude for Teachers」を発表した（ITmedia AI＋）。認証された教員は、Claudeのプレミアム機能・授業づくり用の『スキル』ライブラリ・全50州の学習指導基準にマップされた教材へ無料でアクセスでき、エージェント機能のClaude CodeやCoworkで出席データの分析や定型業務の自動化もできる。データはモデル学習に使わずFERPA準拠で、2027年6月30日までの登録で1年間無料。★学校・学区向けプランは近日提供予定。"
-    },
-    {
-     "topic_flag": "ツール更新",
-     "source_name": "ITmedia キーマンズネット",
-     "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/15/news021.html",
-     "time": "2026-07-15",
-     "title": "ナレッジセンス、AIエージェント「Cowork」にデスクトップ操作機能 — “RPA負債”の解消狙う",
-     "summary": "法人向け生成AI「ChatSense」を提供するナレッジセンスが、ブラウザ操作AIエージェント「Cowork」に、Windowsのローカルファイルやデスクトップアプリを自然言語の指示で操作できる「デスクトップ機能」の追加を発表した。事前にシナリオを作らずAIが画面を認識して操作するため、画面変更で止まりやすい従来RPAの保守負担（RPA負債）を抑える狙い。ChatSenseは東証プライム企業を含む500社超が導入済みで、ベータ版を月額・1人単位から提供する。なぜ重要か: AIエージェント型RPAが国産SaaSでも実装段階に入り、定型業務の自動化対象がブラウザ外へ広がっている（キーマンズネット、2026年7月15日）。"
-    },
-    {
-     "topic_flag": "製品動向",
-     "source_name": "ITmedia NEWS",
-     "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news055.html",
-     "time": "2026-07-16",
-     "title": "OpenAI、初のハードウェア「Codex Micro」を230ドルで発売 — Codex専用キーパッド",
-     "summary": "OpenAIは7月15日（現地時間）、AIコーディングツール「Codex」専用キーパッド「Codex Micro」を230ドル（約3万7000円）で発売した。同社初のハードウェア製品で、キーボードメーカーWork Louderと共同開発し、エージェントの状態を示すLEDキー6つや推論レベルのダイヤル、ワークフロー切替のジョイスティックを備える。CEOサム・アルトマン氏が年内発売を予告する買収企業ioとのAIデバイスとは別物で、AIツールが物理デバイスへ広がり始めた節目。"
-    },
-    {
-     "topic_flag": "製品動向",
-     "source_name": "MONOist",
-     "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/16/news052.html",
-     "time": "2026-07-16",
-     "title": "NVIDIA、組み込みAIボード「Jetson Thor」に省メモリ版 T3000／T2000 を追加",
-     "summary": "NVIDIAは2026年7月16日、組み込みAIボード「Jetson AGX Thor」の量産モジュールに、メモリと消費電力を抑えた「Jetson T3000」「Jetson T2000」を追加すると発表した。T3000はFP4のAI処理性能865TFLOPS・メモリ容量を最上位T5000（128GB）の4分の1の32GBとし、消費電力も約半分に抑えた。メモリ価格が高騰する中、エッジ／ロボット向けにコストを抑えた選択肢を広げる狙い。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia NEWS",
-     "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news101.html",
-     "time": "2026-07-16",
-     "title": "国産AI開発企業「Noetra」が本格始動 — ソニー・SB・NECなど44社出資、NVIDIA「Rubin」2万7500基の計算基盤へ",
-     "summary": "国内大手44社（ソニーグループ、ソフトバンク、NEC、本田技研工業など）が共同出資するAI開発企業Noetraが7月16日、本格始動を発表した。産総研やPreferred Networksなどから技術者を集め、2026年度に言語の基盤モデル、28年度からマルチモーダル基盤モデル、30年度には物理法則を理解する「実世界ネイティブAI」を目指す。27年4月にはNVIDIAの最新GPU「Rubin」約2万7500基を搭載した計算基盤の構築を始め、28年6月に稼働予定（ITmedia NEWS）。"
-    },
-    {
-     "topic_flag": "新サービス",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000200/",
-     "time": "2026-07-16",
-     "title": "Google「Gemini Spark」が日本上陸 — 24時間クラウドで働くパーソナルAIエージェント、まずUltraから",
-     "summary": "Googleは7月16日、パーソナルAIエージェント「Gemini Spark」の日本提供を開始した。まず月額1万4500円〜の「Ultra」加入者向けβ版で、基盤はGemini 3.5とエージェント開発基盤「Antigravity」。GmailやカレンダーなどWorkspaceとパートナーアプリ、カスタムMCPに接続し、端末の電源が切れていてもクラウド上で24時間タスクを実行する。担当副社長はPro（月額2900円）への拡大も示唆した（ITmedia AI＋）。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000201/",
-     "time": "2026-07-16",
-     "title": "Anthropic、「Claude」の利用制限を全リセット — OpenAIもCodex／ChatGPT Workで即応酬、2度目の“リセット合戦”",
-     "summary": "Anthropicは7月16日（日本時間）、Claudeの5時間および1週間の利用制限をリセットしたと発表。直後にOpenAI幹部がX上でChatGPT WorkとCodexの週次利用制限のリセットを表明した。両社は7月9日にも同様のリセットを実施しており、これで2度目の“リセット合戦”。★ユーザー獲得競争が「値下げ」でなく「利用制限緩和の応酬」という形で表面化している。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/16/2000000203/",
-     "time": "2026-07-16",
-     "title": "富士通、川崎重工・ファナック・安川電機と「フィジカルAI」で協業 — NVIDIAは「Cosmos Coalition」を日本へ拡大",
-     "summary": "富士通は7月16日、川崎重工業・ファナック・安川電機とフィジカルAI開発での協業を発表した。次世代CPU「FUJITSU-MONAKA」やAI向けOS「Fujitsu Kozuchi Physical OS」にNVIDIAの「Omniverse」「Isaac」を組み合わせ、ロボットを協調制御する基盤を開発。9月末から笠島工場（石川県かほく市）に実装し、2026年内に各社へ展開・オープンな基盤として提供する。同日NVIDIAはフィジカルAI共同プロジェクト「Cosmos Coalition」の日本拡大も発表し、日立製作所・本田技術研究所・ソフトバンクなどが参画する。★日本のロボット大手が一斉にNVIDIA陣営でフィジカルAIに乗った——製造業の現場が次の主戦場になる。"
-    },
-    {
-     "topic_flag": "業界動向",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/",
-     "time": "2026-07-15",
-     "title": "Microsoft、営業にOpenAI・Anthropic製品を否定的に比較させる方針と報道 — CopilotをClaudeと直接比較",
-     "summary": "Bloomberg報道（TechCrunchが7月15日に紹介）によると、Microsoftは新会計年度の社内戦略会議で、営業チームがOpenAI・Google・Anthropicの製品を自社製品と否定的に比較して売り込む方針を示した。Copilot担当EVPはOfficeアプリ内でのClaudeを「遅く、精度が低く、適切なセキュリティ統合を欠く」と直接比較。WordやExcelから両社モデルを自社モデルに置き換える動きに続くもので、長年モデル供給を頼ってきた相手を名指しで標的にする形だ。★Microsoftとモデル供給2社の関係悪化が、営業現場のトークまで下りてきた。"
-    }
-   ]
-  },
-  {
-   "id": "kisei",
-   "name": "規制・制度",
-   "jp": "法律・ガイドライン・著作権",
-   "items": [
-    {
-     "topic_flag": "訴訟",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/",
-     "time": "2026-07-17",
-     "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影",
-     "summary": "TechCrunch（Equityポッドキャスト、2026年7月17日）によると、Appleは先週金曜（7月10日）、OpenAIを企業秘密（トレードシークレット）侵害で提訴した。訴状はOpenAIの最高ハードウェア責任者にまで及ぶ不正のパターンを主張し、400人を超える元Apple社員が現在OpenAIで働いていると述べる。OpenAIの反応は慎重に言葉を選んだもので、同社が年内にもIPO（新規株式公開）を検討していると報じられる中、番組ホスト陣は「タイミングは最悪」とし、訴訟がOpenAIのハードウェア事業とIPOの時期に影を落としかねないと分析した。★『利用者はAI企業に自分のデータをどこまで預けてよいか』という今週の底流とも重なる論点。"
-    },
-    {
-     "topic_flag": "権利",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/",
-     "time": "2026-07-17",
-     "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflare連携でrobots.txt無視のスクレイパーを遮断",
-     "summary": "TechCrunch（2026年7月17日）によると、クリエイター支援サイトPatreonは、robots.txtで「学習しないで」と依頼する従来方式をやめ、CloudflareのAI Crawl Control技術と連携してAI学習用クローラーを実際に遮断し始めた。検証では対象クローラーの週次アクセス試行が「数千回からゼロ」に落ち、robots.txtを無視した収集の実態が浮かんだ（同社ブログ「同意は、スクレイパーが行儀よく振る舞うかどうかに左右されるべきではない」）。ただしユーザーをPatreonへ送り返す検索インデックス目的のボットは引き続き許可する方針で、クリエイターのコンテンツをAI学習からどう守るかを巡る攻防の一例。"
-    },
-    {
-     "topic_flag": "政策",
-     "source_name": "ITmedia NEWS",
-     "source_url": "https://www.itmedia.co.jp/news/articles/2607/16/news107.html",
-     "time": "2026-07-16",
-     "title": "経産省、国産フィジカルAIの新プロジェクト「FRONTia Project」始動 — フアンCEO「日本はジャパンAIを構築しなければならない」",
-     "summary": "ITmedia NEWS（2026年7月16日）によると、経済産業省は7月16日、フィジカルAI向けの国産マルチモーダル基盤モデル構築を目指す「FRONTia Project」を開始した。国内44社が共同出資するNoetraと産業技術総合研究所を中心に、2030年での「実世界ネイティブAI」実現が目標。キックオフには赤沢経産相とNVIDIAのジェンスン・フアンCEOが登壇し、フアン氏は「日本は国家の知性をアウトソースすることはできない。ジャパンAIを所有し、改善し、守り、展開しなければならない」と述べた。★同日のNoetra本格始動・富士通×ロボット大手3社協業と合わせ、日本の「フィジカルAI」国家戦略が一気に立ち上がった一日。"
-    },
-    {
-     "topic_flag": "法律",
-     "source_name": "The Verge",
-     "source_url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma",
-     "time": "2026-07-16",
-     "title": "EU、GoogleにAndroidと検索データの「ライバル開放」を命令 — 違反なら世界売上の最大10%の制裁金",
-     "summary": "The Verge（2026年7月16日）によると、欧州委員会はデジタル市場法（DMA）に基づく2件の決定で、①AndroidでライバルのAIアシスタントにGeminiと同等のシステム機能・データアクセスを与えること、②競合検索エンジンやAIチャットボット（検索エンジンとして機能しうるものを含む）にGoogle検索が生むデータへのアクセスを認めることをGoogleに求めた。従わない場合は全世界年間売上高の最大10%の制裁金。ユーザーがChatGPTやClaude等を「深く統合されたアシスタント」としてGeminiの代わりに選べるようになる可能性がある。★米反トラスト判決の検索データ共有命令と呼応し、スマホのAIアシスタントの土俵が端末レベルで開きうる規制。"
-    },
-    {
-     "topic_flag": "法律",
-     "source_name": "e-Gov 法令検索（法律本文）",
-     "source_url": "https://laws.e-gov.go.jp/law/507AC0000000053",
-     "time": "2025-09-01 施行",
-     "title": "AI推進法が施行 — 国に「人工知能戦略本部」、政府は基本計画を策定",
-     "summary": "「人工知能関連技術の研究開発及び活用の推進に関する法律」（令和7年法律第53号）。2025年6月4日公布・9月1日施行。基本理念を定め、内閣に本部長を内閣総理大臣とする人工知能戦略本部を設置し、政府が人工知能基本計画を閣議決定して推進する枠組み。罰則で縛る規制型ではなく、研究開発と活用の“推進”を軸にした基本法。"
-    },
-    {
-     "topic_flag": "著作権",
-     "source_name": "文化庁（AIと著作権について）",
-     "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
-     "time": "2024-03-15",
-     "title": "文化庁「AIと著作権に関する考え方について」— 学習と生成を分けて整理",
-     "summary": "文化審議会 著作権分科会 法制度小委員会が2024年3月15日に取りまとめ。AIの“学習段階”は著作権法30条の4（情報解析のための利用）で原則許容されうる一方、「享受」目的が併存する場合や著作権者の利益を不当に害する場合は権利制限が及ばないとする。“生成・利用段階”は通常の著作権侵害と同じ枠組みで判断する、という基本的な考え方を示した。"
-    },
-    {
-     "topic_flag": "実務指針",
-     "source_name": "文化庁（AIと著作権について）",
-     "source_url": "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
-     "time": "2024-07-31",
-     "title": "文化庁「AIと著作権に関するチェックリスト＆ガイダンス」を公表",
-     "summary": "2024年7月31日公表。上記「考え方」を、AIの開発・提供者と、利用者、クリエイター/権利者がそれぞれ実務で使えるよう、チェックリスト形式でかみ砕いた解説資料。制度そのものの変更ではなく、判断の当てはめ方を示す実務向けのガイダンス。"
-    },
-    {
-     "topic_flag": "ガイドライン",
-     "source_name": "経済産業省（AI事業者ガイドライン）",
-     "source_url": "https://www.meti.go.jp/shingikai/mono_info_service/ai_shakai_jisso/20240419_report.html",
-     "time": "2024-04-19（初版）／現行 第1.1版",
-     "title": "経産省・総務省「AI事業者ガイドライン」— 開発・提供・利用の3者に共通指針",
-     "summary": "従来3つに分かれていたAI関連ガイドラインを統合し、2024年4月19日に初版（第1.0版）を公表。その後 第1.1版に改定（本ページで現行版を確認）。AIの開発者・提供者・利用者という立場ごとに、人間中心・安全性・公平性・透明性・アカウンタビリティなどの原則と実践を示す“ソフトロー”。法的義務ではなく自主的取組の指針という位置づけ。"
-    },
-    {
-     "topic_flag": "個人情報",
-     "source_name": "個人情報保護委員会（報道発表資料）",
-     "source_url": "https://www.ppc.go.jp/news/press/2023/230602kouhou/",
-     "time": "2023-06-02",
-     "title": "個人情報保護委員会、生成AI利用の注意喚起 — 事業者・行政・利用者の3者へ、OpenAIには要請",
-     "summary": "個人情報保護委員会が2023年6月2日に公表。(1)個人情報取扱事業者は、個人情報を含むプロンプトを入力する際に利用目的の範囲内かを確認すること、本人の同意なく個人データを入力して応答結果の出力以外（機械学習等）に使われると個人情報保護法違反となる恐れがあるため、提供事業者が学習に使わないこと等を十分に確認すること、(2)行政機関等も同様、(3)一般の利用者は、入力した個人情報が機械学習に使われ不正確に出力されうるリスクや応答自体が不正確な可能性を踏まえ、規約・プライバシーポリシーを確認して判断すること、と注意喚起。あわせてChatGPTを提供するOpenAIに対し、個人情報保護法147条に基づき、本人同意なく要配慮個人情報を取得しないこと・利用目的を日本語で通知/公表することを要請した。"
-    },
-    {
-     "topic_flag": "制度提案",
-     "source_name": "ITmedia AI＋",
-     "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/15/2000000192/",
-     "time": "2026-07-14",
-     "title": "Google DeepMindのハサビスCEO、米国主導の「フロンティアAI標準化機関」設立を提唱",
-     "summary": "Google DeepMindのデミス・ハサビスCEOが7月14日（現地時間）、自身のSubstackでフロンティアAIの枠組みを論じるエッセイを公開し、金融のFINRAをモデルにした官民の『フロンティアAI標準化機関』の設立を提案した（ITmedia AI＋）。評価プロトコルを策定し、フロンティアラボは公開の最大30日前に自主的にモデルを提出してレビューを受ける仕組みで、実効性が示せれば審査通過を米国市場での展開要件にすることも視野に入れるという。★資金は主に業界が拠出し、深刻時にはラボ間の開発減速の調整も担うとした自主規制型の構想。"
-    },
-    {
-     "topic_flag": "安全性",
-     "source_name": "＠IT",
-     "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/14/news031.html",
-     "time": "2026-07-14",
-     "title": "AIコーディングエージェントが「ホームディレクトリ全削除」— Docker、境界なきシェル実行を警告",
-     "summary": "＠ITが、AIコーディングエージェント（Claude Code／Cursor／Replit等）が開発者本人の権限でシェルを直接実行し、確認なしの「rm -rf ~/」でホームディレクトリを丸ごと消した実例を解説した（原典はDockerの連載「Coding Agent Horror Stories」第2弾・2026年6月1日）。Redditで報告された2025年12月の事例など複数のインシデントに共通するのは、AIの賢さではなく“推論と実行の間に承認の境界がない”構造だと指摘。対策として、エージェントをmicroVMで隔離する「Docker Sandboxes」が提案されている。なぜ重要か: Claude Code等を業務で使う開発現場に直結する安全設計の教訓（＠IT、2026年7月14日）。"
-    },
-    {
-     "topic_flag": "著作権",
-     "source_name": "TechCrunch",
-     "source_url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/",
-     "time": "2026-07-15",
-     "title": "AI作曲Sunoにハッキング — 「YouTube等から学習音源をスクレイピング」を示すソースコード流出と報道",
-     "summary": "AI音楽生成Sunoがハッキングを受け、YouTube MusicやDeezer、Genius、ポッドキャストRSSなどから数十年分の音源を収集していたことを示すソースコードをハッカーが閲覧したと404 Mediaが報じた。Sunoは「公開されている音楽ファイル」の学習はフェアユースと主張してきたが、提訴中の大手レーベル側はYouTubeの保護回避はDMCA違反だと主張する。2025年11月の侵害では顧客のメール・電話番号・カード番号の一部も漏えいしたが、Sunoは顧客に通知していなかった（TechCrunch）。"
-    }
-   ]
-  }
- ],
- "as_of": "2026-07-17"
+  ],
+  "as_of": "2026-07-17"
 }

@@ -49,6 +49,7 @@ const CATEGORIES = [
     slugs: [
       "seisei-ai-katsuyo-jirei",
       "sumitomo-shoji-copilot-jirei",
+      "mufg-chatgpt-enterprise-jirei",
     ],
   },
   {

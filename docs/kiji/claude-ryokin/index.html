@@ -207,14 +207,15 @@
     </figure>
 
     <h2 id="api">Claude APIの料金（従量課金の単価）</h2>
-    <p>システムに組み込む場合は API の従量課金です。単価は<b>100万トークン（1M）あたりの米ドル</b>で、入力（送るプロンプト）と出力（生成される返答）で異なります。現行世代3モデルの単価は次のとおりです。</p>
+    <p>システムに組み込む場合は API の従量課金です。単価は<b>100万トークン（1M）あたりの米ドル</b>で、入力（送るプロンプト）と出力（生成される返答）で異なります。最上位は2026年6月に一般提供が始まった最高性能モデル <b>Claude Fable 5</b>（入力$10・出力$50、長時間の自律エージェント向け）で、2026年7月20日からは Max・Team Premium プランの標準機能にもなります。現行世代の主要4モデルの単価は次のとおりです。</p>
     <div class="scroll-wrap">
       <table>
         <thead>
           <tr><th>モデル</th><th class="n">入力 $/1M</th><th class="n">出力 $/1M</th><th class="n">文脈長</th><th class="n">キャッシュ書込/読出 $/1M</th></tr>
         </thead>
         <tbody>
-          <tr><td><b>Claude Opus 4.8</b>（最上位）</td><td class="n">$5</td><td class="n">$25</td><td class="n">1000K</td><td class="n">$6.25 / $0.50</td></tr>
+          <tr><td><b>Claude Fable 5</b>（最上位・最高性能）</td><td class="n">$10</td><td class="n">$50</td><td class="n">1000K</td><td class="n">$12.50 / $1</td></tr>
+          <tr><td><b>Claude Opus 4.8</b>（上位）</td><td class="n">$5</td><td class="n">$25</td><td class="n">1000K</td><td class="n">$6.25 / $0.50</td></tr>
           <tr><td><b>Claude Sonnet 5</b>（中位）</td><td class="n">$3（導入 $2）</td><td class="n">$15（導入 $10）</td><td class="n">1000K</td><td class="n">$2.50 / $0.20</td></tr>
           <tr><td><b>Claude Haiku 4.5</b>（高速・低コスト）</td><td class="n">$1</td><td class="n">$5</td><td class="n">200K</td><td class="n">$1.25 / $0.10</td></tr>
         </tbody>

@@ -145,7 +145,7 @@
     <h1>主要AIモデルのAPI料金の見方【2026年7月】</h1>
     <p class="article-meta"><span><b>公開</b> 2026年7月16日</span><span><b>照合</b> 各社公式価格ページ／AI相場データ</span><span><b>カテゴリ</b> AI相場・料金</span></p>
 
-    <p class="lead">結論から言うと、AIモデルのAPI料金は<b>「入力 $/100万トークン」「出力 $/100万トークン」「文脈長」</b>の3つを並べて読むと、ほぼ一目で見当がつきます。同じ「最上位」でも、Claude Opus 4.8 は入力$5・出力$25、GPT-5.6 は入力$5・出力$30 と、出力側で差が出ます。</p>
+    <p class="lead">結論から言うと、AIモデルのAPI料金は<b>「入力 $/100万トークン」「出力 $/100万トークン」「文脈長」</b>の3つを並べて読むと、ほぼ一目で見当がつきます。同じ最上位クラスでも、Anthropicの最高性能 Claude Fable 5 は入力$10・出力$50、Claude Opus 4.8 は入力$5・出力$25、GPT-5.6 は入力$5・出力$30 と、モデルごとに大きく差が出ます。</p>
     <p class="lead">ただし<b>単価がいちばん安いモデル＝最安、ではありません</b>。トークナイザー（文章をトークンに刻む仕組み）が変わると、同じ文章でも消費トークン数が変わるためです。この記事では料金表の3項目の読み方と、見落としやすい落とし穴、無料/有料の分かれ目までを、各社公式価格と逐語照合した数値でまとめます。数値は2026年7月16日時点で、毎日照合している<a href="../../soba/">AI相場</a>データと一致させています。</p>
 
     <nav class="toc">
@@ -191,15 +191,16 @@
     <p>3つめの<b>文脈長</b>は、一度に扱えるトークンの上限です。長い資料をまるごと読ませたい用途では重要ですが、掲載単価は通常「標準・短コンテキスト（≤200K）」の料金であることが多く、上限近くまで使うと長コンテキストの割増が別にかかる提供元もあります。上限だけで選ばず、割増の有無まで見るのが安全です。</p>
 
     <h2 id="hikaku">主要モデルのAPI料金 比較【2026年7月】</h2>
-    <p>主要7モデルを入力単価の高い順に並べたのが下の表です。単価は<b>標準・短コンテキストの通常入出力料金</b>で、キャッシュ・バッチ・優先処理・長コンテキスト割増は含みません（それらは別料金）。数値は各社公式価格ページと、毎日照合している<a href="../../soba/">AI相場</a>データ（soba.json）に一致させています。</p>
+    <p>主要8モデルを入力単価の高い順に並べたのが下の表です。単価は<b>標準・短コンテキストの通常入出力料金</b>で、キャッシュ・バッチ・優先処理・長コンテキスト割増は含みません（それらは別料金）。数値は各社公式価格ページと、毎日照合している<a href="../../soba/">AI相場</a>データ（soba.json）に一致させています。</p>
     <div class="scroll-wrap">
       <table>
         <thead>
           <tr><th>モデル</th><th>提供元</th><th class="n">入力 $/1M</th><th class="n">出力 $/1M</th><th class="n">文脈</th><th>位置づけ</th></tr>
         </thead>
         <tbody>
-          <tr><td><b>Claude Opus 4.8</b></td><td>Anthropic</td><td class="n">$5</td><td class="n">$25</td><td class="n">1000K</td><td>最上位・長文/エージェント</td></tr>
-          <tr><td><b>GPT-5.6</b></td><td>OpenAI</td><td class="n">$5</td><td class="n">$30</td><td class="n">1050K</td><td>最上位（既定 gpt-5.6）</td></tr>
+          <tr><td><b>Claude Fable 5</b></td><td>Anthropic</td><td class="n">$10</td><td class="n">$50</td><td class="n">1000K</td><td>Anthropic最上位・最高性能／長時間エージェント</td></tr>
+          <tr><td><b>Claude Opus 4.8</b></td><td>Anthropic</td><td class="n">$5</td><td class="n">$25</td><td class="n">1000K</td><td>上位・長文/エージェント</td></tr>
+          <tr><td><b>GPT-5.6</b></td><td>OpenAI</td><td class="n">$5</td><td class="n">$30</td><td class="n">1050K</td><td>OpenAI最上位（既定 gpt-5.6）</td></tr>
           <tr><td><b>Claude Sonnet 5</b></td><td>Anthropic</td><td class="n">$3</td><td class="n">$15</td><td class="n">1000K</td><td>中位（導入価格あり／下記）</td></tr>
           <tr><td><b>Gemini 3.1 Pro</b></td><td>Google</td><td class="n">$2</td><td class="n">$12</td><td class="n">1000K</td><td>上位・低価格</td></tr>
           <tr><td><b>Gemini 3.5 Flash</b></td><td>Google</td><td class="n">$1.5</td><td class="n">$9</td><td class="n">1000K</td><td>上位Flash</td></tr>
@@ -208,7 +209,7 @@
         </tbody>
       </table>
     </div>
-    <p>入力単価は $5 から $0.5 まで10倍の開きがありますが、<b>出力単価まで見ると順位が変わる</b>のが分かります。GPT-5.6 は入力こそ Opus 4.8 と同じ$5ですが、出力は$30と最も高く、長い返答を作らせる用途では総額が伸びやすい設計です。逆に Gemini 3 Flash は入力$0.5・出力$3で、大量処理のコストを最優先する用途に向きます。</p>
+    <p>入力単価は $10 から $0.5 まで20倍の開きがありますが、<b>出力単価まで見ると順位がさらに変わる</b>のが分かります。最上位の Claude Fable 5 は入力$10・出力$50と頭ひとつ高く、長時間の自律エージェント向けの最高性能モデルです。GPT-5.6 は入力こそ Opus 4.8 と同じ$5ですが、出力は$30とその次に高く、長い返答を作らせる用途では総額が伸びやすい設計です。逆に Gemini 3 Flash は入力$0.5・出力$3で、大量処理のコストを最優先する用途に向きます。</p>
 
     <h2 id="tsukaiwake">安さの落とし穴と、モデルの使い分け</h2>
     <p>単価表だけで最安を決めると外すことがあります。理由は主に3つです。</p>
@@ -224,7 +225,7 @@
     <div class="summary-box">
       <div class="sb-title">使い分けの目安</div>
       <ul>
-        <li><b>難しい推論・長文・エージェント：</b>最上位（Claude Opus 4.8／GPT-5.6）。出力が高いので、返答を短く保つほど効く。</li>
+        <li><b>難しい推論・長文・エージェント：</b>最上位（Claude Fable 5／Opus 4.8／GPT-5.6）。出力が高いので、返答を短く保つほど効く。</li>
         <li><b>バランス（多くの業務）：</b>中位（Claude Sonnet 5／Gemini 3.1 Pro）。品質とコストの折り合い。</li>
         <li><b>高速・大量・単純処理：</b>低コスト帯（Claude Haiku 4.5／Gemini 3 Flash）。分類・要約・抽出など。</li>
       </ul>

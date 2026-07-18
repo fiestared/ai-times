@@ -14,6 +14,7 @@
     "last_full_check": "2026-07-18"
   },
   "models": [
+    { "name": "Claude Fable 5", "provider": "Anthropic", "input": 10, "output": 50, "context_k": 1000, "released": "2026-06-09", "tag": "新規", "delta": null, "verified": true, "src": "https://www.anthropic.com/claude/fable", "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。" },
     { "name": "Claude Opus 4.8", "provider": "Anthropic", "input": 5, "output": 25, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing" },
     { "name": "GPT-5.6", "provider": "OpenAI", "input": 5, "output": 30, "context_k": 1050, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://platform.openai.com/docs/pricing", "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金" },
     { "name": "Gemini 3.1 Pro", "provider": "Google", "input": 2, "output": 12, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/vertex-ai/generative-ai/pricing", "note": "Vertex表記は Gemini 3.1 Pro Preview。入力≤200Kの通常料金" },

@@ -48,6 +48,7 @@ const CATEGORIES = [
     desc: "国内企業が生成AIを実際の業務にどう入れたか。導入の狙い・使ったツール・効果を、公表事例と出典つきでまとめる。",
     slugs: [
       "seisei-ai-katsuyo-jirei",
+      "sumitomo-shoji-copilot-jirei",
     ],
   },
   {

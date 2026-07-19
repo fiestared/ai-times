@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-19",
+    "as_of": "2026-07-20",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -11,7 +11,7 @@
       "google": "https://cloud.google.com/vertex-ai/generative-ai/pricing",
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む"
     },
-    "last_full_check": "2026-07-19"
+    "last_full_check": "2026-07-20"
   },
   "models": [
     { "name": "Claude Fable 5", "provider": "Anthropic", "input": 10, "output": 50, "context_k": 1000, "released": "2026-06-09", "tag": "新規", "delta": null, "verified": true, "src": "https://www.anthropic.com/claude/fable", "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。" },

@@ -28,37 +28,44 @@
     {
       "time": "2026-07-18",
       "flag": "海外",
-      "title": "Anthropic、最上位「Claude Fable 5」を7/20から有料プランの標準機能に — Max・Team Premiumは利用枠の50%まで追加費用なし"
+      "title": "Anthropic、最上位「Claude Fable 5」を7/20から有料プランの標準機能に — Max・Team Premiumは利用枠の50%まで追加費用なし",
+      "source_url": "https://www.itmedia.co.jp/news/articles/2607/18/news019.html"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論"
+      "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論",
+      "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル"
+      "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル",
+      "source_url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み"
+      "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み",
+      "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "TikTok、AIによる「なりすまし肖像」検出ツールをテスト — 米国一部クリエイター向け、Jumioで本人確認"
+      "title": "TikTok、AIによる「なりすまし肖像」検出ツールをテスト — 米国一部クリエイター向け、Jumioで本人確認",
+      "source_url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影"
+      "title": "Apple、OpenAIを企業秘密侵害で提訴 —「元Apple社員400人超が在籍」と主張、年内IPO計画に影",
+      "source_url": "https://techcrunch.com/video/how-apples-big-lawsuit-could-disrupt-openais-ipo-plans/"
     },
     {
       "time": "2026-07-17",
       "flag": "海外",
-      "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflareと連携しrobots.txt無視のスクレイパーを遮断"
+      "title": "Patreon、AI学習クローラーを「お願い」から実力ブロックへ — Cloudflareと連携しrobots.txt無視のスクレイパーを遮断",
+      "source_url": "https://techcrunch.com/2026/07/17/patreon-stops-asking-ai-bots-not-to-scrape-and-starts-blocking-them/"
     }
   ],
   "topics": [

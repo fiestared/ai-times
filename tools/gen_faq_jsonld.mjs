@@ -97,7 +97,8 @@ for (const file of htmlFiles(DOCS)) {
     target.mainEntity = built;
 
     const json = JSON.stringify(data, null, 2);
-    html = html.replace(whole, `${open}\n${json}\n${close}`);
+    // 置換文字列に "$&" 等が入ると String.replace が特殊パターンと解釈するので必ず関数で差し込む
+    html = html.replace(whole, () => `${open}\n${json}\n${close}`);
     writeFileSync(file, html);
     changed++;
     console.log(`  更新: ${rel} (設問${pairs.length}件)`);
@@ -120,7 +121,7 @@ for (const file of htmlFiles(DOCS)) {
     const data = JSON.parse(body);
     data["@graph"].push(faqNode(pairs));
     const json = JSON.stringify(data, null, 2);
-    html = html.replace(whole, `${open}\n${json}\n${close}`);
+    html = html.replace(whole, () => `${open}\n${json}\n${close}`);
     writeFileSync(file, html);
     changed++;
     console.log(`  追加: ${rel} (設問${pairs.length}件・FAQPageを新規挿入)`);

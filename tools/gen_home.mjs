@@ -15,7 +15,16 @@ const DOCS = join(ROOT, "docs");
 const CHECK = process.argv.includes("--check");
 const esc = (s) => String(s == null ? "" : s).replace(/[&<>"]/g,
   (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-const readJson = (p) => { try { return JSON.parse(readFileSync(join(DOCS, "data", p), "utf8")); } catch { return {}; } };
+// ファイルが無いだけなら空扱い(fail-closedで「準備中」)。壊れたJSONは黙って{}にすると
+// 一面が丸ごと「準備中」で焼かれて公開される静かな事故になるので、そこは大声で落とす。
+const readJson = (p) => {
+  try { return JSON.parse(readFileSync(join(DOCS, "data", p), "utf8")); }
+  catch (e) {
+    if (e.code === "ENOENT") return {};
+    console.error(`✗ data/${p} が読めない(壊れたJSON?): ${e.message}`);
+    process.exit(1);
+  }
+};
 const ph = (msg) => `<p class="loading">${esc(msg)}</p>`;
 
 const WD = ["日", "月", "火", "水", "木", "金", "土"];
@@ -110,7 +119,11 @@ function inject(html, id, content) {
   const s = `<!--${id}:S-->`, e = `<!--${id}:E-->`;
   const esc2 = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   if (html.includes(s)) return html.replace(new RegExp(esc2(s) + "[\\s\\S]*?" + esc2(e)), () => s + content + e);
-  return html.replace(new RegExp(`(<div id="${id}"[^>]*>)</div>`), (_, g1) => g1 + s + content + e + "</div>");
+  // id は属性列の途中にも来る(例: <div class="move" id="breakingMove">)。<div id= 決め打ちだと
+  // 一致せず「黙って差し込まれない」(速報ティッカーが空のまま公開された実績)ので id 位置は問わない。
+  const out = html.replace(new RegExp(`(<div[^>]*\\bid="${id}"[^>]*>)</div>`), (_, g1) => g1 + s + content + e + "</div>");
+  if (out === html) { console.error(`✗ 差し込み先 #${id} が見つからない(index.htmlの構造変更?)`); process.exit(1); }
+  return out;
 }
 let html = readFileSync(join(DOCS, "index.html"), "utf8");
 const before = html;
@@ -121,9 +134,12 @@ html = inject(html, "toolsMount", toolsHtml);
 html = inject(html, "kaseguMount", kaseguHtml);
 html = inject(html, "breakingMove", tickerHtml);
 // 速報バーは wire があるとき表示(hidden を外す)。無いときは hidden のまま。
+// 付与側の「既にhiddenか」の判定はタグ内だけを見る。旧実装の後読み (?![^]*?\shidden) は
+// 文書末尾まで見るため、自タグのhiddenを見落として hidden を二重付与(冪等性破壊)し、
+// 文書後方の別要素の hidden で付与自体が抑止される誤判定もあった。
 html = wire.length
   ? html.replace(/(<div class="breaking"[^>]*?)\s*hidden(>)/, "$1$2")
-  : html.replace(/(<div class="breaking"[^>]*?)(>)(?![^]*?\shidden)/, "$1 hidden$2");
+  : html.replace(/(<div class="breaking"(?:(?!\shidden)[^>])*)(>)/, "$1 hidden$2");
 // 日付
 html = html.replace(/(<span class="mono" id="today">)[^<]*(<\/span>)/, (_, g1, g2) => g1 + fmtDate(soba._meta?.as_of) + g2);
 html = html.replace(/(<span class="mono" id="freshness">)[^<]*(<\/span>)/, (_, g1, g2) => g1 + (soba._meta?.as_of ? "更新: " + soba._meta.as_of : "毎日更新") + g2);

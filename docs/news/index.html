@@ -71,6 +71,8 @@
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
+  // 見出しを出典リンクにする(出典クリック不要で元記事へ)。source_url が無ければ素のテキスト。
+  var A = function (url, inner) { return url ? '<a class="hl-link" href="' + esc(url) + '" rel="noopener" target="_blank">' + inner + '</a>' : inner; };
 
   fetch("../data/news.json", { cache: "no-cache" }).then(function (r) {
     if (!r.ok) throw new Error(r.status); return r.json();
@@ -84,7 +86,7 @@
     if (wire.length) {
       wm.innerHTML = '<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono">最新順</span></div>' +
         wire.map(function (w) {
-          return '<div class="wi"><div class="tm">' + esc(w.time) + '</div><div class="hl">' + esc(w.title) +
+          return '<div class="wi"><div class="tm">' + esc(w.time) + '</div><div class="hl">' + A(w.source_url, esc(w.title)) +
             (w.flag ? ' <span class="fl">' + esc(w.flag) + '</span>' : '') + '</div></div>';
         }).join("") + '</aside>';
     } else {
@@ -98,8 +100,8 @@
       tm.innerHTML = topics.map(function (t) {
         var stories = t.items.map(function (a) {
           return '<div class="story"><div class="sk">' + esc(a.source_name || "") +
-            (a.time ? ' ・ ' + esc(a.time) : '') + '</div><h3>' + esc(a.title) + '</h3>' +
-            '<p>' + esc(a.summary || "") + '</p>' +
+            (a.time ? ' ・ ' + esc(a.time) : '') + '</div><h3>' + A(a.source_url, esc(a.title)) + '</h3>' +
+            '<p>' + A(a.source_url, esc(a.summary || "")) + '</p>' +
             (a.source_url ? '<div class="src"><a href="' + esc(a.source_url) + '" rel="noopener" target="_blank">出典 ↗</a></div>' : '') +
             '</div>';
         }).join("");

@@ -36,19 +36,22 @@ if (!lead) {
   const all = [];
   (news.topics || []).forEach((t) => (t.items || []).forEach((i) => all.push(i)));
   all.sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
-  if (all.length) { const t = all[0]; lead = { title: t.title, dek: t.summary, time: t.time, source_name: t.source_name }; }
+  if (all.length) { const t = all[0]; lead = { title: t.title, dek: t.summary, time: t.time, source_name: t.source_name, source_url: t.source_url }; }
 }
+// タイトルを出典リンクにする(出典クリックしなくても見出しから元記事へ飛べる)。source_urlが無ければ素のテキスト。
+const A = (url, inner) => url
+  ? `<a class="hl-link" href="${esc(url)}" rel="noopener" target="_blank">${inner}</a>` : inner;
 const tickerHtml = wire.slice(0, 6).map((w) =>
-  `<span><span class="t">${esc(w.time)}</span> <b>${esc(w.title)}</b></span>`).join("");
+  `<span><span class="t">${esc(w.time)}</span> <b>${A(w.source_url, esc(w.title))}</b></span>`).join("");
 
 const leadHtml = lead
   ? `<article class="lead"><div class="kicker"><span class="sq"></span> 本日の一面 ・ TOP STORY</div>` +
-    `<h2>${esc(lead.title)}</h2><p class="dek">${esc(lead.dek)}</p>` +
+    `<h2>${A(lead.source_url, esc(lead.title))}</h2><p class="dek">${A(lead.source_url, esc(lead.dek))}</p>` +
     `<div class="meta"><span>公開 <b>${esc(lead.time)}</b></span><span>出典 <b>${esc(lead.source_name)}</b></span></div></article>`
   : `<article class="lead">${ph("一面は準備中です。")}</article>`;
 const wireHtml = `<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono">最新順</span></div>` +
   (wire.length ? wire.slice(0, 7).map((w) =>
-    `<div class="wi"><div class="tm">${esc(w.time)}</div><div class="hl">${esc(w.title)}` +
+    `<div class="wi"><div class="tm">${esc(w.time)}</div><div class="hl">${A(w.source_url, esc(w.title))}` +
     (w.flag ? ` <span class="fl">${esc(w.flag)}</span>` : "") + `</div></div>`).join("") : ph("準備中")) + `</aside>`;
 const frontHtml = (!lead && !wire.length) ? ph("一面は準備中です。まもなく最新の発表を要約してお届けします。")
   : `<div class="front">${leadHtml}${wireHtml}</div>`;
@@ -58,7 +61,7 @@ const topicsHtml = topics.map((t) => {
   const items = t.items.slice().sort((a, b) => String(b.time || "").localeCompare(String(a.time || "")));
   const stories = items.slice(0, 6).map((a) =>
     `<div class="story"><div class="sk">${esc(a.source_name || "")}${a.time ? " ・ " + esc(a.time) : ""}</div>` +
-    `<h3>${esc(a.title)}</h3><p>${esc(a.summary || "")}</p>` +
+    `<h3>${A(a.source_url, esc(a.title))}</h3><p>${A(a.source_url, esc(a.summary || ""))}</p>` +
     (a.source_url ? `<div class="src"><a href="${esc(a.source_url)}" rel="noopener" target="_blank">出典 ↗</a></div>` : "") +
     `</div>`).join("");
   return `<section id="${esc(t.id)}"><div class="sec-title">${esc(t.name)} <span class="jp">— ${esc(t.jp || "")}</span></div><div class="grid2">${stories}</div></section>`;

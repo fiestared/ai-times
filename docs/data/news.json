@@ -20,6 +20,12 @@
   },
   "wire": [
     {
+      "time": "2026-07-17",
+      "flag": "国内",
+      "title": "「AIに期待」64.9%でも「明確な成果」16.4% — primeNumber調査、成果を分けるのはデータ基盤統合",
+      "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/21/news048.html"
+    },
+    {
       "time": "2026-07-20",
       "flag": "海外",
       "title": "ソニー・ミュージック、AI作曲Udioを再提訴 — 30,117曲の無断学習・1曲最大15万ドルの法定賠償を請求",
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "中国2連発 — Alibaba「Qwen3.8」プレビュー（2.4兆・“Fable 5に次ぐ”主張）、Kimi K3は7/27に全ウェイト公開へ",
       "source_url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen"
-    },
-    {
-      "time": "2026-07-16",
-      "flag": "海外",
-      "title": "Hugging Faceに自律AIエージェントのサイバー攻撃 — 商用モデルは解析を拒否、オープンウェイトGLM 5.2で対応",
-      "source_url": "https://huggingface.co/blog/security-incident-july-2026"
     }
   ],
   "topics": [
@@ -80,6 +80,14 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内調査",
+          "source_name": "primeNumber公式リリース / MONOist（ITmedia）",
+          "source_url": "https://prtimes.jp/main/html/rd/p/000000134.000039164.html",
+          "time": "2026-07-17",
+          "title": "「AIに期待」64.9%でも「明確な成果」は16.4% — primeNumber調査、成果企業はデータ基盤統合率が2倍以上",
+          "summary": "primeNumberが「AI・データ活用実態調査 2026」を公開した（2026年6月実施・企業のAI・データ活用担当373人・Webアンケート）。AI活用にビジネスの「劇的な変革」「大きな改善」を期待する割合は64.9%に達する一方、「明確な成果が得られている」は16.4%にとどまり約49ポイントの期待ギャップ。成果が出ている企業はデータ基盤を「全社で統合済み」の比率が26.2%とその他の2倍以上だが、全体では13.9%しか統合できておらず、生成AI・エージェント開発を優先投資に挙げた回答者の60.5%はデータ基盤整備をどれも優先していなかった。★MONOist取材によると製造業（103件）は「PoC・実証実験」止まりが26.2%と非製造業（15.9%）より10ポイント以上高く、原因は意欲でなく「モノ・暗黙知・工場ごとのオンプレ分断」というデータ構造の難しさ — エージェント導入ブームの足元で基盤投資が置き去りという構図。"
+        },
         {
           "topic_flag": "海外調査",
           "source_name": "＠IT（ITmedia）",

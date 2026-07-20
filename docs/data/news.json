@@ -20,6 +20,12 @@
   },
   "wire": [
     {
+      "time": "2026-07-10",
+      "flag": "国内",
+      "title": "中外製薬「社員1人にAIエージェント10体・全社10万個」構想 — 段階試算で最大30%の生産性向上へ",
+      "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/10/news007.html"
+    },
+    {
       "time": "2026-07-20",
       "flag": "海外",
       "title": "AMDとMicrosoftが提携拡大 — AIラック「Helios」をAzureへ大規模導入、新VM3系統・2026年後半出荷",
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "Adobe、カメラアプリIndigoに生成AI編集「AI Playground」— モデルはまずGoogleのNano Banana",
       "source_url": "https://research.adobe.com/articles/playground/playground.html"
-    },
-    {
-      "time": "2026-07-20",
-      "flag": "海外",
-      "title": "YouTube、AI量産動画の収益化ルールを3区分に明確化 — AIペルソナの健康・金融解説は収益化不可",
-      "source_url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/"
     }
   ],
   "topics": [
@@ -80,6 +80,14 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内事例",
+          "source_name": "ITmedia キーマンズネット（Eight EXPO 2026講演採録）/ 中外製薬公式",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/10/news007.html",
+          "time": "2026-07-10",
+          "title": "中外製薬「社員1人にAIエージェント10体・全社で約10万個」構想 — 最大30%の生産性向上で2030年に研究開発成果の倍増へ",
+          "summary": "中外製薬のDX責任者・金谷和充氏がEight EXPO 2026（6月3日）の講演で全社AI活用の実像を明かした（ITmediaキーマンズネット7月10日採録）。独自基盤「Chugai AI Platform」は用途に応じて9種類のAIモデルを選べ、既に従業員の9割以上が利用・うち半数以上が毎日活用。将来は自律的に業務を自動化するAIエージェントを1人当たり10個・全従業員で約10万個まで管理・利用する構想で、「個々の作業の効率化で生産性+5%→エージェントをつなげたプロセス自動化で+15%→最大30%向上」という段階の試算を示した。全社AI基本戦略「Chugai AI Strategy」の3本柱（AI Everyday／AI Everywhere／AI Transformation）と「2022年比30%の生産性向上→創薬・早期開発（RED）領域へ投資増」は公式サイトにも明記。★国内製薬トップ級による全社エージェント構想の具体数値 — 「AIに期待65%でも成果16%」（primeNumber調査）の裏で、成果側の企業が基盤統合と段階目標をどう設計しているかの実例。"
+        },
         {
           "topic_flag": "国内調査",
           "source_name": "primeNumber公式リリース / MONOist（ITmedia）",

@@ -22,6 +22,12 @@
     {
       "time": "2026-07-20",
       "flag": "海外",
+      "title": "Googleが新AIチップ「Frozen v2」開発と報道 — Gemini直結で電力効率6〜10倍・2028年投入予定",
+      "source_url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+    },
+    {
+      "time": "2026-07-20",
+      "flag": "海外",
       "title": "AI連携標準「MCP」、7/28に登場以来最大の仕様改定 — セッションID廃止・ステートレス化で大規模運用に対応",
       "source_url": "https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/"
     },
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "Anthropic、最上位「Claude Fable 5」を7/20から有料プランの標準機能に — Max・Team Premiumは利用枠の50%まで追加費用なし",
       "source_url": "https://www.itmedia.co.jp/news/articles/2607/18/news019.html"
-    },
-    {
-      "time": "2026-07-17",
-      "flag": "海外",
-      "title": "Databricks、評価額$1,880億に到達 — 開示ベンチで中国オープンモデルGLM 5.2が商用より低コストと結論",
-      "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
     }
   ],
   "topics": [
@@ -183,6 +183,14 @@
       "name": "モデル・技術",
       "jp": "新モデル・価格・性能",
       "items": [
+        {
+          "topic_flag": "AI半導体",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/",
+          "time": "2026-07-20",
+          "title": "Googleが新AIチップ「Frozen v2」開発と報道 — Geminiの設計をシリコンに直接組み込み、電力効率6〜10倍を狙う",
+          "summary": "The Information（2026年7月20日・事情を直接知る2人の情報源）によると、AlphabetはGeminiの設計をチップに直接統合する新サーバーチップ「Frozen v2」（社内呼称）を開発中で、2028年の投入を予定。電力あたりのトークン生成量で既存の自社AIチップ比6〜10倍の効率になり得るという。GoogleはTechCrunchに対し確認も否定もせず「ハードとソフトをゼロから共同設計するフルスタック方針の中核」とコメントし、報道を受け株価は月曜朝に約3%上昇した（CNBC）。★数値・時期はいずれも匿名情報源ベースで未確認 — だが6月のOpenAI初の自社チップ「Jalapeño」、7月のAnthropic×Samsung交渉報道（いずれもTechCrunch）に続く自社チップ競争の加速で、推論コスト（AI相場）の下押しとNvidia依存脱却の文脈に直結する。"
+        },
         {
           "topic_flag": "オープンウェイト",
           "source_name": "The Verge",

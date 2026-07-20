@@ -22,6 +22,18 @@
     {
       "time": "2026-07-20",
       "flag": "海外",
+      "title": "ソニー・ミュージック、AI作曲Udioを再提訴 — 30,117曲の無断学習・1曲最大15万ドルの法定賠償を請求",
+      "source_url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright"
+    },
+    {
+      "time": "2026-07-20",
+      "flag": "海外",
+      "title": "米AI標準機関CAISIのChris Fall所長が就任3ヶ月で辞任 — 今年3人目のトップ退任",
+      "source_url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
+    },
+    {
+      "time": "2026-07-20",
+      "flag": "海外",
       "title": "Googleが新AIチップ「Frozen v2」開発と報道 — Gemini直結で電力効率6〜10倍・2028年投入予定",
       "source_url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
     },
@@ -54,18 +66,6 @@
       "flag": "海外",
       "title": "Hugging Faceに自律AIエージェントのサイバー攻撃 — 商用モデルは解析を拒否、オープンウェイトGLM 5.2で対応",
       "source_url": "https://huggingface.co/blog/security-incident-july-2026"
-    },
-    {
-      "time": "2026-07-19",
-      "flag": "海外",
-      "title": "フアンCEO訪日をTechCrunchが総括 — 政府は国産フィジカルAIに5年で最大1兆円、2040年AIロボット1000万台目標",
-      "source_url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
-    },
-    {
-      "time": "2026-07-18",
-      "flag": "海外",
-      "title": "Anthropic、最上位「Claude Fable 5」を7/20から有料プランの標準機能に — Max・Team Premiumは利用枠の50%まで追加費用なし",
-      "source_url": "https://www.itmedia.co.jp/news/articles/2607/18/news019.html"
     }
   ],
   "topics": [
@@ -493,6 +493,22 @@
       "name": "規制・制度",
       "jp": "法律・ガイドライン・著作権",
       "items": [
+        {
+          "topic_flag": "訴訟",
+          "source_name": "米NY南部連邦地裁 訴状原文（DocumentCloud）/ The Verge",
+          "source_url": "https://www.documentcloud.org/documents/28500970-sony-v-udio-july-2026/",
+          "time": "2026-07-20",
+          "title": "ソニー・ミュージック、AI作曲Udioを再提訴 — 30,117曲の無断学習を特定、1曲最大15万ドルの法定賠償を請求",
+          "summary": "ソニー・ミュージックと傘下9レーベルは7月20日、AI音楽生成のUdio（運営: Uncharted Labs）をNY南部連邦地裁に再び提訴した（Case No. 1:26-cv-6120・訴状原文で確認）。2024年の前訴は学習データ非公開のため333曲にとどまったが、証拠開示で得たデータを音響フィンガープリントで照合し、今回はエルヴィス・プレスリー「Hound Dog」からビヨンセ「Say My Name」まで30,117曲を特定 — それでも「侵害されたごく一部」と訴状は主張する。YouTubeからの「ストリームリッピング」による技術的保護手段の回避も問い、著作権侵害1曲最大15万ドル（§504(c)）＋回避行為1件最大2,500ドル（§1203）の法定賠償と差止を請求。★UMG・ワーナーは既にUdioと和解し提携に転じており（The Verge）、音楽業界のAI対応が「提携」と「徹底抗戦」に二分された構図が鮮明になった。"
+        },
+        {
+          "topic_flag": "政策",
+          "source_name": "TechCrunch（Axios第一報・機関が複数媒体に確認）",
+          "source_url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/",
+          "time": "2026-07-20",
+          "title": "米AI標準機関CAISI、Chris Fall所長が就任3ヶ月で辞任 — 前任は1週間未満、今年3人目のトップ退任",
+          "summary": "米商務省NIST傘下でAIモデルの評価・技術標準を担うCAISI（Center for AI Standards and Innovation）のChris Fall所長が辞任した（Axios第一報・機関がTechCrunch等複数媒体に確認。理由は非公表）。前任のCollin Burns氏は4月に就任1週間足らずで退任（Anthropic出身が問題視されたとワシントン・ポスト報道）、その前のDavid Sacks氏（White House AI・仮想通貨担当）も3月に退任しており、今年だけで3人目のトップ退任となる。★Kimi K3など中国オープンウェイトモデルへの規制論が過熱する中、7月の新AI安全プログラム「Gold Eagle」の参加機関リストからもCAISIは外れており（CNBC指摘）、フロンティアAI評価を担う米公的機関の空洞化を示す人事として注目される。"
+        },
         {
           "topic_flag": "プラットフォーム",
           "source_name": "YouTubeヘルプ（公式ポリシー）/ TechCrunch",

@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "AI TIMES — 速報・トピック別ニュース",
-    "as_of": "2026-07-20",
+    "as_of": "2026-07-21",
     "status": "verified",
     "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
     "sources": {
@@ -19,6 +19,12 @@
     "source_url": "https://www.theverge.com/ai-artificial-intelligence/967781/chinese-ai-models-open-source-moonshot-kimi-k3-alibaba-qwen"
   },
   "wire": [
+    {
+      "time": "2026-07-20",
+      "flag": "海外",
+      "title": "YouTube、AI量産動画の収益化ルールを3区分に明確化 — AIペルソナの健康・金融解説は収益化不可",
+      "source_url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/"
+    },
     {
       "time": "2026-07-20",
       "flag": "海外",
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み",
       "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
-    },
-    {
-      "time": "2026-07-17",
-      "flag": "海外",
-      "title": "TikTok、AIによる「なりすまし肖像」検出ツールをテスト — 米国一部クリエイター向け、Jumioで本人確認",
-      "source_url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
     }
   ],
   "topics": [
@@ -470,6 +470,14 @@
       "jp": "法律・ガイドライン・著作権",
       "items": [
         {
+          "topic_flag": "プラットフォーム",
+          "source_name": "YouTubeヘルプ（公式ポリシー）/ TechCrunch",
+          "source_url": "https://support.google.com/youtube/answer/1311392",
+          "time": "2026-07-20",
+          "title": "YouTube、AI量産動画の収益化ルールを明確化 — 「非本来的コンテンツ」を3区分に整理、AIペルソナによる健康・金融解説は収益化不可",
+          "summary": "YouTubeは収益化プログラム（YPP）の「inauthentic content（非本来的コンテンツ）」ポリシーを3区分に明確化した（TechCrunchが7月20日報道・区分は公式ヘルプページで確認）。①AI・CGI・テンプレートで量産された反復的な動画、②感情操作で視聴を稼ぐ「不快（off-putting）」な動画、③AI生成ペルソナが人間の専門家を装って健康・法律・金融などを解説する動画 — が収益化不可で、該当チャンネルはYPPから除外される。★AIツールでの動画量産×広告収益という「AIで稼ぐ」定番手法の収益化経路が公式に閉じられた形で、個人クリエイターへの実務影響が大きい。"
+        },
+        {
           "topic_flag": "セキュリティ",
           "source_name": "Hugging Face公式ブログ",
           "source_url": "https://huggingface.co/blog/security-incident-july-2026",
@@ -592,5 +600,5 @@
       ]
     }
   ],
-  "as_of": "2026-07-20"
+  "as_of": "2026-07-21"
 }

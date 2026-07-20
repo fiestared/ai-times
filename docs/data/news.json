@@ -22,6 +22,12 @@
     {
       "time": "2026-07-20",
       "flag": "海外",
+      "title": "Adobe、カメラアプリIndigoに生成AI編集「AI Playground」— モデルはまずGoogleのNano Banana",
+      "source_url": "https://research.adobe.com/articles/playground/playground.html"
+    },
+    {
+      "time": "2026-07-20",
+      "flag": "海外",
       "title": "YouTube、AI量産動画の収益化ルールを3区分に明確化 — AIペルソナの健康・金融解説は収益化不可",
       "source_url": "https://techcrunch.com/2026/07/20/youtube-clarifies-policies-around-ai-slop-and-upsetting-videos/"
     },
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "Agility Robotics、Tesla Optimusの隣に6万sqftの訓練施設 — ロボ「Digit」で実稼働先行・契約受注3億ドル",
       "source_url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/"
-    },
-    {
-      "time": "2026-07-17",
-      "flag": "海外",
-      "title": "AIデータセンターのメモリ争奪でインドのスマホ市場が失速 — 4-6月出荷10%減、6年ぶりの落ち込み",
-      "source_url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smartphone-market/"
     }
   ],
   "topics": [
@@ -278,6 +278,14 @@
       "name": "ツール・プロダクト",
       "jp": "新しいAIツールの登場・更新",
       "items": [
+        {
+          "topic_flag": "新機能",
+          "source_name": "Adobe Research",
+          "source_url": "https://research.adobe.com/articles/playground/playground.html",
+          "time": "2026-07-20",
+          "title": "Adobe、カメラアプリ「Project Indigo」に生成AI編集「AI Playground」— 採用モデルは自社Fireflyでなく“まずGoogleのNano Banana”",
+          "summary": "Adobeの実験カメラアプリProject Indigoがv1.1で生成AI編集スイート「AI Playground」を追加(Marc Levoy=Adobeフェローが7/20発表)。Object Editing(消去・被写界深度)/Styles/Photo Guidance(撮り直し助言)/Custom Editの4部構成で「撮ったその場でAI編集」が狙い。無料・サインイン不要だが対象は数%のユーザー×数週間の実験で、人気なら将来は有料化。★採用モデルは“まずGoogleのNano Banana”と明言(切替・Firefly併用もあり得る)。C2PAメタデータ付与は「準備中」で、Nano BananaのSynthID透かしのみ先行。"
+        },
         {
           "topic_flag": "ロボット",
           "source_name": "TechCrunch",

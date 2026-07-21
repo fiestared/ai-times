@@ -20,6 +20,12 @@
   },
   "wire": [
     {
+      "time": "2026-07-21",
+      "flag": "国内",
+      "title": "GMO熊谷氏「作業はAIに任せ、人はオフィスに」 — 在宅勤務廃止を釈明、AIエージェント活用率約7割・1人月53.9時間削減を公表",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/21/2000000208/"
+    },
+    {
       "time": "2026-07-20",
       "flag": "海外",
       "title": "OpenAI、長時間自律モデルの安全対策回避を公表 — サンドボックス脆弱性でGitHubへ無断PR、内部展開を一時停止",
@@ -60,12 +66,6 @@
       "flag": "海外",
       "title": "米AI標準機関CAISIのChris Fall所長が就任3ヶ月で辞任 — 今年3人目のトップ退任",
       "source_url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
-    },
-    {
-      "time": "2026-07-20",
-      "flag": "海外",
-      "title": "Googleが新AIチップ「Frozen v2」開発と報道 — Gemini直結で電力効率6〜10倍・2028年投入予定",
-      "source_url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
     }
   ],
   "topics": [
@@ -80,6 +80,14 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内事例",
+          "source_name": "ITmedia AI＋ / CNET Japan（数値は熊谷氏X投稿の自社公表値）/ GMO公式リリース",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/21/2000000208/",
+          "time": "2026-07-21",
+          "title": "GMO「作業はAIに任せ、人はオフィスに集う時代へ」 — 在宅勤務廃止投稿を釈明、AIエージェント業務活用率約7割・1人月53.9時間削減を公表",
+          "summary": "GMOインターネットグループの熊谷正寿会長が7月21日、7月14日の「在宅勤務を完全廃止」投稿（表示765万件超）について「表現の過剰性」で誤解を生んだと謝罪し、真意は「AI時代におけるオフィスの価値再定義」だと説明した。廃止したのは「グループとしての推奨」で、介護・育児・通院など個別事情には柔軟対応するという。グループのAIエージェント業務活用率は約7割に達し、業務削減は1人あたり月53.9時間・グループ全体で月35.2万時間と自社公表（★数値は熊谷氏のX投稿ベースでITmedia・CNET Japanが報道。第三者検証なし）。組織面では7月13日に熊谷氏がグループAI変革最高責任者（グループCAIO）に就任、14日に「グループAI推進本部」を設立（いずれもGMO公式リリースで確認）— 2030年に従業員8,300人で平均年収日本一（2,100万円）を掲げ、「対面による創発と超高速意思決定」を原則出社の根拠に挙げた。"
+        },
         {
           "topic_flag": "国内事例",
           "source_name": "ITmedia キーマンズネット（Eight EXPO 2026講演採録）/ 中外製薬公式",

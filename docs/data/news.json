@@ -22,6 +22,18 @@
     {
       "time": "2026-07-21",
       "flag": "国内",
+      "title": "業務AI利用者の7割超が「経験3年未満」・最大の不安は情報漏えい — IPAが2,000人意識調査",
+      "source_url": "https://www.ipa.go.jp/security/reports/technicalwatch/20260601.html"
+    },
+    {
+      "time": "2026-07-21",
+      "flag": "国内",
+      "title": "ドラクエ×Gemini「ジェミニクエスト」7月30日から渋谷・原宿で — 画像生成で“じゅもん”を唱える",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/21/2000000209/"
+    },
+    {
+      "time": "2026-07-21",
+      "flag": "国内",
       "title": "GMO熊谷氏「作業はAIに任せ、人はオフィスに」 — 在宅勤務廃止を釈明、AIエージェント活用率約7割・1人月53.9時間削減を公表",
       "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/21/2000000208/"
     },
@@ -54,18 +66,6 @@
       "flag": "国内",
       "title": "「AIに期待」64.9%でも「明確な成果」16.4% — primeNumber調査、成果を分けるのはデータ基盤統合",
       "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/21/news048.html"
-    },
-    {
-      "time": "2026-07-20",
-      "flag": "海外",
-      "title": "ソニー・ミュージック、AI作曲Udioを再提訴 — 30,117曲の無断学習・1曲最大15万ドルの法定賠償を請求",
-      "source_url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright"
-    },
-    {
-      "time": "2026-07-20",
-      "flag": "海外",
-      "title": "米AI標準機関CAISIのChris Fall所長が就任3ヶ月で辞任 — 今年3人目のトップ退任",
-      "source_url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
     }
   ],
   "topics": [
@@ -80,6 +80,14 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内調査",
+          "source_name": "IPA公式（テクニカルウォッチ・調査PDF逐語確認）/ @IT",
+          "source_url": "https://www.ipa.go.jp/security/reports/technicalwatch/20260601.html",
+          "time": "2026-07-21",
+          "title": "業務AI利用者の7割超が「経験3年未満」、最大の不安は情報漏えい — IPAが2,000人意識調査",
+          "summary": "IPA（情報処理推進機構）が6月1日に公開した意識調査（2026年3月13〜24日実施・大企業/中小×製造/非製造の4象限各500人＝計2,000人）を@ITが7月21日に報じた。業務でAIを使う人の70％以上が経験3年未満で、2025年以降に使い始めた人が30％を占める急速な普及の一方、最大の課題は「職場全体で知識・スキルが足りない」（前回比7％減の54.4％）と「知識・スキルの情報がない」（10％増の54.9％）——スキルは上がったが情報が追いつかない構図。信頼性への不安では情報漏えいが突出し（「非常に大きい」14.9％＋「やや大きい」38.7％）、AI悪用によるサイバー攻撃への不安は前回比7％増。新設問では「AIで一部の業務がなくなる・変わる」33.0％、「業務スキルが継承されない」38.5％が課題と回答した。"
+        },
         {
           "topic_flag": "国内事例",
           "source_name": "ITmedia AI＋ / CNET Japan（数値は熊谷氏X投稿の自社公表値）/ GMO公式リリース",
@@ -318,6 +326,14 @@
       "name": "ツール・プロダクト",
       "jp": "新しいAIツールの登場・更新",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "ITmedia AI＋ / GAME Watch・ファミ通ほか（Google日本法人の発表）",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/21/2000000209/",
+          "time": "2026-07-21",
+          "title": "ドラクエ×Gemini「ジェミニクエスト」開催へ — 画像生成で“じゅもん”を唱える体験イベント、渋谷・原宿で7月30日から",
+          "summary": "Google日本法人が7月21日、「ドラゴンクエスト」との連動企画「ジェミニクエスト」を発表した。7月30日〜8月9日に渋谷・原宿エリア5カ所（SHIBUYA109渋谷店・東急プラザ原宿「ハラカド」・MAGNET by SHIBUYA109・竹下口パークほか）へスライムやキラーマシン等の巨大立像が出現し、参加者はGeminiの画像生成で「メラゾーマ」「マダンテ」など“じゅもん”を唱える自分の画像を作れる（参加無料）。Geminiアプリにも連動テンプレートを展開する。Googleは背景として「ドラゴンクエストIV」（1990年）がAI戦闘をいち早く導入した歴史を挙げており、3月には「ドラゴンクエストX オンライン」の対話機能「おしゃべりスラミィ」でのGoogle AIモデル活用も発表済み——生成AIを消費者向け体験マーケティングに使う国内大型事例。"
+        },
         {
           "topic_flag": "業界動向",
           "source_name": "MCP公式ブログ",

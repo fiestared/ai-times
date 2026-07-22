@@ -140,16 +140,37 @@ const lastmodOf = (file) => {
   if (dirty.has(file)) return TODAY;
   return git("log", "-1", "--format=%cs", "--", file); // 履歴が無ければ "" → lastmod を出さない
 };
+// 複数ファイルに依存するページは「いちばん新しい日」を採る（日付は YYYY-MM-DD なので文字列比較でよい）。
+const lastmodOfAll = (files) => files.map(lastmodOf).filter(Boolean).sort().pop() || "";
+
+// ★データ駆動ページの lastmod は index.html だけ見ると必ず古くなる。
+// news/ tools/ kasegu/ は index.html が data/*.json を JS で読んで描画する形なので、
+// **画面の中身は JSON が変わった日に変わる**のに index.html のコミット日は動かない。
+// その結果 sitemap が「/news/ は 07-19 から変わっていない」と嘘をつき、毎日更新という
+// 当サイト最大の武器（鮮度）をサーチエンジンに隠してしまう（2026-07-23 に実際に発生）。
+// → 依存する JSON も含めていちばん新しい日を採る。「変わっていないのに今日と言う」嘘は
+//   増やしていない（JSON が変わった日にだけ日付が動く）ので、上の原則とも矛盾しない。
+const DATA_DEPS = {
+  "": ["news.json", "soba.json", "tools.json", "kasegu.json"], // トップは4つ全部を描画する
+  "news/": ["news.json"],
+  "soba/": ["soba.json"],
+  "tools/": ["tools.json"],
+  "kasegu/": ["kasegu.json"],
+};
 
 const urls = [
-  ...STATIC_PAGES.map((p) => ({ loc: `https://aitimes.jp/${p}`, file: join(DOCS, p, "index.html") })),
+  ...STATIC_PAGES.map((p) => ({
+    loc: `https://aitimes.jp/${p}`,
+    files: [join(DOCS, p, "index.html"),
+            ...(DATA_DEPS[p] || []).map((f) => join(DOCS, "data", f))],
+  })),
   ...articles.map((a) => ({ loc: `https://aitimes.jp/kiji/${a.slug}/`,
-                            file: join(KIJI, a.slug, "index.html") })),
+                            files: [join(KIJI, a.slug, "index.html")] })),
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map(({ loc, file }) => {
-  const d = lastmodOf(file);
+${urls.map(({ loc, files }) => {
+  const d = lastmodOfAll(files);
   return `  <url><loc>${loc}</loc>${d ? `<lastmod>${d}</lastmod>` : ""}</url>`;
 }).join("\n")}
 </urlset>

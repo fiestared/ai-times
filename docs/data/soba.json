@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-22",
+    "as_of": "2026-07-23",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -11,19 +11,149 @@
       "google": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）"
     },
-    "last_full_check": "2026-07-22"
+    "last_full_check": "2026-07-23"
   },
   "models": [
-    { "name": "Claude Fable 5", "provider": "Anthropic", "input": 10, "output": 50, "context_k": 1000, "released": "2026-06-09", "tag": "新規", "delta": null, "verified": true, "src": "https://www.anthropic.com/claude/fable", "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。" },
-    { "name": "Claude Opus 4.8", "provider": "Anthropic", "input": 5, "output": 25, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing" },
-    { "name": "GPT-5.6", "provider": "OpenAI", "input": 5, "output": 30, "context_k": 1050, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://platform.openai.com/docs/pricing", "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金。★GPT-5.6には3変種があり、下位ほど安い（gpt-5.6-terra $2.5/$15、gpt-5.6-luna $1/$6）。他社の比較表が「GPT-5.6 = $1/$6」と書いていることがあるが、それは最下位のLunaで、既定のSolは$5/$30（2026-07-22にOpenAI公式価格表で再確認）。長コンテキストは倍額。" },
-    { "name": "Gemini 3.1 Pro", "provider": "Google", "input": 2, "output": 12, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "Vertex表記は Gemini 3.1 Pro Preview。入力≤200Kの通常料金（>200Kは入力$4/出力$18）" },
-    { "name": "Claude Sonnet 5", "provider": "Anthropic", "input": 3, "output": 15, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing", "note": "掲載は標準料金。2026-08-31までは導入価格 入力$2/出力$10 が有効(9/1から標準$3/$15)。新トークナイザーで同じ文章でも約30%多くトークンを生成するため実コストは単価ほど下がらない。" },
-    { "name": "Gemini 3.6 Flash", "provider": "Google", "input": 1.5, "output": 7.5, "context_k": 1000, "released": "2026-07-21", "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "2026-07-21提供開始のGoogleの主力Flash（一般提供・入力1M/出力64k）。入力は3.5 Flashと同額だが出力は$9→$7.5と安い。Global/Non-globalの差が無い一律料金。Google自身は3.5 Flash比でトークン消費が最大17%減と説明（＝単価に加え使用量でも下がる）。価格はVertex価格表とDeepMindモデルカードの2ソースで一致確認。" },
-    { "name": "Gemini 3.5 Flash", "provider": "Google", "input": 1.5, "output": 9, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "Vertex表記は Gemini 3.5 Flash。掲載はGlobalエンドポイントの標準料金（Non-globalは入力$1.65/出力$9.90）。2026-07-21に後継の Gemini 3.6 Flash ($1.5/$7.5) が出たため、同じ入力単価なら3.6 Flashの方が安い。" },
-    { "name": "Gemini 3 Flash", "provider": "Google", "input": 0.5, "output": 3, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "Vertex表記は Gemini 3 Flash Preview。音声入力は$1。" },
-    { "name": "Claude Haiku 4.5", "provider": "Anthropic", "input": 1, "output": 5, "context_k": 200, "released": "2025-10-01", "tag": "新規", "delta": null, "verified": true, "src": "https://docs.anthropic.com/en/docs/about-claude/pricing" },
-    { "name": "Gemini 3.5 Flash-Lite", "provider": "Google", "input": 0.3, "output": 2.5, "context_k": 1000, "released": "2026-07-21", "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "2026-07-21提供開始の最新Flash-Lite（一般提供・入力1M/出力64k）。掲載はGlobalエンドポイント（Non-globalは入力$0.33/出力$2.75）。前世代の3.1 Flash-Lite ($0.25/$1.5) より高いが、Google公表のコーディング評価では大きく上回る（＝最安が欲しいなら3.1、性能なら3.5）。価格はVertex価格表とDeepMindモデルカードの2ソースで一致確認。" },
-    { "name": "Gemini 3.1 Flash-Lite", "provider": "Google", "input": 0.25, "output": 1.5, "context_k": 1000, "released": null, "tag": "新規", "delta": null, "verified": true, "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing", "note": "Vertex表記は Gemini 3.1 Flash-Lite。掲載はGlobalエンドポイントの通常料金（Non-globalは入力$0.275/出力$1.65）。音声入力は$0.5。コンテキスト1,048,576トークン。掲載11モデル中の最安。" }
+    {
+      "name": "Claude Fable 5",
+      "provider": "Anthropic",
+      "input": 10,
+      "output": 50,
+      "context_k": 1000,
+      "released": "2026-06-09",
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://www.anthropic.com/claude/fable",
+      "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。"
+    },
+    {
+      "name": "Claude Opus 4.8",
+      "provider": "Anthropic",
+      "input": 5,
+      "output": 25,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "name": "GPT-5.6",
+      "provider": "OpenAI",
+      "input": 5,
+      "output": 30,
+      "context_k": 1050,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://platform.openai.com/docs/pricing",
+      "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金。★GPT-5.6には3変種があり、下位ほど安い（gpt-5.6-terra $2.5/$15、gpt-5.6-luna $1/$6）。他社の比較表が「GPT-5.6 = $1/$6」と書いていることがあるが、それは最下位のLunaで、既定のSolは$5/$30（2026-07-22にOpenAI公式価格表で再確認）。長コンテキストは倍額。"
+    },
+    {
+      "name": "Gemini 3.1 Pro",
+      "provider": "Google",
+      "input": 2,
+      "output": 12,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "Vertex表記は Gemini 3.1 Pro Preview。入力≤200Kの通常料金（>200Kは入力$4/出力$18）"
+    },
+    {
+      "name": "Claude Sonnet 5",
+      "provider": "Anthropic",
+      "input": 3,
+      "output": 15,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+      "note": "掲載は標準料金。2026-08-31までは導入価格 入力$2/出力$10 が有効(9/1から標準$3/$15)。新トークナイザーで同じ文章でも約30%多くトークンを生成するため実コストは単価ほど下がらない。"
+    },
+    {
+      "name": "Gemini 3.6 Flash",
+      "provider": "Google",
+      "input": 1.5,
+      "output": 7.5,
+      "context_k": 1000,
+      "released": "2026-07-21",
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "2026-07-21提供開始のGoogleの主力Flash（一般提供・入力1M/出力64k）。入力は3.5 Flashと同額だが出力は$9→$7.5と安い。Global/Non-globalの差が無い一律料金。Google自身は3.5 Flash比でトークン消費が最大17%減と説明（＝単価に加え使用量でも下がる）。価格はVertex価格表とDeepMindモデルカードの2ソースで一致確認。"
+    },
+    {
+      "name": "Gemini 3.5 Flash",
+      "provider": "Google",
+      "input": 1.5,
+      "output": 9,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "Vertex表記は Gemini 3.5 Flash。掲載はGlobalエンドポイントの標準料金（Non-globalは入力$1.65/出力$9.90）。2026-07-21に後継の Gemini 3.6 Flash ($1.5/$7.5) が出たため、同じ入力単価なら3.6 Flashの方が安い。"
+    },
+    {
+      "name": "Gemini 3 Flash",
+      "provider": "Google",
+      "input": 0.5,
+      "output": 3,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "Vertex表記は Gemini 3 Flash Preview。音声入力は$1。"
+    },
+    {
+      "name": "Claude Haiku 4.5",
+      "provider": "Anthropic",
+      "input": 1,
+      "output": 5,
+      "context_k": 200,
+      "released": "2025-10-01",
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+    },
+    {
+      "name": "Gemini 3.5 Flash-Lite",
+      "provider": "Google",
+      "input": 0.3,
+      "output": 2.5,
+      "context_k": 1000,
+      "released": "2026-07-21",
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "2026-07-21提供開始の最新Flash-Lite（一般提供・入力1M/出力64k）。掲載はGlobalエンドポイント（Non-globalは入力$0.33/出力$2.75）。前世代の3.1 Flash-Lite ($0.25/$1.5) より高いが、Google公表のコーディング評価では大きく上回る（＝最安が欲しいなら3.1、性能なら3.5）。価格はVertex価格表とDeepMindモデルカードの2ソースで一致確認。"
+    },
+    {
+      "name": "Gemini 3.1 Flash-Lite",
+      "provider": "Google",
+      "input": 0.25,
+      "output": 1.5,
+      "context_k": 1000,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
+      "note": "Vertex表記は Gemini 3.1 Flash-Lite。掲載はGlobalエンドポイントの通常料金（Non-globalは入力$0.275/出力$1.65）。音声入力は$0.5。コンテキスト1,048,576トークン。掲載11モデル中の最安。"
+    }
   ]
 }

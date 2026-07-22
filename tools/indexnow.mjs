@@ -36,10 +36,25 @@ function pathToUrl(p) {
 
 let inputs = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 
+// ★データ駆動ページは index.html が変わらないので、JSON→ページ の対応も見る。
+// news/ tools/ kasegu/ は data/*.json を JS で読んで描画する形。index.html のコミットだけを
+// 見ていると、毎日中身が変わる /news/ が **一度もBingに通知されない**（2026-07-23 に発覚。
+// 新規ドメインでBing索引の高速化が生命線なのに、いちばん更新頻度の高いページが漏れていた）。
+const DATA_PAGES = {
+  "docs/data/news.json": ["docs/index.html", "docs/news/index.html"],
+  "docs/data/soba.json": ["docs/index.html", "docs/soba/index.html"],
+  "docs/data/tools.json": ["docs/index.html", "docs/tools/index.html"],
+  "docs/data/kasegu.json": ["docs/index.html", "docs/kasegu/index.html"],
+};
+
 if (AUTO) {
   const out = execFileSync("git", ["show", "--name-only", "--pretty=format:", "HEAD"],
     { cwd: ROOT, encoding: "utf8" });
-  inputs = out.split("\n").filter((l) => /^docs\/.*index\.html$/.test(l));
+  const changed = out.split("\n").filter(Boolean);
+  inputs = [...new Set([
+    ...changed.filter((l) => /^docs\/.*index\.html$/.test(l)),
+    ...changed.flatMap((l) => DATA_PAGES[l] || []),
+  ])];
 }
 
 const urls = [...new Set(inputs.map((a) => {

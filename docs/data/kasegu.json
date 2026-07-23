@@ -1,22 +1,144 @@
 {
   "_meta": {
     "title": "AIで稼ぐ — 世界の事例キュレーション",
-    "as_of": "2026-07-18",
+    "as_of": "2026-07-23",
     "status": "seed",
     "note": "世の中の『AIで稼いだ』実例を集めて、誰が・何で・月いくら を事実として表にする。★著作権★ 収益報告の本文を転載しない。載せるのは (1)公開された数字(月商・累計・課金額) (2)手法の1〜2行要約 (3)必ず出典URL。数字は必ず出典に実在することを確認してから載せる(AIは金額を捏造しがち)。日本の事例(note/X/個人開発)も海外(Indie Hackers/HN/Reddit)も両方集める。金額は現地通貨のまま+概算円。ランキングは月商(または月商相当)の降順。",
-    "flags": ["拡張機能", "SaaS", "アプリ", "コンテンツ", "受託", "素材", "国内", "海外"]
+    "flags": [
+      "拡張機能",
+      "SaaS",
+      "アプリ",
+      "コンテンツ",
+      "受託",
+      "素材",
+      "国内",
+      "海外"
+    ]
   },
   "examples": [
-    { "name": "GMass", "who": "個人→小チーム", "what": "Gmailの一括送信拡張（実質SaaS）", "monthly_usd": 130000, "model": "サブスク $7〜20/月", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/interview/how-i-hit-115k-mo-with-a-status-quo-improvement-c45d11ad17", "source_name": "Indie Hackers", "note": "収益化は公開の約1年後。1万有料ユーザーを目標に。" },
-    { "name": "CSS Scan", "who": "個人", "what": "任意要素のCSSをコピーする拡張", "monthly_usd": null, "cumulative_usd": 100000, "model": "買い切り $69（Gumroad）", "flag": "拡張機能・海外", "source_url": "https://www.indiehackers.com/product/css-scan/100-000-in-revenue-with-css-scan--MF_-4QWdBIJscbnJMSK", "source_name": "Indie Hackers", "note": "買い切りモデルでも累計10万ドル。" },
-    { "name": "Closet Tools", "who": "個人（副業→本業）", "what": "フリマ(Poshmark)出品の自動化", "monthly_usd": 38000, "model": "サブスク $30/月", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/podcast/187-jordan-oconnor-of-closet-tools", "source_name": "Indie Hackers", "note": "本業を持ちながら$12k MRR→独立。顧客がそれで“稼ぐ”道具。" },
-    { "name": "Easy Folders", "who": "個人", "what": "ChatGPT/Claudeにフォルダ・検索を足す拡張", "monthly_usd": 3700, "model": "フリーミアム（月額＋買い切り）", "flag": "拡張機能・海外", "source_url": "https://www.indiehackers.com/product/easy-folders/6-months-post-launch-my-chrome-extension-has-hit-3-700-in-mrr-and-42-000-in-total-revenue--O3qs28VAnAkcJw0j--M", "source_name": "Indie Hackers", "note": "公開6か月で月商$3,700・累計$42,000。" },
-    { "name": "BlackMagic.so", "who": "個人（Tony Dinh）", "what": "X(Twitter)の分析拡張", "monthly_usd": 3000, "model": "サブスク $8/月〜", "flag": "拡張機能・海外", "source_url": "https://news.ycombinator.com/item?id=29803817", "source_name": "Hacker News (Show HN)", "note": "3か月で$60/月→さらに5か月で$3k/月。$400/月で会社を辞めた。" },
-    { "name": "Leadmore AI（Richard Wang）", "who": "個人（元テック企業のエンジニア／PM）", "what": "RedditでのB2Bマーケを自動化するAIツール（関連subredditの発見・投稿・コメント）", "monthly_usd": 30000, "model": "クレジット課金制（未使用分は返金可）", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/post/tech/hitting-30k-mrr-with-an-ai-marketing-product-n59ORJCYjnZC61Q096UL", "source_name": "Indie Hackers（本人インタビュー）", "note": "本人談で「Leadmore AI は現在$30k MRR超で急成長中」。作る前に1〜3か月ユーザー調査で需要を検証し、機能を1つに絞った最小MVPを約2週間で出す方針。集客はRedditでの発信＋対話（売上であって利益ではない）。" },
-    { "name": "Sleek（Mattia Pomelli）", "who": "個人（友人2人と）", "what": "モバイルアプリのUIをAIとの対話で作る「vibe design」ツール Sleek.design", "monthly_usd": 10000, "model": "サブスク＋AIクレジット制（$25/月〜・国別に割安ティアも）", "flag": "SaaS・海外", "source_url": "https://www.indiehackers.com/post/tech/hitting-10k-mrr-in-six-weeks-with-an-ai-design-tool-pEvmU5qkWS6ny0AR9SUv", "source_name": "Indie Hackers（本人インタビュー）", "note": "既存の別デザインツールのコードを流用し約3週間でv1.0公開。広告費ゼロ・X/Redditのオーガニック発信のみで、公開から約1か月で$10k MRR到達（本人談・売上）。" },
-    { "name": "IsTalk（けい）", "who": "個人（エンジニア／AI開発会社経営）", "what": "スマホアプリ「IsTalk - トーク分析」をAIコーディングツール(Cursor)で個人開発", "monthly_jpy": 2500000, "model": "サブスク＋広告（有料サブスク4,600人超）", "flag": "アプリ・国内", "source_url": "https://note.com/keitaaaan/n/n6b4ff16d9835", "source_name": "note（本人の収益公開）", "note": "「昨今のAI時代が苦手意識を変えた」としてAIエディタCursorで開発。iOS/Android合計60万DL超・App Storeランキング1位（2024年10月時点・本人公開。売上であって利益ではない）。" },
-    { "name": "iDM（ぶべ）", "who": "個人（ShiftB校長・bubekichi inc. 代表／立川修平）", "what": "Instagram DMを自動化するチャットボットツールを個人開発", "monthly_jpy": 300000, "model": "サブスク 月額数千円（海外競合は月$99〜$299）", "flag": "SaaS・国内", "source_url": "https://shiftb.dev/articles/indie-dev-success-stories", "source_name": "ShiftB（開発者本人の解説記事）", "note": "本人が「月30万円弱のMRR（月間経常収益）」と公開（記事の表では約30万円）。自身のInstagram発信の実体験から開発し、口コミで拡散。海外の競合が月額$99〜$299のところ月額数千円で提供。IsTalk（¥250万）とLearning Next（初週¥3万）の中間＝国内の“現実的な中位”の実例。自己申告（校長本人の事例記事・2026-04-06公開）。" },
-    { "name": "Learning Next（とまだ）", "who": "個人（未経験からエンジニア／AI駆動開発教育者）", "what": "プログラミング学習サイトをCursorで個人開発", "monthly_jpy": null, "cumulative_jpy": 30000, "model": "月額サブスク $10〜20（月1,500〜3,000円）", "flag": "SaaS・国内", "source_url": "https://note.com/tomada/n/n2b5898ca86d7", "source_name": "note（本人の実体験記事）", "note": "2025年6月15日リリース→リリースから1週間で約3万円（初週の売上。月次の継続収益ではない）。本人が見出しで『Cursorで作った個人開発アプリ』と明記。250万円級とは対照的に、小さく始めた現実的な初速の実例。" }
+    {
+      "name": "GMass",
+      "who": "個人→小チーム",
+      "what": "Gmailの一括送信拡張（実質SaaS）",
+      "monthly_usd": 130000,
+      "model": "サブスク $7〜20/月",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/interview/how-i-hit-115k-mo-with-a-status-quo-improvement-c45d11ad17",
+      "source_name": "Indie Hackers",
+      "note": "収益化は公開の約1年後。1万有料ユーザーを目標に。"
+    },
+    {
+      "name": "CSS Scan",
+      "who": "個人",
+      "what": "任意要素のCSSをコピーする拡張",
+      "monthly_usd": null,
+      "cumulative_usd": 100000,
+      "model": "買い切り $69（Gumroad）",
+      "flag": "拡張機能・海外",
+      "source_url": "https://www.indiehackers.com/product/css-scan/100-000-in-revenue-with-css-scan--MF_-4QWdBIJscbnJMSK",
+      "source_name": "Indie Hackers",
+      "note": "買い切りモデルでも累計10万ドル。"
+    },
+    {
+      "name": "Closet Tools",
+      "who": "個人（副業→本業）",
+      "what": "フリマ(Poshmark)出品の自動化",
+      "monthly_usd": 38000,
+      "model": "サブスク $30/月",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/podcast/187-jordan-oconnor-of-closet-tools",
+      "source_name": "Indie Hackers",
+      "note": "本業を持ちながら$12k MRR→独立。顧客がそれで“稼ぐ”道具。"
+    },
+    {
+      "name": "Easy Folders",
+      "who": "個人",
+      "what": "ChatGPT/Claudeにフォルダ・検索を足す拡張",
+      "monthly_usd": 3700,
+      "model": "フリーミアム（月額＋買い切り）",
+      "flag": "拡張機能・海外",
+      "source_url": "https://www.indiehackers.com/product/easy-folders/6-months-post-launch-my-chrome-extension-has-hit-3-700-in-mrr-and-42-000-in-total-revenue--O3qs28VAnAkcJw0j--M",
+      "source_name": "Indie Hackers",
+      "note": "公開6か月で月商$3,700・累計$42,000。"
+    },
+    {
+      "name": "BlackMagic.so",
+      "who": "個人（Tony Dinh）",
+      "what": "X(Twitter)の分析拡張",
+      "monthly_usd": 3000,
+      "model": "サブスク $8/月〜",
+      "flag": "拡張機能・海外",
+      "source_url": "https://news.ycombinator.com/item?id=29803817",
+      "source_name": "Hacker News (Show HN)",
+      "note": "3か月で$60/月→さらに5か月で$3k/月。$400/月で会社を辞めた。"
+    },
+    {
+      "name": "Leadmore AI（Richard Wang）",
+      "who": "個人（元テック企業のエンジニア／PM）",
+      "what": "RedditでのB2Bマーケを自動化するAIツール（関連subredditの発見・投稿・コメント）",
+      "monthly_usd": 30000,
+      "model": "クレジット課金制（未使用分は返金可）",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/hitting-30k-mrr-with-an-ai-marketing-product-n59ORJCYjnZC61Q096UL",
+      "source_name": "Indie Hackers（本人インタビュー）",
+      "note": "本人談で「Leadmore AI は現在$30k MRR超で急成長中」。作る前に1〜3か月ユーザー調査で需要を検証し、機能を1つに絞った最小MVPを約2週間で出す方針。集客はRedditでの発信＋対話（売上であって利益ではない）。"
+    },
+    {
+      "name": "Sleek（Mattia Pomelli）",
+      "who": "個人（友人2人と）",
+      "what": "モバイルアプリのUIをAIとの対話で作る「vibe design」ツール Sleek.design",
+      "monthly_usd": 10000,
+      "model": "サブスク＋AIクレジット制（$25/月〜・国別に割安ティアも）",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/hitting-10k-mrr-in-six-weeks-with-an-ai-design-tool-pEvmU5qkWS6ny0AR9SUv",
+      "source_name": "Indie Hackers（本人インタビュー）",
+      "note": "既存の別デザインツールのコードを流用し約3週間でv1.0公開。広告費ゼロ・X/Redditのオーガニック発信のみで、公開から約1か月で$10k MRR到達（本人談・売上）。"
+    },
+    {
+      "name": "IsTalk（けい）",
+      "who": "個人（エンジニア／AI開発会社経営）",
+      "what": "スマホアプリ「IsTalk - トーク分析」をAIコーディングツール(Cursor)で個人開発",
+      "monthly_jpy": 2500000,
+      "model": "サブスク＋広告（有料サブスク4,600人超）",
+      "flag": "アプリ・国内",
+      "source_url": "https://note.com/keitaaaan/n/n6b4ff16d9835",
+      "source_name": "note（本人の収益公開）",
+      "note": "「昨今のAI時代が苦手意識を変えた」としてAIエディタCursorで開発。iOS/Android合計60万DL超・App Storeランキング1位（2024年10月時点・本人公開。売上であって利益ではない）。"
+    },
+    {
+      "name": "iDM（ぶべ）",
+      "who": "個人（ShiftB校長・bubekichi inc. 代表／立川修平）",
+      "what": "Instagram DMを自動化するチャットボットツールを個人開発",
+      "monthly_jpy": 300000,
+      "model": "サブスク 月額数千円（海外競合は月$99〜$299）",
+      "flag": "SaaS・国内",
+      "source_url": "https://shiftb.dev/articles/indie-dev-success-stories",
+      "source_name": "ShiftB（開発者本人の解説記事）",
+      "note": "本人が「月30万円弱のMRR（月間経常収益）」と公開（記事の表では約30万円）。自身のInstagram発信の実体験から開発し、口コミで拡散。海外の競合が月額$99〜$299のところ月額数千円で提供。IsTalk（¥250万）とLearning Next（初週¥3万）の中間＝国内の“現実的な中位”の実例。自己申告（校長本人の事例記事・2026-04-06公開）。"
+    },
+    {
+      "name": "Learning Next（とまだ）",
+      "who": "個人（未経験からエンジニア／AI駆動開発教育者）",
+      "what": "プログラミング学習サイトをCursorで個人開発",
+      "monthly_jpy": null,
+      "cumulative_jpy": 30000,
+      "model": "月額サブスク $10〜20（月1,500〜3,000円）",
+      "flag": "SaaS・国内",
+      "source_url": "https://note.com/tomada/n/n2b5898ca86d7",
+      "source_name": "note（本人の実体験記事）",
+      "note": "2025年6月15日リリース→リリースから1週間で約3万円（初週の売上。月次の継続収益ではない）。本人が見出しで『Cursorで作った個人開発アプリ』と明記。250万円級とは対照的に、小さく始めた現実的な初速の実例。"
+    },
+    {
+      "name": "Klipy.ai",
+      "who": "Jung Hong Kim（韓国出身の連続起業家）＋共同創業者2人（ブートストラップ）",
+      "what": "営業のやり取り（メール/LinkedIn/会議）をAIが自動記録するCRM — MVPは本人が約3か月で自作",
+      "monthly_usd": null,
+      "model": "フリーミアム＋サブスク $39〜149/月・席（トークン量で階層）",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/a-5-figure-mrr-success-after-a-failed-product-buried-him-in-debt-jzXCQaChntz3v1usYLz5",
+      "source_name": "Indie Hackers（本人インタビュー）",
+      "note": "MRRは5桁ドル（$10,000以上・具体額は非公表）・世界約4,000社が利用・2026年末に$1.5M ARR目標（いずれも本人公表＝自己申告）。COVIDで小売向け事業が破綻し借金→約6年で清算後、2024年11月に公開。買い切り優待（LTD）は利益でなく最初の100コアユーザー獲得の手段と割り切る戦略。"
+    }
   ],
-  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。"
+  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。 海外AIネイティブSaaSを1件追加（2026-07-23）: Klipy.ai（AI CRM・5桁ドルMRR・IH本人インタビューで逐語照合。具体額非公表のためmonthly_usdはnull＝fail-closed）。Zigpoll($125k MRR)は検討の上examplesに入れず（本体は非AIのアンケートSaaSで『AIで稼いだ』に該当せず。AI経由流入14%の話としてnews側kasegu topicに収録）。"
 }

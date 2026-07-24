@@ -2,7 +2,7 @@
  "_meta": {
   "title": "AI相場 — 主要モデルのAPI価格",
   "unit": "USD / 1M tokens",
-  "as_of": "2026-07-24",
+  "as_of": "2026-07-25",
   "status": "verified",
   "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
   "verify_sources": {
@@ -11,7 +11,7 @@
    "google": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
    "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）"
   },
-  "last_full_check": "2026-07-24"
+  "last_full_check": "2026-07-25"
  },
  "models": [
   {
@@ -25,7 +25,20 @@
    "delta": null,
    "verified": true,
    "src": "https://www.anthropic.com/claude/fable",
-   "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。"
+   "note": "Anthropicの最上位・一般提供モデル（claude-fable-5、2026-06-09提供開始）。長時間の自律エージェント向けの最高性能。掲載は標準料金で、プロンプトキャッシュ書込$12.50/読出$1・US限定推論の1.1倍は別。2026-07-20からMax・Team Premiumプランの標準機能にも。 同価格・同スペックの Claude Mythos 5 は招待制（Project Glasswing）のため本表には載せない。"
+  },
+  {
+   "name": "Claude Opus 5",
+   "provider": "Anthropic",
+   "input": 5,
+   "output": 25,
+   "context_k": 1000,
+   "released": "2026-07-24",
+   "tag": "新規",
+   "delta": null,
+   "verified": true,
+   "src": "https://www.anthropic.com/news/claude-opus-5",
+   "note": "2026-07-24提供開始。Anthropicは「最上位 Claude Fable 5 のフロンティア級の知能に近づきながら価格は半額」と位置づける。価格は前世代 Opus 4.8 と同額（入力$5・出力$25）に据え置かれた＝同じ支払いのまま性能だけ上がった形。Claude Maxの既定モデル、Claude Proで選べる最上位。Fast mode（既定の約2.5倍速）は基本料金の2倍。コンテキスト100万トークン・最大出力128kは公式のモデル比較表で確認。"
   },
   {
    "name": "Claude Opus 4.8",
@@ -37,7 +50,8 @@
    "tag": "新規",
    "delta": null,
    "verified": true,
-   "src": "https://docs.anthropic.com/en/docs/about-claude/pricing"
+   "src": "https://docs.anthropic.com/en/docs/about-claude/pricing",
+   "note": "2026-07-24に同額（入力$5・出力$25）の後継 Claude Opus 5 が提供開始。Anthropicは Opus 5 が Frontier-Bench v0.1 で Opus 4.8 の性能を2倍以上に伸ばしつつ1タスクあたりのコストは下がるとしており、同じ単価なら Opus 5 を選ぶ理由が強い。Opus 4.8 も引き続き提供中。"
   },
   {
    "name": "GPT-5.6",

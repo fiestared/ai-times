@@ -99,12 +99,20 @@ const toolsHtml = tl.length ? `<div class="tools">` + tl.slice(0, 8).map((x) => 
 
 // --- AIで稼ぐ ---
 const ex = kasegu.examples || [];
-const yen = (usd) => usd ? "≈ ¥" + Math.round(usd * 155 / 10000) + "万" : "";
-const amt = (e) => e.monthly_usd ? { big: "$" + e.monthly_usd.toLocaleString() + "/月", sub: yen(e.monthly_usd) + "/月" }
+const yen = (usd) => usd ? "≈ " + man(usd * 155) : "";
+// 1万円未満を「万」に丸めると ¥0万 になり金額が消える(例: 累計¥55)ので実額のまま出す
+const man = (v) => v < 10000 ? "¥" + Math.round(v).toLocaleString()
+                             : "¥" + Math.round(v / 10000).toLocaleString() + "万";
+// ★円建て(国内事例)を落とさない。落とすと monthly_jpy を持つ国内例が全部「—」になる
+const amt = (e) => e.monthly_jpy ? { big: man(e.monthly_jpy) + "/月", sub: "" }
+  : e.cumulative_jpy ? { big: man(e.cumulative_jpy), sub: "累計" }
+  : e.monthly_usd ? { big: "$" + e.monthly_usd.toLocaleString() + "/月", sub: yen(e.monthly_usd) + "/月" }
   : e.cumulative_usd ? { big: "$" + e.cumulative_usd.toLocaleString(), sub: yen(e.cumulative_usd) + "・累計" } : { big: "—", sub: "" };
+const rank = (e) => (e.monthly_jpy || 0) + (e.monthly_usd || 0) * 155 +
+                    ((e.cumulative_jpy || 0) + (e.cumulative_usd || 0) * 155) / 12;
 const kaseguHtml = ex.length
   ? `<div class="kasegu-note">世の中で公開されている「AIで稼いだ」実例を集めています。金額はすべて本人の公開値で、各行から出典に飛べます。宣伝ではありません。</div><div class="klist">` +
-    ex.slice().sort((a, b) => (b.monthly_usd || b.cumulative_usd / 12 || 0) - (a.monthly_usd || a.cumulative_usd / 12 || 0)).map((e) => {
+    ex.slice().sort((a, b) => rank(b) - rank(a)).map((e) => {
       const a = amt(e);
       return `<a class="krow2" href="${esc(e.source_url)}" rel="noopener" target="_blank"><div class="kx-main">` +
         `<div class="kx-nm">${esc(e.name)}${e.flag ? ` <span class="fl">${esc(e.flag)}</span>` : ""}</div>` +

@@ -70,7 +70,9 @@
   var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
   var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
-  var man = function (v) { return "¥" + Math.round(v / 10000).toLocaleString() + "万"; };
+  // 1万円未満は「万」に丸めると ¥0万 になり金額が消える（例: 累計¥55）。実額のまま出す。
+  var man = function (v) { return v < 10000 ? "¥" + Math.round(v).toLocaleString()
+                                            : "¥" + Math.round(v / 10000).toLocaleString() + "万"; };
   var USDJPY = 155; // 概算換算レート（海外事例のドル→円のめやす）
 
   // 金額の表示（現地通貨をそのまま主表示に。円はめやす）

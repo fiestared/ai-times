@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "AIで稼ぐ — 世界の事例キュレーション",
-    "as_of": "2026-07-23",
+    "as_of": "2026-07-26",
     "status": "seed",
     "note": "世の中の『AIで稼いだ』実例を集めて、誰が・何で・月いくら を事実として表にする。★著作権★ 収益報告の本文を転載しない。載せるのは (1)公開された数字(月商・累計・課金額) (2)手法の1〜2行要約 (3)必ず出典URL。数字は必ず出典に実在することを確認してから載せる(AIは金額を捏造しがち)。日本の事例(note/X/個人開発)も海外(Indie Hackers/HN/Reddit)も両方集める。金額は現地通貨のまま+概算円。ランキングは月商(または月商相当)の降順。",
     "flags": [
@@ -138,7 +138,19 @@
       "source_url": "https://www.indiehackers.com/post/tech/a-5-figure-mrr-success-after-a-failed-product-buried-him-in-debt-jzXCQaChntz3v1usYLz5",
       "source_name": "Indie Hackers（本人インタビュー）",
       "note": "MRRは5桁ドル（$10,000以上・具体額は非公表）・世界約4,000社が利用・2026年末に$1.5M ARR目標（いずれも本人公表＝自己申告）。COVIDで小売向け事業が破綻し借金→約6年で清算後、2024年11月に公開。買い切り優待（LTD）は利益でなく最初の100コアユーザー獲得の手段と割り切る戦略。"
+    },
+    {
+      "name": "iPhoneアプリ26本（hiro1760）",
+      "who": "個人（非専業・バイブコーディング）",
+      "what": "Codex/Claude Code等でiPhoneアプリを3か月に26本量産（質より量）",
+      "monthly_jpy": null,
+      "cumulative_jpy": 55,
+      "model": "広告のみ（AdMob。課金はほぼ未実装）",
+      "flag": "アプリ・国内",
+      "source_url": "https://note.com/hiro1760/n/na7e8ed3879db",
+      "source_name": "note（本人の収益公開・無料記事）",
+      "note": "2026-04-20から3か月で26本公開し、収益は広告のみで累計55円・最多DLのアプリでも15DL（2026-07-24公開）。★この表の下限として意図的に載せている: 『AIで速く作れる』は『売れる』ではないことの実測値。有料noteやコンサルへの導線がない無料記事＝金額を盛る動機が薄い点で、他の自己申告より確度が高い。"
     }
   ],
-  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。 海外AIネイティブSaaSを1件追加（2026-07-23）: Klipy.ai（AI CRM・5桁ドルMRR・IH本人インタビューで逐語照合。具体額非公表のためmonthly_usdはnull＝fail-closed）。Zigpoll($125k MRR)は検討の上examplesに入れず（本体は非AIのアンケートSaaSで『AIで稼いだ』に該当せず。AI経由流入14%の話としてnews側kasegu topicに収録）。"
+  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。 海外AIネイティブSaaSを1件追加（2026-07-23）: Klipy.ai（AI CRM・5桁ドルMRR・IH本人インタビューで逐語照合。具体額非公表のためmonthly_usdはnull＝fail-closed）。Zigpoll($125k MRR)は検討の上examplesに入れず（本体は非AIのアンケートSaaSで『AIで稼いだ』に該当せず。AI経由流入14%の話としてnews側kasegu topicに収録）。 2026-07-26: 国内事例を探索し、note検索API（data.notes.contents）から候補を抽出。採用＝hiro1760（累計55円・無料記事・販売導線なし）。★不採用2件と理由: (1) enging1iw「0→月20万円」は本体が4,980円の有料note＝金額が販売文句そのもので検証不能、(2) bokuwalily「月商120万円」は無料記事だが末尾に同じ数字を題材にした有料noteとコンサルの導線があり、第三者検証もないため examples（確定額の表）には入れず news の kasegu トピックに『自己申告・導線あり』と明記して収録した。Indie Hackersは 502／タイムアウト／本文がJS描画で curl では取得できず（この便では新規追加なし）。"
 }

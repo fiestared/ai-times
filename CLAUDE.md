@@ -67,8 +67,8 @@ keiri-tools と同じ静的サイト構成（GitHub Pages・データJSON・自�
 ## 収益化
 - AdSense（サイト全体）＋ **AIツールのアフィリエイト**（tools/ が主導線。「AIで稼ぐ」読者と相性◎）
 - ※ GA4・AdSense は**この新ドメイン用に別途取得**する。keiri-tools のIDを流用しない
-- **実測(GSC/GA4)**: `node ../keiri-tools/tools/analytics_report.mjs --site aitimes.jp`
-  （keiri-tools 側のツールが両サイト対応。個人アカウントOAuth・詳細はそちらのCLAUDE.md）
+- **実測(GSC/GA4)**: ブラウザ(Playwright)でGA4/GSCのUIを直接読む。**API・gcloud・SAは使わない**。
+  手順は keiri-tools の CLAUDE.md「書いた後の実測」を参照
 
 ## デプロイ
 - 独自ドメイン **aitimes.jp**（取得可能を確認済み・2026-07-15）。Masahiro が取得 → GitHub Pages にCNAME

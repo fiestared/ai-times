@@ -9,7 +9,8 @@
       "anthropic": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "openai": "https://platform.openai.com/docs/pricing",
       "google": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
-      "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）"
+      "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）",
+      "moonshot": "https://platform.kimi.ai/docs/pricing/chat-k3.md"
     },
     "last_full_check": "2026-07-26"
   },
@@ -91,6 +92,19 @@
       "verified": true,
       "src": "https://docs.anthropic.com/en/docs/about-claude/pricing",
       "note": "掲載は標準料金。2026-08-31までは導入価格 入力$2/出力$10 が有効(9/1から標準$3/$15)。新トークナイザーで同じ文章でも約30%多くトークンを生成するため実コストは単価ほど下がらない。"
+    },
+    {
+      "name": "Kimi K3",
+      "provider": "Moonshot AI",
+      "input": 3,
+      "output": 15,
+      "context_k": 1048,
+      "released": null,
+      "tag": "新規",
+      "delta": null,
+      "verified": true,
+      "src": "https://platform.kimi.ai/docs/pricing/chat-k3.md",
+      "note": "公式Pricing原文と逐語照合: kimi-k3 は1Mトークンあたり入力$3.00（キャッシュミス時）／キャッシュヒット時$0.30／出力$15.00、コンテキストは1,048,576トークン（表示は1,048K）。公式技術ブログは「2.8兆パラメータに達した初のオープンソースモデル」とし、完全な重みは2026年7月27日までに公開予定と明記。★正式な提供開始日は公式に明記がないため released は空のまま（推測を載せない）。参考として公式の「Kimi K3 Launch Top-Up Rebate」は2026-07-15(PDT)開始、技術ブログのベンチマークは2026-07-16時点の値。Claude Sonnet 5 の標準価格と同額の$3/$15。"
     },
     {
       "name": "Gemini 3.6 Flash",

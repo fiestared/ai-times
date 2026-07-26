@@ -30,43 +30,43 @@
       "time": "2026-07-25",
       "flag": "海外",
       "title": "Anthropic「Claude Opus 5」公開 — Fable 5に迫る性能を半額の$5/$25で",
-      "source_url": "https://www.watch.impress.co.jp/docs/news/2127836.html"
+      "source_url": "https://www.itmedia.co.jp/news/articles/2607/25/news016.html"
+    },
+    {
+      "time": "2026-07-25",
+      "flag": "海外",
+      "title": "図書館の「AIを避ける」講座に異例の需要 — 巨大テックに疲れた人たちが集まる",
+      "source_url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/"
+    },
+    {
+      "time": "2026-07-25",
+      "flag": "海外",
+      "title": "電線1本の断線が露呈させたAIデータセンターの弱点 — 電力網の乱れへの応答が課題",
+      "source_url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/"
+    },
+    {
+      "time": "2026-07-24",
+      "flag": "海外",
+      "title": "Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた",
+      "source_url": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/"
+    },
+    {
+      "time": "2026-07-24",
+      "flag": "海外",
+      "title": "Google DeepMind、自社AIが意図に反する事態に備える「AI Control Roadmap」を公表",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/"
     },
     {
       "time": "2026-07-24",
       "flag": "国内",
       "title": "近畿大学情報学部、総合型選抜の入試で生成AIの利用を容認",
-      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/24/2000000221/"
+      "source_url": "https://www.atpress.ne.jp/news/9177205"
     },
     {
       "time": "2026-07-24",
       "flag": "海外",
       "title": "Midjourney、占星術アプリ「Co-Star」を買収",
-      "source_url": "https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition"
-    },
-    {
-      "time": "2026-07-24",
-      "flag": "海外",
-      "title": "ChatGPTの新音声モードがデスクトップアプリに対応",
-      "source_url": "https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/"
-    },
-    {
-      "time": "2026-07-24",
-      "flag": "国内",
-      "title": "「2日かかる攻撃が25分に」パロアルトがAIによる攻撃の高速化に警鐘",
-      "source_url": "https://www.itmedia.co.jp/news/articles/2607/24/news070.html"
-    },
-    {
-      "time": "2026-07-23",
-      "flag": "海外",
-      "title": "Samsung、Gemini搭載「Android XR」スマートグラスを発表 — 2026年秋発売",
-      "source_url": "https://www.itmedia.co.jp/news/articles/2607/23/news070.html"
-    },
-    {
-      "time": "2026-07-22",
-      "flag": "海外",
-      "title": "Google Cloud、脆弱性を自動修正するAIエージェント「CodeMender」提供開始",
-      "source_url": "https://japan.cnet.com/article/35250869/"
+      "source_url": "https://techcrunch.com/2026/07/24/midjourney-acquired-the-astrology-app-co-star/"
     }
   ],
   "topics": [
@@ -122,6 +122,22 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "キーマンズネット（元経産省・小池明氏へのインタビュー）",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html",
+          "time": "2026-07-24",
+          "title": "中小企業が生成AIでハマる「あるある課題」5つ — 元経産省の専門家が乗り切り方を解説",
+          "summary": "キーマンズネットの読者調査に寄せられた中小企業の生成AIの悩みから代表的な5つを取り上げ、経済産業省・中小企業庁でデジタル活用支援に携わった小池明氏が対処法を答えた記事。現場で実際に詰まっている論点に絞って整理されている。★大企業の派手な導入事例より、人と予算が限られた企業がどこで止まるかのほうが、多くの読者の実情に近い。"
+        },
+        {
+          "topic_flag": "国内",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/articles/2607/24/news094.html",
+          "time": "2026-07-24",
+          "title": "スーパーの「生成AIポップ」が物議 — 看板広告で知られるきぬた歯科院長は「これはアリ」",
+          "summary": "スーパーの青果売り場に並んだ、生成AIで作ったとみられる派手な商品ポップがX上で物議を醸し、「見づらい」との声が相次いだ。一方、看板広告で知られるきぬた歯科のきぬた泰和院長は「これはアリ」と評価しているとITmediaは伝えている。★生成AIが現場の販促物に降りてきた段階で、品質の基準を誰がどう決めるのかという実務上の問いが表に出た事例。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "＠IT",
@@ -363,6 +379,22 @@
       "items": [
         {
           "topic_flag": "海外",
+          "source_name": "Kimi API Platform（公式Pricing / 技術ブログ）",
+          "source_url": "https://platform.kimi.ai/docs/pricing/chat-k3.md",
+          "time": "2026-07-16",
+          "title": "Kimi K3 のAPI価格は入力$3・出力$15 — 2.8兆パラメータで、重みは7月27日までに公開予定",
+          "summary": "Moonshot AI の公式価格ページによると、フラッグシップの kimi-k3 は100万トークンあたり入力$3.00（キャッシュヒット時$0.30）・出力$15.00、コンテキストは1,048,576トークン。公式技術ブログは同モデルを「2.8兆パラメータに達した初のオープンソースモデル」とし、完全な重みを2026年7月27日までに公開すると明記している。★米政権が「AnthropicのFableを蒸留した」と名指しし規制論争の火種になっているモデルが、Claude Sonnet 5 の標準価格とまったく同じ$3/$15で提供される点が相場の焦点（AI相場表にも追加した）。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/",
+          "time": "2026-07-23",
+          "title": "AMD、ラックスケールAIシステム「Helios」でNVIDIAに対抗 — 年内に顧客への出荷開始",
+          "summary": "AMDが、ラック単位でAI処理をまとめる新システム「Helios」を発表し、年内に顧客への出荷を始めるとTechCrunchが報じた。データセンター向けAIチップ市場でNVIDIAの優位に正面から挑む構えとなる。★AMDがAnthropicへ最大50億ドルを出資し最大2GW分の導入を発表した際の対象システムがこのHeliosで、出荷開始は当時の計画が実機の段階に入ったことを意味する。"
+        },
+        {
+          "topic_flag": "海外",
           "source_name": "TechCrunch",
           "source_url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/",
           "time": "2026-07-24",
@@ -568,6 +600,22 @@
       "name": "ツール・プロダクト",
       "jp": "新しいAIツールの登場・更新",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/",
+          "time": "2026-07-24",
+          "title": "Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた",
+          "summary": "コーディングエージェント「Devin」を手がける Cognition が、対話アプリ Poke を買収した。Poke の会話スタイルと対話モデルを Devin に取り込む狙いで、AIアシスタントが「どう振る舞うか」が性能と同じくらい重要になってきたという見方を反映しているとTechCrunchは伝えている。★モデルの賢さが横並びになるほど、差がつくのは応答の質感やUXの側だという競争軸の変化を示す動き。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/",
+          "time": "2026-07-24",
+          "title": "Bluesky のAIアシスタント「Attie」が、オープンなソーシャル調査ツールへ拡張",
+          "summary": "Bluesky のAIアシスタント Attie が機能を広げ、Bluesky や AT Protocol 上の他アプリのニュース・トレンド・会話について質問できるようになった。SNS内の投稿を横断して調べる用途に踏み込む。★クローズドなSNSのデータが囲い込まれる中、オープンなプロトコル上では第三者もAIで分析できるという違いが出てきた例。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "ITmedia NEWS",
@@ -887,6 +935,22 @@
       "name": "規制・制度",
       "jp": "法律・ガイドライン・著作権",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "ITmedia AI＋（Google DeepMindの構想の解説）",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/",
+          "time": "2026-07-24",
+          "title": "Google DeepMind が「AI Control Roadmap」を公表 — 自社AIが意図に反した場合への備え",
+          "summary": "Google DeepMind が、AIが開発者の意図に反して振る舞う事態を想定した管理構想「AI Control Roadmap」を発表し、ITmediaがその内容を解説した。性能向上ではなく「制御」を正面から扱う点が異例だとしている。★規制が外から来る前に、開発する側が制御の枠組みを自ら示しはじめたという流れの一例。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/",
+          "time": "2026-07-23",
+          "title": "AIの安全ガードレールが、攻撃側セキュリティ研究者の仕事を妨げている",
+          "summary": "未知の脆弱性を探し、それを突く道具を作る攻撃側（オフェンシブ）のセキュリティ研究者たちに、OpenAI と Anthropic のガードレールが業務にどう影響しているかをTechCrunchが取材した。防御のために必要な作業が、悪用対策の制限に引っかかる場面があるという。★安全策は「悪用を止める」と同時に「守るための研究も止めうる」という、規制設計のトレードオフが具体的に現れている論点。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "CNET Japan",

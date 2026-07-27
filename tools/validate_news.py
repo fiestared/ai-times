@@ -90,20 +90,21 @@ def main():
     # ★常設項目（制度の恒久リンク）の扱い:
     #   文化庁のガイドライン・AI推進法・AI事業者ガイドライン等は「速報」ではなく
     #   参照のために置いてある。これらに30日の鮮度規律を当てると必ず赤になる。
-    #   旧検査もこれらを除外していたが、除外の根拠が
-    #   「同じURLの別項目がたまたま非ISOの日付を持っていたから」という偶然に依存していた。
-    #   ここでは根拠を明示する: **time が純ISOでない項目＝常設** とみなし、
-    #   その URL を常設として扱う（日付を書けない＝版が続く制度文書、という意味を持たせる）。
-    #   ただし常設でも「日付を明記する」規律は外さない（ISO日付を含むことは要求する）。
+    #
+    #   ★2026-07-28 第2便で作り直した。旧版は「time が純ISOでない項目＝常設」とみなし、
+    #   **その URL を常設扱い**していた。これは2つの意味を1つのフィールドに載せる設計で、
+    #   実際に次の2つの穴が空いていた:
+    #     (a) time が壊れている項目は gen_home.mjs の文字列降順ソートで**常に最新**として
+    #         一面に出る（"2026-08-31まで導入価格" > "2026-07-28"）。表示を直すと
+    #         同時に鮮度検査の免除も外れる＝直した人が赤を踏む。
+    #     (b) 免除が**URL単位**なので、常設項目と同じURLを持つ**普通の速報**まで免除された。
+    #         実際 docs.anthropic.com/…/pricing を出典にした300日前のHaiku 4.5の項目が
+    #         速報面に残り続けていた（旧版のコメント自身がこの偶然依存を問題視しながら再実装していた）。
+    #   → 常設かどうかは **item の permanent フラグ**で明示する。time は全項目ISO必須。
     PERMANENT_URLS = {
         "https://www.bunka.go.jp/seisaku/chosakuken/aiandcopyright.html",
         "https://www.ppc.go.jp/news/press/2023/230602kouhou/",
     }
-    for t in d["topics"]:
-        for it in t["items"]:
-            tm = it.get("time") or ""
-            if not re.match(r"^\d{4}-\d{2}-\d{2}$", tm):
-                PERMANENT_URLS.add(it.get("source_url"))
 
     seen = {}
     for t in d["topics"]:
@@ -122,18 +123,16 @@ def main():
             seen[key] = tid
 
             tm = it.get("time", "")
-            permanent = url in PERMANENT_URLS
+            # 常設は item 自身の permanent で明示する（URL単位の巻き添え免除をやめた）
+            permanent = bool(it.get("permanent")) or url in PERMANENT_URLS
+            # ★time は常設項目も含めて全項目ISO必須（表示のソートが文字列比較のため）
+            ck(re.match(r"^\d{4}-\d{2}-\d{2}$", tm) is not None,
+               "%s の time が ISO(YYYY-MM-DD)でない: %r" % (tag, tm))
             if re.match(r"^\d{4}-\d{2}-\d{2}$", tm):
                 age = (today - datetime.date.fromisoformat(tm)).days
                 ck(age >= 0, "%s が未来日付(%s)" % (tag, tm))
                 if tid in SPEED and not permanent:
                     ck(age <= 30, "%s が30日より古い(%d日)＝速報面に置けない" % (tag, age))
-            elif permanent:
-                # 常設でも日付は必ず書く（新しさが判定できないものは載せない、の最低線）
-                ck(re.search(r"\d{4}-\d{2}-\d{2}", tm) is not None,
-                   "%s は常設項目だが time にISO日付が含まれない: %r" % (tag, tm))
-            else:
-                ck(False, "%s の time が ISO(YYYY-MM-DD)でない: %r" % (tag, tm))
 
     # --- 5. soba: 出すのは verified だけ / 価格は正の数 ---
     for m in s["models"]:

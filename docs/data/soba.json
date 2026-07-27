@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-27",
+    "as_of": "2026-07-28",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -12,7 +12,7 @@
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）",
       "moonshot": "https://platform.kimi.ai/docs/pricing/chat-k3.md"
     },
-    "last_full_check": "2026-07-27"
+    "last_full_check": "2026-07-28"
   },
   "models": [
     {
@@ -104,7 +104,7 @@
       "delta": null,
       "verified": true,
       "src": "https://platform.kimi.ai/docs/pricing/chat-k3.md",
-      "note": "公式Pricing原文と逐語照合: kimi-k3 は1Mトークンあたり入力$3.00（キャッシュミス時）／キャッシュヒット時$0.30／出力$15.00、コンテキストは1,048,576トークン（表示は1,048K）。公式技術ブログは「2.8兆パラメータに達した初のオープンソースモデル」とし、完全な重みは2026年7月27日までに公開予定と明記。★正式な提供開始日は公式に明記がないため released は空のまま（推測を載せない）。参考として公式の「Kimi K3 Launch Top-Up Rebate」は2026-07-15(PDT)開始、技術ブログのベンチマークは2026-07-16時点の値。Claude Sonnet 5 の標準価格と同額の$3/$15。 ★2026-07-27（重み公開の予定日当日）07:00 JST に再照合: 公式Pricingは入力$3.00（キャッシュヒット$0.30）／出力$15.00／1,048,576トークンから変更なし。あわせて Hugging Face 公式API で moonshotai の公開モデル18件を機械確認したが Kimi K3 のリポジトリは無く、最新は 2026-06-15 更新の Kimi-K2.7-Code だった（＝重みは本稿時点で未公開。期日は当日中のため released は空のまま追跡する）。"
+      "note": "公式Pricing原文と逐語照合: kimi-k3 は1Mトークンあたり入力$3.00（キャッシュミス時）／キャッシュヒット時$0.30／出力$15.00、コンテキストは1,048,576トークン（表示は1,048K）。公式技術ブログは「2.8兆パラメータに達した初のオープンソースモデル」とし、完全な重みは2026年7月27日までに公開予定と明記。★正式な提供開始日は公式に明記がないため released は空のまま（推測を載せない）。参考として公式の「Kimi K3 Launch Top-Up Rebate」は2026-07-15(PDT)開始、技術ブログのベンチマークは2026-07-16時点の値。Claude Sonnet 5 の標準価格と同額の$3/$15。 ★2026-07-28 07:00 JST 再照合: 公式Pricingは入力$3.00（キャッシュヒット$0.30）／出力$15.00／1,048,576トークンから変更なし。★**重みが公開された**: Hugging Face 公式APIで moonshotai/Kimi-K3 が公開（private:false・gated:false）で存在することを機械確認。リポジトリの最終更新は 2026-07-27T16:29:18Z＝**2026-07-28 01:29 JST**（米太平洋時間では07-27午前＝予定日「7月27日」内）。safetensors 96分割・全118ファイル・blob合計約1,561GB、compressed-tensors 形式の量子化済みチェックポイント。config.json はマルチモーダル（vision_config あり・HFのpipelineは image-text-to-text）で、text_config は kimi_linear・93層・hidden 7168・experts 896（うちトークンあたり16＋共有2）・max_position_embeddings 1,048,576（＝公式Pricingのコンテキストと一致）。ライセンスは MIT 系の文面に**収益条項2つ**を足した独自の「Kimi K3 License」（Model as a Service事業で連続12か月の売上2,000万ドル超なら別途契約が必要／MAU1億人超または月商2,000万ドル超の商用製品ではUIに「Kimi K3」の表示義務）＝OSI的な意味での無制限のオープンソースではない。★正式な提供開始日は公式に明記がないままなので released は空のまま（重みの公開日は提供開始日ではない）。参考として公式の「Kimi K3 Launch Top-Up Rebate」は2026-07-15(PDT)開始。Claude Sonnet 5 の標準価格と同額の$3/$15。"
     },
     {
       "name": "Gemini 3.6 Flash",

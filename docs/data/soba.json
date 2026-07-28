@@ -83,15 +83,16 @@
     {
       "name": "Claude Sonnet 5",
       "provider": "Anthropic",
-      "input": 3,
-      "output": 15,
+      "input": 2,
+      "output": 10,
       "context_k": 1000,
       "released": null,
       "tag": "新規",
       "delta": null,
       "verified": true,
+      "row_hint": "through August 31, 2026",
       "src": "https://docs.anthropic.com/en/docs/about-claude/pricing",
-      "note": "掲載は標準料金。2026-08-31までは導入価格 入力$2/出力$10 が有効(9/1から標準$3/$15)。新トークナイザーで同じ文章でも約30%多くトークンを生成するため実コストは単価ほど下がらない。"
+      "note": "掲載値は今日課金される価格＝導入価格の入力$2/出力$10。公式Pricingは同じモデルを期間で2行に分けており、『Claude Sonnet 5 through August 31, 2026』が$2/$10、『Claude Sonnet 5 starting September 1, 2026』が$3/$15。2026-09-01から標準価格$3/$15へ上がる（提供終了日・料金改定カレンダーに掲載）。★2026-07-28訂正: それまで当欄は未来の行の$3/$15を現在の相場として載せていた（照合器がモデル名だけを錨にしていたため毎日PASSしていた）。新トークナイザーで同じ文章でも約30%多くトークンを生成するため、実コストは単価ほど下がらない。"
     },
     {
       "name": "Kimi K3",

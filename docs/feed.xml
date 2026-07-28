@@ -26,6 +26,22 @@
       <description>&lt;p&gt;Moonshot AI が予告していた Kimi K3 の重みが、公式の Hugging Face リポジトリで公開された（本紙が公式APIで機械確認。private・gated ともに false）。リポジトリの最終更新は2026-07-27 16:29 UTC＝日本時間の7月28日1時29分で、米太平洋時間では予定日「7月27日」の午前にあたる。中身は safetensors 96分割・全118ファイル・blob合計約1,561GBの量子化済みチェックポイントで、config.json は画像も扱うマルチモーダル構成（93層・エキスパート896・コンテキスト1,048,576トークン＝公式Pricingの表記と一致）。★ライセンスはMIT系の文面に収益条項を2つ足した独自の「Kimi K3 License」で、Model as a Service事業で連続12か月の売上が2,000万ドルを超える場合は商用利用前にMoonshotとの個別契約が必要、MAU1億人超などの商用製品ではUIに「Kimi K3」の表示義務がある＝制限のないオープンソースではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://huggingface.co/moonshotai/Kimi-K3&quot;&gt;Hugging Face（公式リポジトリ）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>NTTデータ先端技術、Copilot Coworkで営業事務の社内実証 — 料金は「Copilotクレジット」の従量課金</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-5d0e9f6c8a</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-5d0e9f6c8a</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;NTTデータ先端技術が7月27日、Microsoft 365の操作を自律実行するエージェント「Copilot Cowork」を使い、営業事務業務の効率化に向けた社内実証を進めていると発表した。Coworkは固定料金のCopilot USLに加えてタスクごとの従量課金（Copilotクレジット）で、料金はモデル利用量・コンテキスト取得量・ツール呼び出し回数・実行時間の4要素から決まり、既定では無効・テナント/グループ/ユーザー単位で上限とアラートを設定できる。Microsoftは社内テストでAnthropicの「Claude Cowork」よりプロンプト当たり平均30〜40％低コストだったとしている（同社の自社比較である点に留意）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://atmarkit.itmedia.co.jp/ait/articles/2607/28/news053.html&quot;&gt;＠IT&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ナデラCEO「1つのAIに全部を託す企業は生き残れないかもしれない」 — プロンプトもモデルから切り離せと警告</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-593821ed00</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-593821ed00</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Microsoftのサティア・ナデラCEOが日曜のCNN「Fareed Zakaria GPS」で、AI需要のすべてを特定のAIラボに依存する企業は最終的に生き残れないと述べた。自社モデルを持つか、プロンプトをモデル本体から切り離す「AIゲートウェイ」と呼ばれるAI基盤の層を持たない企業は苦しくなる、という主張で、データだけでなく渡すプロンプトそのものを警戒すべきだとした。同氏が今月出した警告をさらに一歩進めた発言で、企業のAI導入をベンダー選定でなく構成の問題として捉え直すもの。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>MIXI、新卒エンジニア研修の資料と動画を無料公開 — 全12科目すべてが「AI活用を前提」</title>
       <link>https://aitimes.jp/news/katsuyo/#s-bd181552ed</link>
       <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-bd181552ed</guid>
@@ -50,6 +66,22 @@
       <description>&lt;p&gt;Moonshot AI が API ドキュメントで「7月27日までに公開予定」としていた Kimi K3 のフルウェイトは、期日当日の19:00 JST時点でも公式 Hugging Face（moonshotai）に現れていない。本紙が同組織のモデル一覧を Hugging Face の API で確認したところ、最新は2026年6月11日作成の Kimi-K2.7-Code のままで、K3 名義のリポジトリは1件も無かった（07:00 JST の確認時と変化なし）。K3を巡っては米政権が「AnthropicのFableからの大規模蒸留」と名指しし財務長官が制裁に言及しているが、公開が遅れている理由が技術的なものか外的な圧力かは、Moonshot から公表されていない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://huggingface.co/moonshotai&quot;&gt;Hugging Face 公式API（author=moonshotai の公開モデル一覧）／Kimi 公式Pricing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>ThreadsのDMでMeta AIと直接やり取りできるように</title>
+      <link>https://aitimes.jp/news/tool/#s-b794a14816</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-b794a14816</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Metaが7月27日、ThreadsのDM内でチャットボット「Meta AI」を使えるようにすると発表した。一部の国では公開投稿でMeta AIに話しかけることが既にできたが（XでのGrokと同じ形）、今回は非公開のDMでやり取りできる点が違う。SNSの会話画面そのものをAIの入口にする動きが続いている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cursor、インド専用プラン「Cursor Start」を月額649ルピー（約7ドル）で投入 — 標準Proの20ドルを大きく下回る</title>
+      <link>https://aitimes.jp/news/tool/#s-5dd05f1ed5</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-5dd05f1ed5</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AIコーディングのCursorが7月27日、初の国別サブスクリプション「Cursor Start」をインド向けに月額649ルピー（約7ドル）で開始した。標準のProプラン月20ドルに対して3分の1程度で、同社はインドが世界3番目の市場になったとして現地採用と法人営業を広げるとしている。SpaceXによる買収の完了が数週間先に控える中での投入で、AIコーディングツールの価格が国ごとに分かれ始めた例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Microsoft、初のAIセキュリティ専用モデルとエージェント型のセキュリティ基盤を投入</title>
       <link>https://aitimes.jp/news/tool/#s-434f3ebbec</link>
       <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-434f3ebbec</guid>
@@ -64,6 +96,14 @@
       <category>ツール・プロダクト</category>
       <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;新しい調査データで、GoogleのAI Overviews（AIが生成する要約回答）が全検索の43%に表示されていることが示された。人が情報に出会う既定の経路が、リンクの一覧からAIの生成した答えへ移りつつあるということ。サイト側から見れば、検索結果に表示されてもクリックが起きない比率が上がる方向の変化になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anthropicのダリオ・アモデイCEO、オープンウェイト禁止への反対を明言 — 「禁止を提唱したことは一度もない」</title>
+      <link>https://aitimes.jp/news/kisei/#s-2bc1e718b6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-2bc1e718b6</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;オープンウェイト規制に反対する連名書簡にAnthropicが署名しなかったことから、同社が中国製オープンモデルの禁止を支持しているとの見方が業界で広がっていたのに対し、アモデイCEOが7月27日午後に反応した。「私の過去の文章を読んだ人なら、私がそうした禁止を有用な手段と考えていないことを知っているはずだが、疑いが残らないようはっきり述べる。Anthropicはオープンウェイトモデルの禁止を提唱したことは一度もない」と書いている（強調は本人）。一方でAI向けチップの輸出には一定の制限を設けるべきだとの立場は維持しており、本紙が7月26日に報じた「署名せず」の理由が本人の言葉で埋まった形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claudeの共有チャットとArtifactsが、Google検索に載っていた可能性</title>
@@ -448,46 +488,6 @@
       <category>モデル・技術</category>
       <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;Alphabetが7月22日（現地時間）発表した四半期決算で、Google Cloudの売上が前年同期比82%増の248億ドルとなり、アナリスト予想（224.6億ドル）を大きく上回った（TechCrunch報道）。けん引したのは企業向けAIソリューションとAIインフラの採用で、未消化の受注残は5,140億ドルに積み上がった。全体売上は24%増の1,198億ドル、Geminiアプリの月間利用者は9.5億人（2025年Q4時点の7.5億人から増加）。年間の設備投資は1,800億〜1,900億ドル規模の見込みで、ピチャイCEOは「需要の指標は強く、力学は1年前より健全だ」と回収に自信を示した。★「AI投資はバブルか」の論争に、クラウドの実売上の急伸という具体的な数字が返ってきた形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI、2030年までのインフラ投資を7,500億ドルへ — 年初見積もりから25%上積み、Stargateは停滞</title>
-      <link>https://aitimes.jp/news/model/#s-957346ecee</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-957346ecee</guid>
-      <category>モデル・技術</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIが2030年までのインフラ投資を7,500億ドルに引き上げると7月22日に表明した（WSJ報道をTechCrunchが伝えた）。年初の見積もりから約25%の上積みで、旗艦のStargateデータセンター計画が停滞して見える中での再加速となる。第1弾はジョージア州サバンナ北西の1,400エーカーに建てる200億ドル規模の拠点「Project Camellia」で、地域電力Georgia Powerから最低3.2ギガワットを引く（電力供給の開始は2028〜2032年）。★OpenAIはインフラ費と電力費を全額自社負担すると表明し、需要逼迫時には最大1ギガワット分の電力使用を抑えるとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/&quot;&gt;TechCrunch（The Wall Street Journal報道を引用）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI会長「オープンモデルは必ずしも安くない」 — 勝負を分けるのは学習効率でなく推論効率</title>
-      <link>https://aitimes.jp/news/model/#s-4f841daa9e</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-4f841daa9e</guid>
-      <category>モデル・技術</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIのブレット・テイラー会長が7月20日（現地時間）のCNBCインタビューで、中国発オープンウェイトモデルについて「必ずしも利用コストが安いわけではない」と述べた。Moonshot「Kimi K3」の評価を問われたもので、タスク完了に必要なトークン数を示す「トークン効率」ではフロンティアモデルがはるかに上であり、競争を分けるのは学習効率ではなく利用時の推論効率で米国勢が依然大きくリードしていると主張した。★単価（1トークンあたりの価格）と実コスト（タスク完了までの総トークン数）は別物という指摘で、AI相場を単価だけで比べる読み方への反論になっている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/22/2000000211/&quot;&gt;ITmedia AI＋（米CNBCインタビューを引用）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Google Cloud、脆弱性を自分で攻撃して確かめるAIエージェント「CodeMender」をプレビュー提供</title>
-      <link>https://aitimes.jp/news/tool/#s-ca5f129c32</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-ca5f129c32</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Google Cloudが7月22日、ソフトウェアの脆弱性を検出し修正パッチまで自動生成するAIエージェント「CodeMender」のプレビュー提供を開始した。検出した脆弱性を自ら攻撃して成立を確かめる点が特徴。まず一部の政府機関と特定の組織・企業に限定して提供し、対象を順次広げる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35250869/&quot;&gt;CNET Japan&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI、企業向けAIエージェント基盤「OpenAI Presence」を発表 — 音声とチャットの応対を実運用へ</title>
-      <link>https://aitimes.jp/news/tool/#s-c54f46e53d</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-c54f46e53d</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIは7月22日、企業がカスタマー対応や社内業務向けに音声・チャットのAIエージェントを配備するためのプラットフォーム「OpenAI Presence」を発表した。同社は「実績のある（proven）エンタープライズ向けAIエージェント基盤」と説明しており、モデル単体の提供から、業務に組み込んだエージェントの運用基盤の提供へ軸足を広げる動きになる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/introducing-openai-presence&quot;&gt;OpenAI（公式発表）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Substack、AI執筆検出を導入 — Pangram連携で「どこまで人間が書いたか」を読者に表示</title>
-      <link>https://aitimes.jp/news/tool/#s-076fd769c4</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-076fd769c4</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Substackが、AI執筆検出ソフトPangramとの連携を発表した。アプリ上の投稿・コメント・返信のうち100文字を超えるものをスキャンし、人間が書いた割合とAIが書いた割合の推定を読者が確認できる。禁止や処罰が目的ではなく、書き手に「どう作ったか」の開示を促すもので、任意の「AI著者注記」の付与、公開前の自分の下書きへの実行、誤判定と思われるスキャンの報告・削除も認める。★短期的には自社プラットフォーム上のAI製ニュースレターを露呈させかねない機能を、あえて開示側に倒した点が異例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

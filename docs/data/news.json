@@ -22,51 +22,43 @@
   "wire": [
     {
       "time": "2026-07-28",
-      "flag": "海外",
-      "title": "Kimi K3の完全な重みが公式Hugging Faceで公開 — 96分割・約1,561GB、独自ライセンス",
-      "source_url": "https://huggingface.co/moonshotai/Kimi-K3"
+      "title": "「AI待ちが惜しくて7並列」個人開発112日の作業ログ集計 — 切り替え279回/日で6月に停止",
+      "source_url": "https://note.com/ai_kojin/n/nbd2377e31097"
     },
     {
       "time": "2026-07-28",
-      "flag": "国内",
-      "title": "イーソル、AIエージェントが車載アプリを動的生成する仮想実験場「AI Mobility Sandbox」",
-      "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html"
+      "title": "Kimi K3の完全な重みが公式Hugging Faceで公開 — 96分割・約1,561GB、独自ライセンス",
+      "source_url": "https://huggingface.co/api/models/moonshotai/Kimi-K3"
     },
     {
       "time": "2026-07-27",
-      "flag": "海外",
+      "title": "アモデイCEO「Anthropicはオープンウェイト禁止を提唱したことは一度もない」",
+      "source_url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/"
+    },
+    {
+      "time": "2026-07-27",
+      "title": "ナデラCEO「1つのAIに全部を託す企業は生き残れないかもしれない」",
+      "source_url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/"
+    },
+    {
+      "time": "2026-07-27",
+      "title": "Cursor、インド専用プランを月額649ルピー（約7ドル）で投入 — 標準Proは20ドル",
+      "source_url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/"
+    },
+    {
+      "time": "2026-07-27",
+      "title": "NTTデータ先端技術、Copilot Coworkで営業事務の社内実証 — 料金はクレジット従量課金",
+      "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/28/news053.html"
+    },
+    {
+      "time": "2026-07-27",
+      "title": "ThreadsのDMでMeta AIと直接やり取りできるように",
+      "source_url": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/"
+    },
+    {
+      "time": "2026-07-27",
       "title": "NVIDIA・Microsoftら30社超がAIセキュリティ連合を設立 — OpenAI・Google・Anthropicは不参加",
-      "source_url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity"
-    },
-    {
-      "time": "2026-07-27",
-      "flag": "海外",
-      "title": "GoogleのAI Overviews、全検索の43%に表示 — AI検索が既定になりつつある",
-      "source_url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/"
-    },
-    {
-      "time": "2026-07-27",
-      "flag": "国内",
-      "title": "警視庁、検索結果とAI要約に「詐欺ではありません」と出させる投資詐欺の手口を確認",
-      "source_url": "https://www.itmedia.co.jp/news/articles/2607/27/news076.html"
-    },
-    {
-      "time": "2026-07-27",
-      "flag": "海外",
-      "title": "Claudeの共有チャットとArtifactsがGoogle検索に載っていた可能性",
-      "source_url": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/"
-    },
-    {
-      "time": "2026-07-27",
-      "flag": "海外",
-      "title": "Microsoft、初のAIセキュリティ専用モデルとエージェント型セキュリティ基盤を投入",
-      "source_url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/"
-    },
-    {
-      "time": "2026-07-27",
-      "flag": "国内",
-      "title": "NEC、スマホ映像から最短1分で高精細3Dモデルを生成する技術",
-      "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/27/news011.html"
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000224/"
     }
   ],
   "topics": [
@@ -75,6 +67,14 @@
       "name": "AIで稼ぐ",
       "jp": "個人・企業がAIで収益を上げた話",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "note（本人の作業ログ集計・無料記事）",
+          "source_url": "https://note.com/ai_kojin/n/nbd2377e31097",
+          "time": "2026-07-28",
+          "title": "「AIの待ち時間がもったいなくて7つ同時に動かしたら、2か月後に止まった」— 個人開発112日の作業ログ実測",
+          "summary": "個人開発者が、AIの応答待ち10分を別プロジェクトで埋め続けた結果を自分の作業ログから集計して公開した。112日で触ったプロジェクトは39個・ログ68本47,879行・作業開始記録5,684回で、同じ日に8つ触った日が3日、最も濃い日は別プロジェクトへの切り替えが279回（約5分に1回）・作業記録392件が0時4分から23時58分まで途切れなかった。「疲れた」「限界」といった言葉13回のうち11回が4月に集中し、6月に停止。本人の結論は「並列数の上限を決めるのはAIの本数ではなく、判断する人間が保持できる文脈の数」で、待ち時間は無駄ではなく判断を寝かせるバッファだった、というもの。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "note（本人の収益公開・無料記事）",
@@ -122,6 +122,30 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "MONOist（医療機器ニュース）",
+          "source_url": "https://monoist.itmedia.co.jp/mn/articles/2607/28/news080.html",
+          "time": "2026-07-08",
+          "title": "日本IBMと関西医科大、医療AI共通ICTプラットフォームを共同開発 — 看護サマリー作成が約30分から約5分へ",
+          "summary": "日本IBMと関西医科大学が7月8日、複数の医療機関でAIアプリを展開するための共通基盤「医療AI共通ICTプラットフォーム」を開発したと発表した。第1弾の文書作成支援アプリは関西医科大の3病院で実運用に入り、電子カルテの情報から看護サマリー・退院サマリー・外来サマリーを出力して、看護サマリー作成にかかる時間を従来の約30分から約5分に短縮できるとしている。基盤にはLLM実行用クラウド、国際標準FHIRに準拠したデータ連携、ゼロトラストのセキュリティが組み込まれ、病院間の情報活用や臨床研究のインフラとしても使う想定。"
+        },
+        {
+          "topic_flag": "国内",
+          "source_name": "＠IT",
+          "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/28/news053.html",
+          "time": "2026-07-27",
+          "title": "NTTデータ先端技術、Copilot Coworkで営業事務の社内実証 — 料金は「Copilotクレジット」の従量課金",
+          "summary": "NTTデータ先端技術が7月27日、Microsoft 365の操作を自律実行するエージェント「Copilot Cowork」を使い、営業事務業務の効率化に向けた社内実証を進めていると発表した。Coworkは固定料金のCopilot USLに加えてタスクごとの従量課金（Copilotクレジット）で、料金はモデル利用量・コンテキスト取得量・ツール呼び出し回数・実行時間の4要素から決まり、既定では無効・テナント/グループ/ユーザー単位で上限とアラートを設定できる。Microsoftは社内テストでAnthropicの「Claude Cowork」よりプロンプト当たり平均30〜40％低コストだったとしている（同社の自社比較である点に留意）。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/",
+          "time": "2026-07-27",
+          "title": "ナデラCEO「1つのAIに全部を託す企業は生き残れないかもしれない」 — プロンプトもモデルから切り離せと警告",
+          "summary": "Microsoftのサティア・ナデラCEOが日曜のCNN「Fareed Zakaria GPS」で、AI需要のすべてを特定のAIラボに依存する企業は最終的に生き残れないと述べた。自社モデルを持つか、プロンプトをモデル本体から切り離す「AIゲートウェイ」と呼ばれるAI基盤の層を持たない企業は苦しくなる、という主張で、データだけでなく渡すプロンプトそのものを警戒すべきだとした。同氏が今月出した警告をさらに一歩進めた発言で、企業のAI導入をベンダー選定でなく構成の問題として捉え直すもの。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "MONOist",
@@ -667,6 +691,22 @@
         {
           "topic_flag": "海外",
           "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/",
+          "time": "2026-07-27",
+          "title": "ThreadsのDMでMeta AIと直接やり取りできるように",
+          "summary": "Metaが7月27日、ThreadsのDM内でチャットボット「Meta AI」を使えるようにすると発表した。一部の国では公開投稿でMeta AIに話しかけることが既にできたが（XでのGrokと同じ形）、今回は非公開のDMでやり取りできる点が違う。SNSの会話画面そのものをAIの入口にする動きが続いている。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/",
+          "time": "2026-07-27",
+          "title": "Cursor、インド専用プラン「Cursor Start」を月額649ルピー（約7ドル）で投入 — 標準Proの20ドルを大きく下回る",
+          "summary": "AIコーディングのCursorが7月27日、初の国別サブスクリプション「Cursor Start」をインド向けに月額649ルピー（約7ドル）で開始した。標準のProプラン月20ドルに対して3分の1程度で、同社はインドが世界3番目の市場になったとして現地採用と法人営業を広げるとしている。SpaceXによる買収の完了が数週間先に控える中での投入で、AIコーディングツールの価格が国ごとに分かれ始めた例。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
           "source_url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/",
           "time": "2026-07-27",
           "title": "Microsoft、初のAIセキュリティ専用モデルとエージェント型のセキュリティ基盤を投入",
@@ -1047,6 +1087,14 @@
       "name": "規制・制度",
       "jp": "法律・ガイドライン・著作権",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
+          "time": "2026-07-27",
+          "title": "Anthropicのダリオ・アモデイCEO、オープンウェイト禁止への反対を明言 — 「禁止を提唱したことは一度もない」",
+          "summary": "オープンウェイト規制に反対する連名書簡にAnthropicが署名しなかったことから、同社が中国製オープンモデルの禁止を支持しているとの見方が業界で広がっていたのに対し、アモデイCEOが7月27日午後に反応した。「私の過去の文章を読んだ人なら、私がそうした禁止を有用な手段と考えていないことを知っているはずだが、疑いが残らないようはっきり述べる。Anthropicはオープンウェイトモデルの禁止を提唱したことは一度もない」と書いている（強調は本人）。一方でAI向けチップの輸出には一定の制限を設けるべきだとの立場は維持しており、本紙が7月26日に報じた「署名せず」の理由が本人の言葉で埋まった形。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "TechCrunch",

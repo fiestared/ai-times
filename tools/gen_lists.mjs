@@ -155,6 +155,34 @@ const results = [];
       `<div class="klist">${rows}</div>`;
   }
 
+  // ★★ 2026-07-28 第6便で塞いだ穴: news.json の kasegu トピックを、誰も描画していなかった。
+  //   gen_news.mjs / newslib.mjs の liveTopics は「kasegu は専用ページ(/kasegu/)が扱う」として
+  //   除外していたが、その専用ページを焼く当ファイルは kasegu.json しか読んでいなかった。
+  //   **2つの生成器が互いに相手の担当だと思っていた**ため、書いた6件がどのHTMLにも出ていない
+  //   （grepで確認・対照実験で検索経路の生存も確認済み）。JSON描画の件と同型＝
+  //   「書いたのに読まれない本文」。金額の確定事例は examples、稼いだ話の速報はここ、という
+  //   CLAUDE.md の設計どおりに、同じページの下段へ出す。
+  let wireList = "";
+  try {
+    const nd = JSON.parse(readFileSync(join(DOCS, "data/news.json"), "utf8"));
+    const kt = (nd.topics || []).find((t) => t.id === "kasegu");
+    const items = (kt && kt.items ? kt.items.slice() : [])
+      .sort((a, b) => String(b.time).localeCompare(String(a.time)));
+    if (items.length) {
+      const rows = items.map((a) =>
+        `<div class="story"><div class="sk">${esc(a.source_name || "")}` +
+        (a.time ? ` ・ ${esc(a.time)}` : "") + `</div>` +
+        `<h3><a href="${esc(a.source_url)}" rel="noopener" target="_blank">${esc(a.title)}</a></h3>` +
+        `<p>${esc(a.summary || "")}</p>` +
+        `<div class="src"><a href="${esc(a.source_url)}" rel="noopener" target="_blank">出典 ↗</a></div></div>`
+      ).join("");
+      wireList = `<section id="kasegu-news" style="margin-top:28px">` +
+        `<div class="sec-title">AIで稼ぐ — 速報 <span class="jp">— 金額が確定していない段階の話・失敗の実測も含む（全${items.length}件）</span></div>` +
+        `<div class="grid2">${rows}</div></section>`;
+    }
+  } catch { wireList = ""; }   // fail closed: 読めなければ何も出さない（偽の空欄を作らない）
+  list += wireList;
+
   const ld = jsonld({
     "@context": "https://schema.org",
     "@graph": [

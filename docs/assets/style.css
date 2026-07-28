@@ -278,3 +278,7 @@ section.cat .cat-desc { font-size: 12.5px; color: var(--ink-3); line-height: 1.6
 /* ニュース見出しの出典リンク: 色は本文のまま・hoverで下線(出典クリック不要で元記事へ) */
 .hl-link { color: inherit; text-decoration: none; }
 .hl-link:hover { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+/* 一覧→トピックページ／戻り導線の1行リンク（速報のトピック分割で追加・2026-07-28） */
+p.more { font-family: var(--font-mono); font-size: 12px; letter-spacing: .3px; margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--line); color: var(--ink-3); }
+p.more a:hover { color: var(--live); }

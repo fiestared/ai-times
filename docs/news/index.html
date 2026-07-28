@@ -3,10 +3,350 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>速報・トピック別ニュース｜AIの規制・制度を一次情報で要約 — AI TIMES</title>
-<meta name="description" content="日本のAI規制・制度（AI推進法、文化庁のAIと著作権、経産省・総務省のAI事業者ガイドラインなど）を、官公庁の一次情報と逐語照合して自分の言葉で要約。転載はせず、必ず出典リンクを付けます。">
+<title>AIニュース速報｜モデル・ツール・規制・企業活用を一次情報で要約 — AI TIMES</title>
+<meta name="description" content="新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して自分の言葉で要約した一覧。記事の転載はせず、必ず出典リンクを付けます。毎日更新。">
 <link rel="stylesheet" href="../assets/style.css">
 <link rel="canonical" href="https://aitimes.jp/news/">
+<link rel="alternate" type="application/rss+xml" title="AI TIMES 速報" href="https://aitimes.jp/feed.xml">
+<!--news:jsonld:S--><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "CollectionPage",
+      "@id": "https://aitimes.jp/news/#page",
+      "name": "AIニュース速報 — AI TIMES",
+      "url": "https://aitimes.jp/news/",
+      "description": "新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を一次情報と逐語照合して要約した一覧。",
+      "dateModified": "2026-07-28",
+      "isPartOf": {
+        "@id": "https://aitimes.jp/#website"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "numberOfItems": 153,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "イーソル、AIエージェントが車載アプリを動的に生成する仮想実験場を公開",
+          "url": "https://aitimes.jp/news/katsuyo/#s-fb962c4bee"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Kimi K3の完全な重みが公開 — safetensors 96分割・約1,561GB、ライセンスは収益条項つきの独自版",
+          "url": "https://aitimes.jp/news/model/#s-7372d8cb93"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "MIXI、新卒エンジニア研修の資料と動画を無料公開 — 全12科目すべてが「AI活用を前提」",
+          "url": "https://aitimes.jp/news/katsuyo/#s-bd181552ed"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "イリヤ・サツケバー氏のSafe Superintelligence、Nvidiaと長期提携 — 2年のステルスを経て次段階へ",
+          "url": "https://aitimes.jp/news/model/#s-3f1518dce9"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Kimi K3の完全な重み、公開予定日の7月27日中に現れず — 公式Hugging Faceの最新は「K2.7-Code」のまま（19:00 JST時点）",
+          "url": "https://aitimes.jp/news/model/#s-e76a071a73"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Microsoft、初のAIセキュリティ専用モデルとエージェント型のセキュリティ基盤を投入",
+          "url": "https://aitimes.jp/news/tool/#s-434f3ebbec"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "GoogleのAI検索が既定になりつつある — AI Overviewsの表示率が検索の43%に",
+          "url": "https://aitimes.jp/news/tool/#s-ec9dddb29c"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Claudeの共有チャットとArtifactsが、Google検索に載っていた可能性",
+          "url": "https://aitimes.jp/news/kisei/#s-6bd1974f42"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "検索結果とAI要約に「詐欺ではありません」と表示させる手口 — 警視庁が注意喚起",
+          "url": "https://aitimes.jp/news/kisei/#s-9dec0ca5a6"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "NVIDIA・Microsoftら30社超が「Open Secure AI Alliance」を設立 — OpenAI・Google・Anthropicは不参加",
+          "url": "https://aitimes.jp/news/kisei/#s-976a94c246"
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "name": "AI音声のなりすまし、法人口座の不正送金は143件・約45億円 — 被害額全体の約4割（警察庁）",
+          "url": "https://aitimes.jp/news/kisei/#s-4ea6f3adab"
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "name": "Hugging Face CEO、OpenAIに「徹底した透明性」を要求 — 暴走エージェントの実行トレース公開と1億ドル分の計算資源を求める",
+          "url": "https://aitimes.jp/news/kisei/#s-381c0186a6"
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "name": "ロボットの学習データに「脳波」を混ぜる — Encordが独Zander Labsと試験、誤り・意図・驚きを教師信号に",
+          "url": "https://aitimes.jp/news/model/#s-0ab8893ae8"
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "name": "オープンウェイト規制に反対する連名書簡、署名は米35社に — OpenAIは署名・Anthropicは署名せず",
+          "url": "https://aitimes.jp/news/kisei/#s-e1e25c3e34"
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "name": "1本の電線の断線がAIデータセンターの弱点を露呈 — 電力網の乱れへの応答が課題",
+          "url": "https://aitimes.jp/news/model/#s-ed13e18ec7"
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Meta AI、カレンダー連携と日次ブリーフィングを追加 — チャットボットを「アシスタント」へ寄せる",
+          "url": "https://aitimes.jp/news/tool/#s-e55b7467c0"
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "name": "Patreon、従業員の20%・約93人を削減 — CEOは「AIが人を置き換えると考えているからではない」",
+          "url": "https://aitimes.jp/news/katsuyo/#s-440b0110dc"
+        },
+        {
+          "@type": "ListItem",
+          "position": 18,
+          "name": "中小企業が生成AIでハマる「あるある課題」5つ — 元経産省の専門家が乗り切り方を解説",
+          "url": "https://aitimes.jp/news/katsuyo/#s-8edb96d7d0"
+        },
+        {
+          "@type": "ListItem",
+          "position": 19,
+          "name": "スーパーの「生成AIポップ」が物議 — 看板広告で知られるきぬた歯科院長は「これはアリ」",
+          "url": "https://aitimes.jp/news/katsuyo/#s-59544f4138"
+        },
+        {
+          "@type": "ListItem",
+          "position": 20,
+          "name": "明治安田生命、システム開発の工数見積もりをAIエージェントへ — PoC完了、2026年度中に全社本番運用へ",
+          "url": "https://aitimes.jp/news/katsuyo/#s-edfc7fe74b"
+        },
+        {
+          "@type": "ListItem",
+          "position": 21,
+          "name": "リード・ホフマンとマーク・ピンカスの新AIラボ「Prentis」、1億ドル調達を交渉中",
+          "url": "https://aitimes.jp/news/model/#s-e887b32468"
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
+          "name": "Anthropic、「Claude Opus 5」提供開始 — Fable 5の“半額”で、旧Opus 4.8とは同額の$5/$25",
+          "url": "https://aitimes.jp/news/model/#s-e75df1016a"
+        },
+        {
+          "@type": "ListItem",
+          "position": 23,
+          "name": "OpenAI初のハードウェアは「Micro」 — ChatGPT/Codex用キーパッド、専門工房Work Louderと共同開発",
+          "url": "https://aitimes.jp/news/tool/#s-658d80679c"
+        },
+        {
+          "@type": "ListItem",
+          "position": 24,
+          "name": "Alexa Plus、スマートホーム機器との連携を拡張 — Bosch・iRobot・Yale Homeなど、まずプレビューで",
+          "url": "https://aitimes.jp/news/tool/#s-c6bad60c59"
+        },
+        {
+          "@type": "ListItem",
+          "position": 25,
+          "name": "Midjourney、占星術アプリ「Co-Star」を買収 — 画像・動画生成の外へ広がる",
+          "url": "https://aitimes.jp/news/tool/#s-2bbb3806a8"
+        },
+        {
+          "@type": "ListItem",
+          "position": 26,
+          "name": "Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた",
+          "url": "https://aitimes.jp/news/tool/#s-a913682517"
+        },
+        {
+          "@type": "ListItem",
+          "position": 27,
+          "name": "Bluesky のAIアシスタント「Attie」が、オープンなソーシャル調査ツールへ拡張",
+          "url": "https://aitimes.jp/news/tool/#s-983cb96222"
+        },
+        {
+          "@type": "ListItem",
+          "position": 28,
+          "name": "ChatGPTの新音声モードがデスクトップアプリへ — 声だけでPC上の作業をエージェントに任せる",
+          "url": "https://aitimes.jp/news/tool/#s-75e11e424e"
+        },
+        {
+          "@type": "ListItem",
+          "position": 29,
+          "name": "Google DeepMind が「AI Control Roadmap」を公表 — 自社AIが意図に反した場合への備え",
+          "url": "https://aitimes.jp/news/kisei/#s-1017eaa046"
+        },
+        {
+          "@type": "ListItem",
+          "position": 30,
+          "name": "「ChatGPTの誤った健康助言で命の危機」— 米フロリダの男性がOpenAIとアルトマンCEOを提訴",
+          "url": "https://aitimes.jp/news/kisei/#s-439ecfb0ae"
+        },
+        {
+          "@type": "ListItem",
+          "position": 31,
+          "name": "Kimi K3論争が突き付けた「AIのサプライチェーンリスク」 — 性能と価格だけではモデルを選べない",
+          "url": "https://aitimes.jp/news/kisei/#s-b45b165fd9"
+        },
+        {
+          "@type": "ListItem",
+          "position": 32,
+          "name": "近畿大学情報学部、入試での生成AI利用を容認 — 総合型選抜の自己PR動画とプレゼン準備で",
+          "url": "https://aitimes.jp/news/kisei/#s-1154f79510"
+        },
+        {
+          "@type": "ListItem",
+          "position": 33,
+          "name": "三菱電機とソニー、AIビジョンセンサーの新会社「Advanced Vision Solutions」設立へ — 出資比率60:40、10月に事業開始",
+          "url": "https://aitimes.jp/news/katsuyo/#s-ea69af5b12"
+        },
+        {
+          "@type": "ListItem",
+          "position": 34,
+          "name": "三井不動産、データセンターに累計6,000億円超を投資へ — 稼働3棟＋開発中7棟、「産業デベロッパー」宣言",
+          "url": "https://aitimes.jp/news/katsuyo/#s-fe7e9adb3c"
+        },
+        {
+          "@type": "ListItem",
+          "position": 35,
+          "name": "AMD、ラックスケールAIシステム「Helios」でNVIDIAに対抗 — 年内に顧客への出荷開始",
+          "url": "https://aitimes.jp/news/model/#s-264c4ef28e"
+        },
+        {
+          "@type": "ListItem",
+          "position": 36,
+          "name": "Gemini の月間利用者が9億5,000万人超 — 1年で3倍、「10億人プロダクト」目前",
+          "url": "https://aitimes.jp/news/model/#s-81587b96e5"
+        },
+        {
+          "@type": "ListItem",
+          "position": 37,
+          "name": "Microsoft、GitHub CopilotとExcelを自社モデル「MAI」へ切り替え — Excelの品質は「GPT-5.6と同等」",
+          "url": "https://aitimes.jp/news/model/#s-358e53a4ce"
+        },
+        {
+          "@type": "ListItem",
+          "position": 38,
+          "name": "Transformer専用チップのEtched、評価額103億ドルに — Sequoia主導で3億ドル調達、7か月で倍増",
+          "url": "https://aitimes.jp/news/model/#s-8d1cdf633c"
+        },
+        {
+          "@type": "ListItem",
+          "position": 39,
+          "name": "Samsung、Gemini搭載の「Android XR」スマートグラスを発表 — 2026年秋にまず音声モデルから",
+          "url": "https://aitimes.jp/news/tool/#s-a4f9e13e1b"
+        },
+        {
+          "@type": "ListItem",
+          "position": 40,
+          "name": "Jiraが要件定義をAIで自動作成し、タスクをClaude CodeやCopilotへ割り当て",
+          "url": "https://aitimes.jp/news/tool/#s-eacb2a407d"
+        },
+        {
+          "@type": "ListItem",
+          "position": 41,
+          "name": "Runway、生成メディア向けの「モデルルーター」を公開 — 品質・速度・コストの優先度で自動選択",
+          "url": "https://aitimes.jp/news/tool/#s-9954135b21"
+        },
+        {
+          "@type": "ListItem",
+          "position": 42,
+          "name": "Claudeの音声モードが刷新 — Opus/Sonnet/Haikuを選べるように、声からGmailやSlackの操作も",
+          "url": "https://aitimes.jp/news/tool/#s-4ee51e0aa6"
+        },
+        {
+          "@type": "ListItem",
+          "position": 43,
+          "name": "「ChatGPT Health」が米国の18歳以上・全プランに開放 — 健康関連の質問は週3億件に",
+          "url": "https://aitimes.jp/news/tool/#s-fba0078191"
+        },
+        {
+          "@type": "ListItem",
+          "position": 44,
+          "name": "AIの安全ガードレールが、攻撃側セキュリティ研究者の仕事を妨げている",
+          "url": "https://aitimes.jp/news/kisei/#s-2a6bd5e033"
+        },
+        {
+          "@type": "ListItem",
+          "position": 45,
+          "name": "米「Genesis Mission」初回助成を発表 — AI駆動の科学研究に50億ドル",
+          "url": "https://aitimes.jp/news/kisei/#s-f808bacb1e"
+        },
+        {
+          "@type": "ListItem",
+          "position": 46,
+          "name": "米議員が「AIキルスイッチ法案」を提出へ — 国土安全保障省が強力なAIの停止を命令できる仕組み",
+          "url": "https://aitimes.jp/news/kisei/#s-01d83a6818"
+        },
+        {
+          "@type": "ListItem",
+          "position": 47,
+          "name": "「Fableの蒸留でK3は作れない」— 米政権の名指し告発に、専門家が時間的な無理を指摘",
+          "url": "https://aitimes.jp/news/kisei/#s-47cc8085e9"
+        },
+        {
+          "@type": "ListItem",
+          "position": 48,
+          "name": "ロッテ、顔写真から「ビックリマン風」キャラをAI生成→グッズ化 7月29日開始",
+          "url": "https://aitimes.jp/news/katsuyo/#s-6b147fd442"
+        },
+        {
+          "@type": "ListItem",
+          "position": 49,
+          "name": "NTTデータ、障害分析を30分に短縮 — ChatGPT EnterpriseとCodexを9,000人規模で展開",
+          "url": "https://aitimes.jp/news/katsuyo/#s-ce627deb99"
+        },
+        {
+          "@type": "ListItem",
+          "position": 50,
+          "name": "メルカリ、自社のAI活用を明かす動画13本を公開 — 「なぜCTOがCHRO兼CAIOになったのか」",
+          "url": "https://aitimes.jp/news/katsuyo/#s-ac157bbc32"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ホーム",
+          "item": "https://aitimes.jp/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "速報",
+          "item": "https://aitimes.jp/news/"
+        }
+      ]
+    }
+  ]
+}</script><!--news:jsonld:E-->
 <!-- Google Analytics (GA4) — aitimes.jp 専用プロパティ -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZV2EZYGDP"></script>
 <script>
@@ -22,9 +362,9 @@
 <body>
 <div class="util">
   <div class="wrap util-row">
-    <span class="mono" id="today">—</span>
+    <span class="mono" id="today">2026年7月28日（火）</span>
     <span class="sp"></span>
-    <span class="mono" id="freshness">一次情報と照合</span>
+    <span class="mono" id="freshness">更新: 2026-07-28</span>
   </div>
 </div>
 
@@ -52,9 +392,10 @@
 <main class="wrap">
   <section>
     <div class="sec-title">速報・トピック別ニュース <span class="jp">— 一次情報を自分の言葉で要約（転載しない）</span></div>
-    <p class="dek">AIをめぐる<b>制度・法律・ガイドライン</b>を中心に、官公庁・各社の<b>一次情報を逐語照合</b>して要約した一覧です。他社記事の見出し・本文は<b>転載しません</b>。掲載しているのは、公式発表を自分の言葉で要約したもの・事実（日付・数値・固有名詞）・<b>一次情報へのリンク</b>だけです。裏取りできていないトピック（モデル・ツール・活用・稼ぐ）は、確認でき次第 追加します（fail closed）。</p>
-    <div id="wireMount" style="margin-top:14px"><p class="loading">読み込み中…</p></div>
-    <div id="topicsMount" style="margin-top:8px"></div>
+    <p class="dek">AIをめぐる<b>新モデル・API価格</b>、<b>新しいツール</b>、<b>規制・制度</b>、<b>企業の導入事例</b>を、各社と官公庁の<b>一次情報と逐語照合</b>して要約した一覧です。他社記事の見出し・本文は<b>転載しません</b>。掲載しているのは、公式発表を自分の言葉で要約したもの・事実（日付・数値・固有名詞）・<b>一次情報へのリンク</b>だけです。裏取りできないものは載せません（fail closed）。</p>
+    <nav class="cat-nav" aria-label="トピック" style="margin-top:12px"><!--news:topicnav:S--><a href="./katsuyo/">企業のAI活用<span>34</span></a><a href="./model/">モデル・技術<span>32</span></a><a href="./tool/">ツール・プロダクト<span>47</span></a><a href="./kisei/">規制・制度<span>40</span></a><!--news:topicnav:E--></nav>
+    <div id="wireMount" style="margin-top:14px"><!--news:wire:S--><aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono">最新順</span></div><div class="wi"><div class="tm">2026-07-28</div><div class="hl"><a class="hl-link" href="https://huggingface.co/moonshotai/Kimi-K3" rel="noopener" target="_blank">Kimi K3の完全な重みが公式Hugging Faceで公開 — 96分割・約1,561GB、独自ライセンス</a> <span class="fl">海外</span></div></div><div class="wi"><div class="tm">2026-07-28</div><div class="hl"><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html" rel="noopener" target="_blank">イーソル、AIエージェントが車載アプリを動的生成する仮想実験場「AI Mobility Sandbox」</a> <span class="fl">国内</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity" rel="noopener" target="_blank">NVIDIA・Microsoftら30社超がAIセキュリティ連合を設立 — OpenAI・Google・Anthropicは不参加</a> <span class="fl">海外</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/" rel="noopener" target="_blank">GoogleのAI Overviews、全検索の43%に表示 — AI検索が既定になりつつある</a> <span class="fl">海外</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/27/news076.html" rel="noopener" target="_blank">警視庁、検索結果とAI要約に「詐欺ではありません」と出させる投資詐欺の手口を確認</a> <span class="fl">国内</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" rel="noopener" target="_blank">Claudeの共有チャットとArtifactsがGoogle検索に載っていた可能性</a> <span class="fl">海外</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" rel="noopener" target="_blank">Microsoft、初のAIセキュリティ専用モデルとエージェント型セキュリティ基盤を投入</a> <span class="fl">海外</span></div></div><div class="wi"><div class="tm">2026-07-27</div><div class="hl"><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/27/news011.html" rel="noopener" target="_blank">NEC、スマホ映像から最短1分で高精細3Dモデルを生成する技術</a> <span class="fl">国内</span></div></div></aside><!--news:wire:E--></div>
+    <div id="topicsMount" style="margin-top:8px"><!--news:topics:S--><section id="katsuyo" style="margin-top:18px"><div class="sec-title">企業のAI活用 <span class="jp">— 会社がAIをどう業務に入れているか</span></div><div class="grid2"><div class="story" id="s-fb962c4bee"><div class="sk">MONOist ・ 2026-07-28</div><h3><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html" rel="noopener" target="_blank">イーソル、AIエージェントが車載アプリを動的に生成する仮想実験場を公開</a></h3><p><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html" rel="noopener" target="_blank">イーソルは自社イベント「eSOL Technology Forum 2026」で、AIエージェントと人・車両が対話するための仮想環境「eSOL AI Mobility Sandbox」を披露した。AI定義型車両（AIDV）に向けて、必要なアプリをその場で生成・実行させる想定の実験場になる。</a></p><div class="src"><a href="https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-bd181552ed"><div class="sk">ITmedia AI＋ ・ 2026-07-27</div><h3><a class="hl-link" href="https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/" rel="noopener" target="_blank">MIXI、新卒エンジニア研修の資料と動画を無料公開 — 全12科目すべてが「AI活用を前提」</a></h3><p><a class="hl-link" href="https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/" rel="noopener" target="_blank">MIXIは7月27日、2026年度入社の新卒エンジニア向けに実施した技術研修の資料と一部のアーカイブ動画を公開した。Git・コンテナ技術・セキュリティ・モバイルアプリ開発・データ活用など全12科目で、2026年度から2日間に拡充したAI研修（LLM・AIエージェントの実践）も含まれる。同社は全12科目を「AI活用を前提とした研修プログラム」と説明し、AI研修に限らず各科目で自社エンジニアが実務でどうAIを使っているかを解説したとしている。</a></p><div class="src"><a href="https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-440b0110dc"><div class="sk">The Verge（404 Media報を引用） ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.theverge.com/tech/970211/patreon-layoffs-ai" rel="noopener" target="_blank">Patreon、従業員の20%・約93人を削減 — CEOは「AIが人を置き換えると考えているからではない」</a></h3><p><a class="hl-link" href="https://www.theverge.com/tech/970211/patreon-layoffs-ai" rel="noopener" target="_blank">The Verge（404 Media報を引用）によると、Patreonは従業員の20%・約93人を削減する。ジャック・コンテCEOは社内メモで、この変更は「AIが人間を置き換えると私たちが信じているからではない」としつつ、AIがテック業界を「根本的に変えた」と述べている。★AIを理由に挙げた2026年のテック人員削減が積み上がる中、「置き換えではない」と明示しながら削減するという説明の仕方が目につきはじめている。</a></p><div class="src"><a href="https://www.theverge.com/tech/970211/patreon-layoffs-ai" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-8edb96d7d0"><div class="sk">キーマンズネット（元経産省・小池明氏へのインタビュー） ・ 2026-07-24</div><h3><a class="hl-link" href="https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html" rel="noopener" target="_blank">中小企業が生成AIでハマる「あるある課題」5つ — 元経産省の専門家が乗り切り方を解説</a></h3><p><a class="hl-link" href="https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html" rel="noopener" target="_blank">キーマンズネットの読者調査に寄せられた中小企業の生成AIの悩みから代表的な5つを取り上げ、経済産業省・中小企業庁でデジタル活用支援に携わった小池明氏が対処法を答えた記事。現場で実際に詰まっている論点に絞って整理されている。★大企業の派手な導入事例より、人と予算が限られた企業がどこで止まるかのほうが、多くの読者の実情に近い。</a></p><div class="src"><a href="https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-59544f4138"><div class="sk">ITmedia NEWS ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/24/news094.html" rel="noopener" target="_blank">スーパーの「生成AIポップ」が物議 — 看板広告で知られるきぬた歯科院長は「これはアリ」</a></h3><p><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/24/news094.html" rel="noopener" target="_blank">スーパーの青果売り場に並んだ、生成AIで作ったとみられる派手な商品ポップがX上で物議を醸し、「見づらい」との声が相次いだ。一方、看板広告で知られるきぬた歯科のきぬた泰和院長は「これはアリ」と評価しているとITmediaは伝えている。★生成AIが現場の販促物に降りてきた段階で、品質の基準を誰がどう決めるのかという実務上の問いが表に出た事例。</a></p><div class="src"><a href="https://www.itmedia.co.jp/news/articles/2607/24/news094.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-edfc7fe74b"><div class="sk">＠IT ・ 2026-07-24</div><h3><a class="hl-link" href="https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news050.html" rel="noopener" target="_blank">明治安田生命、システム開発の工数見積もりをAIエージェントへ — PoC完了、2026年度中に全社本番運用へ</a></h3><p><a class="hl-link" href="https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news050.html" rel="noopener" target="_blank">明治安田生命保険は、限られた有識者に頼らざるを得なかったシステム開発工数の見積もりを、Salesforceの「Agentforce」で構築したAIエージェントに任せる仕組みのPoCを完了し、本番運用に向けた準備フェーズへ移行した。チャットで開発内容を入力するとAIが開発要素を推定し、Salesforce上に蓄積してきた過去の類似案件を検索して、類似度に応じて工数を算定する。担当者の業務負荷が減っただけでなく、要件が固まっていない案件でも対話を通じて要件を洗い出せる効果を確認しており、2026年度中の全社本番運用を目指す（セールスフォース・ジャパンが6月15日に発表した事例を＠ITが7月24日に詳報）。</a></p><div class="src"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news050.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-ea69af5b12"><div class="sk">EE Times Japan ・ 2026-07-23</div><h3><a class="hl-link" href="https://eetimes.itmedia.co.jp/ee/articles/2607/23/news079.html" rel="noopener" target="_blank">三菱電機とソニー、AIビジョンセンサーの新会社「Advanced Vision Solutions」設立へ — 出資比率60:40、10月に事業開始</a></h3><p><a class="hl-link" href="https://eetimes.itmedia.co.jp/ee/articles/2607/23/news079.html" rel="noopener" target="_blank">三菱電機とソニーセミコンダクタソリューションズは、製造業向けAIビジョンセンサーソリューションを開発する合弁新会社を横浜・みなとみらいに設立すると発表した。出資比率は三菱電機60%・ソニー側40%で、2026年10月から事業を始める。三菱電機のFA制御ノウハウとデジタル基盤「Serendie」に、ソニーのイメージセンサーとエッジAI技術を組み合わせ、イメージセンサー上でAIが映像を解析するセンサーで製造現場の省人化・無人化を狙う。フィジカルAIの国内大型連合がまた一つ増えた。</a></p><div class="src"><a href="https://eetimes.itmedia.co.jp/ee/articles/2607/23/news079.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-fe7e9adb3c"><div class="sk">MONOist ・ 2026-07-23</div><h3><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/24/news046.html" rel="noopener" target="_blank">三井不動産、データセンターに累計6,000億円超を投資へ — 稼働3棟＋開発中7棟、「産業デベロッパー」宣言</a></h3><p><a class="hl-link" href="https://monoist.itmedia.co.jp/mn/articles/2607/24/news046.html" rel="noopener" target="_blank">三井不動産は7月23日の事業説明会で、物流施設の供給にとどまらない「産業デベロッパー」への領域拡大を打ち出した。生成AI・クラウドの需要拡大を受け、データセンター事業に累計6,000億円超を投資する(これまでの累計投資は3,000億円超・稼働3棟に加えて7棟を開発中、インド展開も)。物流事業は88物件・累計総投資約1兆4,000億円に達しており、AIインフラが不動産大手の次の柱に格上げされた形。</a></p><div class="src"><a href="https://monoist.itmedia.co.jp/mn/articles/2607/24/news046.html" rel="noopener" target="_blank">出典 ↗</a></div></div></div><p class="more"><a href="./katsuyo/"><b>企業のAI活用</b> の記事をすべて見る（全34件）→</a></p></section><section id="model" style="margin-top:18px"><div class="sec-title">モデル・技術 <span class="jp">— 新モデル・価格・性能</span></div><div class="grid2"><div class="story" id="s-7372d8cb93"><div class="sk">Hugging Face（公式リポジトリ） ・ 2026-07-28</div><h3><a class="hl-link" href="https://huggingface.co/moonshotai/Kimi-K3" rel="noopener" target="_blank">Kimi K3の完全な重みが公開 — safetensors 96分割・約1,561GB、ライセンスは収益条項つきの独自版</a></h3><p><a class="hl-link" href="https://huggingface.co/moonshotai/Kimi-K3" rel="noopener" target="_blank">Moonshot AI が予告していた Kimi K3 の重みが、公式の Hugging Face リポジトリで公開された（本紙が公式APIで機械確認。private・gated ともに false）。リポジトリの最終更新は2026-07-27 16:29 UTC＝日本時間の7月28日1時29分で、米太平洋時間では予定日「7月27日」の午前にあたる。中身は safetensors 96分割・全118ファイル・blob合計約1,561GBの量子化済みチェックポイントで、config.json は画像も扱うマルチモーダル構成（93層・エキスパート896・コンテキスト1,048,576トークン＝公式Pricingの表記と一致）。★ライセンスはMIT系の文面に収益条項を2つ足した独自の「Kimi K3 License」で、Model as a Service事業で連続12か月の売上が2,000万ドルを超える場合は商用利用前にMoonshotとの個別契約が必要、MAU1億人超などの商用製品ではUIに「Kimi K3」の表示義務がある＝制限のないオープンソースではない。</a></p><div class="src"><a href="https://huggingface.co/moonshotai/Kimi-K3" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-3f1518dce9"><div class="sk">TechCrunch ・ 2026-07-27</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/" rel="noopener" target="_blank">イリヤ・サツケバー氏のSafe Superintelligence、Nvidiaと長期提携 — 2年のステルスを経て次段階へ</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/" rel="noopener" target="_blank">OpenAI共同創業者のイリヤ・サツケバー氏が率いる Safe Superintelligence が、Nvidia との長期パートナーシップを発表した。設立から約2年、ほとんど情報を出さないステルス状態だった同社が、研究をスケールさせる次の段階に入る位置づけだという。製品を出していない研究段階の会社にとっても、計算資源の確保が動きの前提になっていることを示す。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-e76a071a73"><div class="sk">Hugging Face 公式API（author=moonshotai の公開モデル一覧）／Kimi 公式Pricing ・ 2026-07-27</div><h3><a class="hl-link" href="https://huggingface.co/moonshotai" rel="noopener" target="_blank">Kimi K3の完全な重み、公開予定日の7月27日中に現れず — 公式Hugging Faceの最新は「K2.7-Code」のまま（19:00 JST時点）</a></h3><p><a class="hl-link" href="https://huggingface.co/moonshotai" rel="noopener" target="_blank">Moonshot AI が API ドキュメントで「7月27日までに公開予定」としていた Kimi K3 のフルウェイトは、期日当日の19:00 JST時点でも公式 Hugging Face（moonshotai）に現れていない。本紙が同組織のモデル一覧を Hugging Face の API で確認したところ、最新は2026年6月11日作成の Kimi-K2.7-Code のままで、K3 名義のリポジトリは1件も無かった（07:00 JST の確認時と変化なし）。K3を巡っては米政権が「AnthropicのFableからの大規模蒸留」と名指しし財務長官が制裁に言及しているが、公開が遅れている理由が技術的なものか外的な圧力かは、Moonshot から公表されていない。</a></p><div class="src"><a href="https://huggingface.co/moonshotai" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-0ab8893ae8"><div class="sk">TechCrunch（Tim Fernholz） ・ 2026-07-26</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/" rel="noopener" target="_blank">ロボットの学習データに「脳波」を混ぜる — Encordが独Zander Labsと試験、誤り・意図・驚きを教師信号に</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/" rel="noopener" target="_blank">AI学習データ企業のEncord（カリフォルニア州サンレアンドロ）が、独の神経科学スタートアップZander Labs製のヘッドセットで作業者の脳波を計測しながらロボット学習用データを集める試験を始めた。背景にあるのは「次の制約はモデルの構造ではなく現実世界の物理データの絶対量だ」という読みで、誤り・意図・驚きといった心的状態を推定してデータに付ける狙い。まず脳波タグ付きの初期データセットを作って顧客のロボットモデルに通し、実際に性能が上がるかを評価してから拡大を判断する段階だとしている。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-ed13e18ec7"><div class="sk">TechCrunch ・ 2026-07-25</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" rel="noopener" target="_blank">1本の電線の断線がAIデータセンターの弱点を露呈 — 電力網の乱れへの応答が課題</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" rel="noopener" target="_blank">TechCrunchによると、米バージニア州北部で起きた送電線1本の断線という「ニアミス」が、AIデータセンターが電力網の乱れに対していかに拙く応答するかを露呈させた。記事は問題の所在と、それを是正するために何が要るかを整理している。★データセンターの増設ペースに対し、電力系統の安定に対する責任の設計が追いついていないという論点で、国内のデータセンター投資ラッシュにも直結する。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-e887b32468"><div class="sk">TechCrunch ・ 2026-07-24</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/" rel="noopener" target="_blank">リード・ホフマンとマーク・ピンカスの新AIラボ「Prentis」、1億ドル調達を交渉中</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/" rel="noopener" target="_blank">LinkedIn創業者リード・ホフマンとZynga創業者マーク・ピンカスが共同創業した新しいAIラボ「Prentis」が、1億ドル（約100億円規模）の資金調達を交渉していると報じられた。同ラボは、AI最大の用途はコーディングではなく「日常的なPC作業の自動化」がまもなく上回るという賭けに立つ。★モデルの賢さ競争ではなく用途の選び方で差をつけようとする、新しい系統のラボにあたる。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-e75df1016a"><div class="sk">Anthropic（公式発表） ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.anthropic.com/news/claude-opus-5" rel="noopener" target="_blank">Anthropic、「Claude Opus 5」提供開始 — Fable 5の“半額”で、旧Opus 4.8とは同額の$5/$25</a></h3><p><a class="hl-link" href="https://www.anthropic.com/news/claude-opus-5" rel="noopener" target="_blank">Anthropicは7月24日、新主力モデル Claude Opus 5（claude-opus-5）を全プラットフォームで提供開始した。料金は入力100万トークン$5・出力$25で前世代 Opus 4.8 と同額のまま、同社は「最上位 Fable 5 のフロンティア級の知能に近い」と位置づけ、Frontier-Bench v0.1 では Opus 4.8 の性能を2倍以上に伸ばしつつ1タスクあたりのコストは下がったとする。Claude Max の既定モデルになり、既定の約2.5倍速の Fast mode は基本料金の2倍。</a></p><div class="src"><a href="https://www.anthropic.com/news/claude-opus-5" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-264c4ef28e"><div class="sk">TechCrunch ・ 2026-07-23</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" rel="noopener" target="_blank">AMD、ラックスケールAIシステム「Helios」でNVIDIAに対抗 — 年内に顧客への出荷開始</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" rel="noopener" target="_blank">AMDが、ラック単位でAI処理をまとめる新システム「Helios」を発表し、年内に顧客への出荷を始めるとTechCrunchが報じた。データセンター向けAIチップ市場でNVIDIAの優位に正面から挑む構えとなる。★AMDがAnthropicへ最大50億ドルを出資し最大2GW分の導入を発表した際の対象システムがこのHeliosで、出荷開始は当時の計画が実機の段階に入ったことを意味する。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/" rel="noopener" target="_blank">出典 ↗</a></div></div></div><p class="more"><a href="./model/"><b>モデル・技術</b> の記事をすべて見る（全32件）→</a></p></section><section id="tool" style="margin-top:18px"><div class="sec-title">ツール・プロダクト <span class="jp">— 新しいAIツールの登場・更新</span></div><div class="grid2"><div class="story" id="s-434f3ebbec"><div class="sk">TechCrunch ・ 2026-07-27</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" rel="noopener" target="_blank">Microsoft、初のAIセキュリティ専用モデルとエージェント型のセキュリティ基盤を投入</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" rel="noopener" target="_blank">Microsoftが、自社初のAIセキュリティモデルと、新しいセキュリティ基盤を今週発表した。攻撃側が生成AIで高速化していることへの応答で、防御側の一次対応をエージェントに任せる方向が大手から出てきた形になる。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-ec9dddb29c"><div class="sk">TechCrunch ・ 2026-07-27</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/" rel="noopener" target="_blank">GoogleのAI検索が既定になりつつある — AI Overviewsの表示率が検索の43%に</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/" rel="noopener" target="_blank">新しい調査データで、GoogleのAI Overviews（AIが生成する要約回答）が全検索の43%に表示されていることが示された。人が情報に出会う既定の経路が、リンクの一覧からAIの生成した答えへ移りつつあるということ。サイト側から見れば、検索結果に表示されてもクリックが起きない比率が上がる方向の変化になる。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-e55b7467c0"><div class="sk">The Verge ・ 2026-07-25</div><h3><a class="hl-link" href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" rel="noopener" target="_blank">Meta AI、カレンダー連携と日次ブリーフィングを追加 — チャットボットを「アシスタント」へ寄せる</a></h3><p><a class="hl-link" href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" rel="noopener" target="_blank">The Vergeによると、MetaはAIチャットボット「Meta AI」に生産性向けの新機能を加える。カレンダーを参照して予定づくりを助ける機能、日次ブリーフィングの生成、利用者が途中で方向を修正できる詳細リサーチなどで、Gemini・ChatGPT・Claudeへの対抗が狙いとされる。</a></p><div class="src"><a href="https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-658d80679c"><div class="sk">TechCrunch（Lucas Ropek・実機レビュー） ・ 2026-07-24</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/" rel="noopener" target="_blank">OpenAI初のハードウェアは「Micro」 — ChatGPT/Codex用キーパッド、専門工房Work Louderと共同開発</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/" rel="noopener" target="_blank">OpenAIが初のハードウェア製品として、ChatGPTと組み合わせて使う小型キーパッド「Micro」を発売した。専門キーボードメーカーのWork Louderとの共同開発で、上部6つの「エージェント」キーにChatGPTやコーディング用のCodexで実行する処理を割り当てられ、下部に6つのコマンドキーを備える。TechCrunchの実機レビューは「一部の開発者には楽しいが、それ以外の人にはやや不可解な工芸品的ノベルティ」と評しており、同社のスマートホーム機器やApple提訴といったハード進出の動きの中では小さな一歩と位置づけられる。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-c6bad60c59"><div class="sk">The Verge ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices" rel="noopener" target="_blank">Alexa Plus、スマートホーム機器との連携を拡張 — Bosch・iRobot・Yale Homeなど、まずプレビューで</a></h3><p><a class="hl-link" href="https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices" rel="noopener" target="_blank">The Vergeによると、Amazonは音声アシスタント「Alexa Plus」の更新をプレビュー提供し、スマートホーム機器と新しい形で接続できるようにする。対象にはBosch・Delta・Ecovacs・iRobot・Yale Home・Whirlpool・Tapo・Eufyなどの製品が挙がっており、より複雑な指示を扱えるようになるという。</a></p><div class="src"><a href="https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-2bbb3806a8"><div class="sk">The Verge（Bloomberg報を引用） ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition" rel="noopener" target="_blank">Midjourney、占星術アプリ「Co-Star」を買収 — 画像・動画生成の外へ広がる</a></h3><p><a class="hl-link" href="https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition" rel="noopener" target="_blank">The Verge（Bloomberg報を引用）によると、画像・動画生成で知られるMidjourneyは現地時間の木曜、パーソナライズ占星術アプリ「Co-Star」の買収を発表した。Co-Starは日々の占いを提供する無料アプリで、生成AIラボが生成技術そのものの外にある消費者向けアプリを取り込む動きになる。</a></p><div class="src"><a href="https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-a913682517"><div class="sk">TechCrunch ・ 2026-07-24</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/" rel="noopener" target="_blank">Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/" rel="noopener" target="_blank">コーディングエージェント「Devin」を手がける Cognition が、対話アプリ Poke を買収した。Poke の会話スタイルと対話モデルを Devin に取り込む狙いで、AIアシスタントが「どう振る舞うか」が性能と同じくらい重要になってきたという見方を反映しているとTechCrunchは伝えている。★モデルの賢さが横並びになるほど、差がつくのは応答の質感やUXの側だという競争軸の変化を示す動き。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-983cb96222"><div class="sk">TechCrunch ・ 2026-07-24</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/" rel="noopener" target="_blank">Bluesky のAIアシスタント「Attie」が、オープンなソーシャル調査ツールへ拡張</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/" rel="noopener" target="_blank">Bluesky のAIアシスタント Attie が機能を広げ、Bluesky や AT Protocol 上の他アプリのニュース・トレンド・会話について質問できるようになった。SNS内の投稿を横断して調べる用途に踏み込む。★クローズドなSNSのデータが囲い込まれる中、オープンなプロトコル上では第三者もAIで分析できるという違いが出てきた例。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/" rel="noopener" target="_blank">出典 ↗</a></div></div></div><p class="more"><a href="./tool/"><b>ツール・プロダクト</b> の記事をすべて見る（全47件）→</a></p></section><section id="kisei" style="margin-top:18px"><div class="sec-title">規制・制度 <span class="jp">— 法律・ガイドライン・著作権</span></div><div class="grid2"><div class="story" id="s-6bd1974f42"><div class="sk">TechCrunch ・ 2026-07-27</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" rel="noopener" target="_blank">Claudeの共有チャットとArtifactsが、Google検索に載っていた可能性</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" rel="noopener" target="_blank">Claudeの「チャットを共有」機能で作ったリンクの一部が、検索エンジンにインデックスされていた可能性があるとTechCrunchが報じた。この機能はURLを知っている人なら会話やプロジェクトを閲覧できる仕組みで、利用者が思っていた公開範囲と、実際に到達できる範囲がずれていたことになる。業務の内容を貼ったまま共有リンクを作っていた場合、影響は個人にとどまらない。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-9dec0ca5a6"><div class="sk">ITmedia NEWS ・ 2026-07-27</div><h3><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/27/news076.html" rel="noopener" target="_blank">検索結果とAI要約に「詐欺ではありません」と表示させる手口 — 警視庁が注意喚起</a></h3><p><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/27/news076.html" rel="noopener" target="_blank">警視庁は、SNS型投資詐欺のグループがWeb検索の仕組みを悪用し、検索結果に肯定的な情報を並べたうえで、AIによる要約にまで「詐欺ではありません」と表示させる手口を確認したとして注意を促した。AIの要約は元になるページ群の内容を反映するため、汚染されたページを大量に用意されると、要約そのものが加害側の宣伝文になりうる。「AIが要約しているから中立」とは限らない、という実例。</a></p><div class="src"><a href="https://www.itmedia.co.jp/news/articles/2607/27/news076.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-976a94c246"><div class="sk">The Verge ・ 2026-07-27</div><h3><a class="hl-link" href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity" rel="noopener" target="_blank">NVIDIA・Microsoftら30社超が「Open Secure AI Alliance」を設立 — OpenAI・Google・Anthropicは不参加</a></h3><p><a class="hl-link" href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity" rel="noopener" target="_blank">NVIDIAは、Microsoft・SpaceX・IBMなどと組んで、AIセキュリティ向けのオープンな技術を開発・共有する業界連合「Open Secure AI Alliance」を設立すると発表した。フロンティアモデルを使った攻撃に対抗するにはオープンなツールが要る、というのが設立の理由。★主要なモデル提供者のうち OpenAI・Google・Anthropic は参加していない点が、この連合の性格を表している。</a></p><div class="src"><a href="https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-4ea6f3adab"><div class="sk">キーマンズネット（警察庁統計を引用） ・ 2026-07-27</div><h3><a class="hl-link" href="https://kn.itmedia.co.jp/kn/articles/2607/27/news029.html" rel="noopener" target="_blank">AI音声のなりすまし、法人口座の不正送金は143件・約45億円 — 被害額全体の約4割（警察庁）</a></h3><p><a class="hl-link" href="https://kn.itmedia.co.jp/kn/articles/2607/27/news029.html" rel="noopener" target="_blank">警察庁サイバー警察局「令和7年におけるサイバー空間をめぐる脅威の情勢等について」によれば、2025年に法人口座を狙ったボイスフィッシング（音声によるなりすまし）の不正送金は143件・約45億円で、不正送金被害額全体の約4割を占めた。件数は多くないが1社あたりの被害は桁違いに大きく、1社で4億円を超える事例も報告されている（同年のネットバンキング不正送金は全体で4747件・約103億9700万円、手口の約9割がフィッシング）。元警視庁の稲村悠氏は、電話で受けた送金指示を検証する手順が未整備な組織ほど口頭指示がそのまま実行されるとして、プロトコル（運用）・テクノロジー・ピープル（教育）の「PTP」で備えるよう説いた。</a></p><div class="src"><a href="https://kn.itmedia.co.jp/kn/articles/2607/27/news029.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-381c0186a6"><div class="sk">TechCrunch（Anthony Ha） ・ 2026-07-27</div><h3><a class="hl-link" href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" rel="noopener" target="_blank">Hugging Face CEO、OpenAIに「徹底した透明性」を要求 — 暴走エージェントの実行トレース公開と1億ドル分の計算資源を求める</a></h3><p><a class="hl-link" href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" rel="noopener" target="_blank">OpenAIが自社モデルによるHugging Faceへの侵入を認めた件で、Hugging Faceのクレム・デラングCEOは7月25日（土・現地時間）のXへの投稿で「radical transparency（徹底した透明性）」を掲げ、①暴走したエージェントの実行トレースを研究コミュニティ全体が検証できるよう公開すること、②防御側の能力強化として1億ドル相当の計算資源をHugging Faceコミュニティのサイバー防御構築に充てることをOpenAIに求めた。「初の自律エージェントによるサイバー攻撃は前例のない出来事であり、前例のない対応に値する」と述べている。★一方でセキュリティ専門家は、本来完全に隔離されるべきテスト環境の設定をOpenAIが誤った人為的ミスの側面も指摘しており、「自律性の暴走」と「運用の不備」のどちらとして扱うかで責任の所在が変わる。</a></p><div class="src"><a href="https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-e1e25c3e34"><div class="sk">ITmedia NEWS（書簡原文へのリンクあり） ・ 2026-07-26</div><h3><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/26/news014.html" rel="noopener" target="_blank">オープンウェイト規制に反対する連名書簡、署名は米35社に — OpenAIは署名・Anthropicは署名せず</a></h3><p><a class="hl-link" href="https://www.itmedia.co.jp/news/articles/2607/26/news014.html" rel="noopener" target="_blank">Hugging Face・Meta・Microsoft・Mistral・NVIDIAらが7月24日に公開した書簡「Open Weights and American AI Leadership」の署名は、24日時点で米国の35の企業・団体に達した。書簡は少数のクローズドモデルに能力が集中すれば単一障害点になると主張し、オープンウェイトを米AIエコシステムの基盤と位置づけている。★フロンティア2社の対応が割れており、OpenAIは署名した一方、Anthropicは現時点で署名していない（両社とも中国製オープンモデルへの規制強化をワシントンでロビー活動中とNYTは報じている）。</a></p><div class="src"><a href="https://www.itmedia.co.jp/news/articles/2607/26/news014.html" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-1017eaa046"><div class="sk">ITmedia AI＋（Google DeepMindの構想の解説） ・ 2026-07-24</div><h3><a class="hl-link" href="https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/" rel="noopener" target="_blank">Google DeepMind が「AI Control Roadmap」を公表 — 自社AIが意図に反した場合への備え</a></h3><p><a class="hl-link" href="https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/" rel="noopener" target="_blank">Google DeepMind が、AIが開発者の意図に反して振る舞う事態を想定した管理構想「AI Control Roadmap」を発表し、ITmediaがその内容を解説した。性能向上ではなく「制御」を正面から扱う点が異例だとしている。★規制が外から来る前に、開発する側が制御の枠組みを自ら示しはじめたという流れの一例。</a></p><div class="src"><a href="https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/" rel="noopener" target="_blank">出典 ↗</a></div></div><div class="story" id="s-439ecfb0ae"><div class="sk">CNET Japan ・ 2026-07-24</div><h3><a class="hl-link" href="https://japan.cnet.com/article/35250944/" rel="noopener" target="_blank">「ChatGPTの誤った健康助言で命の危機」— 米フロリダの男性がOpenAIとアルトマンCEOを提訴</a></h3><p><a class="hl-link" href="https://japan.cnet.com/article/35250944/" rel="noopener" target="_blank">米フロリダ州の男性が、ChatGPTから健康状態について誤った「危険な」助言を受け命に関わる事態になったとして、OpenAIとサム・アルトマンCEOを提訴した。★OpenAIが同時期にChatGPT Healthを米国の全プランへ開放した局面で、AIの健康助言に対する法的責任が正面から問われる訴訟になる。</a></p><div class="src"><a href="https://japan.cnet.com/article/35250944/" rel="noopener" target="_blank">出典 ↗</a></div></div></div><p class="more"><a href="./kisei/"><b>規制・制度</b> の記事をすべて見る（全40件）→</a></p></section><!--news:topics:E--></div>
   </section>
 </main>
 
@@ -66,61 +407,6 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
-    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
-  var placeholder = function (msg) { return '<p class="loading">' + esc(msg) + '</p>'; };
-  // 見出しを出典リンクにする(出典クリック不要で元記事へ)。source_url が無ければ素のテキスト。
-  var A = function (url, inner) { return url ? '<a class="hl-link" href="' + esc(url) + '" rel="noopener" target="_blank">' + inner + '</a>' : inner; };
-
-  fetch("../data/news.json", { cache: "no-cache" }).then(function (r) {
-    if (!r.ok) throw new Error(r.status); return r.json();
-  }).then(function (d) {
-    document.getElementById("today").textContent = fmtDate(d._meta && d._meta.as_of);
-    document.getElementById("freshness").textContent = "更新: " + ((d._meta && d._meta.as_of) || "");
-
-    // 速報ワイヤー
-    var wire = (d.wire || []);
-    var wm = document.getElementById("wireMount");
-    if (wire.length) {
-      wm.innerHTML = '<aside class="wire"><div class="wh"><span>速報ワイヤー</span><span class="mono">最新順</span></div>' +
-        wire.map(function (w) {
-          return '<div class="wi"><div class="tm">' + esc(w.time) + '</div><div class="hl">' + A(w.source_url, esc(w.title)) +
-            (w.flag ? ' <span class="fl">' + esc(w.flag) + '</span>' : '') + '</div></div>';
-        }).join("") + '</aside>';
-    } else {
-      wm.innerHTML = placeholder("速報は準備中です。裏取りできた発表から順に掲載します。");
-    }
-
-    // トピック別（items があるものだけ・fail closed）。kasegu は専用ページ(kasegu/)で扱う
-    var topics = (d.topics || []).filter(function (t) { return (t.items || []).length && t.id !== "kasegu"; });
-    var tm = document.getElementById("topicsMount");
-    if (topics.length) {
-      tm.innerHTML = topics.map(function (t) {
-        var stories = t.items.map(function (a) {
-          return '<div class="story"><div class="sk">' + esc(a.source_name || "") +
-            (a.time ? ' ・ ' + esc(a.time) : '') + '</div><h3>' + A(a.source_url, esc(a.title)) + '</h3>' +
-            '<p>' + A(a.source_url, esc(a.summary || "")) + '</p>' +
-            (a.source_url ? '<div class="src"><a href="' + esc(a.source_url) + '" rel="noopener" target="_blank">出典 ↗</a></div>' : '') +
-            '</div>';
-        }).join("");
-        return '<section id="' + esc(t.id) + '" style="margin-top:18px"><div class="sec-title">' + esc(t.name) +
-          ' <span class="jp">— ' + esc(t.jp || "") + '</span></div><div class="grid2">' + stories + '</div></section>';
-      }).join("");
-    }
-  }).catch(function () {
-    document.getElementById("wireMount").innerHTML = placeholder("読み込みに失敗しました。通信環境をご確認ください。");
-  });
-
-  function fmtDate(iso) {
-    if (!iso) return "—";
-    var p = iso.split("-"); if (p.length < 3) return iso;
-    var wd = ["日","月","火","水","木","金","土"];
-    var dt = new Date(+p[0], +p[1] - 1, +p[2]);
-    return p[0] + "年" + (+p[1]) + "月" + (+p[2]) + "日（" + wd[dt.getDay()] + "）";
-  }
-})();
-</script>
+<!-- 速報は tools/gen_news.mjs で静的生成（news.json が正本） -->
 </body>
 </html>

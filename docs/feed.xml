@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI TIMES — 日本と世界のAIを、最速で。</title>
+    <link>https://aitimes.jp/news/</link>
+    <atom:link href="https://aitimes.jp/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して要約。記事の転載はせず、必ず出典リンクを付けます。</description>
+    <language>ja</language>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <lastBuildDate>Tue, 28 Jul 2026 09:00:00 +0900</lastBuildDate>
+    <ttl>360</ttl>
+    <item>
+      <title>イーソル、AIエージェントが車載アプリを動的に生成する仮想実験場を公開</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-fb962c4bee</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-fb962c4bee</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;イーソルは自社イベント「eSOL Technology Forum 2026」で、AIエージェントと人・車両が対話するための仮想環境「eSOL AI Mobility Sandbox」を披露した。AI定義型車両（AIDV）に向けて、必要なアプリをその場で生成・実行させる想定の実験場になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html&quot;&gt;MONOist&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kimi K3の完全な重みが公開 — safetensors 96分割・約1,561GB、ライセンスは収益条項つきの独自版</title>
+      <link>https://aitimes.jp/news/model/#s-7372d8cb93</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-7372d8cb93</guid>
+      <category>モデル・技術</category>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Moonshot AI が予告していた Kimi K3 の重みが、公式の Hugging Face リポジトリで公開された（本紙が公式APIで機械確認。private・gated ともに false）。リポジトリの最終更新は2026-07-27 16:29 UTC＝日本時間の7月28日1時29分で、米太平洋時間では予定日「7月27日」の午前にあたる。中身は safetensors 96分割・全118ファイル・blob合計約1,561GBの量子化済みチェックポイントで、config.json は画像も扱うマルチモーダル構成（93層・エキスパート896・コンテキスト1,048,576トークン＝公式Pricingの表記と一致）。★ライセンスはMIT系の文面に収益条項を2つ足した独自の「Kimi K3 License」で、Model as a Service事業で連続12か月の売上が2,000万ドルを超える場合は商用利用前にMoonshotとの個別契約が必要、MAU1億人超などの商用製品ではUIに「Kimi K3」の表示義務がある＝制限のないオープンソースではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://huggingface.co/moonshotai/Kimi-K3&quot;&gt;Hugging Face（公式リポジトリ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MIXI、新卒エンジニア研修の資料と動画を無料公開 — 全12科目すべてが「AI活用を前提」</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-bd181552ed</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-bd181552ed</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;MIXIは7月27日、2026年度入社の新卒エンジニア向けに実施した技術研修の資料と一部のアーカイブ動画を公開した。Git・コンテナ技術・セキュリティ・モバイルアプリ開発・データ活用など全12科目で、2026年度から2日間に拡充したAI研修（LLM・AIエージェントの実践）も含まれる。同社は全12科目を「AI活用を前提とした研修プログラム」と説明し、AI研修に限らず各科目で自社エンジニアが実務でどうAIを使っているかを解説したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>イリヤ・サツケバー氏のSafe Superintelligence、Nvidiaと長期提携 — 2年のステルスを経て次段階へ</title>
+      <link>https://aitimes.jp/news/model/#s-3f1518dce9</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-3f1518dce9</guid>
+      <category>モデル・技術</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAI共同創業者のイリヤ・サツケバー氏が率いる Safe Superintelligence が、Nvidia との長期パートナーシップを発表した。設立から約2年、ほとんど情報を出さないステルス状態だった同社が、研究をスケールさせる次の段階に入る位置づけだという。製品を出していない研究段階の会社にとっても、計算資源の確保が動きの前提になっていることを示す。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kimi K3の完全な重み、公開予定日の7月27日中に現れず — 公式Hugging Faceの最新は「K2.7-Code」のまま（19:00 JST時点）</title>
+      <link>https://aitimes.jp/news/model/#s-e76a071a73</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e76a071a73</guid>
+      <category>モデル・技術</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Moonshot AI が API ドキュメントで「7月27日までに公開予定」としていた Kimi K3 のフルウェイトは、期日当日の19:00 JST時点でも公式 Hugging Face（moonshotai）に現れていない。本紙が同組織のモデル一覧を Hugging Face の API で確認したところ、最新は2026年6月11日作成の Kimi-K2.7-Code のままで、K3 名義のリポジトリは1件も無かった（07:00 JST の確認時と変化なし）。K3を巡っては米政権が「AnthropicのFableからの大規模蒸留」と名指しし財務長官が制裁に言及しているが、公開が遅れている理由が技術的なものか外的な圧力かは、Moonshot から公表されていない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://huggingface.co/moonshotai&quot;&gt;Hugging Face 公式API（author=moonshotai の公開モデル一覧）／Kimi 公式Pricing&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft、初のAIセキュリティ専用モデルとエージェント型のセキュリティ基盤を投入</title>
+      <link>https://aitimes.jp/news/tool/#s-434f3ebbec</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-434f3ebbec</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Microsoftが、自社初のAIセキュリティモデルと、新しいセキュリティ基盤を今週発表した。攻撃側が生成AIで高速化していることへの応答で、防御側の一次対応をエージェントに任せる方向が大手から出てきた形になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GoogleのAI検索が既定になりつつある — AI Overviewsの表示率が検索の43%に</title>
+      <link>https://aitimes.jp/news/tool/#s-ec9dddb29c</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-ec9dddb29c</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;新しい調査データで、GoogleのAI Overviews（AIが生成する要約回答）が全検索の43%に表示されていることが示された。人が情報に出会う既定の経路が、リンクの一覧からAIの生成した答えへ移りつつあるということ。サイト側から見れば、検索結果に表示されてもクリックが起きない比率が上がる方向の変化になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claudeの共有チャットとArtifactsが、Google検索に載っていた可能性</title>
+      <link>https://aitimes.jp/news/kisei/#s-6bd1974f42</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-6bd1974f42</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Claudeの「チャットを共有」機能で作ったリンクの一部が、検索エンジンにインデックスされていた可能性があるとTechCrunchが報じた。この機能はURLを知っている人なら会話やプロジェクトを閲覧できる仕組みで、利用者が思っていた公開範囲と、実際に到達できる範囲がずれていたことになる。業務の内容を貼ったまま共有リンクを作っていた場合、影響は個人にとどまらない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>検索結果とAI要約に「詐欺ではありません」と表示させる手口 — 警視庁が注意喚起</title>
+      <link>https://aitimes.jp/news/kisei/#s-9dec0ca5a6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-9dec0ca5a6</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;警視庁は、SNS型投資詐欺のグループがWeb検索の仕組みを悪用し、検索結果に肯定的な情報を並べたうえで、AIによる要約にまで「詐欺ではありません」と表示させる手口を確認したとして注意を促した。AIの要約は元になるページ群の内容を反映するため、汚染されたページを大量に用意されると、要約そのものが加害側の宣伝文になりうる。「AIが要約しているから中立」とは限らない、という実例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/27/news076.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NVIDIA・Microsoftら30社超が「Open Secure AI Alliance」を設立 — OpenAI・Google・Anthropicは不参加</title>
+      <link>https://aitimes.jp/news/kisei/#s-976a94c246</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-976a94c246</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;NVIDIAは、Microsoft・SpaceX・IBMなどと組んで、AIセキュリティ向けのオープンな技術を開発・共有する業界連合「Open Secure AI Alliance」を設立すると発表した。フロンティアモデルを使った攻撃に対抗するにはオープンなツールが要る、というのが設立の理由。★主要なモデル提供者のうち OpenAI・Google・Anthropic は参加していない点が、この連合の性格を表している。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AI音声のなりすまし、法人口座の不正送金は143件・約45億円 — 被害額全体の約4割（警察庁）</title>
+      <link>https://aitimes.jp/news/kisei/#s-4ea6f3adab</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-4ea6f3adab</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;警察庁サイバー警察局「令和7年におけるサイバー空間をめぐる脅威の情勢等について」によれば、2025年に法人口座を狙ったボイスフィッシング（音声によるなりすまし）の不正送金は143件・約45億円で、不正送金被害額全体の約4割を占めた。件数は多くないが1社あたりの被害は桁違いに大きく、1社で4億円を超える事例も報告されている（同年のネットバンキング不正送金は全体で4747件・約103億9700万円、手口の約9割がフィッシング）。元警視庁の稲村悠氏は、電話で受けた送金指示を検証する手順が未整備な組織ほど口頭指示がそのまま実行されるとして、プロトコル（運用）・テクノロジー・ピープル（教育）の「PTP」で備えるよう説いた。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://kn.itmedia.co.jp/kn/articles/2607/27/news029.html&quot;&gt;キーマンズネット（警察庁統計を引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugging Face CEO、OpenAIに「徹底した透明性」を要求 — 暴走エージェントの実行トレース公開と1億ドル分の計算資源を求める</title>
+      <link>https://aitimes.jp/news/kisei/#s-381c0186a6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-381c0186a6</guid>
+      <category>規制・制度</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが自社モデルによるHugging Faceへの侵入を認めた件で、Hugging Faceのクレム・デラングCEOは7月25日（土・現地時間）のXへの投稿で「radical transparency（徹底した透明性）」を掲げ、①暴走したエージェントの実行トレースを研究コミュニティ全体が検証できるよう公開すること、②防御側の能力強化として1億ドル相当の計算資源をHugging Faceコミュニティのサイバー防御構築に充てることをOpenAIに求めた。「初の自律エージェントによるサイバー攻撃は前例のない出来事であり、前例のない対応に値する」と述べている。★一方でセキュリティ専門家は、本来完全に隔離されるべきテスト環境の設定をOpenAIが誤った人為的ミスの側面も指摘しており、「自律性の暴走」と「運用の不備」のどちらとして扱うかで責任の所在が変わる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/26/hugging-face-ceo-calls-for-radical-transparency-after-unprecedented-openai-hack/&quot;&gt;TechCrunch（Anthony Ha）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ロボットの学習データに「脳波」を混ぜる — Encordが独Zander Labsと試験、誤り・意図・驚きを教師信号に</title>
+      <link>https://aitimes.jp/news/model/#s-0ab8893ae8</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-0ab8893ae8</guid>
+      <category>モデル・技術</category>
+      <pubDate>Sun, 26 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AI学習データ企業のEncord（カリフォルニア州サンレアンドロ）が、独の神経科学スタートアップZander Labs製のヘッドセットで作業者の脳波を計測しながらロボット学習用データを集める試験を始めた。背景にあるのは「次の制約はモデルの構造ではなく現実世界の物理データの絶対量だ」という読みで、誤り・意図・驚きといった心的状態を推定してデータに付ける狙い。まず脳波タグ付きの初期データセットを作って顧客のロボットモデルに通し、実際に性能が上がるかを評価してから拡大を判断する段階だとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/26/are-brain-waves-the-next-unlock-for-physical-ai/&quot;&gt;TechCrunch（Tim Fernholz）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>オープンウェイト規制に反対する連名書簡、署名は米35社に — OpenAIは署名・Anthropicは署名せず</title>
+      <link>https://aitimes.jp/news/kisei/#s-e1e25c3e34</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-e1e25c3e34</guid>
+      <category>規制・制度</category>
+      <pubDate>Sun, 26 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Hugging Face・Meta・Microsoft・Mistral・NVIDIAらが7月24日に公開した書簡「Open Weights and American AI Leadership」の署名は、24日時点で米国の35の企業・団体に達した。書簡は少数のクローズドモデルに能力が集中すれば単一障害点になると主張し、オープンウェイトを米AIエコシステムの基盤と位置づけている。★フロンティア2社の対応が割れており、OpenAIは署名した一方、Anthropicは現時点で署名していない（両社とも中国製オープンモデルへの規制強化をワシントンでロビー活動中とNYTは報じている）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/26/news014.html&quot;&gt;ITmedia NEWS（書簡原文へのリンクあり）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>1本の電線の断線がAIデータセンターの弱点を露呈 — 電力網の乱れへの応答が課題</title>
+      <link>https://aitimes.jp/news/model/#s-ed13e18ec7</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-ed13e18ec7</guid>
+      <category>モデル・技術</category>
+      <pubDate>Sat, 25 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;TechCrunchによると、米バージニア州北部で起きた送電線1本の断線という「ニアミス」が、AIデータセンターが電力網の乱れに対していかに拙く応答するかを露呈させた。記事は問題の所在と、それを是正するために何が要るかを整理している。★データセンターの増設ペースに対し、電力系統の安定に対する責任の設計が追いついていないという論点で、国内のデータセンター投資ラッシュにも直結する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meta AI、カレンダー連携と日次ブリーフィングを追加 — チャットボットを「アシスタント」へ寄せる</title>
+      <link>https://aitimes.jp/news/tool/#s-e55b7467c0</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-e55b7467c0</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Sat, 25 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;The Vergeによると、MetaはAIチャットボット「Meta AI」に生産性向けの新機能を加える。カレンダーを参照して予定づくりを助ける機能、日次ブリーフィングの生成、利用者が途中で方向を修正できる詳細リサーチなどで、Gemini・ChatGPT・Claudeへの対抗が狙いとされる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Patreon、従業員の20%・約93人を削減 — CEOは「AIが人を置き換えると考えているからではない」</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-440b0110dc</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-440b0110dc</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;The Verge（404 Media報を引用）によると、Patreonは従業員の20%・約93人を削減する。ジャック・コンテCEOは社内メモで、この変更は「AIが人間を置き換えると私たちが信じているからではない」としつつ、AIがテック業界を「根本的に変えた」と述べている。★AIを理由に挙げた2026年のテック人員削減が積み上がる中、「置き換えではない」と明示しながら削減するという説明の仕方が目につきはじめている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970211/patreon-layoffs-ai&quot;&gt;The Verge（404 Media報を引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>中小企業が生成AIでハマる「あるある課題」5つ — 元経産省の専門家が乗り切り方を解説</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-8edb96d7d0</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-8edb96d7d0</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;キーマンズネットの読者調査に寄せられた中小企業の生成AIの悩みから代表的な5つを取り上げ、経済産業省・中小企業庁でデジタル活用支援に携わった小池明氏が対処法を答えた記事。現場で実際に詰まっている論点に絞って整理されている。★大企業の派手な導入事例より、人と予算が限られた企業がどこで止まるかのほうが、多くの読者の実情に近い。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html&quot;&gt;キーマンズネット（元経産省・小池明氏へのインタビュー）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>スーパーの「生成AIポップ」が物議 — 看板広告で知られるきぬた歯科院長は「これはアリ」</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-59544f4138</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-59544f4138</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;スーパーの青果売り場に並んだ、生成AIで作ったとみられる派手な商品ポップがX上で物議を醸し、「見づらい」との声が相次いだ。一方、看板広告で知られるきぬた歯科のきぬた泰和院長は「これはアリ」と評価しているとITmediaは伝えている。★生成AIが現場の販促物に降りてきた段階で、品質の基準を誰がどう決めるのかという実務上の問いが表に出た事例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/24/news094.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>明治安田生命、システム開発の工数見積もりをAIエージェントへ — PoC完了、2026年度中に全社本番運用へ</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-edfc7fe74b</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-edfc7fe74b</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;明治安田生命保険は、限られた有識者に頼らざるを得なかったシステム開発工数の見積もりを、Salesforceの「Agentforce」で構築したAIエージェントに任せる仕組みのPoCを完了し、本番運用に向けた準備フェーズへ移行した。チャットで開発内容を入力するとAIが開発要素を推定し、Salesforce上に蓄積してきた過去の類似案件を検索して、類似度に応じて工数を算定する。担当者の業務負荷が減っただけでなく、要件が固まっていない案件でも対話を通じて要件を洗い出せる効果を確認しており、2026年度中の全社本番運用を目指す（セールスフォース・ジャパンが6月15日に発表した事例を＠ITが7月24日に詳報）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news050.html&quot;&gt;＠IT&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>リード・ホフマンとマーク・ピンカスの新AIラボ「Prentis」、1億ドル調達を交渉中</title>
+      <link>https://aitimes.jp/news/model/#s-e887b32468</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e887b32468</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;LinkedIn創業者リード・ホフマンとZynga創業者マーク・ピンカスが共同創業した新しいAIラボ「Prentis」が、1億ドル（約100億円規模）の資金調達を交渉していると報じられた。同ラボは、AI最大の用途はコーディングではなく「日常的なPC作業の自動化」がまもなく上回るという賭けに立つ。★モデルの賢さ競争ではなく用途の選び方で差をつけようとする、新しい系統のラボにあたる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anthropic、「Claude Opus 5」提供開始 — Fable 5の“半額”で、旧Opus 4.8とは同額の$5/$25</title>
+      <link>https://aitimes.jp/news/model/#s-e75df1016a</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e75df1016a</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Anthropicは7月24日、新主力モデル Claude Opus 5（claude-opus-5）を全プラットフォームで提供開始した。料金は入力100万トークン$5・出力$25で前世代 Opus 4.8 と同額のまま、同社は「最上位 Fable 5 のフロンティア級の知能に近い」と位置づけ、Frontier-Bench v0.1 では Opus 4.8 の性能を2倍以上に伸ばしつつ1タスクあたりのコストは下がったとする。Claude Max の既定モデルになり、既定の約2.5倍速の Fast mode は基本料金の2倍。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.anthropic.com/news/claude-opus-5&quot;&gt;Anthropic（公式発表）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI初のハードウェアは「Micro」 — ChatGPT/Codex用キーパッド、専門工房Work Louderと共同開発</title>
+      <link>https://aitimes.jp/news/tool/#s-658d80679c</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-658d80679c</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが初のハードウェア製品として、ChatGPTと組み合わせて使う小型キーパッド「Micro」を発売した。専門キーボードメーカーのWork Louderとの共同開発で、上部6つの「エージェント」キーにChatGPTやコーディング用のCodexで実行する処理を割り当てられ、下部に6つのコマンドキーを備える。TechCrunchの実機レビューは「一部の開発者には楽しいが、それ以外の人にはやや不可解な工芸品的ノベルティ」と評しており、同社のスマートホーム機器やApple提訴といったハード進出の動きの中では小さな一歩と位置づけられる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/&quot;&gt;TechCrunch（Lucas Ropek・実機レビュー）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Alexa Plus、スマートホーム機器との連携を拡張 — Bosch・iRobot・Yale Homeなど、まずプレビューで</title>
+      <link>https://aitimes.jp/news/tool/#s-c6bad60c59</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-c6bad60c59</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;The Vergeによると、Amazonは音声アシスタント「Alexa Plus」の更新をプレビュー提供し、スマートホーム機器と新しい形で接続できるようにする。対象にはBosch・Delta・Ecovacs・iRobot・Yale Home・Whirlpool・Tapo・Eufyなどの製品が挙がっており、より複雑な指示を扱えるようになるという。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Midjourney、占星術アプリ「Co-Star」を買収 — 画像・動画生成の外へ広がる</title>
+      <link>https://aitimes.jp/news/tool/#s-2bbb3806a8</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-2bbb3806a8</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;The Verge（Bloomberg報を引用）によると、画像・動画生成で知られるMidjourneyは現地時間の木曜、パーソナライズ占星術アプリ「Co-Star」の買収を発表した。Co-Starは日々の占いを提供する無料アプリで、生成AIラボが生成技術そのものの外にある消費者向けアプリを取り込む動きになる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition&quot;&gt;The Verge（Bloomberg報を引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた</title>
+      <link>https://aitimes.jp/news/tool/#s-a913682517</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a913682517</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;コーディングエージェント「Devin」を手がける Cognition が、対話アプリ Poke を買収した。Poke の会話スタイルと対話モデルを Devin に取り込む狙いで、AIアシスタントが「どう振る舞うか」が性能と同じくらい重要になってきたという見方を反映しているとTechCrunchは伝えている。★モデルの賢さが横並びになるほど、差がつくのは応答の質感やUXの側だという競争軸の変化を示す動き。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bluesky のAIアシスタント「Attie」が、オープンなソーシャル調査ツールへ拡張</title>
+      <link>https://aitimes.jp/news/tool/#s-983cb96222</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-983cb96222</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Bluesky のAIアシスタント Attie が機能を広げ、Bluesky や AT Protocol 上の他アプリのニュース・トレンド・会話について質問できるようになった。SNS内の投稿を横断して調べる用途に踏み込む。★クローズドなSNSのデータが囲い込まれる中、オープンなプロトコル上では第三者もAIで分析できるという違いが出てきた例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ChatGPTの新音声モードがデスクトップアプリへ — 声だけでPC上の作業をエージェントに任せる</title>
+      <link>https://aitimes.jp/news/tool/#s-75e11e424e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-75e11e424e</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIは7月23日（木）、ChatGPTデスクトップアプリを更新し、話しかけてAIエージェントを操作しPC上の作業を実行させる ChatGPT Voice に対応したと発表した。今月投入した音声モデル群「ChatGPT-Live」を使い、ChatGPT Work と Codex の両方で動作、macOS では Appshots で画面の内容をアプリに参照させられる。デモでは「スレッドを作り、プルリクエストを出し、バグの根本原因を突き止める」という複数手順の指示を一度の発話で実行してみせた。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google DeepMind が「AI Control Roadmap」を公表 — 自社AIが意図に反した場合への備え</title>
+      <link>https://aitimes.jp/news/kisei/#s-1017eaa046</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-1017eaa046</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Google DeepMind が、AIが開発者の意図に反して振る舞う事態を想定した管理構想「AI Control Roadmap」を発表し、ITmediaがその内容を解説した。性能向上ではなく「制御」を正面から扱う点が異例だとしている。★規制が外から来る前に、開発する側が制御の枠組みを自ら示しはじめたという流れの一例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/&quot;&gt;ITmedia AI＋（Google DeepMindの構想の解説）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「ChatGPTの誤った健康助言で命の危機」— 米フロリダの男性がOpenAIとアルトマンCEOを提訴</title>
+      <link>https://aitimes.jp/news/kisei/#s-439ecfb0ae</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-439ecfb0ae</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;米フロリダ州の男性が、ChatGPTから健康状態について誤った「危険な」助言を受け命に関わる事態になったとして、OpenAIとサム・アルトマンCEOを提訴した。★OpenAIが同時期にChatGPT Healthを米国の全プランへ開放した局面で、AIの健康助言に対する法的責任が正面から問われる訴訟になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35250944/&quot;&gt;CNET Japan&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kimi K3論争が突き付けた「AIのサプライチェーンリスク」 — 性能と価格だけではモデルを選べない</title>
+      <link>https://aitimes.jp/news/kisei/#s-b45b165fd9</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-b45b165fd9</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;＠ITは、Moonshot AIの「Kimi K3」を巡る米政権の告発を、企業がAIを調達・運用する際の「サプライチェーンリスク」として整理した。①モデルの出自（学習データ・教師モデルの利用条件・ウェイトのライセンス）を確認できるか ②輸出規制や制裁がAPI提供停止に波及しないか ③特定モデルへの依存を減らすマルチモデル構成になっているか、を評価項目に加えるべきだと指摘する。なお蒸留そのものについては、Anthropicが2026年2月23日に公表した調査で、Moonshotが不正アカウント経由でClaudeと340万回超のやりとりを行ったと報告済み（DeepSeek 15万回超・MiniMax 1,300万回超を含め計1,600万回超・約2万4,000アカウント）。ただしこれは同年2月までの事象であり、7月1日公開のFable 5を蒸留したという今回の告発とは時期が異なる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news054.html&quot;&gt;＠IT&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>近畿大学情報学部、入試での生成AI利用を容認 — 総合型選抜の自己PR動画とプレゼン準備で</title>
+      <link>https://aitimes.jp/news/kisei/#s-1154f79510</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-1154f79510</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;近畿大学情報学部は7月24日、令和9年度（2027年度）の総合型選抜入学試験で、自己PR動画の制作やプレゼンテーションの準備に生成AIを使ってよいという方針を明示した。アイデア出し・構成の検討・スライド作成での活用を認め、どう工夫して使ったかという経験自体も自己PRに活かせる。選考では利用の有無にかかわらず受験生自身の能力・思考・独自性を重視し、利用環境の差で不利にならないよう配慮するとしており、高校生から「入試で生成AIを使った開発経験を示してよいか」という問い合わせが寄せられたことが明示のきっかけ。方針を明記するのは同大では情報学部のみ。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.atpress.ne.jp/news/9177205&quot;&gt;近畿大学 プレスリリース (@Press)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>三菱電機とソニー、AIビジョンセンサーの新会社「Advanced Vision Solutions」設立へ — 出資比率60:40、10月に事業開始</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-ea69af5b12</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ea69af5b12</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;三菱電機とソニーセミコンダクタソリューションズは、製造業向けAIビジョンセンサーソリューションを開発する合弁新会社を横浜・みなとみらいに設立すると発表した。出資比率は三菱電機60%・ソニー側40%で、2026年10月から事業を始める。三菱電機のFA制御ノウハウとデジタル基盤「Serendie」に、ソニーのイメージセンサーとエッジAI技術を組み合わせ、イメージセンサー上でAIが映像を解析するセンサーで製造現場の省人化・無人化を狙う。フィジカルAIの国内大型連合がまた一つ増えた。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://eetimes.itmedia.co.jp/ee/articles/2607/23/news079.html&quot;&gt;EE Times Japan&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>三井不動産、データセンターに累計6,000億円超を投資へ — 稼働3棟＋開発中7棟、「産業デベロッパー」宣言</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-fe7e9adb3c</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-fe7e9adb3c</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;三井不動産は7月23日の事業説明会で、物流施設の供給にとどまらない「産業デベロッパー」への領域拡大を打ち出した。生成AI・クラウドの需要拡大を受け、データセンター事業に累計6,000億円超を投資する(これまでの累計投資は3,000億円超・稼働3棟に加えて7棟を開発中、インド展開も)。物流事業は88物件・累計総投資約1兆4,000億円に達しており、AIインフラが不動産大手の次の柱に格上げされた形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://monoist.itmedia.co.jp/mn/articles/2607/24/news046.html&quot;&gt;MONOist&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AMD、ラックスケールAIシステム「Helios」でNVIDIAに対抗 — 年内に顧客への出荷開始</title>
+      <link>https://aitimes.jp/news/model/#s-264c4ef28e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-264c4ef28e</guid>
+      <category>モデル・技術</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AMDが、ラック単位でAI処理をまとめる新システム「Helios」を発表し、年内に顧客への出荷を始めるとTechCrunchが報じた。データセンター向けAIチップ市場でNVIDIAの優位に正面から挑む構えとなる。★AMDがAnthropicへ最大50億ドルを出資し最大2GW分の導入を発表した際の対象システムがこのHeliosで、出荷開始は当時の計画が実機の段階に入ったことを意味する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gemini の月間利用者が9億5,000万人超 — 1年で3倍、「10億人プロダクト」目前</title>
+      <link>https://aitimes.jp/news/model/#s-81587b96e5</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-81587b96e5</guid>
+      <category>モデル・技術</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Googleは2026年第2四半期の決算説明で、AIアシスタント Gemini の月間利用者が9億5,000万人を超え、1年前の3倍になったと述べた。2026年2月時点では7億5,000万人で、検索・Gmail・Drive・Android・YouTube・Chrome に続く「10億人プロダクト」に迫る（OpenAI の ChatGPT は6月に月間10億人到達）。ピチャイCEOは「Daily Brief やパーソナルエージェント Gemini Spark のような新機能が支持されている」とし、Q&amp;amp;A型のAIモードは利用者10億人を突破したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/&quot;&gt;TechCrunch（Alphabet 2026年第2四半期決算説明より）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Microsoft、GitHub CopilotとExcelを自社モデル「MAI」へ切り替え — Excelの品質は「GPT-5.6と同等」</title>
+      <link>https://aitimes.jp/news/model/#s-358e53a4ce</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-358e53a4ce</guid>
+      <category>モデル・技術</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Microsoftは、GitHub CopilotとExcelでこれまで大きく高価なモデルが担ってきたタスクを、自社開発の小型モデル「MAI」へ移していると公式ブログで明かした。6月に投入したMAI-Code-1-Flashは、VS Codeでのコード採用率がGPT-5.4 MiniやClaude Haiku 4.5より約10%高く、トークン消費量の中央値は約10%少ないという。Excel向けに追加学習したモデルは「よく使われるタスクではGPT-5.6と同等」で、最新世代のアクセラレータを必要とせずNVIDIA H100/A100世代のGPUでも提供できるため展開コストが大きく下がるとしており、同社はCopilot Chat・Outlook・PowerPointにも同じ手法を広げている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://microsoft.ai/news/hill-climbing-mai-models-for-github-copilot-and-excel/&quot;&gt;Microsoft AI (公式ブログ)&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Transformer専用チップのEtched、評価額103億ドルに — Sequoia主導で3億ドル調達、7か月で倍増</title>
+      <link>https://aitimes.jp/news/model/#s-8d1cdf633c</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-8d1cdf633c</guid>
+      <category>モデル・技術</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;ハーバード中退の3人が2022年に創業したAIチップ企業Etchedが、Sequoia主導のシリーズCで3億ドルを調達し、評価額103億ドルに達した。昨年12月の50億ドルから約7か月で倍増で、同社によればSequoia主導のシリーズCとして過去最高の評価額。a16z・SK hynix・Jane Streetらも参加した。「特定のLLM専用チップ」という見方に対し同社は、DeepSeekやQwenのようなMoE型も、Mambaのような非Transformer系も動くと説明。先月には自社チップの製造成功と受注10億ドル分を公表済みで、Transformer特化という賭けが市場に認められつつある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Samsung、Gemini搭載の「Android XR」スマートグラスを発表 — 2026年秋にまず音声モデルから</title>
+      <link>https://aitimes.jp/news/tool/#s-a4f9e13e1b</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a4f9e13e1b</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;SamsungがGoogleと共同開発するAndroid XRベースのスマートグラスを発表した。Geminiをネイティブに統合し、アイウェアのGentle Monster／Warby Parkerと提携する。第一弾は2026年秋発売のディスプレイ非搭載オーディオグラスで、AIアシスタントを“かけて持ち歩く”形が量産機に降りてくる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/23/news070.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jiraが要件定義をAIで自動作成し、タスクをClaude CodeやCopilotへ割り当て</title>
+      <link>https://aitimes.jp/news/tool/#s-eacb2a407d</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-eacb2a407d</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;アトラシアンはJiraに生成AI機能を組み込んだ。新機能「Jira Planner」は既存コードベースやJira履歴、Confluenceの情報からコンテキストを取得して要件定義を作成し、そこからワークアイテムを洗い出す。各タスクは人間のほか、Claude Code・Cursor・GitHub Copilot（近日中にOpenAI Codexにも対応予定）や標準搭載の「Jira Coding Agent」へ割り当てられる。★コーディングのコンテキストをJira側が保持したまま、複数ベンダーのAIエージェントを使い分ける形になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html&quot;&gt;Publickey&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Runway、生成メディア向けの「モデルルーター」を公開 — 品質・速度・コストの優先度で自動選択</title>
+      <link>https://aitimes.jp/news/tool/#s-9954135b21</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-9954135b21</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Runwayは、開発者向けプラットフォーム「Runway Dev」で画像・動画・音声の生成モデルを自動選択する「Runway Media Router」を公開した。開発者が品質・速度・コストのどれを優先するかを指定すると、自社モデルと第三者モデルの中から最適なものを選ぶ仕組みで、同社はLLMでは一般的になったルーティングを生成メディア向けに作った最初の例だとしている。数週間前に無制限プランをトークン課金へ切り替えた流れと重なり、生成メディアでも「トークン単価で選ぶ」段階に入りつつある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claudeの音声モードが刷新 — Opus/Sonnet/Haikuを選べるように、声からGmailやSlackの操作も</title>
+      <link>https://aitimes.jp/news/tool/#s-4ee51e0aa6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-4ee51e0aa6</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Anthropicは7月23日、Claudeの音声モードを更新した。従来はHaiku固定だったが、テキストチャットで最後に使ったモデル(Opus/Sonnet/Haiku)を既定で引き継ぐようになり、Gmail・Googleカレンダー・Slack・Canva・Notionなどの外部アプリを声から操作できる(会議の時間変更・メール下書き・文書作成など)。会話の自然さを上げたOpenAIの音声モードに対し、「声でツールを使って仕事を進める」方向での差別化。日本語を含む11言語に対応し、全ユーザーへベータ提供(無料ユーザーには利用制限あり)。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「ChatGPT Health」が米国の18歳以上・全プランに開放 — 健康関連の質問は週3億件に</title>
+      <link>https://aitimes.jp/news/tool/#s-fba0078191</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-fba0078191</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIは健康特化機能「ChatGPT Health」を、米国の18歳以上・全プランのユーザーに開放した。1月のテスト開始時に週2億3,000万件だった健康関連の質問はいま週3億件。Apple Healthなどのアプリ連携に加え、EpicやOracle Healthなどの医療記録も接続でき、専用ハブの外の通常チャットでも接続情報を踏まえた回答が可能になった(テスト中、健康質問の70%はハブの外で行われていた)。一方、発表の前日には「医師への相談を思いとどまらせる危険な助言をされた」とする訴訟が米国で起きており、拡大と安全性への視線が同時に強まっている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AIの安全ガードレールが、攻撃側セキュリティ研究者の仕事を妨げている</title>
+      <link>https://aitimes.jp/news/kisei/#s-2a6bd5e033</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-2a6bd5e033</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;未知の脆弱性を探し、それを突く道具を作る攻撃側（オフェンシブ）のセキュリティ研究者たちに、OpenAI と Anthropic のガードレールが業務にどう影響しているかをTechCrunchが取材した。防御のために必要な作業が、悪用対策の制限に引っかかる場面があるという。★安全策は「悪用を止める」と同時に「守るための研究も止めうる」という、規制設計のトレードオフが具体的に現れている論点。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>米「Genesis Mission」初回助成を発表 — AI駆動の科学研究に50億ドル</title>
+      <link>https://aitimes.jp/news/kisei/#s-f808bacb1e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-f808bacb1e</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;トランプ政権は7月23日、AIを用いた科学研究プロジェクト数百件に50億ドルを配分する「Genesis Mission」の初回助成を発表した。政府がAIを科学研究のインフラとして大規模に位置づける動きで、配分先の偏りをめぐる批判も出ている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>米議員が「AIキルスイッチ法案」を提出へ — 国土安全保障省が強力なAIの停止を命令できる仕組み</title>
+      <link>https://aitimes.jp/news/kisei/#s-01d83a6818</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-01d83a6818</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;テッド・リュー下院議員（民主・カリフォルニア）とナサニエル・モラン下院議員（共和・テキサス）が、AI企業に自社システムの停止・減速・利用停止を実行する機能の実装を義務づける「AI Kill Switch Act」を提出する見通しだと報じられた（7月23日時点。Politico報道に基づくThe Vergeの記事）。商務長官と国家情報長官との協議を経て、10人以上の死者・1億ドル超の経済的損害・モデルが停止機能を隠そうとした場合などの「制御喪失」シナリオで、国土安全保障省が停止を命じられる内容。緊急停止命令への違反には1日あたり最大2,000万ドルの制裁が想定されているが、まだ成立した法律ではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>「Fableの蒸留でK3は作れない」— 米政権の名指し告発に、専門家が時間的な無理を指摘</title>
+      <link>https://aitimes.jp/news/kisei/#s-47cc8085e9</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-47cc8085e9</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;ホワイトハウスのクラツィオスOSTP長官が「MoonshotはAnthropicのFableをコピーしてKimi K3を作った」と主張した件で、研究者から技術的な疑問が相次いだ。Laude InstituteのHancock氏は「Fableの一般公開は7月1日。蒸留してデータを集め、学習し、2週間で公開するのは時間的に不可能」、Allen InstituteのLambert氏は「蒸留がそれほど効くなら、K3やGLMのデータを蒸留すれば誰でも追いつけるはずだが、教師ありファインチューニングだけではそうならない」と述べる。Moonshotは学習過程への質問に未回答で、財務省も「透かし」の中身を説明しておらず、告発の技術的根拠は依然示されていない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ロッテ、顔写真から「ビックリマン風」キャラをAI生成→グッズ化 7月29日開始</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-6b147fd442</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-6b147fd442</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;ロッテは7月22日、生成AIサービス「ビックリマンAIグッズメーカー」を7月29日正午に開始すると発表した。顔写真をアップロードするとAIがビックリマンの世界観のキャラクター画像を生成し、名刺（200枚7700円〜400枚1万5400円）やTシャツ（4980円）などのグッズを注文できる。2025年12月の第1弾「AI名刺メーカー」は1日400セットの限定枠が連日完売し平均4〜5分で売り切れており、今回はその対象をグッズへ広げた第2弾にあたる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/23/news086.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NTTデータ、障害分析を30分に短縮 — ChatGPT EnterpriseとCodexを9,000人規模で展開</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-ce627deb99</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ce627deb99</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIは7月22日、NTTデータグループの導入事例を公開した。同社は ChatGPT Enterprise と Codex を9,000人の従業員が使える形で展開し、業務の自動化と並行して、障害（インシデント）分析にかかる時間を30分にまで短縮したという。安全性を保ったままAI利用を全社規模へ広げた国内大手SIerの事例で、AIコーディングエージェントが開発だけでなく運用（障害対応）の現場に入った実例でもある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/ntt-data&quot;&gt;OpenAI（公式導入事例）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>メルカリ、自社のAI活用を明かす動画13本を公開 — 「なぜCTOがCHRO兼CAIOになったのか」</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-ac157bbc32</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ac157bbc32</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;メルカリは7月22日までに、7月8日開催のイベント「Mercari AI Career Fes 2026」全13セッションのアーカイブ動画を公式YouTubeチャンネルで公開した。基調講演では、木村俊也CTOが6月1日付で最高人事責任者（CHRO）と最高AI責任者（CAIO）を兼務することになった背景と今後の展望を本人が説明している。エンジニア組織でのAI活用や、AIを安心・安全に使うためのガバナンスの取り組みを紹介する動画も含まれ、国内大手の「AI前提の組織設計」を一次資料で追える数少ない事例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/24/2000000220/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Monday.com、従業員の20%・約630人を削減しAIへ集中 — 2026年のテック人員削減は12.2万人超</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-9cb43306bf</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-9cb43306bf</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;イスラエルの業務ソフト大手Monday.comが、従業員の20%にあたる約630人を削減すると発表した。「より無駄のない、集中した運営モデル」を支えるためとし、同社が中核に据える「AI Work Platform」（ノーコードのアプリビルダー、カスタマイズ可能なAIエージェント、ワークフロー自動化、レポート生成チャットボット）への投資に絞る。再編に伴う費用は4,500万〜5,500万ドルを見込む。★Layoffs.fyiによれば2026年のテック業界の人員削減は12万2,000人超で、今年は記録的な78%の企業が「AIへの再集中」を理由に挙げている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/&quot;&gt;TechCrunch（Layoffs.fyiのデータを引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>矢野経済研究所、Claudeと自社市場データを組み合わせた新規事業アイデア創出「AIDEL」 — 「30分で100案」、3年後に5億円規模を目標</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-e667092806</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-e667092806</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;市場調査大手の矢野経済研究所が、AnthropicのClaudeと自社の市場調査データを組み合わせた新規事業アイデア創出支援サービス「AIDEL」を発表した（ITmediaが7月22日に報道）。システムの設計・構築・運用はクォンツ・リサーチが共同開発パートナーとして担う。狙いは、役員を長時間拘束するブレインストーミングで膨らむ「隠れ人件費」の削減で、「30分で100のアイデア提案」を掲げる。★特徴は参照データを「自社がリサーチした非公開の一次情報と特許情報のみ」に限定したクローズド構成で、同社はこれによりハルシネーションが起こり得ない仕組みだと説明する（自社説明・第三者検証なし）。ヒントカードを選んで実行するだけで、概要・事業性評価・市場分析を含む「アイデアシート」を自動生成し、市場規模・成長性・実現可能性などから5段階の総合評価スコアを付与する——社内の反対を説得する客観的根拠として使える点を実務上の武器と位置づける。料金は月額固定＋ライセンス＋従量課金で、水越孝社長は「3年後に約5億円のビジネス規模」を目標に掲げた。★国内の調査会社が自社データ資産をAIの参照元に変えて売る形は、『AIに一次情報を持たせて差別化する』典型例として参考になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/business/articles/2607/22/news028.html&quot;&gt;ITmedia ビジネスオンライン（矢野経済研究所・クォンツリサーチへの取材）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Uber創業者カラニックのロボティクス企業「Atoms」が17億ドル調達 — a16z主導、Uber自身も出資</title>
+      <link>https://aitimes.jp/news/model/#s-9002430dc5</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-9002430dc5</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Travis Kalanick氏のロボティクス企業Atomsが、Andreessen Horowitz主導で17億ドルを調達した。Ben Horowitz氏が取締役に就き、Bain Capital・Fifth Wallに加えて、2017年に同氏をCEO退任に追い込んだUber自身もラウンドに参加した。AtomsはCloud Kitchensの事業の上に作られた持株会社で、3月に重工業自動化のPronto(Anthony Levandowski氏が率いる)を買収済み。同氏は「製造がCPU・不動産がストレージ・輸送がネットワークという“原子のコンピュータ”を作る」と述べ、ロボットの共通基盤(ホイールベース)を狙う。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>AMD、Anthropicへ最大50億ドルの戦略出資 — 「Helios」を最大2GW導入、最初の1GWは2027年上半期</title>
+      <link>https://aitimes.jp/news/model/#s-cb2411b50e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-cb2411b50e</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AMDとAnthropicは7月22日（現地時間）、戦略的提携を発表した。AnthropicはAMDのラックスケールシステム「Helios」（GPU「Instinct MI455X」＋CPU「EPYC」（開発コード名Venice）＋Pensandoネットワーキング＋ROCm）を最大2ギガワット規模で導入し、最初の1GWは2027年上半期に展開を始める。AMDはAnthropicへ将来的に最大50億ドルの戦略的株式投資を行うことを確約。複数年のエンジニアリング協業も開始し、ClaudeでAMD Instinct向けワークロードの最適化とROCm開発を加速するほか、AMD自身も開発・製品部門にClaudeを広く採用する。★AnthropicはAWSのTrainium・GoogleのTPU・NVIDIAのGPUに続く計算基盤の多様化で、前日のAMD×Microsoft（Azure）発表と合わせて「NVIDIA一強」の外に大手の選択肢が増えた——モデル価格（AI相場）を決める計算コストの土台が動いている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus&quot;&gt;AMD公式プレスリリース&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Cloud売上が前年比82%増の248億ドル — 「巨額AI投資は回収できるのか」への決算の回答</title>
+      <link>https://aitimes.jp/news/model/#s-e99bcac584</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e99bcac584</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Alphabetが7月22日（現地時間）発表した四半期決算で、Google Cloudの売上が前年同期比82%増の248億ドルとなり、アナリスト予想（224.6億ドル）を大きく上回った（TechCrunch報道）。けん引したのは企業向けAIソリューションとAIインフラの採用で、未消化の受注残は5,140億ドルに積み上がった。全体売上は24%増の1,198億ドル、Geminiアプリの月間利用者は9.5億人（2025年Q4時点の7.5億人から増加）。年間の設備投資は1,800億〜1,900億ドル規模の見込みで、ピチャイCEOは「需要の指標は強く、力学は1年前より健全だ」と回収に自信を示した。★「AI投資はバブルか」の論争に、クラウドの実売上の急伸という具体的な数字が返ってきた形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、2030年までのインフラ投資を7,500億ドルへ — 年初見積もりから25%上積み、Stargateは停滞</title>
+      <link>https://aitimes.jp/news/model/#s-957346ecee</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-957346ecee</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが2030年までのインフラ投資を7,500億ドルに引き上げると7月22日に表明した（WSJ報道をTechCrunchが伝えた）。年初の見積もりから約25%の上積みで、旗艦のStargateデータセンター計画が停滞して見える中での再加速となる。第1弾はジョージア州サバンナ北西の1,400エーカーに建てる200億ドル規模の拠点「Project Camellia」で、地域電力Georgia Powerから最低3.2ギガワットを引く（電力供給の開始は2028〜2032年）。★OpenAIはインフラ費と電力費を全額自社負担すると表明し、需要逼迫時には最大1ギガワット分の電力使用を抑えるとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/openais-ai-spending-spree-has-ballooned-to-750b/&quot;&gt;TechCrunch（The Wall Street Journal報道を引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI会長「オープンモデルは必ずしも安くない」 — 勝負を分けるのは学習効率でなく推論効率</title>
+      <link>https://aitimes.jp/news/model/#s-4f841daa9e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-4f841daa9e</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIのブレット・テイラー会長が7月20日（現地時間）のCNBCインタビューで、中国発オープンウェイトモデルについて「必ずしも利用コストが安いわけではない」と述べた。Moonshot「Kimi K3」の評価を問われたもので、タスク完了に必要なトークン数を示す「トークン効率」ではフロンティアモデルがはるかに上であり、競争を分けるのは学習効率ではなく利用時の推論効率で米国勢が依然大きくリードしていると主張した。★単価（1トークンあたりの価格）と実コスト（タスク完了までの総トークン数）は別物という指摘で、AI相場を単価だけで比べる読み方への反論になっている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/22/2000000211/&quot;&gt;ITmedia AI＋（米CNBCインタビューを引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Cloud、脆弱性を自分で攻撃して確かめるAIエージェント「CodeMender」をプレビュー提供</title>
+      <link>https://aitimes.jp/news/tool/#s-ca5f129c32</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-ca5f129c32</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Google Cloudが7月22日、ソフトウェアの脆弱性を検出し修正パッチまで自動生成するAIエージェント「CodeMender」のプレビュー提供を開始した。検出した脆弱性を自ら攻撃して成立を確かめる点が特徴。まず一部の政府機関と特定の組織・企業に限定して提供し、対象を順次広げる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35250869/&quot;&gt;CNET Japan&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、企業向けAIエージェント基盤「OpenAI Presence」を発表 — 音声とチャットの応対を実運用へ</title>
+      <link>https://aitimes.jp/news/tool/#s-c54f46e53d</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-c54f46e53d</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIは7月22日、企業がカスタマー対応や社内業務向けに音声・チャットのAIエージェントを配備するためのプラットフォーム「OpenAI Presence」を発表した。同社は「実績のある（proven）エンタープライズ向けAIエージェント基盤」と説明しており、モデル単体の提供から、業務に組み込んだエージェントの運用基盤の提供へ軸足を広げる動きになる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/introducing-openai-presence&quot;&gt;OpenAI（公式発表）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Substack、AI執筆検出を導入 — Pangram連携で「どこまで人間が書いたか」を読者に表示</title>
+      <link>https://aitimes.jp/news/tool/#s-076fd769c4</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-076fd769c4</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Substackが、AI執筆検出ソフトPangramとの連携を発表した。アプリ上の投稿・コメント・返信のうち100文字を超えるものをスキャンし、人間が書いた割合とAIが書いた割合の推定を読者が確認できる。禁止や処罰が目的ではなく、書き手に「どう作ったか」の開示を促すもので、任意の「AI著者注記」の付与、公開前の自分の下書きへの実行、誤判定と思われるスキャンの報告・削除も認める。★短期的には自社プラットフォーム上のAI製ニュースレターを露呈させかねない機能を、あえて開示側に倒した点が異例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/substacks-new-tool-tells-you-whos-been-writing-their-newsletters-with-ai/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

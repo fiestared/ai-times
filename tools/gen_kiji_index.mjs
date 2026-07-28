@@ -62,8 +62,11 @@ const CATEGORIES = [
   },
 ];
 
-/** sitemap に載せる固定ページ（記事は自動で追加される） */
-const STATIC_PAGES = ["", "news/", "soba/", "tools/", "kasegu/", "kiji/", "about/", "privacy/", "contact/"];
+/** sitemap に載せる固定ページ（記事は自動で追加される）
+ *  ★news/<topic>/ は tools/gen_news.mjs が生成するトピックページ。**足したらここにも足す**
+ *    （2026-07-28 追加。sitemap の所有者はこのスクリプト1本だけにしてある） */
+const STATIC_PAGES = ["", "news/", "news/model/", "news/tool/", "news/kisei/", "news/katsuyo/",
+                      "soba/", "tools/", "kasegu/", "kiji/", "about/", "privacy/", "contact/"];
 
 const strip = (s) => s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -153,6 +156,10 @@ const lastmodOfAll = (files) => files.map(lastmodOf).filter(Boolean).sort().pop(
 const DATA_DEPS = {
   "": ["news.json", "soba.json", "tools.json", "kasegu.json"], // トップは4つ全部を描画する
   "news/": ["news.json"],
+  "news/model/": ["news.json"],
+  "news/tool/": ["news.json"],
+  "news/kisei/": ["news.json"],
+  "news/katsuyo/": ["news.json"],
   "soba/": ["soba.json"],
   "tools/": ["tools.json"],
   "kasegu/": ["kasegu.json"],

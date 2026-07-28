@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
 Sitemap: https://aitimes.jp/sitemap.xml
+
+# RSS（Feedly等の購読・アグリゲータの新着検出用）
+# Sitemap 行と違い robots.txt の標準項目ではないが、フィードの所在を明示しておく
+# https://aitimes.jp/feed.xml

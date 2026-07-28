@@ -28,8 +28,10 @@ const DRY = process.argv.includes("--dry");
 const AUTO = process.argv.includes("--auto");
 
 // docs 配下の index.html パス → 公開URL（/foo/index.html → https://host/foo/、docs/index.html → ルート）
+// ★先頭の / を必ず落とす。落とさないと `/tools/` を渡したとき https://aitimes.jp//tools/ という
+//   二重スラッシュのURLを通知していた（2026-07-28 のcodex監査で発覚。別URL扱いになり通知が無駄になる）。
 function pathToUrl(p) {
-  let rel = p.replace(/^.*docs\//, "").replace(/index\.html$/, "");
+  let rel = p.replace(/^.*docs\//, "").replace(/index\.html$/, "").replace(/^\/+/, "");
   if (!/^https?:\/\//.test(rel)) return `https://${HOST}/${rel}`;
   return rel;
 }
@@ -41,7 +43,9 @@ let inputs = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 // 見ていると、毎日中身が変わる /news/ が **一度もBingに通知されない**（2026-07-23 に発覚。
 // 新規ドメインでBing索引の高速化が生命線なのに、いちばん更新頻度の高いページが漏れていた）。
 const DATA_PAGES = {
-  "docs/data/news.json": ["docs/index.html", "docs/news/index.html"],
+  "docs/data/news.json": ["docs/index.html", "docs/news/index.html",
+    "docs/news/model/index.html", "docs/news/tool/index.html",
+    "docs/news/kisei/index.html", "docs/news/katsuyo/index.html"],
   "docs/data/soba.json": ["docs/index.html", "docs/soba/index.html"],
   "docs/data/tools.json": ["docs/index.html", "docs/tools/index.html"],
   "docs/data/kasegu.json": ["docs/index.html", "docs/kasegu/index.html"],

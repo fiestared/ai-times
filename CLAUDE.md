@@ -47,6 +47,7 @@ node tools/build_site.mjs --check  # 生成物がデータと不一致なら失�
 | `fetch_fx.mjs` | ECB参照レートから USD/JPY を取得（`data/fx.json`）。失敗したら**古い値を残して何もしない** |
 | `gen_home.mjs` | 一面 |
 | `gen_soba.mjs` | AI相場（円換算列を含む） |
+| `gen_soba_pages.mjs` | `/soba/jpy/`（円換算表）と `/soba/eol/`（提供終了日・料金改定カレンダー）。正本は `data/eol.json` |
 | `gen_news.mjs` | `/news/` とトピック別ページ4本。記事アンカーは `tools/newslib.mjs` が正本 |
 | `gen_lists.mjs` | `/tools/` `/kasegu/` |
 | `gen_kiji_index.mjs` | 記事一覧と **sitemap.xml（唯一の所有者。ページを足したら STATIC_PAGES にも足す）** |

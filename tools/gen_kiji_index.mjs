@@ -66,7 +66,8 @@ const CATEGORIES = [
  *  ★news/<topic>/ は tools/gen_news.mjs が生成するトピックページ。**足したらここにも足す**
  *    （2026-07-28 追加。sitemap の所有者はこのスクリプト1本だけにしてある） */
 const STATIC_PAGES = ["", "news/", "news/model/", "news/tool/", "news/kisei/", "news/katsuyo/",
-                      "soba/", "tools/", "kasegu/", "kiji/", "about/", "privacy/", "contact/"];
+                      "soba/", "soba/jpy/", "soba/eol/",
+                      "tools/", "kasegu/", "kiji/", "about/", "privacy/", "contact/"];
 
 const strip = (s) => s.replace(/<[^>]+>/g, "").replace(/\s+/g, " ").trim();
 const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -160,7 +161,10 @@ const DATA_DEPS = {
   "news/tool/": ["news.json"],
   "news/kisei/": ["news.json"],
   "news/katsuyo/": ["news.json"],
-  "soba/": ["soba.json"],
+  "soba/": ["soba.json", "fx.json"],
+  // 円換算は料金と為替の両方で動く。提供終了日は eol.json が正本。
+  "soba/jpy/": ["soba.json", "fx.json"],
+  "soba/eol/": ["eol.json"],
   "tools/": ["tools.json"],
   "kasegu/": ["kasegu.json"],
 };

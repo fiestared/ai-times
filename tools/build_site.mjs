@@ -36,6 +36,7 @@ if (!CHECK) {
 const STEPS = [
   ["gen_home.mjs", "一面"],
   ["gen_soba.mjs", "AI相場"],
+  ["gen_soba_pages.mjs", "AI相場の派生ページ（円換算・提供終了日）"],
   ["gen_news.mjs", "速報＋トピックページ"],
   ["gen_lists.mjs", "AIツール／AIで稼ぐ"],
   ["gen_kiji_index.mjs", "記事一覧"],

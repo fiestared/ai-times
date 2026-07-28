@@ -1,0 +1,12 @@
+{
+  "_meta": {
+    "title": "為替レート（USD→JPY）",
+    "note": "AI各社のAPI料金は米ドル建て。円換算の目安に使う参照レート。実際の請求は各社・カード会社の換算レートによる。",
+    "source_name": "欧州中央銀行（ECB）参照レート / Frankfurter API",
+    "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "api": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=JPY"
+  },
+  "usd_jpy": 163.64,
+  "rate_date": "2026-07-27",
+  "fetched_at": "2026-07-28"
+}

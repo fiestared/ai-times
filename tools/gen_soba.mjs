@@ -34,6 +34,13 @@ function fmtDate(iso) {
 }
 
 const d = JSON.parse(readFileSync(DATA, "utf8"));
+// 為替（円換算の目安）。無ければ円の列は出さない＝fail-closed。推測レートは絶対に使わない。
+// （「Claude API 料金 日本円」等のクエリでは、上位記事が1USD=155円のような固定レートで
+//   書き逃げしている。毎日レートを取り直せるのは毎日動くサイトだけの強み。）
+let fx = null;
+try { fx = JSON.parse(readFileSync(join(ROOT, "docs/data/fx.json"), "utf8")); } catch { fx = null; }
+const FXR = fx && typeof fx.usd_jpy === "number" ? fx.usd_jpy : null;
+const yen = (usd) => "¥" + Math.round(usd * FXR).toLocaleString("en-US");
 const meta = d._meta || {};
 const rows = (d.models || []).filter((m) => m.verified && m.input != null);
 
@@ -71,11 +78,13 @@ if (!rows.length) {
   })).sort((a, b) => a.per - b.per); // 安い順(=どれが安いかの検索意図に答える)
   const body = calc.map((c) =>
     `<tr><td><span class="m">${esc(c.name)}</span> <span class="pv">${esc(c.provider)}</span></td>` +
-    `<td class="n">$${c.per.toFixed(4)}</td><td class="n">$${(c.per * 1000).toFixed(2)}</td></tr>`
+    `<td class="n">$${c.per.toFixed(4)}</td><td class="n">$${(c.per * 1000).toFixed(2)}</td>` +
+    (FXR ? `<td class="n">${yen(c.per * 1000)}</td>` : "") + `</tr>`
   ).join("");
   cost = `<div class="market"><div class="mh"><b>タスク1回あたりの費用（入力1万・出力2千トークン／安い順）</b>` +
     `<span class="as mono">as of ${esc(meta.as_of)}</span></div><div class="scroll">` +
-    `<table class="data"><thead><tr><th>モデル</th><th class="n">1回</th><th class="n">1,000回</th></tr></thead>` +
+    `<table class="data"><thead><tr><th>モデル</th><th class="n">1回</th><th class="n">1,000回</th>` +
+    (FXR ? `<th class="n">1,000回（円）</th>` : "") + `</tr></thead>` +
     `<tbody>${body}</tbody></table></div></div>`;
 }
 
@@ -85,8 +94,12 @@ const links = ["anthropic", "openai", "google"]
   .filter((k) => vs[k])
   .map((k) => `<a href="${esc(vs[k])}" rel="noopener" target="_blank">${esc(k)}</a>`)
   .join(" ・ ");
+const fxNote = FXR
+  ? `　円換算は 1USD=${FXR}円（${esc(fx._meta?.source_name || "ECB参照レート")}・${esc(fx.rate_date)}公表）で計算。毎日取り直しています。` +
+    `実際の請求は各社・カード会社の換算レートによります。`
+  : "";
 const sources = rows.length
-  ? `一次情報（公式価格ページ）: ${links}。掲載値は ${esc(meta.last_full_check || meta.as_of || "")} に照合。`
+  ? `一次情報（公式価格ページ）: ${links}。掲載値は ${esc(meta.last_full_check || meta.as_of || "")} に照合。${fxNote}`
   : "";
 
 // --- 差し込み(冪等: 中身だけ置換) ---

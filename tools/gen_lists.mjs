@@ -116,7 +116,16 @@ const results = [];
   // 1万円未満は「万」に丸めると ¥0万 になり金額が消える（例: 累計¥55）。実額のまま出す。
   const man = (v) => v < 10000 ? "¥" + Math.round(v).toLocaleString("en-US")
                                : "¥" + Math.round(v / 10000).toLocaleString("en-US") + "万";
-  const USDJPY = 155; // 概算換算レート（海外事例のドル→円のめやす）
+  // ★為替は data/fx.json（ECB参照レート・毎日取り直し）から採る。
+  //   以前は 155 のハードコードで、実勢163.64円に対して5.6%ずれていた（2026-07-28に発覚）。
+  //   「他社は固定レートで書き逃げしている」と言う側が固定レートを使っていた。
+  //   fx.json が無い/壊れているときだけ 155 に落ちる（円が消えるよりは目安を出す。注記で断る）。
+  let fx = null;
+  try { fx = JSON.parse(readFileSync(join(DOCS, "data/fx.json"), "utf8")); } catch { fx = null; }
+  const USDJPY = (fx && typeof fx.usd_jpy === "number") ? fx.usd_jpy : 155;
+  const fxNote = (fx && fx.usd_jpy)
+    ? `円は 1USD=${fx.usd_jpy}円（${fx._meta?.source_name || "ECB参照レート"}・${fx.rate_date}公表）で換算した目安です。`
+    : "円は概算レートで換算した目安です。";
   const amt = (e) => {
     if (e.monthly_jpy)    return { big: man(e.monthly_jpy) + "/月", sub: "" };
     if (e.cumulative_jpy) return { big: man(e.cumulative_jpy),      sub: "累計" };
@@ -141,7 +150,8 @@ const results = [];
         `<div class="kx-amt"><b>${esc(a.big)}</b><span>${esc(a.sub)}</span></div></a>`;
     }).join("");
     list = `<div class="kasegu-note">世の中で公開されている「AIで稼いだ」実例を集めています。金額はすべて本人の公開値で、` +
-      `各行から出典に飛べます。宣伝ではありません（as of ${esc(meta.as_of || "")}・全${ex.length}件）。</div>` +
+      `各行から出典に飛べます。宣伝ではありません（as of ${esc(meta.as_of || "")}・全${ex.length}件）。` +
+      `${esc(fxNote)}</div>` +
       `<div class="klist">${rows}</div>`;
   }
 

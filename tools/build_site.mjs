@@ -21,6 +21,18 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const CHECK = process.argv.includes("--check");
 
 // 順序に意味がある: 各ページを焼いてから、記事一覧＋sitemap（gen_kiji_index が唯一の所有者）と feed を作る。
+// 為替は外部APIを叩くので --check では走らせない（検査が通信で落ちるのは検査の役目ではない）。
+// 失敗しても既存の fx.json を残すだけなので、ここで止めない。
+if (!CHECK) {
+  process.stdout.write("── 為替レート (fetch_fx.mjs)\n");
+  try {
+    process.stdout.write(execFileSync(process.execPath, [join(ROOT, "tools/fetch_fx.mjs")],
+      { cwd: ROOT, encoding: "utf8" }).replace(/^/gm, "   "));
+  } catch (e) {
+    process.stdout.write("   ⚠️ 為替の取得に失敗（既存の fx.json をそのまま使う）\n");
+  }
+}
+
 const STEPS = [
   ["gen_home.mjs", "一面"],
   ["gen_soba.mjs", "AI相場"],

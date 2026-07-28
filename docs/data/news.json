@@ -1,7 +1,7 @@
 {
   "_meta": {
     "title": "AI TIMES — 速報・トピック別ニュース",
-    "as_of": "2026-07-28",
+    "as_of": "2026-07-29",
     "status": "verified",
     "legal": "★著作権の絶対ルール★ 他社の記事の見出し・本文・画像を転載しない。載せてよいのは (1)公式発表/プレスリリース/公式ドキュメント/RSSを『自分の言葉で要約』したもの、(2)事実(数値・日付・固有名詞)、(3)一次情報へのリンク。要約には必ず source(URL) を付ける。AIは自信満々に嘘を書くので、数値・固有名詞・日付は一次情報と逐語照合してから載せる。",
     "sources": {
@@ -12,52 +12,52 @@
     "verify_log": "2026-07-15: kisei(制度)の4件を一次情報とcurlで逐語照合。AI推進法=e-Gov法令API(law_id 507AC0000000053・公布2025-06-04/施行2025-09-01・人工知能戦略本部の設置と基本計画を本文で確認)。文化庁2件=bunka.go.jp/seisaku/chosakuken/aiandcopyright.html(『考え方』令和6年3月15日・『チェックリスト＆ガイダンス』令和6年7月31日をページ内リンク文言で確認)。AI事業者ガイドライン=meti.go.jpのページ(20240419_report.html)で第1.1版が現行であることを確認。 2026-07-15: kisei に個人情報保護委員会の生成AI注意喚起を追加。ppc.go.jp/news/press/2023/230602kouhou の公表資料PDF(230602_kouhou_houdou.pdf)をcurlでpdftotext抽出し、令和5年6月2日公表・別添1(事業者/行政機関等/一般利用者の3者への注意喚起)・別添2(OpenAIへ法147条に基づく要請=要配慮個人情報の非取得・利用目的の日本語通知)を本文から逐語照合。 2026-07-15: model トピックを2件で開始。Anthropic公式Pricing(docs.anthropic.com)を curl で生取得し逐語照合 — Sonnet 5 の導入価格『$2/$10 per million input/output tokens is in effect through August 31, 2026, after which the standard pricing of $3/$15』・新トークナイザー『produces approximately 30% more tokens for the same text』・Haiku 4.5『$1/MTok入力・$5/MTok出力』を本文から確認。Opus 4.8=$5/$25・Sonnet 5標準=$3/$15 も静的表で再照合。 2026-07-15: katsuyo(企業のAI活用)をパナソニック コネクトの1件で開始。news.panasonic.com/jp/press/jn250707-2 を curl で生取得し逐語照合 — タイトル『「聞く」から「頼む」へシフトしたAI活用で年間44.8万時間の削減を達成』、＜2024年の利用実績＞『削減時間44.8万時間(昨年比2.4倍)・利用回数240万回(昨年比約1.7倍)・1回あたり28分(画像36分)・月間ユニークユーザー率49.1％(昨年比14.3pt増)』、『主要3社の大規模言語モデルを活用して開発した自社向けAIアシスタント ConnectAI』『2023年2月より生成AIの業務利用を開始』、主な活用事例『プログラミング:コード生成・リファクタリング/成果物作成:作業手順書・各種基準の作成/作業依頼:資料レビュー・アンケートコメント分析』を本文から確認。2025年7月7日公表。社員数(1.2万人)は本リリース本文に無いため記載せず(fail closed)。 tool/kasegu は裏取り済みのものが出来次第 追加(fail closed)。 2026-07-15: tool(ツール・プロダクト)を1件で開始。Cursor公式Changelog(cursor.com/changelog)を curl で生取得し逐語照合 — 見出し『3.11 Jul 10, 2026 · Side Chats and Conversation Search』、『side chats that run alongside your main chat』『Use /side, /btw, or the plus button』『Each side chat is a durable, full agent conversation … at-mention to pull context back into the main thread』『By default, side chats focus on reading, searching, and answering』、会話検索『search agent transcripts from the command palette (Cmd+K)』『local search index that scales … to thousands of conversations』『search within an existing conversation using Cmd+F』、『Redesigned project and repo pickers』を本文から確認。バージョン番号3.11・日付Jul 10, 2026は changelog のバージョン一覧マーカーからも独立に確認。 | 2026-07-16: news +4 (model:GPT-5.6キャンペーン/tool:ChatSense Cowork/katsuyo:孫正義2040/kisei:AIエージェントによるホームディレクトリ削除) 全て一次記事をcurl生読みで逐語照合。wireに孫正義キーノートを追加(ハサビスはkisei topicに残置)。 2026-07-16(夕): 夕方便でnews4件追加(Noetra/Gemini Spark日本/GPT-Red/Sunoハッキング)。全てITmedia NEWS・AI＋/TechCrunchの記事本文をcurl生読みし、44社・2万7500基・27年4月構築開始・28年6月稼働/Ultra月額1万4500円・Gemini 3.5+Antigravity・カスタムMCP/84%対13%・GPT-5.6 Sol失敗率6分の1/404 Media報・2025年11月侵害・DMCA主張 を逐語照合。lead=Noetra・wire8件を最新順に刷新。 | 2026-07-17: news +1 (tool:Upper90が推論新興General Computeに$400Mチップ担保ローン)。TechCrunch記事本文をcurl生読みで逐語照合 — $400M chip-backed loan／General Compute(CEO Finn Puklowski)／SambaNova製SN50推論チップ・水冷不要・GPUベース比16倍／Upper90(Billy Libby・元Goldman Sachsクオンツ・2021年Crusoeへのチップ担保融資が最初)／『markets are responding to concerns over the price of AI tools and tokens by turning to infrastructure that runs open-source models more cheaply』を確認。wireに追加し最新順に刷新(8件)。 | 2026-07-17(深夜): news +1 (kisei:AppleがOpenAIを企業秘密侵害で提訴・年内IPO計画に影)。TechCrunch Equity回(videoページ+podcastページの2ソース)の本文をcurl生読みで逐語照合 — 『Apple filed a trade secrets lawsuit against OpenAI last Friday』『a pattern of misconduct reaching all the way up to OpenAI's chief hardware officer』『more than 400 former Apple employees now work at the company』『OpenAI's response so far has been carefully hedged』『reportedly eyeing an IPO as early as later this year』を2ページで同一確認。leadをFRONTia(07-16)から本件(07-17・最新かつ非ニッチの大型ニュース)へ更新、wire先頭に追加しFRONTia(07-16)を繰り出して8件維持(FRONTiaはkisei topicに残置)。 | 2026-07-18: news +1・lead更新 (model:Anthropicが最上位『Claude Fable 5』を7/20から有料プランの標準機能へ)。ITmedia NEWS記事(news019.html)本文をShift_JIS→UTF-8デコードしcurl生読みで逐語照合 — 『7月17日(現地時間)発表』『20日からMax・Team Premiumの標準機能』『利用上限の50%まで追加費用なし』『Pro・Team Standardは使用クレジット(従量課金)・対象者に100ドル分を1回限り付与』『6月9日公開のMythosクラス・7月1日再開後に期限を7日→12日→19日と2度延長』『Anthropic公式X: 利用枠の50%でアクセスを標準とする』『延長中にOpenAI GPT-5.6一般提供(9日)・Moonshot Kimi K3公開(16日)』を本文から確認。07-18(土)の初のAI hard-newsかつサイト#1テーマ(AI相場・料金)直撃につきleadへ昇格(Databricks 07-17はmodel topicに残置)、wire先頭に追加しGartner(07-17)を繰り出して8件維持。\n2026-07-20: フアンCEO訪日総括(TechCrunch 07-19)とCosmos 3 Edge(tool)を追加。NVIDIA公式PR2本(japan-…-national-ai-infrastructure / japans-robotics-…-cosmos)をcurl逐語照合=Vera CPU 13,750基・Rubin GPU 27,500基・140MW・世界初の国家AIインフラ・AIロボット戦略2040年シェア30%超(約$133B)・Cosmos 3 Edge(Jetson Thor/T2000/T3000上)・Coalition参加意向10社(Honda R&D/オムロン等は開発側で別掲)。「5年で最大1兆円」「1000万台/18分野」「官民$65B」はTechCrunch記載につき本文で帰属明記。\n2026-07-20(夜): model +1・lead/wire更新(中国2連発=Alibaba Qwen3.8プレビュー/Kimi K3確定情報)。The Verge記事(Robert Hart=AI担当記者・2026-07-20 10:16UTC)本文をcurl生読みで逐語照合 — Moonshot『unveiled Kimi K3 on Friday』『2.8 trillion parameters』『world's largest open-source AI system』『trailing only OpenAI's GPT-5.6 Sol and Anthropic's Claude Fable 5』『release full model weights … on July 27th』／Alibaba『preview of Qwen3.8』『one of the most powerful model[s] available today』『second only to Fable 5』『2.4 trillion parameter』『going open-weight soon』を確認。一次情報(qwen.ai=JS描画・alizila=取得不可・Moonshot公式=curl不可)は取得できず、性能・規模の数値は全て企業の自社主張としてVerge帰属を明記(fail-close)。leadをHF侵入事件(07-16)から本件(07-20・最新かつサイト#1テーマ=モデル競争とAI相場直撃)へ更新、HFはkisei topicとwireに残置。wire先頭に追加しApple提訴(07-17)を繰り出して8件維持(同件はkisei topicに残置)。\n2026-07-21(朝): tool +1・wire更新(MCP次期仕様2026-07-28)。TechCrunch(Russell Brandom・07-20 20:50UTC)を検知し、一次=MCP公式で逐語照合 — 公式ブログRC告知(2026-05-21)『The 2026-07-28 MCP Specification Release Candidate』=a stateless protocol core/the Extensions framework/Tasks/MCP Apps/authorization hardening/a formal deprecation policy、SDKベータ告知(2026-06-29)『before the spec goes final on July 28』『biggest revision since launch』(Python/TypeScript/Go/C#)、仕様draft changelog=『Remove protocol-level sessions and the Mcp-Session-Id header from the Streamable HTTP transport』(SEP-2567)・『Make MCP stateless: remove the initialize / notifications/initialized handshake』・server/discover新設・subscriptions/listen導入(SEP-2575)を確認。負荷分散下の運用障壁・Arcade言及はTechCrunch帰属(記事解説のみ採用)。wire先頭に追加しAgility Robotics(07-17)を繰り出して8件維持(同件はtool topicに残置)。\n2026-07-22(19時便): news +6・lead差し替え・wire全面刷新。★lead=OpenAIがHugging Face侵害の実行主体を自社モデルと認めた件。openai.com本体はChrome UAでも403のためWayback Machine(20260722085641)経由で公式ブログ全文を取得し逐語照合 — 『including GPT-5.6 Sol and an even more capable pre-release model, all with reduced cyber refusals for evaluation purposes』『We consider this incident to be an unprecedented cyber incident』『identified and exploited a zero-day vulnerability (which we've now responsibly disclosed to the vendor) in the package registry cache proxy』『performed a series of privilege escalation and lateral movement actions』『the models inferred that Hugging Face potentially hosted models, datasets and solutions for ExploitGym』『chained together multiple attack vectors, including using stolen credentials and zero-day vulnerabilities to find a remote code execution path』『obtain test solutions directly from Hugging Face's production database』『hyperfocused on finding a solution for ExploitGym, going to extreme lengths』『UK AISI's evaluation shows that models such as GPT-5.6 Sol are increasingly able to sustain complex, multi-step cyber operations over long time horizons』『brought Hugging Face into the trusted access program』を本文から確認。TechCrunch(07-21 20:56UTC)・ITmedia AI＋(07-22)でも同一事実を独立にクロス確認し、CFAA抵触の可能性はTechCrunch帰属で明記。★これは既存のkisei項目(07-16『Hugging FaceにAI主導のサイバー攻撃』=実行主体を『AIエージェント』としか特定できていなかった)の続報にあたる(同項目は残置)。 | 米財務長官の対中AI制裁警告=TechCrunch(Rebecca Bellan)本文をcurl生読み。ベッセント長官のFox Business発言(第一報Bloomberg)・ナデラ/Delangueの蒸留を巡る反論を帰属明記型で収録(一次動画は未取得のためfail-closeで発言はTC帰属)。 | Microsoft×Mistral=ITmediaの記事リンクから公式リリースURLを特定し、news.microsoft.com/source(07-21付)をcurl生読みで逐語照合 — 『multibillion dollar commitment from Microsoft』『thousands of the latest NVIDIA Vera Rubin GPUs』『Mistral Medium 3.5 and OCR 4 are now available in Microsoft Foundry』『Mistral Medium 3.5 is now in Microsoft Copilot Studio』『cloud, cloud-connected and fully disconnected』『European Digital Commitments announced in 2025』Brad Smith/Arthur Mensch両氏の発言原文を確認。ITmedia記載の『2026年3月に8.3億ドル融資・2027年末までに200MW』は本リリース本文に無いため不掲載(fail closed)。 | Claude『Record a skill』とBlock『Buzz』=公式ページがJS描画で取得不可(claude.com/release-notes/cowork は404、buzz.xyzは実質空)のためITmedia報道の帰属明記型で収録。Buzzのライセンス(Apache-2.0)・現行版0.4.21・Nostr採用理由(アイデンティティの可搬性)はITmedia本文で確認。 | 矢野経済研究所AIDEL=ITmediaビジネスオンラインの取材記事。『ハルシネーションは起こり得ない』は同社の自社説明として明記(第三者検証なし)。 | wireを8件へ刷新(最新順)。繰り出した6件(中外製薬/AMD×MS/Anthropic和解/OpenAI long-horizon/ドラクエ×Gemini/GMO)は全て各トピックに残存することを確認済み。\n2026-07-23(19時便): kasegu topicを0件→3件で開設(Klipy=IH本人インタビューで5桁MRR/4,000社/$39-149/2024-11公開/3か月MVPを本文逐語照合・記事日付はHN投稿07-17で特定 | Zigpoll=IH本人インタビューで$125k MRR/H1+44%/AI経由14%/Shopify1/3を本文逐語照合・日付はHN投稿07-12 | note深津CSO=noteinc公式n99e8b7430004をcurl生読みでAI引用ドメイン2位(Ahrefs)/AI経由流入約4倍/8209万件/上位1000名平均1515万円を逐語照合)。model+2(AMD×Anthropic=一次ir.amd.com/detail/1292で最大$5B/2GW/MI455X+EPYC Venice/2027H1/リサ・スー+トム・ブラウン発言を逐語照合・ITmedia/Vergeともクロス確認 | Google決算=TC報道でCloud+82% $24.8B/受注残$514B/Gemini 950M MAU/capex$180-190Bを帰属明記で収録)。katsuyo+1(Okta調査=ITmedia転載のPublickey記事で成長率Anthropic100/OpenAI66.9/GWS59.8/GitHub56.6/Cursor42.4・M365最多・57%複数併用を照合)。tool+1(Claude Code Mac×iOSシミュレータ=ITmedia AI＋で7/21発表/Pro-Max-Team/Computer Use不要/最大4台/スクショはAnthropicサーバ送信を照合・Anthropic公式release notesはJS描画のため帰属明記型)。★Kimi K3ウェイト公開時期の食い違い(前便fail-closed)を一次で決着=HF moonshotai(組織ページ+modelsページ)とGitHub MoonshotAI(repositories)をcurl取得しK3が0件(最新はK2.7-Code)であることを機械確認→「7/23時点で未公開・7/27予定はVerge帰属のまま」を追記。lead=AMD×Anthropic(相場の土台=本命領域・07-22で最新の大型)へ差し替え、旧lead(Moonshot制裁)はkisei+wireに残存を機械確認。wire8件刷新(繰り出し5件の各トピック残存をassertで機械確認)。 / 2026-07-25 第7便: 収録8件（国内5・海外3）を記事本文の逐語照合で確認。ITmedia系はcp932で復号（utf-8だと日付・金額を読み違える）。soba全12モデルを公式価格ページで再照合し変更ゼロ。巡回はtools/fetch_feeds.py（RSS2.0/RDF/Atomの3形式・HTTPステータス検査つき）へ一本化。 / 2026-07-27 07時便: soba全13モデルを公式ページで再照合し変更ゼロ（Anthropic docs=Fable $10/$50・Opus 5 $5/$25・Opus 4.8 $5/$25・Sonnet 5 標準$3/$15かつ8/31まで導入価格$2/$10・Haiku 4.5 $1/$5 を表から逐語確認／OpenAI=gpt-5.6-sol $5/$30・terra $2.5/$15・luna $1/$6／Google=3.6 Flash $1.5/$7.5・3.1 Pro $2/$12(Global)・3.5 Flash-Lite $0.3・3 Flash $0.5／Moonshot=kimi-k3 $3/$15・1,048,576tok）。★Kimi K3の重み公開期日（7/27）当日の検証: Hugging Face公式API author=moonshotai の18件を機械確認しK3リポジトリ無し（最新Kimi-K2.7-Code 2026-06-15）→ model トピックとwireに『未公開』として収録し released は空のまま維持（fail-closed）。 news +7: kisei(HF CEOのradical transparency要求)・model(Kimi K3重み未公開／電線断線とDCの系統応答)・tool(Meta AIのアシスタント化／Alexa Plusのスマートホーム拡張／Midjourney×Co-Star)・katsuyo(Patreon 20%削減)。TechCrunch/The Vergeの記事本文をcurl生読みし、Patreon『20 percent … around 93 employees』『because we believe AI replaces humans』『fundamentally transformed the tech industry』、Alexa Plusの提携先8社、HF CEOの『radical transparency』『release the traces』『$100 million worth of computing power』『The first autonomous agent cyberattack is an unprecedented event』を逐語確認。日付は全てRSSのpubDateからJSTへ変換して格納（UTCのまま入れない）。 lead=HF CEOの要求（07-27 01:33 JST＝当日最新）。wire 8件刷新し、繰り出した4件（Cognition×Poke／DeepMind AI Control Roadmap／近畿大／Midjourney×Co-Star）のトピック残存をassertで機械確認。★Midjourney×Co-Starはwireのみに在って孤児になる状態だったのでtoolトピックへ収録して救済した。"
   },
   "lead": {
-    "time": "2026-07-28",
+    "time": "2026-07-29",
     "flag": "海外",
-    "title": "Kimi K3の完全な重み、ついに公開 — 96分割・約1,561GB、ただしライセンスは収益条項つき",
-    "dek": "本紙が期日超過として追跡していた Moonshot AI の重み公開が、日本時間7月28日1時29分に確認された（公式Hugging FaceのAPIで機械確認）。米太平洋時間では予定日「7月27日」の午前にあたる。文面はMIT系だが、Model as a Service事業で連続12か月の売上2,000万ドル超なら個別契約が必要という条項が付く。",
-    "source_name": "Hugging Face（公式リポジトリ）",
-    "source_url": "https://huggingface.co/moonshotai/Kimi-K3"
+    "title": "Claudeで「共有」した会話、検索エンジンから読める状態に — 医療記録や社内データも",
+    "dek": "共有リンクで公開されたClaudeの会話がGoogleやBingに登録され、誰でも閲覧できる状態になっていたとCNETが報じた。Anthropicの広報は「共有リンクは推測も発見もできないが、共有した時点で誰でもアクセスできる状態にしたことになる」と仕様どおりの動作だと説明している。つまり不具合ではなく、AIチャットの『共有』が世間の想像より広い公開だという設計の話だ。心当たりのある人は設定→プライバシー→共有されたチャットを見に行くのが早い。",
+    "source_name": "CNET Japan（CNET News翻訳）",
+    "source_url": "https://japan.cnet.com/article/35251032/"
   },
   "wire": [
     {
-      "time": "2026-07-28",
-      "title": "「AI待ちが惜しくて7並列」個人開発112日の作業ログ集計 — 切り替え279回/日で6月に停止",
-      "source_url": "https://note.com/ai_kojin/n/nbd2377e31097"
+      "time": "2026-07-29",
+      "title": "Claudeの共有会話が検索エンジンに登録されていたと判明 — Anthropicは「共有＝公開」と説明",
+      "source_url": "https://japan.cnet.com/article/35251032/"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "Google Cloud、脆弱性を突いて確かめてから直すAIエージェント「CodeMender」をプレビュー公開",
+      "source_url": "https://www.publickey1.jp/blog/26/google_cloudaicodemender.html"
     },
     {
       "time": "2026-07-28",
-      "title": "Kimi K3の完全な重みが公式Hugging Faceで公開 — 96分割・約1,561GB、独自ライセンス",
-      "source_url": "https://huggingface.co/api/models/moonshotai/Kimi-K3"
+      "title": "Gemini APIのManaged Agents、既定モデルがGemini 3.6 Flashへ — コード変更なしで切り替わる",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
+    },
+    {
+      "time": "2026-07-28",
+      "title": "MCP仕様の2026-07-28版が最新版に — ステートレスな自己完結リクエストが基本プロトコル入り",
+      "source_url": "https://modelcontextprotocol.io/specification/2026-07-28"
+    },
+    {
+      "time": "2026-07-28",
+      "title": "音声AIのFish Audio、年換算売上2,100万ドル・利用者800万人でシード5,200万ドル調達",
+      "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
     },
     {
       "time": "2026-07-27",
-      "title": "アモデイCEO「Anthropicはオープンウェイト禁止を提唱したことは一度もない」",
-      "source_url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/"
+      "title": "検索結果とAI要約に「詐欺ではありません」と出させる手口、警視庁が注意喚起",
+      "source_url": "https://www.itmedia.co.jp/news/articles/2607/27/news076.html"
     },
     {
       "time": "2026-07-27",
-      "title": "ナデラCEO「1つのAIに全部を託す企業は生き残れないかもしれない」",
-      "source_url": "https://techcrunch.com/2026/07/27/satya-nadella-says-companies-that-trust-one-ai-for-everything-may-not-survive/"
+      "title": "MIXI、新卒エンジニア向けAI活用研修の資料と動画を全12科目ぶん無料公開",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/"
     },
     {
       "time": "2026-07-27",
-      "title": "Cursor、インド専用プランを月額649ルピー（約7ドル）で投入 — 標準Proは20ドル",
-      "source_url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "NTTデータ先端技術、Copilot Coworkで営業事務の社内実証 — 料金はクレジット従量課金",
-      "source_url": "https://atmarkit.itmedia.co.jp/ait/articles/2607/28/news053.html"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "ThreadsのDMでMeta AIと直接やり取りできるように",
-      "source_url": "https://techcrunch.com/2026/07/27/threads-users-can-now-chat-with-meta-ai-in-their-dms/"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "NVIDIA・Microsoftら30社超がAIセキュリティ連合を設立 — OpenAI・Google・Anthropicは不参加",
+      "title": "NVIDIA・Microsoftら30社超、AIセキュリティのオープン連合「Open Secure AI Alliance」設立",
       "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000224/"
     }
   ],
@@ -67,6 +67,14 @@
       "name": "AIで稼ぐ",
       "jp": "個人・企業がAIで収益を上げた話",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "TechCrunch",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+          "time": "2026-07-28",
+          "title": "音声AIのFish Audio、年換算売上2,100万ドルでシード5,200万ドルを調達",
+          "summary": "クリエイター・企業向けの音声AIモデルを手がけるFish Audioが、5,200万ドルのシードラウンドを実施した。TechCrunchによれば、昨年のローンチから利用者は800万人を超え、年換算経常収益（ARR）は2,100万ドルに達している。オープンソース版と自社ホスティング版を並走させる形で、無料で配って上澄みを課金する構えが売上として成立している数少ない実例のひとつ。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "note（本人の作業ログ集計・無料記事）",
@@ -122,6 +130,14 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "CNET Japan",
+          "source_url": "https://japan.cnet.com/article/35250958/",
+          "time": "2026-07-27",
+          "title": "レノボ・ジャパンが「関西AI Hub」を創設 — PoC止まりのAIを事業化まで運ぶ枠組み",
+          "summary": "レノボ・ジャパンが7月22日、関西でAIの社会実装を支援する共創拠点「関西AI Hub」を創設した。産業界・大学・金融機関が連携し、ユースケースの発案からPoC、事業化、資金調達までを一気通貫で支援する枠組みで、大阪・中之島とグラングリーン大阪の2拠点に無料で使える検証環境を置く。企業のAI導入がPoCで止まる問題に、資金調達までを含めた導線で答えようとする構えだ。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "MONOist（医療機器ニュース）",
@@ -427,6 +443,22 @@
       "items": [
         {
           "topic_flag": "海外",
+          "source_name": "Google（公式ブログ）",
+          "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/#hooks",
+          "time": "2026-07-28",
+          "title": "エージェントの道具の使用を止められる「環境フック」— 同時に定時実行とトークン上限も",
+          "summary": "同じ更新で、サンドボックス内でエージェントが道具を呼ぶ前後に自前のスクリプトを挟む「環境フック」が入った。.agents/hooks.json に条件と実行コマンドを書き、スクリプトが deny を返せばその道具呼び出しは実行されず、拒否理由がモデルの文脈に渡る。あわせてcron形式の定時実行トリガーと、1回のやり取りで使うトークンの上限指定も追加された。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "Google（公式ブログ）",
+          "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/",
+          "time": "2026-07-28",
+          "title": "Gemini APIのManaged Agents、既定モデルがGemini 3.6 Flashに切り替わる",
+          "summary": "Googleは7月28日、Gemini APIのManaged Agentsを更新し、エージェント antigravity-preview-05-2026 の既定モデルをGemini 3.6 Flashにしたと発表した。コードの変更は不要で次の実行から自動的に切り替わり、agent_config.model を指定すれば従来のGemini 3.5 FlashやGemini 3.5 Flash-Liteに固定もできる。既定が上位モデルに入れ替わると、同じコードのまま実行単価が変わる点に注意したい（各モデルの単価は本紙のAI相場を参照）。"
+        },
+        {
+          "topic_flag": "海外",
           "source_name": "TechCrunch",
           "source_url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/",
           "time": "2026-07-27",
@@ -688,6 +720,22 @@
       "name": "ツール・プロダクト",
       "jp": "新しいAIツールの登場・更新",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "Publickey",
+          "source_url": "https://www.publickey1.jp/blog/26/google_cloudaicodemender.html",
+          "time": "2026-07-29",
+          "title": "Google Cloud「CodeMender」プレビュー公開 — 脆弱性を見つけ、実際に突いて確かめ、直すまで自律実行",
+          "summary": "Google Cloudが、コードの脆弱性の検出から修正までを自律実行するAIエージェント「CodeMender」のプレビューを公開した。特徴は検出のあと、サンドボックス内で実際にエクスプロイトコードを作って動かし、本当にリスクがあるかを検証してから報告する点で、誤検知を落とす狙いがある。修正パッチは別のAIが既存機能を壊さないか評価したうえで差分として提示され、採用するかは開発者が判断する。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "Model Context Protocol（公式仕様）",
+          "source_url": "https://modelcontextprotocol.io/specification/2026-07-28",
+          "time": "2026-07-28",
+          "title": "MCP仕様の2026-07-28版が公開 — 「ステートレスな自己完結リクエスト」が基本プロトコルに",
+          "summary": "AIとツールをつなぐ事実上の標準MCPの新しい仕様版が7月28日付で最新版として公開された。基本プロトコルの項目に「ステートレスな自己完結リクエスト」と「リクエストごとの機能ネゴシエーション」が並び、接続を張り続けなくてもよい形が正式に位置づけられた。サーバをサーバレス環境やロードバランサの背後に置きやすくなる変更で、既存の実装は対応版への追随が要る。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "TechCrunch",
@@ -1089,6 +1137,14 @@
       "items": [
         {
           "topic_flag": "海外",
+          "source_name": "CNET Japan（CNET News翻訳）",
+          "source_url": "https://japan.cnet.com/article/35251032/",
+          "time": "2026-07-29",
+          "title": "Claudeの「共有」した会話が検索エンジンから閲覧できる状態に — Anthropicは「共有＝公開」と説明",
+          "summary": "Claudeの共有リンクで公開された会話がGoogleやBingに登録され、誰でも読める状態になっていたとCNETが報じた。Redditの利用者が最初に指摘し、site:claude.ai/share を付けて検索すると医療記録や企業の内部データを含む会話が並んだという（現在は大半が削除）。Anthropicの広報はCNETに対し、共有リンクは推測も発見もできないが、会話を共有した時点で誰でもアクセスできる状態にしたことになる、と仕様どおりの動作だと説明している。共有済みのチャットは設定→プライバシー→共有されたチャットから確認・取り消しができる。"
+        },
+        {
+          "topic_flag": "海外",
           "source_name": "TechCrunch",
           "source_url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/",
           "time": "2026-07-27",
@@ -1420,5 +1476,5 @@
       ]
     }
   ],
-  "as_of": "2026-07-28"
+  "as_of": "2026-07-29"
 }

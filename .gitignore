@@ -2,3 +2,13 @@
 *.log
 .fig*.html
 node_modules/
+x/outbox.json
+x/outbox.md
+x/sent.log
+
+# 便ごとの使い捨てスクリプトと、一次照合のために取得した生ページ。
+# ★特に tmp_*.html / tmp_*.txt / tmp_*.xml は他社記事の全文そのもので、
+#   `git add -A` で公開リポジトリに入ると規律1（転載しない）に反する。
+#   追跡中の tmp_* は 0 件であることを確認したうえで無視設定にした（2026-07-29）。
+tmp_*
+*.breakbak

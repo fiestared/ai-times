@@ -7,8 +7,24 @@
     <description>新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して要約。記事の転載はせず、必ず出典リンクを付けます。</description>
     <language>ja</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
-    <lastBuildDate>Tue, 28 Jul 2026 09:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 09:00:00 +0900</lastBuildDate>
     <ttl>360</ttl>
+    <item>
+      <title>Google Cloud「CodeMender」プレビュー公開 — 脆弱性を見つけ、実際に突いて確かめ、直すまで自律実行</title>
+      <link>https://aitimes.jp/news/tool/#s-ce4c95f77a</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-ce4c95f77a</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Google Cloudが、コードの脆弱性の検出から修正までを自律実行するAIエージェント「CodeMender」のプレビューを公開した。特徴は検出のあと、サンドボックス内で実際にエクスプロイトコードを作って動かし、本当にリスクがあるかを検証してから報告する点で、誤検知を落とす狙いがある。修正パッチは別のAIが既存機能を壊さないか評価したうえで差分として提示され、採用するかは開発者が判断する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.publickey1.jp/blog/26/google_cloudaicodemender.html&quot;&gt;Publickey&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claudeの「共有」した会話が検索エンジンから閲覧できる状態に — Anthropicは「共有＝公開」と説明</title>
+      <link>https://aitimes.jp/news/kisei/#s-dd9d8e55c2</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-dd9d8e55c2</guid>
+      <category>規制・制度</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Claudeの共有リンクで公開された会話がGoogleやBingに登録され、誰でも読める状態になっていたとCNETが報じた。Redditの利用者が最初に指摘し、site:claude.ai/share を付けて検索すると医療記録や企業の内部データを含む会話が並んだという（現在は大半が削除）。Anthropicの広報はCNETに対し、共有リンクは推測も発見もできないが、会話を共有した時点で誰でもアクセスできる状態にしたことになる、と仕様どおりの動作だと説明している。共有済みのチャットは設定→プライバシー→共有されたチャットから確認・取り消しができる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35251032/&quot;&gt;CNET Japan（CNET News翻訳）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>イーソル、AIエージェントが車載アプリを動的に生成する仮想実験場を公開</title>
       <link>https://aitimes.jp/news/katsuyo/#s-fb962c4bee</link>
@@ -18,12 +34,44 @@
       <description>&lt;p&gt;イーソルは自社イベント「eSOL Technology Forum 2026」で、AIエージェントと人・車両が対話するための仮想環境「eSOL AI Mobility Sandbox」を披露した。AI定義型車両（AIDV）に向けて、必要なアプリをその場で生成・実行させる想定の実験場になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://monoist.itmedia.co.jp/mn/articles/2607/28/news056.html&quot;&gt;MONOist&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>エージェントの道具の使用を止められる「環境フック」— 同時に定時実行とトークン上限も</title>
+      <link>https://aitimes.jp/news/model/#s-d063200cf5</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-d063200cf5</guid>
+      <category>モデル・技術</category>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;同じ更新で、サンドボックス内でエージェントが道具を呼ぶ前後に自前のスクリプトを挟む「環境フック」が入った。.agents/hooks.json に条件と実行コマンドを書き、スクリプトが deny を返せばその道具呼び出しは実行されず、拒否理由がモデルの文脈に渡る。あわせてcron形式の定時実行トリガーと、1回のやり取りで使うトークンの上限指定も追加された。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/#hooks&quot;&gt;Google（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gemini APIのManaged Agents、既定モデルがGemini 3.6 Flashに切り替わる</title>
+      <link>https://aitimes.jp/news/model/#s-be3ca53745</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-be3ca53745</guid>
+      <category>モデル・技術</category>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Googleは7月28日、Gemini APIのManaged Agentsを更新し、エージェント antigravity-preview-05-2026 の既定モデルをGemini 3.6 Flashにしたと発表した。コードの変更は不要で次の実行から自動的に切り替わり、agent_config.model を指定すれば従来のGemini 3.5 FlashやGemini 3.5 Flash-Liteに固定もできる。既定が上位モデルに入れ替わると、同じコードのまま実行単価が変わる点に注意したい（各モデルの単価は本紙のAI相場を参照）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/&quot;&gt;Google（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Kimi K3の完全な重みが公開 — safetensors 96分割・約1,561GB、ライセンスは収益条項つきの独自版</title>
       <link>https://aitimes.jp/news/model/#s-7372d8cb93</link>
       <guid isPermaLink="true">https://aitimes.jp/news/model/#s-7372d8cb93</guid>
       <category>モデル・技術</category>
       <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;Moonshot AI が予告していた Kimi K3 の重みが、公式の Hugging Face リポジトリで公開された（本紙が公式APIで機械確認。private・gated ともに false）。リポジトリの最終更新は2026-07-27 16:29 UTC＝日本時間の7月28日1時29分で、米太平洋時間では予定日「7月27日」の午前にあたる。中身は safetensors 96分割・全118ファイル・blob合計約1,561GBの量子化済みチェックポイントで、config.json は画像も扱うマルチモーダル構成（93層・エキスパート896・コンテキスト1,048,576トークン＝公式Pricingの表記と一致）。★ライセンスはMIT系の文面に収益条項を2つ足した独自の「Kimi K3 License」で、Model as a Service事業で連続12か月の売上が2,000万ドルを超える場合は商用利用前にMoonshotとの個別契約が必要、MAU1億人超などの商用製品ではUIに「Kimi K3」の表示義務がある＝制限のないオープンソースではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://huggingface.co/moonshotai/Kimi-K3&quot;&gt;Hugging Face（公式リポジトリ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>MCP仕様の2026-07-28版が公開 — 「ステートレスな自己完結リクエスト」が基本プロトコルに</title>
+      <link>https://aitimes.jp/news/tool/#s-943db61295</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-943db61295</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Tue, 28 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AIとツールをつなぐ事実上の標準MCPの新しい仕様版が7月28日付で最新版として公開された。基本プロトコルの項目に「ステートレスな自己完結リクエスト」と「リクエストごとの機能ネゴシエーション」が並び、接続を張り続けなくてもよい形が正式に位置づけられた。サーバをサーバレス環境やロードバランサの背後に置きやすくなる変更で、既存の実装は対応版への追随が要る。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://modelcontextprotocol.io/specification/2026-07-28&quot;&gt;Model Context Protocol（公式仕様）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>レノボ・ジャパンが「関西AI Hub」を創設 — PoC止まりのAIを事業化まで運ぶ枠組み</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-d8b47ccada</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-d8b47ccada</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Mon, 27 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;レノボ・ジャパンが7月22日、関西でAIの社会実装を支援する共創拠点「関西AI Hub」を創設した。産業界・大学・金融機関が連携し、ユースケースの発案からPoC、事業化、資金調達までを一気通貫で支援する枠組みで、大阪・中之島とグラングリーン大阪の2拠点に無料で使える検証環境を置く。企業のAI導入がPoCで止まる問題に、資金調達までを含めた導線で答えようとする構えだ。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35250958/&quot;&gt;CNET Japan&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>NTTデータ先端技術、Copilot Coworkで営業事務の社内実証 — 料金は「Copilotクレジット」の従量課金</title>
@@ -440,54 +488,6 @@
       <category>企業のAI活用</category>
       <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;OpenAIは7月22日、NTTデータグループの導入事例を公開した。同社は ChatGPT Enterprise と Codex を9,000人の従業員が使える形で展開し、業務の自動化と並行して、障害（インシデント）分析にかかる時間を30分にまで短縮したという。安全性を保ったままAI利用を全社規模へ広げた国内大手SIerの事例で、AIコーディングエージェントが開発だけでなく運用（障害対応）の現場に入った実例でもある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/ntt-data&quot;&gt;OpenAI（公式導入事例）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>メルカリ、自社のAI活用を明かす動画13本を公開 — 「なぜCTOがCHRO兼CAIOになったのか」</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-ac157bbc32</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ac157bbc32</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;メルカリは7月22日までに、7月8日開催のイベント「Mercari AI Career Fes 2026」全13セッションのアーカイブ動画を公式YouTubeチャンネルで公開した。基調講演では、木村俊也CTOが6月1日付で最高人事責任者（CHRO）と最高AI責任者（CAIO）を兼務することになった背景と今後の展望を本人が説明している。エンジニア組織でのAI活用や、AIを安心・安全に使うためのガバナンスの取り組みを紹介する動画も含まれ、国内大手の「AI前提の組織設計」を一次資料で追える数少ない事例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/24/2000000220/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Monday.com、従業員の20%・約630人を削減しAIへ集中 — 2026年のテック人員削減は12.2万人超</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-9cb43306bf</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-9cb43306bf</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;イスラエルの業務ソフト大手Monday.comが、従業員の20%にあたる約630人を削減すると発表した。「より無駄のない、集中した運営モデル」を支えるためとし、同社が中核に据える「AI Work Platform」（ノーコードのアプリビルダー、カスタマイズ可能なAIエージェント、ワークフロー自動化、レポート生成チャットボット）への投資に絞る。再編に伴う費用は4,500万〜5,500万ドルを見込む。★Layoffs.fyiによれば2026年のテック業界の人員削減は12万2,000人超で、今年は記録的な78%の企業が「AIへの再集中」を理由に挙げている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/monday-com-lays-off-hundreds-to-focuses-on-ai/&quot;&gt;TechCrunch（Layoffs.fyiのデータを引用）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>矢野経済研究所、Claudeと自社市場データを組み合わせた新規事業アイデア創出「AIDEL」 — 「30分で100案」、3年後に5億円規模を目標</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-e667092806</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-e667092806</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;市場調査大手の矢野経済研究所が、AnthropicのClaudeと自社の市場調査データを組み合わせた新規事業アイデア創出支援サービス「AIDEL」を発表した（ITmediaが7月22日に報道）。システムの設計・構築・運用はクォンツ・リサーチが共同開発パートナーとして担う。狙いは、役員を長時間拘束するブレインストーミングで膨らむ「隠れ人件費」の削減で、「30分で100のアイデア提案」を掲げる。★特徴は参照データを「自社がリサーチした非公開の一次情報と特許情報のみ」に限定したクローズド構成で、同社はこれによりハルシネーションが起こり得ない仕組みだと説明する（自社説明・第三者検証なし）。ヒントカードを選んで実行するだけで、概要・事業性評価・市場分析を含む「アイデアシート」を自動生成し、市場規模・成長性・実現可能性などから5段階の総合評価スコアを付与する——社内の反対を説得する客観的根拠として使える点を実務上の武器と位置づける。料金は月額固定＋ライセンス＋従量課金で、水越孝社長は「3年後に約5億円のビジネス規模」を目標に掲げた。★国内の調査会社が自社データ資産をAIの参照元に変えて売る形は、『AIに一次情報を持たせて差別化する』典型例として参考になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/business/articles/2607/22/news028.html&quot;&gt;ITmedia ビジネスオンライン（矢野経済研究所・クォンツリサーチへの取材）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Uber創業者カラニックのロボティクス企業「Atoms」が17億ドル調達 — a16z主導、Uber自身も出資</title>
-      <link>https://aitimes.jp/news/model/#s-9002430dc5</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-9002430dc5</guid>
-      <category>モデル・技術</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Travis Kalanick氏のロボティクス企業Atomsが、Andreessen Horowitz主導で17億ドルを調達した。Ben Horowitz氏が取締役に就き、Bain Capital・Fifth Wallに加えて、2017年に同氏をCEO退任に追い込んだUber自身もラウンドに参加した。AtomsはCloud Kitchensの事業の上に作られた持株会社で、3月に重工業自動化のPronto(Anthony Levandowski氏が率いる)を買収済み。同氏は「製造がCPU・不動産がストレージ・輸送がネットワークという“原子のコンピュータ”を作る」と述べ、ロボットの共通基盤(ホイールベース)を狙う。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/travis-kalanicks-robotics-company-raises-1-7b-led-by-a16z/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AMD、Anthropicへ最大50億ドルの戦略出資 — 「Helios」を最大2GW導入、最初の1GWは2027年上半期</title>
-      <link>https://aitimes.jp/news/model/#s-cb2411b50e</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-cb2411b50e</guid>
-      <category>モデル・技術</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;AMDとAnthropicは7月22日（現地時間）、戦略的提携を発表した。AnthropicはAMDのラックスケールシステム「Helios」（GPU「Instinct MI455X」＋CPU「EPYC」（開発コード名Venice）＋Pensandoネットワーキング＋ROCm）を最大2ギガワット規模で導入し、最初の1GWは2027年上半期に展開を始める。AMDはAnthropicへ将来的に最大50億ドルの戦略的株式投資を行うことを確約。複数年のエンジニアリング協業も開始し、ClaudeでAMD Instinct向けワークロードの最適化とROCm開発を加速するほか、AMD自身も開発・製品部門にClaudeを広く採用する。★AnthropicはAWSのTrainium・GoogleのTPU・NVIDIAのGPUに続く計算基盤の多様化で、前日のAMD×Microsoft（Azure）発表と合わせて「NVIDIA一強」の外に大手の選択肢が増えた——モデル価格（AI相場）を決める計算コストの土台が動いている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus&quot;&gt;AMD公式プレスリリース&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Google Cloud売上が前年比82%増の248億ドル — 「巨額AI投資は回収できるのか」への決算の回答</title>
-      <link>https://aitimes.jp/news/model/#s-e99bcac584</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e99bcac584</guid>
-      <category>モデル・技術</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Alphabetが7月22日（現地時間）発表した四半期決算で、Google Cloudの売上が前年同期比82%増の248億ドルとなり、アナリスト予想（224.6億ドル）を大きく上回った（TechCrunch報道）。けん引したのは企業向けAIソリューションとAIインフラの採用で、未消化の受注残は5,140億ドルに積み上がった。全体売上は24%増の1,198億ドル、Geminiアプリの月間利用者は9.5億人（2025年Q4時点の7.5億人から増加）。年間の設備投資は1,800億〜1,900億ドル規模の見込みで、ピチャイCEOは「需要の指標は強く、力学は1年前より健全だ」と回収に自信を示した。★「AI投資はバブルか」の論争に、クラウドの実売上の急伸という具体的な数字が返ってきた形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/22/google-justifies-its-massive-ai-spending-with-a-booming-cloud-business/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

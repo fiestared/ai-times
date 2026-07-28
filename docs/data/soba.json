@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-28",
+    "as_of": "2026-07-29",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -12,7 +12,7 @@
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）",
       "moonshot": "https://platform.kimi.ai/docs/pricing/chat-k3.md"
     },
-    "last_full_check": "2026-07-28"
+    "last_full_check": "2026-07-29"
   },
   "models": [
     {

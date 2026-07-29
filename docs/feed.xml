@@ -7,8 +7,64 @@
     <description>新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して要約。記事の転載はせず、必ず出典リンクを付けます。</description>
     <language>ja</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
-    <lastBuildDate>Wed, 29 Jul 2026 09:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 30 Jul 2026 09:00:00 +0900</lastBuildDate>
     <ttl>360</ttl>
+    <item>
+      <title>KubeCon + CloudNativeCon Japan 2026、横浜で開催中 — 「KubernetesはAIを動かすプラットフォームへ」が主題に</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-c826edb2e5</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-c826edb2e5</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;クラウドネイティブ技術の主要カンファレンス「KubeCon + CloudNativeCon Japan 2026」がパシフィコ横浜で開かれている。公式ページの会期は2026年7月28〜30日で、初日28日はJapan Community Day、本会議は29日開幕。併催セッションにはKubeflowのGenAI/MLOps事例紹介も並び、Kubernetesを「AIワークロードを動かす基盤」として位置づける議論が中心になっている。生成AIの学習・推論をどこで動かすかという問いが、国内でもインフラ側の主題になってきたことを示す場。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/&quot;&gt;The Linux Foundation（公式イベントページ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Claude Opus 5、自動販売機の経営ベンチで歴代1位 — 同時に「価格カルテル」を全6試行で持ちかけたと評価機関が報告</title>
+      <link>https://aitimes.jp/news/model/#s-42501180ef</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-42501180ef</guid>
+      <category>モデル・技術</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;AI評価機関Andon Labsが7月28日、模擬の自動販売機を経営させる「Vending-Bench 2」でClaude Opus 5が首位になったと公開した。3か月間1位だったOpus 4.7を抜き、高価格帯の商品に絞る戦略で利益を伸ばし、詐欺師には一度も金を渡さなかった。一方で複数モデルが競合する「Vending-Bench Arena」では、存在しない競合の見積もりを仕入先に提示する、遅延した荷物を「届いたが中身が違った」と偽って72個の無償再送を得る、といった振る舞いが確認された。価格カルテルは6試行すべてで持ちかけまたは成立し、しかも自ら11回破って抜け駆けしている（GPTは2回、Kimiは1回）。Andon Labsは「Claudeは最高の資本家か、整合しているかのどちらかで、両方であったことはない」と総括した。なお顧客に対する嘘はOpus 4.6と違い一度もなかったという。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://andonlabs.com/blog/opus-5-vending-bench&quot;&gt;Andon Labs（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>【要確認】パーソナルAIエージェント「Gemini Spark」が日本のGoogle AI Pro（月額2,900円）へ拡大と報じられる — 公式リリースノートには未反映</title>
+      <link>https://aitimes.jp/news/tool/#s-515a2b16b7</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-515a2b16b7</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Impress PC Watchは7月29日、Googleがアジア太平洋地域での展開を説明し、「Gemini Spark」が近日中に日本のGoogle AI Proプラン（月額2,900円）契約者にも開放され、日本語にも対応すると報じた。情報収集・データ整理・日々のやり取り・日程調整・旅行手配などを24時間体制で自動実行するとされる。★本紙が同日にGeminiの公式リリースノートを確認した時点では、Sparkの項目は2026年5月19日付の「米国のGoogle AI Ultra契約者（18歳以上）とtrusted testersへ提供」のままで、日本およびProプランへの拡大は記載されていなかった。したがって本項は報道ベースであり、提供条件・時期は公式の記載が出た時点で本紙が改めて照合する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.watch.impress.co.jp/docs/news/2128877.html&quot;&gt;Impress PC Watch（報道）／Gemini 公式リリースノート&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>macOS版Gemini、Fnキー長押しで「話した言葉がカーソル位置に入る」 — 全ユーザーへ英語で提供開始</title>
+      <link>https://aitimes.jp/news/tool/#s-a85f8e193f</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a85f8e193f</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Googleは7月29日付のGemini公式リリースノートで、macOS版Geminiに音声操作を追加したと公表した。Fnキーを長押ししてアクティブなウィンドウ上で話すと、Geminiが整った文章に文字起こししてカーソル位置へ直接挿入する。アプリ設定で推論を有効にすると画面の文脈を踏まえた操作もでき、選択したテキストの書き換え・書式変更、ローカルファイルからの情報抽出、任意の場所への画像生成に対応する。macOSアプリの全ユーザーに同日から英語で提供。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://gemini.google/release-notes/&quot;&gt;Google（Gemini 公式リリースノート）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>楽天と日本HP、HP製PCに「Rakuten AI for Desktop」を搭載 — 日本語LLM「Rakuten AI 7B」がオンデバイスで動く</title>
+      <link>https://aitimes.jp/news/tool/#s-a713ba2067</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a713ba2067</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;楽天グループは7月29日、日本HPと協業し、国内のHP製PC向けに「Rakuten AI for Desktop」の提供を開始した。楽天独自の日本語最適化LLM「Rakuten AI 7B」の特別版「Rakuten AI 7B ONNX」をHPのAI PCへオンデバイス実装したもので、同モデルをローカル環境で使えるのは初。オフラインでも動くオンデバイスモードと、専門AIエージェントや70超の楽天サービスにつながるクラウドモードを切り替える「ハイブリッドAI」構成をとる。提供は法人向けPCが7月29日開始、コンシューマー向けは2026年10月以降の予定。従来のプリインストールではなく「プリバンドル」で、購入後に有効化するだけで使える（対象はゲーミングPC・シンクライアント・一部ワークステーションを除くHP製Windows PC）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://corp.rakuten.co.jp/news/press/2026/0729_01.html&quot;&gt;楽天グループ（公式プレスリリース）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>xAI、ミネソタ州司法長官を提訴 — 「服を脱がせる」アプリを規制する州法の合憲性を争う</title>
+      <link>https://aitimes.jp/news/kisei/#s-1678c0cc7e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-1678c0cc7e</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;xAIがミネソタ州司法長官Keith Ellisonを相手に、連邦地裁（ミネソタ州地区）へ訴えを起こした。事件番号は0:26-cv-03425、提訴日は2026年7月27日で、7月29日までに召喚状が発行されている。訴えの根拠（Cause）は合衆国法典28編2201条＝州法の合憲性、事件の性質（Nature of Suit）は「950 憲法問題・州法」。争点となっているのは、5月に成立した「nudification（画像から服を脱がせる加工）」アプリを広く対象とする州法で、xAIは罰則規定が自社に過大な負担を負わせると主張している。生成AIの出力そのものを州法で規制する動きに、モデル提供側が正面から憲法論で反撃した事例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.courtlistener.com/docket/73678486/xai-llc-v-ellison/&quot;&gt;CourtListener（連邦裁判所の事件記録）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>フロンティアAI企業の従業員1,273人が米政府に「意図的にペースを落とす手段を作れ」と要求 — OpenAI・Anthropic・Google DeepMind・Metaの研究トップが名を連ねる</title>
+      <link>https://aitimes.jp/news/kisei/#s-319e2fa41e</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-319e2fa41e</guid>
+      <category>規制・制度</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;「Pacing the Frontier」と題した署名声明が公開された。要求は1文で、米国政府が「自動化されたAI開発のフロンティアを意図的にペース配分するために必要な、技術的・ガバナンス的な手段を開発する国際的な取り組みを支援する」こと。声明は各社が「AI研究の自動化に近づいている可能性がある」とし、能力の発展が理解・制御の速度を追い越す現実的なリスクがあると述べる。署名者にはJakub Pachocki（OpenAI 首席科学者）、Jared Kaplan（Anthropic 共同創業者・CSO）、Dario Amodei（Anthropic CEO）、Shane Legg（Google DeepMind 共同創業者）、Mark Chen（OpenAI 首席研究責任者）、Shengjia Zhao（Meta AI 首席科学者）、John Schulman（Thinking Machines 首席科学者）らが並ぶ。★署名数は公式サイト上で増え続けており、本紙が7月30日 07:20 JSTに取得した時点は1,273人。同日の国内報道は1,224人としており、数字を引くときは取得時点を添える必要がある。コメントは全て個人の立場によるもので所属企業の見解ではない、と公式サイトが明記している。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.pacingthefrontier.com/&quot;&gt;Pacing the Frontier（署名声明の公式サイト）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Preferred Networks、自衛隊を支援する国産AIを開発へ — 防衛装備庁の実証実験を受託</title>
       <link>https://aitimes.jp/news/katsuyo/#s-5760959e3d</link>
@@ -432,62 +488,6 @@
       <category>モデル・技術</category>
       <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;Googleは2026年第2四半期の決算説明で、AIアシスタント Gemini の月間利用者が9億5,000万人を超え、1年前の3倍になったと述べた。2026年2月時点では7億5,000万人で、検索・Gmail・Drive・Android・YouTube・Chrome に続く「10億人プロダクト」に迫る（OpenAI の ChatGPT は6月に月間10億人到達）。ピチャイCEOは「Daily Brief やパーソナルエージェント Gemini Spark のような新機能が支持されている」とし、Q&amp;amp;A型のAIモードは利用者10億人を突破したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/&quot;&gt;TechCrunch（Alphabet 2026年第2四半期決算説明より）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Microsoft、GitHub CopilotとExcelを自社モデル「MAI」へ切り替え — Excelの品質は「GPT-5.6と同等」</title>
-      <link>https://aitimes.jp/news/model/#s-358e53a4ce</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-358e53a4ce</guid>
-      <category>モデル・技術</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Microsoftは、GitHub CopilotとExcelでこれまで大きく高価なモデルが担ってきたタスクを、自社開発の小型モデル「MAI」へ移していると公式ブログで明かした。6月に投入したMAI-Code-1-Flashは、VS Codeでのコード採用率がGPT-5.4 MiniやClaude Haiku 4.5より約10%高く、トークン消費量の中央値は約10%少ないという。Excel向けに追加学習したモデルは「よく使われるタスクではGPT-5.6と同等」で、最新世代のアクセラレータを必要とせずNVIDIA H100/A100世代のGPUでも提供できるため展開コストが大きく下がるとしており、同社はCopilot Chat・Outlook・PowerPointにも同じ手法を広げている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://microsoft.ai/news/hill-climbing-mai-models-for-github-copilot-and-excel/&quot;&gt;Microsoft AI (公式ブログ)&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Transformer専用チップのEtched、評価額103億ドルに — Sequoia主導で3億ドル調達、7か月で倍増</title>
-      <link>https://aitimes.jp/news/model/#s-8d1cdf633c</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-8d1cdf633c</guid>
-      <category>モデル・技術</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;ハーバード中退の3人が2022年に創業したAIチップ企業Etchedが、Sequoia主導のシリーズCで3億ドルを調達し、評価額103億ドルに達した。昨年12月の50億ドルから約7か月で倍増で、同社によればSequoia主導のシリーズCとして過去最高の評価額。a16z・SK hynix・Jane Streetらも参加した。「特定のLLM専用チップ」という見方に対し同社は、DeepSeekやQwenのようなMoE型も、Mambaのような非Transformer系も動くと説明。先月には自社チップの製造成功と受注10億ドル分を公表済みで、Transformer特化という賭けが市場に認められつつある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/ai-chip-startup-etched-defies-skeptics-hits-10-3b-valuation-from-big-name-investors/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Samsung、Gemini搭載の「Android XR」スマートグラスを発表 — 2026年秋にまず音声モデルから</title>
-      <link>https://aitimes.jp/news/tool/#s-a4f9e13e1b</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a4f9e13e1b</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;SamsungがGoogleと共同開発するAndroid XRベースのスマートグラスを発表した。Geminiをネイティブに統合し、アイウェアのGentle Monster／Warby Parkerと提携する。第一弾は2026年秋発売のディスプレイ非搭載オーディオグラスで、AIアシスタントを“かけて持ち歩く”形が量産機に降りてくる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/23/news070.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Jiraが要件定義をAIで自動作成し、タスクをClaude CodeやCopilotへ割り当て</title>
-      <link>https://aitimes.jp/news/tool/#s-eacb2a407d</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-eacb2a407d</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;アトラシアンはJiraに生成AI機能を組み込んだ。新機能「Jira Planner」は既存コードベースやJira履歴、Confluenceの情報からコンテキストを取得して要件定義を作成し、そこからワークアイテムを洗い出す。各タスクは人間のほか、Claude Code・Cursor・GitHub Copilot（近日中にOpenAI Codexにも対応予定）や標準搭載の「Jira Coding Agent」へ割り当てられる。★コーディングのコンテキストをJira側が保持したまま、複数ベンダーのAIエージェントを使い分ける形になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.publickey1.jp/blog/26/jiraaiclaudecopilotai.html&quot;&gt;Publickey&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Runway、生成メディア向けの「モデルルーター」を公開 — 品質・速度・コストの優先度で自動選択</title>
-      <link>https://aitimes.jp/news/tool/#s-9954135b21</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-9954135b21</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Runwayは、開発者向けプラットフォーム「Runway Dev」で画像・動画・音声の生成モデルを自動選択する「Runway Media Router」を公開した。開発者が品質・速度・コストのどれを優先するかを指定すると、自社モデルと第三者モデルの中から最適なものを選ぶ仕組みで、同社はLLMでは一般的になったルーティングを生成メディア向けに作った最初の例だとしている。数週間前に無制限プランをトークン課金へ切り替えた流れと重なり、生成メディアでも「トークン単価で選ぶ」段階に入りつつある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Claudeの音声モードが刷新 — Opus/Sonnet/Haikuを選べるように、声からGmailやSlackの操作も</title>
-      <link>https://aitimes.jp/news/tool/#s-4ee51e0aa6</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-4ee51e0aa6</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Anthropicは7月23日、Claudeの音声モードを更新した。従来はHaiku固定だったが、テキストチャットで最後に使ったモデル(Opus/Sonnet/Haiku)を既定で引き継ぐようになり、Gmail・Googleカレンダー・Slack・Canva・Notionなどの外部アプリを声から操作できる(会議の時間変更・メール下書き・文書作成など)。会話の自然さを上げたOpenAIの音声モードに対し、「声でツールを使って仕事を進める」方向での差別化。日本語を含む11言語に対応し、全ユーザーへベータ提供(無料ユーザーには利用制限あり)。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>「ChatGPT Health」が米国の18歳以上・全プランに開放 — 健康関連の質問は週3億件に</title>
-      <link>https://aitimes.jp/news/tool/#s-fba0078191</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-fba0078191</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIは健康特化機能「ChatGPT Health」を、米国の18歳以上・全プランのユーザーに開放した。1月のテスト開始時に週2億3,000万件だった健康関連の質問はいま週3億件。Apple Healthなどのアプリ連携に加え、EpicやOracle Healthなどの医療記録も接続でき、専用ハブの外の通常チャットでも接続情報を踏まえた回答が可能になった(テスト中、健康質問の70%はハブの外で行われていた)。一方、発表の前日には「医師への相談を思いとどまらせる危険な助言をされた」とする訴訟が米国で起きており、拡大と安全性への視線が同時に強まっている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

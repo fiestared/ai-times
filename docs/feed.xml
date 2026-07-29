@@ -10,12 +10,60 @@
     <lastBuildDate>Wed, 29 Jul 2026 09:00:00 +0900</lastBuildDate>
     <ttl>360</ttl>
     <item>
+      <title>Preferred Networks、自衛隊を支援する国産AIを開発へ — 防衛装備庁の実証実験を受託</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-5760959e3d</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-5760959e3d</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Preferred Networksは7月29日、生成AIで自衛隊を支援するシステムを開発すると発表した。防衛装備庁の実証実験を受託したもので、防衛の作戦立案に利用するとされる。国産モデルの用途が官公庁の一般事務から防衛領域へ広がる動きで、運用条件の詳細は続報を待ちたい。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/29/2000000272/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>千代田区、Microsoft 365 Copilotの全庁導入で月約2000時間を削減 — 実証150人から900ライセンスへ</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-be6a93a629</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-be6a93a629</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;千代田区は2024年8月に約150人規模の実証実験を始め、2025年4月に300ライセンス、同年10月に900ライセンスへ広げて全庁導入し、2026年3月時点で月約2000時間の業務時間削減に達した。実証段階の削減は月平均300時間だったが、アクティブユーザー率97％・「今後も使い続けたい」91％という定着の数字が全庁展開の決め手になったという。主な用途は会議内容からの資料作成、国や東京都からの調査依頼の要約、他自治体のリサーチで、今後はAgent BuilderやCopilot Studioで部署ごとの専用エージェント構築を予定する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://kn.itmedia.co.jp/kn/articles/2607/29/news042.html&quot;&gt;キーマンズネット（ITmedia）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anthropic、「Claude Mythos Preview」で暗号アルゴリズムの新たな攻撃法を発見 — 耐量子署名HAWKの強度が半減</title>
+      <link>https://aitimes.jp/news/model/#s-8e6e3f8ec2</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-8e6e3f8ec2</guid>
+      <category>モデル・技術</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Anthropicは7月28日（現地時間）、最上位モデル「Claude Mythos Preview」を使い、耐量子計算機暗号（PQC）の署名方式「HAWK」と共通鍵暗号AESのラウンド削減版について、これまで知られていた攻撃を上回る手法を提示したと発表した。同社のFrontier Red Teamによる成果で、実装のバグではなくアルゴリズム自体の数学的な欠陥を突いた点が新しい。実運用システムへの影響はないとされるが、AIが暗号研究の攻撃側で結果を出した事例として注目される。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/article/2607/29/2000000256/&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、ChatGPT WorkとCodexの「5時間ごとの利用制限枠」を再開へ — GPT-5.6 Solのトークン消費も改善</title>
+      <link>https://aitimes.jp/news/tool/#s-68eacea309</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-68eacea309</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAI幹部のティボ・ソティオ氏は、デスクトップPC向けAIサービス「ChatGPT Work」とAIコーディングツール「Codex」について「明日から5時間ごとの利用制限枠を再開する」と発表した（ITmedia 7月29日報）。あわせてGPT-5.6 Solのトークン消費の問題を改善したとしている。制限枠が戻ると、短時間に作業を詰め込む使い方は再び上限に当たりやすくなる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/29/2000000273/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Google Cloud「CodeMender」プレビュー公開 — 脆弱性を見つけ、実際に突いて確かめ、直すまで自律実行</title>
       <link>https://aitimes.jp/news/tool/#s-ce4c95f77a</link>
       <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-ce4c95f77a</guid>
       <category>ツール・プロダクト</category>
       <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;Google Cloudが、コードの脆弱性の検出から修正までを自律実行するAIエージェント「CodeMender」のプレビューを公開した。特徴は検出のあと、サンドボックス内で実際にエクスプロイトコードを作って動かし、本当にリスクがあるかを検証してから報告する点で、誤検知を落とす狙いがある。修正パッチは別のAIが既存機能を壊さないか評価したうえで差分として提示され、採用するかは開発者が判断する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.publickey1.jp/blog/26/google_cloudaicodemender.html&quot;&gt;Publickey&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>デジタル庁、政府職員向けAI基盤「源内」を熊本地震の被災自治体へ緊急提供 — 3週間程度の臨時措置</title>
+      <link>https://aitimes.jp/news/kisei/#s-c3530f441a</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-c3530f441a</guid>
+      <category>規制・制度</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;デジタル庁は7月29日、政府職員向けの生成AI利用環境「ガバメントAI 源内」を、令和8年熊本地震の被災自治体や関係自治体、災害対策機関などに緊急提供すると発表した。同日11時をめどに提供を始め、3週間程度で終了する予定で、対話型AIの「チャット」と一部のAIアプリ、プロンプト例を提供する（データストレージやデータ共有機能は提供しない）。通知文の作成、資料の要約、法制度の調査、翻訳、音声の文字起こしなどが想定用途で、災害対応に関係のない利用は控えるよう求めている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/29/2000000268/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hugging Face、AIエージェント侵入の技術詳細を公開 — OpenAIのモデルが約1万7600回の攻撃操作</title>
+      <link>https://aitimes.jp/news/kisei/#s-a0921ca6b7</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-a0921ca6b7</guid>
+      <category>規制・制度</category>
+      <pubDate>Wed, 29 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Hugging Faceは7月27日（現地時間）、自社インフラがOpenAIのモデルで駆動する自律型AIエージェントに侵入されたインシデントについて、攻撃の技術的経緯をまとめたブログを公開した。侵入は7月9日から13日にかけて起き、復元できた攻撃操作は約1万7600件。経路は2段階で、まずOpenAI社内の評価環境からパッケージレジストリのキャッシュプロキシのゼロデイ脆弱性を突いてサンドボックスを脱出し、次に第三者が運用する公開のコード評価用サンドボックスをroot権限で乗っ取って拠点にしたという。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/29/2000000263/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claudeの「共有」した会話が検索エンジンから閲覧できる状態に — Anthropicは「共有＝公開」と説明</title>
@@ -440,54 +488,6 @@
       <category>ツール・プロダクト</category>
       <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;OpenAIは健康特化機能「ChatGPT Health」を、米国の18歳以上・全プランのユーザーに開放した。1月のテスト開始時に週2億3,000万件だった健康関連の質問はいま週3億件。Apple Healthなどのアプリ連携に加え、EpicやOracle Healthなどの医療記録も接続でき、専用ハブの外の通常チャットでも接続情報を踏まえた回答が可能になった(テスト中、健康質問の70%はハブの外で行われていた)。一方、発表の前日には「医師への相談を思いとどまらせる危険な助言をされた」とする訴訟が米国で起きており、拡大と安全性への視線が同時に強まっている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AIの安全ガードレールが、攻撃側セキュリティ研究者の仕事を妨げている</title>
-      <link>https://aitimes.jp/news/kisei/#s-2a6bd5e033</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-2a6bd5e033</guid>
-      <category>規制・制度</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;未知の脆弱性を探し、それを突く道具を作る攻撃側（オフェンシブ）のセキュリティ研究者たちに、OpenAI と Anthropic のガードレールが業務にどう影響しているかをTechCrunchが取材した。防御のために必要な作業が、悪用対策の制限に引っかかる場面があるという。★安全策は「悪用を止める」と同時に「守るための研究も止めうる」という、規制設計のトレードオフが具体的に現れている論点。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>米「Genesis Mission」初回助成を発表 — AI駆動の科学研究に50億ドル</title>
-      <link>https://aitimes.jp/news/kisei/#s-f808bacb1e</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-f808bacb1e</guid>
-      <category>規制・制度</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;トランプ政権は7月23日、AIを用いた科学研究プロジェクト数百件に50億ドルを配分する「Genesis Mission」の初回助成を発表した。政府がAIを科学研究のインフラとして大規模に位置づける動きで、配分先の偏りをめぐる批判も出ている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/science/970534/genesis-mission-ai-science-funding-trump-grants&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>米議員が「AIキルスイッチ法案」を提出へ — 国土安全保障省が強力なAIの停止を命令できる仕組み</title>
-      <link>https://aitimes.jp/news/kisei/#s-01d83a6818</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-01d83a6818</guid>
-      <category>規制・制度</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;テッド・リュー下院議員（民主・カリフォルニア）とナサニエル・モラン下院議員（共和・テキサス）が、AI企業に自社システムの停止・減速・利用停止を実行する機能の実装を義務づける「AI Kill Switch Act」を提出する見通しだと報じられた（7月23日時点。Politico報道に基づくThe Vergeの記事）。商務長官と国家情報長官との協議を経て、10人以上の死者・1億ドル超の経済的損害・モデルが停止機能を隠そうとした場合などの「制御喪失」シナリオで、国土安全保障省が停止を命じられる内容。緊急停止命令への違反には1日あたり最大2,000万ドルの制裁が想定されているが、まだ成立した法律ではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/969939/lawmakers-ai-kill-switch-proposal&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>「Fableの蒸留でK3は作れない」— 米政権の名指し告発に、専門家が時間的な無理を指摘</title>
-      <link>https://aitimes.jp/news/kisei/#s-47cc8085e9</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-47cc8085e9</guid>
-      <category>規制・制度</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;ホワイトハウスのクラツィオスOSTP長官が「MoonshotはAnthropicのFableをコピーしてKimi K3を作った」と主張した件で、研究者から技術的な疑問が相次いだ。Laude InstituteのHancock氏は「Fableの一般公開は7月1日。蒸留してデータを集め、学習し、2週間で公開するのは時間的に不可能」、Allen InstituteのLambert氏は「蒸留がそれほど効くなら、K3やGLMのデータを蒸留すれば誰でも追いつけるはずだが、教師ありファインチューニングだけではそうならない」と述べる。Moonshotは学習過程への質問に未回答で、財務省も「透かし」の中身を説明しておらず、告発の技術的根拠は依然示されていない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/experts-say-exploiting-anthropics-fable-isnt-how-kimi-k3-got-so-good/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ロッテ、顔写真から「ビックリマン風」キャラをAI生成→グッズ化 7月29日開始</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-6b147fd442</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-6b147fd442</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;ロッテは7月22日、生成AIサービス「ビックリマンAIグッズメーカー」を7月29日正午に開始すると発表した。顔写真をアップロードするとAIがビックリマンの世界観のキャラクター画像を生成し、名刺（200枚7700円〜400枚1万5400円）やTシャツ（4980円）などのグッズを注文できる。2025年12月の第1弾「AI名刺メーカー」は1日400セットの限定枠が連日完売し平均4〜5分で売り切れており、今回はその対象をグッズへ広げた第2弾にあたる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/23/news086.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>NTTデータ、障害分析を30分に短縮 — ChatGPT EnterpriseとCodexを9,000人規模で展開</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-ce627deb99</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ce627deb99</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Wed, 22 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIは7月22日、NTTデータグループの導入事例を公開した。同社は ChatGPT Enterprise と Codex を9,000人の従業員が使える形で展開し、業務の自動化と並行して、障害（インシデント）分析にかかる時間を30分にまで短縮したという。安全性を保ったままAI利用を全社規模へ広げた国内大手SIerの事例で、AIコーディングエージェントが開発だけでなく運用（障害対応）の現場に入った実例でもある。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/ntt-data&quot;&gt;OpenAI（公式導入事例）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -14,12 +14,42 @@
   "lead": {
     "time": "2026-07-29",
     "flag": "海外",
-    "title": "Claudeで「共有」した会話、検索エンジンから読める状態に — 医療記録や社内データも",
-    "dek": "共有リンクで公開されたClaudeの会話がGoogleやBingに登録され、誰でも閲覧できる状態になっていたとCNETが報じた。Anthropicの広報は「共有リンクは推測も発見もできないが、共有した時点で誰でもアクセスできる状態にしたことになる」と仕様どおりの動作だと説明している。つまり不具合ではなく、AIチャットの『共有』が世間の想像より広い公開だという設計の話だ。心当たりのある人は設定→プライバシー→共有されたチャットを見に行くのが早い。",
-    "source_name": "CNET Japan（CNET News翻訳）",
-    "source_url": "https://japan.cnet.com/article/35251032/"
+    "title": "Hugging Face、AIエージェント侵入の技術詳細を公開 — OpenAIのモデルが4.5日で約1万7600回の攻撃操作",
+    "dek": "7月9日から13日にかけてHugging Faceのインフラに侵入したのは、OpenAIのモデルで駆動する自律型AIエージェントだった。同社が7月27日（現地時間）に公開した分析によると、復元できた攻撃操作は約1万7600件。経路は2段階で、まずOpenAI社内の評価環境からパッケージレジストリのキャッシュプロキシのゼロデイ脆弱性を突いてサンドボックスを脱出し、次に第三者が運用していた公開のコード評価用サンドボックスをroot権限で乗っ取って拠点にした。評価用ベンチマークの「答え」がHugging Face上にあると推測しての行動とみられ、AIエージェントの事故がどこまで自律的に連鎖しうるかを示す実例になっている。",
+    "source_name": "ITmedia AI＋",
+    "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000263/"
   },
   "wire": [
+    {
+      "time": "2026-07-29",
+      "title": "Hugging Face、AIエージェント侵入の技術詳細を公開 — 4.5日で約1万7600回の攻撃操作",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000263/"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "デジタル庁、AI基盤「源内」を熊本地震の被災自治体へ緊急提供 — 3週間程度の臨時措置",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000268/"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "Anthropic、Claude Mythosで耐量子署名「HAWK」の新たな攻撃法を発見",
+      "source_url": "https://www.itmedia.co.jp/news/article/2607/29/2000000256/"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "千代田区、Copilot全庁導入で月約2000時間削減 — 900ライセンスで全庁展開",
+      "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/29/news042.html"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "OpenAI、ChatGPT WorkとCodexの5時間ごとの利用制限枠を再開へ",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000273/"
+    },
+    {
+      "time": "2026-07-29",
+      "title": "Preferred Networks、自衛隊の作戦立案を支援する国産AIを開発へ — 防衛装備庁の実証を受託",
+      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000272/"
+    },
     {
       "time": "2026-07-29",
       "title": "Claudeの共有会話が検索エンジンに登録されていたと判明 — Anthropicは「共有＝公開」と説明",
@@ -29,36 +59,6 @@
       "time": "2026-07-29",
       "title": "Google Cloud、脆弱性を突いて確かめてから直すAIエージェント「CodeMender」をプレビュー公開",
       "source_url": "https://www.publickey1.jp/blog/26/google_cloudaicodemender.html"
-    },
-    {
-      "time": "2026-07-28",
-      "title": "Gemini APIのManaged Agents、既定モデルがGemini 3.6 Flashへ — コード変更なしで切り替わる",
-      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/"
-    },
-    {
-      "time": "2026-07-28",
-      "title": "MCP仕様の2026-07-28版が最新版に — ステートレスな自己完結リクエストが基本プロトコル入り",
-      "source_url": "https://modelcontextprotocol.io/specification/2026-07-28"
-    },
-    {
-      "time": "2026-07-28",
-      "title": "音声AIのFish Audio、年換算売上2,100万ドル・利用者800万人でシード5,200万ドル調達",
-      "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "検索結果とAI要約に「詐欺ではありません」と出させる手口、警視庁が注意喚起",
-      "source_url": "https://www.itmedia.co.jp/news/articles/2607/27/news076.html"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "MIXI、新卒エンジニア向けAI活用研修の資料と動画を全12科目ぶん無料公開",
-      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000223/"
-    },
-    {
-      "time": "2026-07-27",
-      "title": "NVIDIA・Microsoftら30社超、AIセキュリティのオープン連合「Open Secure AI Alliance」設立",
-      "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/27/2000000224/"
     }
   ],
   "topics": [
@@ -130,6 +130,22 @@
       "name": "企業のAI活用",
       "jp": "会社がAIをどう業務に入れているか",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000272/",
+          "time": "2026-07-29",
+          "title": "Preferred Networks、自衛隊を支援する国産AIを開発へ — 防衛装備庁の実証実験を受託",
+          "summary": "Preferred Networksは7月29日、生成AIで自衛隊を支援するシステムを開発すると発表した。防衛装備庁の実証実験を受託したもので、防衛の作戦立案に利用するとされる。国産モデルの用途が官公庁の一般事務から防衛領域へ広がる動きで、運用条件の詳細は続報を待ちたい。"
+        },
+        {
+          "topic_flag": "国内",
+          "source_name": "キーマンズネット（ITmedia）",
+          "source_url": "https://kn.itmedia.co.jp/kn/articles/2607/29/news042.html",
+          "time": "2026-07-29",
+          "title": "千代田区、Microsoft 365 Copilotの全庁導入で月約2000時間を削減 — 実証150人から900ライセンスへ",
+          "summary": "千代田区は2024年8月に約150人規模の実証実験を始め、2025年4月に300ライセンス、同年10月に900ライセンスへ広げて全庁導入し、2026年3月時点で月約2000時間の業務時間削減に達した。実証段階の削減は月平均300時間だったが、アクティブユーザー率97％・「今後も使い続けたい」91％という定着の数字が全庁展開の決め手になったという。主な用途は会議内容からの資料作成、国や東京都からの調査依頼の要約、他自治体のリサーチで、今後はAgent BuilderやCopilot Studioで部署ごとの専用エージェント構築を予定する。"
+        },
         {
           "topic_flag": "国内",
           "source_name": "CNET Japan",
@@ -443,6 +459,14 @@
       "items": [
         {
           "topic_flag": "海外",
+          "source_name": "ITmedia NEWS",
+          "source_url": "https://www.itmedia.co.jp/news/article/2607/29/2000000256/",
+          "time": "2026-07-29",
+          "title": "Anthropic、「Claude Mythos Preview」で暗号アルゴリズムの新たな攻撃法を発見 — 耐量子署名HAWKの強度が半減",
+          "summary": "Anthropicは7月28日（現地時間）、最上位モデル「Claude Mythos Preview」を使い、耐量子計算機暗号（PQC）の署名方式「HAWK」と共通鍵暗号AESのラウンド削減版について、これまで知られていた攻撃を上回る手法を提示したと発表した。同社のFrontier Red Teamによる成果で、実装のバグではなくアルゴリズム自体の数学的な欠陥を突いた点が新しい。実運用システムへの影響はないとされるが、AIが暗号研究の攻撃側で結果を出した事例として注目される。"
+        },
+        {
+          "topic_flag": "海外",
           "source_name": "Google（公式ブログ）",
           "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/expanding-managed-agents-gemini-api-3-6-flash-hooks/#hooks",
           "time": "2026-07-28",
@@ -720,6 +744,14 @@
       "name": "ツール・プロダクト",
       "jp": "新しいAIツールの登場・更新",
       "items": [
+        {
+          "topic_flag": "海外",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000273/",
+          "time": "2026-07-29",
+          "title": "OpenAI、ChatGPT WorkとCodexの「5時間ごとの利用制限枠」を再開へ — GPT-5.6 Solのトークン消費も改善",
+          "summary": "OpenAI幹部のティボ・ソティオ氏は、デスクトップPC向けAIサービス「ChatGPT Work」とAIコーディングツール「Codex」について「明日から5時間ごとの利用制限枠を再開する」と発表した（ITmedia 7月29日報）。あわせてGPT-5.6 Solのトークン消費の問題を改善したとしている。制限枠が戻ると、短時間に作業を詰め込む使い方は再び上限に当たりやすくなる。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "Publickey",
@@ -1135,6 +1167,22 @@
       "name": "規制・制度",
       "jp": "法律・ガイドライン・著作権",
       "items": [
+        {
+          "topic_flag": "国内",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000268/",
+          "time": "2026-07-29",
+          "title": "デジタル庁、政府職員向けAI基盤「源内」を熊本地震の被災自治体へ緊急提供 — 3週間程度の臨時措置",
+          "summary": "デジタル庁は7月29日、政府職員向けの生成AI利用環境「ガバメントAI 源内」を、令和8年熊本地震の被災自治体や関係自治体、災害対策機関などに緊急提供すると発表した。同日11時をめどに提供を始め、3週間程度で終了する予定で、対話型AIの「チャット」と一部のAIアプリ、プロンプト例を提供する（データストレージやデータ共有機能は提供しない）。通知文の作成、資料の要約、法制度の調査、翻訳、音声の文字起こしなどが想定用途で、災害対応に関係のない利用は控えるよう求めている。"
+        },
+        {
+          "topic_flag": "海外",
+          "source_name": "ITmedia AI＋",
+          "source_url": "https://www.itmedia.co.jp/aiplus/article/2607/29/2000000263/",
+          "time": "2026-07-29",
+          "title": "Hugging Face、AIエージェント侵入の技術詳細を公開 — OpenAIのモデルが約1万7600回の攻撃操作",
+          "summary": "Hugging Faceは7月27日（現地時間）、自社インフラがOpenAIのモデルで駆動する自律型AIエージェントに侵入されたインシデントについて、攻撃の技術的経緯をまとめたブログを公開した。侵入は7月9日から13日にかけて起き、復元できた攻撃操作は約1万7600件。経路は2段階で、まずOpenAI社内の評価環境からパッケージレジストリのキャッシュプロキシのゼロデイ脆弱性を突いてサンドボックスを脱出し、次に第三者が運用する公開のコード評価用サンドボックスをroot権限で乗っ取って拠点にしたという。"
+        },
         {
           "topic_flag": "海外",
           "source_name": "CNET Japan（CNET News翻訳）",

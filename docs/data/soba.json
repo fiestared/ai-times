@@ -2,7 +2,7 @@
   "_meta": {
     "title": "AI相場 — 主要モデルのAPI価格",
     "unit": "USD / 1M tokens",
-    "as_of": "2026-07-30",
+    "as_of": "2026-08-01",
     "status": "verified",
     "note": "各社の公式価格ページ・モデルドキュメントを curl で生取得し、input/output/context を逐語照合した検証済みデータ。掲載値は「標準・短コンテキスト（≤200K）の通常入出力料金」で、キャッシュ・バッチ・優先処理・長コンテキスト割増は除く。推測値は載せない（verified:false は画面に出ない）。価格は頻繁に変わるため毎日再照合する。",
     "verify_sources": {
@@ -12,7 +12,7 @@
       "note": "各社UIはJS描画・OAuth必須のことがある。取れなければ公式ドキュメント/モデルカード（例: deepmind.google/models）の価格・仕様表を読む。★Googleの価格ページは2026-07までに /vertex-ai/ から /gemini-enterprise-agent-platform/ へ移設された（旧URLは302。curlは -L を付けないと345バイトのリダイレクト本文だけが返り「取得失敗」に見える）",
       "moonshot": "https://platform.kimi.ai/docs/pricing/chat-k3.md"
     },
-    "last_full_check": "2026-07-30"
+    "last_full_check": "2026-08-01"
   },
   "models": [
     {
@@ -65,7 +65,23 @@
       "delta": null,
       "verified": true,
       "src": "https://platform.openai.com/docs/pricing",
-      "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金。★GPT-5.6には3変種があり、下位ほど安い（gpt-5.6-terra $2.5/$15、gpt-5.6-luna $1/$6）。他社の比較表が「GPT-5.6 = $1/$6」と書いていることがあるが、それは最下位のLunaで、既定のSolは$5/$30（2026-07-22にOpenAI公式価格表で再確認）。長コンテキストは倍額。"
+      "note": "既定の gpt-5.6（Sol）。標準・短コンテキストの通常料金。★GPT-5.6には3変種があり、下位2つ（Terra・Luna）は2026-07-31に値下げされた（本表に別行で掲載）。他社の比較表が「GPT-5.6 = $1/$6」と書いていることがあるが、それは値下げ前のLunaの価格で、現在のLunaは$0.2/$1.2、既定のSolは$5/$30（2026-08-01にOpenAI公式価格ページとモデルドキュメントの2箇所で再確認）。長コンテキストは倍額。"
+    },
+    {
+      "name": "GPT-5.6 Terra",
+      "provider": "OpenAI",
+      "input": 2,
+      "output": 12,
+      "context_k": 1050,
+      "released": null,
+      "tag": null,
+      "delta": {
+        "mark": "▼",
+        "text": "入出力とも −20%（現地時間07-30改定）"
+      },
+      "verified": true,
+      "src": "https://platform.openai.com/docs/pricing",
+      "note": "GPT-5.6の中位モデル。OpenAIが現地時間2026-07-30（JST 07-31）に値下げを発表・同日適用で $2.5/$15 → $2/$12（入出力とも20%減）。公式価格ページの表と gpt-5.6-terra のモデルドキュメント（1,050,000 context window）で逐語照合。"
     },
     {
       "name": "Gemini 3.1 Pro",
@@ -183,6 +199,22 @@
       "verified": true,
       "src": "https://cloud.google.com/gemini-enterprise-agent-platform/generative-ai/pricing",
       "note": "Vertex表記は Gemini 3.1 Flash-Lite。掲載はGlobalエンドポイントの通常料金（Non-globalは入力$0.275/出力$1.65）。音声入力は$0.5。コンテキスト1,048,576トークン。掲載11モデル中の最安。"
+    },
+    {
+      "name": "GPT-5.6 Luna",
+      "provider": "OpenAI",
+      "input": 0.2,
+      "output": 1.2,
+      "context_k": 1050,
+      "released": null,
+      "tag": null,
+      "delta": {
+        "mark": "▼",
+        "text": "入出力とも −80%（現地時間07-30改定）"
+      },
+      "verified": true,
+      "src": "https://platform.openai.com/docs/pricing",
+      "note": "★本表で最も安い。OpenAIが現地時間2026-07-30（JST 07-31）に値下げを発表・同日適用で $1/$6 → $0.2/$1.2（入出力とも80%減）。文脈長は上位のSolと同じ1,050,000トークンで、Gemini 3.1 Flash-Lite（$0.25/$1.5）より入出力とも安い。公式価格ページの表と gpt-5.6-luna のモデルドキュメントで逐語照合。"
     }
   ]
 }

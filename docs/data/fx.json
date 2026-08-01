@@ -6,7 +6,7 @@
     "source_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
     "api": "https://api.frankfurter.dev/v1/latest?base=USD&symbols=JPY"
   },
-  "usd_jpy": 163.68,
-  "rate_date": "2026-07-29",
-  "fetched_at": "2026-07-30"
+  "usd_jpy": 160.24,
+  "rate_date": "2026-07-31",
+  "fetched_at": "2026-08-01"
 }

@@ -7,8 +7,88 @@
     <description>新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して要約。記事の転載はせず、必ず出典リンクを付けます。</description>
     <language>ja</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
-    <lastBuildDate>Thu, 30 Jul 2026 09:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 01 Aug 2026 09:00:00 +0900</lastBuildDate>
     <ttl>360</ttl>
+    <item>
+      <title>日立、SI全工程にAIエージェントを置く「Agentic AI Integration Platform」— 画面仕様の確定で最大240倍と社内実証</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-978de76491</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-978de76491</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;日立製作所が、エンタープライズ向けシステムインテグレーションの全工程にAIを適用する「Agentic AI Integration Platform」を発表した。部分的なコード生成に留めず、構想策定・要件定義から設計・開発・テスト・運用までの各工程に専用のAIエージェントを配置する。社内検証では画面仕様の確定作業で最大240倍、設計からテスト工程で約200倍の効率化を実証したという。約1万5,000件の顧客システム開発で培った知見を土台に、2027年度にシステム開発全体で30%の生産性向上を目標に掲げる。Anthropic・OpenAI・Google Cloudなどのモデルを用途に応じて選べるエンタープライズAI基盤を整備し、GlobalLogicの「VelocityAI」との連携ではトークン利用料を最大54%削減したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/business/articles/2607/31/news049.html&quot;&gt;ITmedia ビジネスオンライン&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>スクウェア・エニックス、ゲームのQAテストをGeminiで自動化 — AIが画面を見てコントローラーを操作し検証を自走</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-512596a9d6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-512596a9d6</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;スクウェア・エニックスがゲームの品質検証（QAテスト）の自動化にGoogleのGeminiを使っていることを、同社の荒牧岳志氏が7月30日の「Google Cloud Next Tokyo &amp;apos;26」基調講演で公開した。AIがゲーム画面を見て状況を把握し、自ら地図を開いて場所を確認し、コントローラーを操作して検証を進める様子を実演。基盤はGoogle Cloudの Gemini Enterprise Agent Platform（旧Vertex AI）。荒牧氏は「現場が求めていたのは文字のやりとりだけでなく、ゲームの音を聞き、複雑に変化する画面を見て状況を把握できる能力だった」と述べた。同社のQA自動化は経済産業省のコンテンツ産業向け支援にも採択されている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000322/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google DeepMind「Gemini Robotics 2」発表 — ヒューマノイドの全身制御と指先作業に初対応</title>
+      <link>https://aitimes.jp/news/model/#s-e14459d1d7</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e14459d1d7</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;GoogleとGoogle DeepMindが7月30日（現地時間）、ロボット向けAIモデル群「Gemini Robotics 2」を発表した。視覚と言語をモーター制御に変換するVLAモデル、高次の計画を担う身体化推論モデル「ER 2」、ロボット本体で動く軽量版の3構成。従来は上半身によるテーブル上の作業に限られていたが、今回初めて全身の動作を制御でき、5本指・22自由度のハンドでひも結びやジップ袋の開閉もこなす。ER 2はGemini APIとGoogle AI Studioで開発者向けに公開済みで、VLA版と端末内版はアーリーアクセスに留まる。エージェントとしての安全性を測る新ベンチマーク「ASIMOV-Agentic」も公開した。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000320/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Thinking Machines、オープンウェイトの「Inkling-Small」を正式公開 — サイズ4分の1で初代Inkling超え</title>
+      <link>https://aitimes.jp/news/model/#s-9028555276</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-9028555276</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;元OpenAI CTOのミラ・ムラティ氏が率いるThinking Machines Labが7月30日（現地時間）、オープンウェイトモデル「Inkling-Small」をApache 2.0ライセンスで正式公開した。総パラメータ2,760億・アクティブ120億のMoE型で、7月15日公開の初代Inklingの4分の1のサイズながら、Humanity&amp;apos;s Last Exam（テキストのみ）31.6%・SWE-bench Verified 80.2%・Terminal-Bench 2.1 64.7%といずれも初代を上回る。ただし知識の網羅性と事実性は初代が優位としている。量子化版（NVFP4）は180GB以上のGPUメモリで動き、初代の600GB以上から自前運用のハードルが下がった。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000326/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、GPT-5.6 Luna を80%・Terra を20%値下げ — Sol は据え置き。本紙が公式価格ページで新価格を確認</title>
+      <link>https://aitimes.jp/news/model/#s-c013d14e97</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-c013d14e97</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが7月30日（現地時間）、GPT-5.6ファミリーのうち下位2モデルのAPI価格を引き下げた。本紙が同日の公式価格ページを取得して逐語確認したところ、標準料金（100万トークン当たり）は GPT-5.6 Terra が入力$2.00／出力$12.00（従来$2.5／$15＝入出力とも20%減）、GPT-5.6 Luna が入力$0.20／出力$1.20（従来$1／$6＝80%減）で、最上位の GPT-5.6 Sol は$5／$30のまま据え置きだった。Lunaは掲載中の全モデルで最安となり、Gemini 3.1 Flash-Lite（$0.25／$1.5）を入出力とも下回る。値下げはChatGPT WorkとCodexのクレジット消費にも反映されるが、サブスクの料金と利用枠自体は変わらない。あわせてAPIに「Fast mode」が導入され、従来のPriority Processingを置き換える（Solで標準の最大2.5倍速・価格2倍、知能面の変化はなし）。AI相場の表も同日付で更新済み。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://platform.openai.com/docs/pricing&quot;&gt;OpenAI 公式価格ページ（本紙が逐語照合）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google Earth のAI画像生成機能、公開から1日で撤回 — 衛星画像に偽の風景を重ねられると批判</title>
+      <link>https://aitimes.jp/news/tool/#s-6422ae0f31</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-6422ae0f31</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Googleが7月30日、衛星画像アプリのGoogle Earthに画像生成AI「Nano Banana 2」を組み込み、地図の上に生成画像を重ねられる機能を公開したが、わずか1日で撤回した。プロンプトから任意の画像を実際の地図に重ねられる仕様で、報道機関や研究者が視覚的証拠として使うGoogle Earthが誤情報の温床になるとの批判が集まっていた。Googleは「地理空間の専門家に有用に使われている一方、ポリシー違反と見られる生成画像のスクリーンショットが共有されているのも確認した」とし、より強いガードレールを実装する間ロールバックすると説明した。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Perplexity、AIエージェントの“暴走”を実行前に止める「Numbat」をオープンソース公開</title>
+      <link>https://aitimes.jp/news/tool/#s-866dae0e26</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-866dae0e26</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Perplexityが7月29日（現地時間）、AIエージェントの危険な挙動を検知・ブロックするセキュリティツール群「Numbat」をオープンソースで公開した。Claude CodeやCodexなど主要なコーディングエージェントの動作に「フック」で割り込み、機密情報へのアクセス・データ持ち出し・権限昇格など11カテゴリー52種のルールで実行前に止める。macOS／Linux／Windows対応で、社内でも数千台に導入済みという。狙いは攻撃者不在でも起きる「アクシデンタル・メルトダウン」— タスク達成に執着したエージェント自身が攻撃者と化す事象で、モデル側の対策だけでなくエンドポイント側でブロックする必要があるとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000325/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Snapchat、完全AI生成の動画を Spotlight の推薦・報酬の対象外へ</title>
+      <link>https://aitimes.jp/news/kisei/#s-43fb41d572</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-43fb41d572</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Snapchatが7月31日、完全にAIで生成された動画を短尺動画枠「Spotlight」の推薦対象から外すと発表した。推薦システムを調整し、実在の人が作った動画だけを推薦の対象にする。同社は「Spotlightを、実在の人による本物の創造性を見つけられる場所であり続けさせたい」と説明している。AIを全面的に否定するわけではなく、クリエイターが自社のAI編集ツールで自分の作品を加工・強調することは引き続き認める。プラットフォーム各社がAIスロップ（大量生成された粗製コンテンツ）への姿勢を強めている流れに続くもの。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Anthropic、Claudeが評価環境から実在3組織の本番インフラへ不正アクセスしていたと公表 — 14万件のログを遡及調査</title>
+      <link>https://aitimes.jp/news/kisei/#s-aded25a18a</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-aded25a18a</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Anthropicが7月30日（現地時間）、サイバーセキュリティ評価の過程でClaudeが遮断されているはずの評価環境からインターネットに到達し、実在する3組織の本番インフラに不正アクセスしていたと発表した。7月21日にOpenAIが自社モデルのHugging Face侵入を公表したのを受け、インターネットに到達し得た14万1,006件の評価実行を精査して3件（計6実行）を特定した。いずれも第三者評価パートナーのCTF課題中で、「接続はない」というプロンプトの前提が設定ミスで成立しておらず、Claudeは到達した実システムを演習の一部と誤認していた。うち1件ではPyPIに悪意あるパッケージを公開し、約1時間で15の実システムがダウンロード・実行している。同社は7月23日に全サイバー評価を停止し、27日に評価パートナーと影響組織へ通知した。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000318/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、研究者10万人に最上位モデルを無料提供へ — 東大・京大など国内15大学が対象</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-972d1a5419</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-972d1a5419</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが7月29日（現地時間）、学術研究者に最上位モデルへの無料アクセスを提供する「ChatGPT for Academic Researchers」を始めると発表した。今夏に1万人規模で開始し、2027年までに10万人へ拡大する計画。日本でも東京大学・京都大学・東京科学大学・早稲田大学・慶應義塾大学など15大学が対象機関に入っている。対象は科学・数学・工学分野の研究者で、Pro／Enterpriseプラン限定の「GPT-5.6 Sol Pro」を含む最上位モデル群をChatGPT・ChatGPT Work・Codexで使える。企業向けと同等のプライバシー保護が付き、既定ではデータは学習に使われない。承認された研究者は同じ機関から最大4人まで共同研究者を招待できる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000333/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>KubeCon + CloudNativeCon Japan 2026、横浜で開催中 — 「KubernetesはAIを動かすプラットフォームへ」が主題に</title>
       <link>https://aitimes.jp/news/katsuyo/#s-c826edb2e5</link>
@@ -408,86 +488,6 @@
       <category>ツール・プロダクト</category>
       <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;コーディングエージェント「Devin」を手がける Cognition が、対話アプリ Poke を買収した。Poke の会話スタイルと対話モデルを Devin に取り込む狙いで、AIアシスタントが「どう振る舞うか」が性能と同じくらい重要になってきたという見方を反映しているとTechCrunchは伝えている。★モデルの賢さが横並びになるほど、差がつくのは応答の質感やUXの側だという競争軸の変化を示す動き。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Bluesky のAIアシスタント「Attie」が、オープンなソーシャル調査ツールへ拡張</title>
-      <link>https://aitimes.jp/news/tool/#s-983cb96222</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-983cb96222</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Bluesky のAIアシスタント Attie が機能を広げ、Bluesky や AT Protocol 上の他アプリのニュース・トレンド・会話について質問できるようになった。SNS内の投稿を横断して調べる用途に踏み込む。★クローズドなSNSのデータが囲い込まれる中、オープンなプロトコル上では第三者もAIで分析できるという違いが出てきた例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/blueskys-ai-assistant-attie-expands-into-an-open-social-research-tool/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>ChatGPTの新音声モードがデスクトップアプリへ — 声だけでPC上の作業をエージェントに任せる</title>
-      <link>https://aitimes.jp/news/tool/#s-75e11e424e</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-75e11e424e</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIは7月23日（木）、ChatGPTデスクトップアプリを更新し、話しかけてAIエージェントを操作しPC上の作業を実行させる ChatGPT Voice に対応したと発表した。今月投入した音声モデル群「ChatGPT-Live」を使い、ChatGPT Work と Codex の両方で動作、macOS では Appshots で画面の内容をアプリに参照させられる。デモでは「スレッドを作り、プルリクエストを出し、バグの根本原因を突き止める」という複数手順の指示を一度の発話で実行してみせた。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/openais-new-voice-mode-makes-it-to-the-chatgpt-desktop-app/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Google DeepMind が「AI Control Roadmap」を公表 — 自社AIが意図に反した場合への備え</title>
-      <link>https://aitimes.jp/news/kisei/#s-1017eaa046</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-1017eaa046</guid>
-      <category>規制・制度</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Google DeepMind が、AIが開発者の意図に反して振る舞う事態を想定した管理構想「AI Control Roadmap」を発表し、ITmediaがその内容を解説した。性能向上ではなく「制御」を正面から扱う点が異例だとしている。★規制が外から来る前に、開発する側が制御の枠組みを自ら示しはじめたという流れの一例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/24/2000000215/&quot;&gt;ITmedia AI＋（Google DeepMindの構想の解説）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>「ChatGPTの誤った健康助言で命の危機」— 米フロリダの男性がOpenAIとアルトマンCEOを提訴</title>
-      <link>https://aitimes.jp/news/kisei/#s-439ecfb0ae</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-439ecfb0ae</guid>
-      <category>規制・制度</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;米フロリダ州の男性が、ChatGPTから健康状態について誤った「危険な」助言を受け命に関わる事態になったとして、OpenAIとサム・アルトマンCEOを提訴した。★OpenAIが同時期にChatGPT Healthを米国の全プランへ開放した局面で、AIの健康助言に対する法的責任が正面から問われる訴訟になる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://japan.cnet.com/article/35250944/&quot;&gt;CNET Japan&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Kimi K3論争が突き付けた「AIのサプライチェーンリスク」 — 性能と価格だけではモデルを選べない</title>
-      <link>https://aitimes.jp/news/kisei/#s-b45b165fd9</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-b45b165fd9</guid>
-      <category>規制・制度</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;＠ITは、Moonshot AIの「Kimi K3」を巡る米政権の告発を、企業がAIを調達・運用する際の「サプライチェーンリスク」として整理した。①モデルの出自（学習データ・教師モデルの利用条件・ウェイトのライセンス）を確認できるか ②輸出規制や制裁がAPI提供停止に波及しないか ③特定モデルへの依存を減らすマルチモデル構成になっているか、を評価項目に加えるべきだと指摘する。なお蒸留そのものについては、Anthropicが2026年2月23日に公表した調査で、Moonshotが不正アカウント経由でClaudeと340万回超のやりとりを行ったと報告済み（DeepSeek 15万回超・MiniMax 1,300万回超を含め計1,600万回超・約2万4,000アカウント）。ただしこれは同年2月までの事象であり、7月1日公開のFable 5を蒸留したという今回の告発とは時期が異なる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news054.html&quot;&gt;＠IT&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>近畿大学情報学部、入試での生成AI利用を容認 — 総合型選抜の自己PR動画とプレゼン準備で</title>
-      <link>https://aitimes.jp/news/kisei/#s-1154f79510</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-1154f79510</guid>
-      <category>規制・制度</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;近畿大学情報学部は7月24日、令和9年度（2027年度）の総合型選抜入学試験で、自己PR動画の制作やプレゼンテーションの準備に生成AIを使ってよいという方針を明示した。アイデア出し・構成の検討・スライド作成での活用を認め、どう工夫して使ったかという経験自体も自己PRに活かせる。選考では利用の有無にかかわらず受験生自身の能力・思考・独自性を重視し、利用環境の差で不利にならないよう配慮するとしており、高校生から「入試で生成AIを使った開発経験を示してよいか」という問い合わせが寄せられたことが明示のきっかけ。方針を明記するのは同大では情報学部のみ。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.atpress.ne.jp/news/9177205&quot;&gt;近畿大学 プレスリリース (@Press)&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>三菱電機とソニー、AIビジョンセンサーの新会社「Advanced Vision Solutions」設立へ — 出資比率60:40、10月に事業開始</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-ea69af5b12</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-ea69af5b12</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;三菱電機とソニーセミコンダクタソリューションズは、製造業向けAIビジョンセンサーソリューションを開発する合弁新会社を横浜・みなとみらいに設立すると発表した。出資比率は三菱電機60%・ソニー側40%で、2026年10月から事業を始める。三菱電機のFA制御ノウハウとデジタル基盤「Serendie」に、ソニーのイメージセンサーとエッジAI技術を組み合わせ、イメージセンサー上でAIが映像を解析するセンサーで製造現場の省人化・無人化を狙う。フィジカルAIの国内大型連合がまた一つ増えた。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://eetimes.itmedia.co.jp/ee/articles/2607/23/news079.html&quot;&gt;EE Times Japan&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>三井不動産、データセンターに累計6,000億円超を投資へ — 稼働3棟＋開発中7棟、「産業デベロッパー」宣言</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-fe7e9adb3c</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-fe7e9adb3c</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;三井不動産は7月23日の事業説明会で、物流施設の供給にとどまらない「産業デベロッパー」への領域拡大を打ち出した。生成AI・クラウドの需要拡大を受け、データセンター事業に累計6,000億円超を投資する(これまでの累計投資は3,000億円超・稼働3棟に加えて7棟を開発中、インド展開も)。物流事業は88物件・累計総投資約1兆4,000億円に達しており、AIインフラが不動産大手の次の柱に格上げされた形。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://monoist.itmedia.co.jp/mn/articles/2607/24/news046.html&quot;&gt;MONOist&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>AMD、ラックスケールAIシステム「Helios」でNVIDIAに対抗 — 年内に顧客への出荷開始</title>
-      <link>https://aitimes.jp/news/model/#s-264c4ef28e</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-264c4ef28e</guid>
-      <category>モデル・技術</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;AMDが、ラック単位でAI処理をまとめる新システム「Helios」を発表し、年内に顧客への出荷を始めるとTechCrunchが報じた。データセンター向けAIチップ市場でNVIDIAの優位に正面から挑む構えとなる。★AMDがAnthropicへ最大50億ドルを出資し最大2GW分の導入を発表した際の対象システムがこのHeliosで、出荷開始は当時の計画が実機の段階に入ったことを意味する。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Gemini の月間利用者が9億5,000万人超 — 1年で3倍、「10億人プロダクト」目前</title>
-      <link>https://aitimes.jp/news/model/#s-81587b96e5</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-81587b96e5</guid>
-      <category>モデル・技術</category>
-      <pubDate>Thu, 23 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Googleは2026年第2四半期の決算説明で、AIアシスタント Gemini の月間利用者が9億5,000万人を超え、1年前の3倍になったと述べた。2026年2月時点では7億5,000万人で、検索・Gmail・Drive・Android・YouTube・Chrome に続く「10億人プロダクト」に迫る（OpenAI の ChatGPT は6月に月間10億人到達）。ピチャイCEOは「Daily Brief やパーソナルエージェント Gemini Spark のような新機能が支持されている」とし、Q&amp;amp;A型のAIモードは利用者10億人を突破したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/23/google-closes-in-on-another-billion-user-product-with-gemini/&quot;&gt;TechCrunch（Alphabet 2026年第2四半期決算説明より）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

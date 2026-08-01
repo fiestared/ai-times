@@ -205,7 +205,12 @@ function pageEol() {
   const all = eol.retirements || [];
   const certain = all.filter((r) => r.certain).sort((a, b) => String(a.retirement).localeCompare(String(b.retirement)));
   const tentative = all.filter((r) => !r.certain).sort((a, b) => String(a.retirement).localeCompare(String(b.retirement)));
-  const changes = eol.price_changes || [];
+  // 料金改定は「これから適用されるもの」と「もう適用されたもの」を分ける。
+  // 混ぜると、適用済みの改定前価格を「現在」の欄に出してしまい、表そのものが嘘になる。
+  // 判定は data の applied フラグで行う（実行日で切ると --check が日替わりで落ちるため時計に依存させない）。
+  const allChanges = eol.price_changes || [];
+  const changes = allChanges.filter((c) => !c.applied);
+  const applied = allChanges.filter((c) => c.applied);
 
   if (!certain.length && !tentative.length) {
     const body = `  <section><div class="sec-title">モデルの提供終了日 <span class="jp">— 準備中</span></div>
@@ -231,17 +236,25 @@ function pageEol() {
     `<table class="data"><thead><tr><th class="n">この日より前には終了しない</th><th>モデル</th><th>公式の推奨移行先</th><th>出典</th></tr></thead>` +
     `<tbody>${tentative.map(row).join("")}</tbody></table></div></div>` : "";
 
+  const changeRow = (c) =>
+    `<tr><td class="n mono">${jp(c.effective)}</td>` +
+    `<td><span class="m">${esc(c.model)}</span> <span class="pv">${esc(c.provider)}</span>` +
+    `<div class="pv" style="margin-top:3px">${esc(c.kind)}</div></td>` +
+    `<td class="n">$${esc(c.before.input)} / $${esc(c.before.output)}<div class="pv">${esc(c.before.label)}</div></td>` +
+    `<td class="n"><b>$${esc(c.after.input)} / $${esc(c.after.output)}</b><div class="pv">${esc(c.after.label)}</div></td>` +
+    `<td class="mono" style="font-size:11px"><a href="${esc(c.source_url)}" rel="noopener" target="_blank">出典 ↗</a></td></tr>`;
+
   const changeTable = changes.length ? `<div class="market"><div class="mh"><b>予定されている料金改定 — ${changes.length}件</b>` +
     `<span class="as mono">as of ${esc(asOf)}</span></div><div class="scroll">` +
     `<table class="data"><thead><tr><th class="n">適用開始</th><th>モデル</th><th class="n">現在</th><th class="n">改定後</th><th>出典</th></tr></thead><tbody>` +
-    changes.map((c) =>
-      `<tr><td class="n mono">${jp(c.effective)}</td>` +
-      `<td><span class="m">${esc(c.model)}</span> <span class="pv">${esc(c.provider)}</span>` +
-      `<div class="pv" style="margin-top:3px">${esc(c.kind)}</div></td>` +
-      `<td class="n">$${esc(c.before.input)} / $${esc(c.before.output)}<div class="pv">${esc(c.before.label)}</div></td>` +
-      `<td class="n"><b>$${esc(c.after.input)} / $${esc(c.after.output)}</b><div class="pv">${esc(c.after.label)}</div></td>` +
-      `<td class="mono" style="font-size:11px"><a href="${esc(c.source_url)}" rel="noopener" target="_blank">出典 ↗</a></td></tr>`).join("") +
-    `</tbody></table></div></div>` : "";
+    changes.map(changeRow).join("") + `</tbody></table></div></div>` : "";
+
+  // 適用済み: 「現在」欄に改定前価格を出さないよう、見出しを「改定前／改定後（現在）」に変える
+  const appliedTable = applied.length ? `<div class="market"><div class="mh"><b>実施済みの料金改定 — ${applied.length}件</b>` +
+    `<span class="as mono">as of ${esc(asOf)}</span></div><div class="scroll">` +
+    `<table class="data"><thead><tr><th class="n">適用開始</th><th>モデル</th><th class="n">改定前</th><th class="n">改定後（現在）</th><th>出典</th></tr></thead><tbody>` +
+    applied.map(changeRow).join("") + `</tbody></table></div>` +
+    `<div class="mh" style="border-top:1px solid var(--rule)"><span class="pv">改定前の価格を載せたままの解説記事が残っていることがあります。上の「改定後（現在）」が公式の現行価格です。</span></div></div>` : "";
 
   // fail-closed の明示（載せていない提供元と、その理由を隠さない）
   const np = (eMeta.not_published || []).map((n) =>
@@ -251,6 +264,7 @@ function pageEol() {
     <div class="sec-title">AIモデルの提供終了日・料金改定カレンダー <span class="jp">— 各社の公式ドキュメントと逐語照合</span></div>
     <p class="dek">使っているモデルが<b>いつ止まるか</b>、料金が<b>いつ変わるか</b>を、各社の公式ドキュメントから逐語照合してまとめた一覧です。日付・モデルID・公式が示す移行先だけを載せ、<b>推測や噂は載せません</b>。ネット上では同じモデルの終了日が記事ごとに食い違っていることが多いため、必ず出典の公式ページを併記しています。</p>
     ${changeTable}
+    ${appliedTable}
     ${certainTable}
     <p class="pv" style="margin-top:8px">「提供終了日」を過ぎると、そのモデルIDへのAPIリクエストは各社の案内に従って停止します。上の表の日付は各社が公式に告知した確定日です。</p>
     ${tentativeTable}

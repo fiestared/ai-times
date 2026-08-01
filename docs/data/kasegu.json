@@ -1,8 +1,8 @@
 {
   "_meta": {
     "title": "AIで稼ぐ — 世界の事例キュレーション",
-    "as_of": "2026-07-26",
-    "status": "seed",
+    "as_of": "2026-08-02",
+    "status": "live",
     "note": "世の中の『AIで稼いだ』実例を集めて、誰が・何で・月いくら を事実として表にする。★著作権★ 収益報告の本文を転載しない。載せるのは (1)公開された数字(月商・累計・課金額) (2)手法の1〜2行要約 (3)必ず出典URL。数字は必ず出典に実在することを確認してから載せる(AIは金額を捏造しがち)。日本の事例(note/X/個人開発)も海外(Indie Hackers/HN/Reddit)も両方集める。金額は現地通貨のまま+概算円。ランキングは月商(または月商相当)の降順。",
     "flags": [
       "拡張機能",
@@ -150,7 +150,73 @@
       "source_url": "https://note.com/hiro1760/n/na7e8ed3879db",
       "source_name": "note（本人の収益公開・無料記事）",
       "note": "2026-04-20から3か月で26本公開し、収益は広告のみで累計55円・最多DLのアプリでも15DL（2026-07-24公開）。★この表の下限として意図的に載せている: 『AIで速く作れる』は『売れる』ではないことの実測値。有料noteやコンサルへの導線がない無料記事＝金額を盛る動機が薄い点で、他の自己申告より確度が高い。"
+    },
+    {
+      "name": "Faceless.video（Jacob Seeger）",
+      "who": "個人（元・音楽アーティスト／ソングライター。エンジニア経験なし）",
+      "what": "「顔出しなし」ショート動画の台本・編集・SNS投稿までをAIが自動で回すSaaS — ノーコード(Bubble)で自作",
+      "monthly_usd": 83000,
+      "model": "従量サブスク $20〜数百/月（最多は Daily $35/月）",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/failing-6-times-before-hitting-a-7-figure-arr-in-10-months-with-no-code-3FvQoHUh2SglJvAJGkSF",
+      "source_name": "Indie Hackers（本人インタビュー・2026-07-21）",
+      "note": "7つ目のプロダクト。$0→$1M ARR を10か月・完全ブートストラップで、登録250万人（本人談）。★金額は Indie Hackers の製品欄「>$83K a month」を採った（本人は『現在6桁MRR』と述べており、低い方＝確度の高い方を載せている）。検証にかけた実費は約$500（インフラ$250＋Xスレッド宣伝$250）だけで、その利益を同じ宣伝に再投資して5桁MRRへ。AIモデルの原価上昇に合わせて何度か値上げしたが解約は増えなかった、とも。"
+    },
+    {
+      "name": "Lancer（Ivan Nedelkovski）",
+      "who": "個人（開発エージェンシーを7桁ドル規模で売却後・現在は2人）",
+      "what": "Upworkの案件探し・絞り込み・提案文作成を全自動化するAIエージェント",
+      "monthly_usd": 20000,
+      "model": "サブスク $149/月（5リード＋追加1件$19）〜 $499/月（無制限）",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/exiting-his-agency-and-hitting-10k-mrr-within-60-days-of-launching-his-saas-sTo5m9qfhxXbruvhBIyH",
+      "source_name": "Indie Hackers（本人インタビュー・2026-07-29）",
+      "note": "自分のエージェンシーの苦痛（毎日Upworkを開いて提案文を書く）を週末にMVP化。公開2か月で有料30社・ARPU約$300＝$10k MRR、現在$20k MRR（本人談）。★Indie Hackersの製品欄は「>$25K a month」で本人の明示額と食い違うため、本紙は本人の$20k MRRを採った。広告費ゼロで、初期$10kの大半はUpworkコーチ1人がアフィリエイトになったことによる（＝単一チャネル依存）。最大の競合は$2M ARR・$500/月と本人が調査済み。"
+    },
+    {
+      "name": "Superpower ChatGPT（Saeed Ezzati）",
+      "who": "個人（サンフランシスコ在住の元フルスタックエンジニア・ソロ）",
+      "what": "ChatGPTに履歴検索・フォルダ・エクスポート・プロンプト管理を足すChrome拡張（初版は3日で公開）",
+      "monthly_usd": 10000,
+      "model": "無料配布＋有料プラン、およびニュースレター（収益源は2本）",
+      "flag": "拡張機能・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/building-a-free-chrome-extension-in-3-days-and-turning-it-into-a-5-figure-mrr-ecosystem-3rIbjigZxiFsrgqJjJYp",
+      "source_name": "Indie Hackers（本人インタビュー・2026-07-08）",
+      "note": "42万DL・週間アクティブ15万人、併営のニュースレター Superpower Daily は35万人購読。MRRは5桁ドル（Indie Hackersの製品欄「>$10K a month」・具体額は非公表）。ChatGPT公開の1週間以内に出した速度がそのまま資産になった例。本人の言葉は「無料は価格戦略ではなく流通戦略」。★他社（OpenAI）の製品の上に乗るためUI変更で壊れうる構造リスクは本人も認識している。"
+    },
+    {
+      "name": "AppAlchemy（Diego Roshardt）",
+      "who": "個人（新卒入社の会社を数か月で辞め、数か月分の貯金だけで独立）",
+      "what": "ブラウザ上でAIと対話してネイティブモバイルアプリを作る（Lovableのモバイル版という位置づけ）",
+      "monthly_usd": 10000,
+      "model": "月額サブスク＋年額割引。★公開初日から課金・無料プランなし",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/launching-an-app-builder-in-2-weeks-and-hitting-10k-mrr-within-a-year-gRWT2S68TIQwMvb6Xxt4",
+      "source_name": "Indie Hackers（本人インタビュー・2026-07-09）",
+      "note": "MVPは2週間（AIと会話してモバイルアプリを組み立てるReact製）、公開から1年で$10k+ MRR。集客はProduct Huntでなく Reddit で、自分が使っている動画を投稿し続けた。開発自体も Claude Code / Cursor を多用。★同じ表の Superpower（無料で配って後から課金）と正反対の型で、どちらも成立している点に注意。"
+    },
+    {
+      "name": "Questgen.ai ほか3本（Ramsri Goutham Golla）",
+      "who": "個人（インド。本業はデータサイエンティストのまま・副業）",
+      "what": "AIクイズ生成 Questgen.ai／AIミーム生成 Supermeme.ai／AI動画生成 AiArtist.io の3本を並行運用",
+      "monthly_usd": 6500,
+      "model": "サブスク（従量課金から移行）スターター $10〜15/月・上位 $50/月",
+      "flag": "SaaS・海外",
+      "source_url": "https://www.indiehackers.com/post/tech/this-full-time-data-scientist-built-a-7k-mo-portfolio-of-side-projects-quOo7AXtrGlePopsGslc",
+      "source_name": "Indie Hackers（本人インタビュー・2026-07-30）",
+      "note": "3本合計で登録250万人・現在は$6k〜$7k MRR。Questgen単体は公開4年で累計$150K超。★この表で唯一の「減っている」実例として載せている: 2025年のピークでは3本合計$100k ARR あり、そこから約2/3に落ちた（本人談）。AIの単発ヒットは減衰するという事実の側の証拠。本業は辞めていない。"
+    },
+    {
+      "name": "AIニュース解説note（recruitmarketing）",
+      "who": "個人（AI・生成AI・DXの解説記事を書くnoteクリエイター）",
+      "what": "AI各社の発表を「日本視点＋具体的な数字」で解説する記事を、1本¥1,000の単品販売",
+      "monthly_jpy": 150000,
+      "model": "単品販売 ¥1,000固定（累計139本の在庫から毎月売れる）",
+      "flag": "コンテンツ・国内",
+      "source_url": "https://note.com/recruitmarketing/n/na73f9dc11250",
+      "source_name": "note（本人の月次売上レポート・無料記事・2026-08-01公開）",
+      "note": "2026年7月 ¥150,000／150件（6月 ¥80,000／80件・5月 ¥20,000／20件）。7月は19本公開し累計139本。6月13日に70本超を¥500→¥1,000へ一斉値上げしたが販売件数はほぼ変わらず売上が倍増した、が本人の転機。★本紙は6月と7月の2本を突き合わせて確認した: 売上と販売件数は両レポートで一致するが、6月末の累計記事数だけが 104本（6月レポート）と 120本（7月レポートの6月欄）で食い違う。★自己申告で第三者検証はできず、本人は「note収益化」を掲げるクリエイターなので宣伝の動機はある。本人の総括は「最初の50本は売れない。100本を超えてから複利が始まる」。"
     }
   ],
-  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。 海外AIネイティブSaaSを1件追加（2026-07-23）: Klipy.ai（AI CRM・5桁ドルMRR・IH本人インタビューで逐語照合。具体額非公表のためmonthly_usdはnull＝fail-closed）。Zigpoll($125k MRR)は検討の上examplesに入れず（本体は非AIのアンケートSaaSで『AIで稼いだ』に該当せず。AI経由流入14%の話としてnews側kasegu topicに収録）。 2026-07-26: 国内事例を探索し、note検索API（data.notes.contents）から候補を抽出。採用＝hiro1760（累計55円・無料記事・販売導線なし）。★不採用2件と理由: (1) enging1iw「0→月20万円」は本体が4,980円の有料note＝金額が販売文句そのもので検証不能、(2) bokuwalily「月商120万円」は無料記事だが末尾に同じ数字を題材にした有料noteとコンサルの導線があり、第三者検証もないため examples（確定額の表）には入れず news の kasegu トピックに『自己申告・導線あり』と明記して収録した。Indie Hackersは 502／タイムアウト／本文がJS描画で curl では取得できず（この便では新規追加なし）。"
+  "todo_jp": "国内3件目（iDM／ぶべ・ShiftB校長の自作SaaS・月30万円弱のMRR）を追加（2026-07-16）。IsTalk(¥250万)とLearning Next(初週¥3万)の中間を埋めた。引き続き note・X・個人開発者の収益公開を集めて海外に偏らせない。月次/累計の“確定額”が一次情報で裏取りできる事例のみ・自己申告は明記（fail-closed）。海外のAIネイティブSaaSも2件追加（2026-07-18）: Leadmore AI（Reddit向けAIマーケ・$30k MRR超）／Sleek（AIでモバイルUIを作るvibe designツール・$10k MRR）。いずれもIndie Hackers本人インタビューで金額をcurl逐語照合。次候補: 生成AIを明確に使った国内SaaS/アプリの収益公開（Cursor/Claude Code駆動など）。 海外AIネイティブSaaSを1件追加（2026-07-23）: Klipy.ai（AI CRM・5桁ドルMRR・IH本人インタビューで逐語照合。具体額非公表のためmonthly_usdはnull＝fail-closed）。Zigpoll($125k MRR)は検討の上examplesに入れず（本体は非AIのアンケートSaaSで『AIで稼いだ』に該当せず。AI経由流入14%の話としてnews側kasegu topicに収録）。 2026-07-26: 国内事例を探索し、note検索API（data.notes.contents）から候補を抽出。採用＝hiro1760（累計55円・無料記事・販売導線なし）。★不採用2件と理由: (1) enging1iw「0→月20万円」は本体が4,980円の有料note＝金額が販売文句そのもので検証不能、(2) bokuwalily「月商120万円」は無料記事だが末尾に同じ数字を題材にした有料noteとコンサルの導線があり、第三者検証もないため examples（確定額の表）には入れず news の kasegu トピックに『自己申告・導線あり』と明記して収録した。Indie Hackersは 502／タイムアウト／本文がJS描画で curl では取得できず（この便では新規追加なし）。 2026-08-02: Indie Hackers の /tech 一覧を curl で生読みし（RSSは無く、HTMLは server-rendered で取れる）、直近1か月半の全20本から『AIそのもので稼いでいる』5本を選んで本文を逐語照合して追加＝Faceless.video($83k/月)／Lancer($20k/月)／Superpower ChatGPT($10k/月)／AppAlchemy($10k/月)／Questgen.ai他3本($6.5k/月)。★金額が製品欄と本文で食い違う2件（Lancer >$25k vs $20k／Faceless >$83k vs 6桁MRR）は低い方＝確度の高い方を採り、note欄に食い違いを明記した。国内は note 検索APIから1件採用＝recruitmarketing（AI解説noteの単品販売・7月¥150,000／150件）。6月と7月の2レポートを突き合わせ、売上は一致・累計記事数だけ食い違う（104 vs 120）ことまで確認して note欄に書いた。★不採用: 『バイブコーディングで月10万』等の note は本文が販売文句で確定額の裏取りができないため見送り。次候補: 国内のAIネイティブSaaS/アプリで、月次の確定額を無料で継続公開している個人（海外13:国内5とまだ海外に偏っている）。"
 }

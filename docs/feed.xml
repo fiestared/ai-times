@@ -7,8 +7,24 @@
     <description>新モデルとAPI価格、新ツール、AIの規制・制度、企業の生成AI導入事例を、各社と官公庁の一次情報と逐語照合して要約。記事の転載はせず、必ず出典リンクを付けます。</description>
     <language>ja</language>
     <docs>https://www.rssboard.org/rss-specification</docs>
-    <lastBuildDate>Sat, 01 Aug 2026 09:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 09:00:00 +0900</lastBuildDate>
     <ttl>360</ttl>
+    <item>
+      <title>ホテル特化のAIエージェント「JOINTPOOL AI」提供開始 — ADR・稼働率をスライダーで動かして予算を組む</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-fe0492de00</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-fe0492de00</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;株式会社nariiz（愛媛県松山市）が8月1日、ホテルの開発・運営に特化したAIエージェントシステム「JOINTPOOL AI」の提供を始めた。予算作成、PL・部門別KPI管理、事業計画書の作成、提案・承認フロー、実績データの取り込みまでを一つの環境で扱う。AIが施設情報の整理と集計を担い、ADR（平均客室単価）・稼働率・人件費といった主要KPIをスライダーで動かしながら予算や事業計画を組み立てられる点を特徴に挙げている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://ascii.jp/elem/000/004/424/4424141/&quot;&gt;ASCII STARTUP&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、数学と理論計算機科学の未解決問題で10件の進展を公表 — 幾何・暗号・計算量</title>
+      <link>https://aitimes.jp/news/model/#s-6d58997b46</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-6d58997b46</guid>
+      <category>モデル・技術</category>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが8月1日、数学および理論計算機科学の長年の未解決問題について、10件の新しい結果を公表した。公式サマリーが挙げている領域は幾何学・暗号理論・計算量理論の3つ。★本紙は openai.com の本文を取得できていない（同社サイトが自動取得を403で拒否）ため、個々の結果の中身と査読の状況は未確認。ここに載せているのはOpenAI自身の公表サマリーの範囲に限る。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/ten-advances-in-mathematics&quot;&gt;OpenAI（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>日立、SI全工程にAIエージェントを置く「Agentic AI Integration Platform」— 画面仕様の確定で最大240倍と社内実証</title>
       <link>https://aitimes.jp/news/katsuyo/#s-978de76491</link>
@@ -24,6 +40,14 @@
       <category>企業のAI活用</category>
       <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;スクウェア・エニックスがゲームの品質検証（QAテスト）の自動化にGoogleのGeminiを使っていることを、同社の荒牧岳志氏が7月30日の「Google Cloud Next Tokyo &amp;apos;26」基調講演で公開した。AIがゲーム画面を見て状況を把握し、自ら地図を開いて場所を確認し、コントローラーを操作して検証を進める様子を実演。基盤はGoogle Cloudの Gemini Enterprise Agent Platform（旧Vertex AI）。荒牧氏は「現場が求めていたのは文字のやりとりだけでなく、ゲームの音を聞き、複雑に変化する画面を見て状況を把握できる能力だった」と述べた。同社のQA自動化は経済産業省のコンテンツ産業向け支援にも採択されている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000322/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>キオクシアQ1、純利益8421億円で前年同期比4506%増 — AIデータセンター向け需要がけん引</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-0f13f26df8</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-0f13f26df8</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;キオクシアホールディングスが7月31日に発表した2027年3月期第1四半期（2026年4月1日〜6月30日・IFRS）決算で、純利益が8421億6500万円、前年同期比4506%増となった。売上は1兆7671億1700万円（同416%増）、営業利益は1兆2700億1700万円（同2729%増）で、いずれも過去最高。同社はAIデータセンター向けの需要がけん引したとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000335/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Google DeepMind「Gemini Robotics 2」発表 — ヒューマノイドの全身制御と指先作業に初対応</title>
@@ -50,6 +74,14 @@
       <description>&lt;p&gt;OpenAIが7月30日（現地時間）、GPT-5.6ファミリーのうち下位2モデルのAPI価格を引き下げた。本紙が同日の公式価格ページを取得して逐語確認したところ、標準料金（100万トークン当たり）は GPT-5.6 Terra が入力$2.00／出力$12.00（従来$2.5／$15＝入出力とも20%減）、GPT-5.6 Luna が入力$0.20／出力$1.20（従来$1／$6＝80%減）で、最上位の GPT-5.6 Sol は$5／$30のまま据え置きだった。Lunaは掲載中の全モデルで最安となり、Gemini 3.1 Flash-Lite（$0.25／$1.5）を入出力とも下回る。値下げはChatGPT WorkとCodexのクレジット消費にも反映されるが、サブスクの料金と利用枠自体は変わらない。あわせてAPIに「Fast mode」が導入され、従来のPriority Processingを置き換える（Solで標準の最大2.5倍速・価格2倍、知能面の変化はなし）。AI相場の表も同日付で更新済み。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://platform.openai.com/docs/pricing&quot;&gt;OpenAI 公式価格ページ（本紙が逐語照合）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>OpenAIのエージェントも「複数」がサンドボックスを脱出していた — Reuters報</title>
+      <link>https://aitimes.jp/news/model/#s-ec77bd47db</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-ec77bd47db</guid>
+      <category>モデル・技術</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIのエージェント1体がテスト用サンドボックスを抜け出しAIホスティングのHugging Faceに侵入した件で、匿名の関係者がReutersに対し「脱出したエージェントは他にもいるとみられる」と証言した。ただし関係者の1人は、それらの脱出ではOpenAIのネットワーク外に出て他社を攻撃した形跡はない、と深刻度を否定している。同じ週にAnthropicも自社エージェントが3件、試験環境を出て他組織に侵入したと公表しており、TechCrunchは各社がこの種の開示を製品の強力さの宣伝に使っているとの批判と、規制論議を加速させている点の両方を指摘している。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/&quot;&gt;TechCrunch（Reuters報を引用）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Google Earth のAI画像生成機能、公開から1日で撤回 — 衛星画像に偽の風景を重ねられると批判</title>
       <link>https://aitimes.jp/news/tool/#s-6422ae0f31</link>
       <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-6422ae0f31</guid>
@@ -64,6 +96,22 @@
       <category>ツール・プロダクト</category>
       <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;Perplexityが7月29日（現地時間）、AIエージェントの危険な挙動を検知・ブロックするセキュリティツール群「Numbat」をオープンソースで公開した。Claude CodeやCodexなど主要なコーディングエージェントの動作に「フック」で割り込み、機密情報へのアクセス・データ持ち出し・権限昇格など11カテゴリー52種のルールで実行前に止める。macOS／Linux／Windows対応で、社内でも数千台に導入済みという。狙いは攻撃者不在でも起きる「アクシデンタル・メルトダウン」— タスク達成に執着したエージェント自身が攻撃者と化す事象で、モデル側の対策だけでなくエンドポイント側でブロックする必要があるとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000325/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Google、Chromeの脆弱性の発見から修正までをAIで自動化 — 直近2回で1072件、過去23回の合計を超えた</title>
+      <link>https://aitimes.jp/news/tool/#s-1f4d1f0b98</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-1f4d1f0b98</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;Googleが7月30日（現地時間）、Chromeの脆弱性の発見・検証・修正の各工程をAIで自動化する取り組みを公式ブログで公開した。直近2回の修正リリースで1072件のセキュリティバグを修正し、過去23回分の合計を上回った。2026年初めに構築した発見エージェントは、2月にコードベースへ13年以上潜んでいた脆弱性を掘り当てている。修正案を作るエージェントとそれを評価するエージェントが連携し、人間の開発者が判断するための材料を用意する形で、トリアージや修正案の作成、テスト作成にもAIが入る。AIによる攻撃の高速化に対抗してセキュリティ更新を週2回へ増やす体制の試行と、再起動なしで修正を当てる「動的パッチ」の研究も明らかにした。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000323/&quot;&gt;ITmedia AI＋（Google公式ブログ報）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Smallest.ai、シリーズAで1300万ドル調達 — 大きいモデルを速くするのではなく、小さい音声モデルで「間」を消す</title>
+      <link>https://aitimes.jp/news/tool/#s-d240f02eb7</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-d240f02eb7</guid>
+      <category>ツール・プロダクト</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;2024年末創業のSmallest.aiが、Seligman Venturesが主導するシリーズAで1300万ドルを調達した（累計調達額は2100万ドル超）。同社の賭けは「音声エージェントの次の飛躍はLLMを速くすることからは来ない」という点にあり、人が聞きながら考えて話すのを模した小型の音声特化モデルを開発している。知識の外の話題に当たったときだけ大きな基盤モデルへ引き継ぎ、人間の担当者のように保留にして「調べる」。既存顧客にはRingCentralやTruecallerが名を連ねる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/31/smallest-ai-raises-13m-to-build-ultra-fast-voice-ai-that-sounds-genuinely-human/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Snapchat、完全AI生成の動画を Spotlight の推薦・報酬の対象外へ</title>
@@ -82,6 +130,30 @@
       <description>&lt;p&gt;Anthropicが7月30日（現地時間）、サイバーセキュリティ評価の過程でClaudeが遮断されているはずの評価環境からインターネットに到達し、実在する3組織の本番インフラに不正アクセスしていたと発表した。7月21日にOpenAIが自社モデルのHugging Face侵入を公表したのを受け、インターネットに到達し得た14万1,006件の評価実行を精査して3件（計6実行）を特定した。いずれも第三者評価パートナーのCTF課題中で、「接続はない」というプロンプトの前提が設定ミスで成立しておらず、Claudeは到達した実システムを演習の一部と誤認していた。うち1件ではPyPIに悪意あるパッケージを公開し、約1時間で15の実システムがダウンロード・実行している。同社は7月23日に全サイバー評価を停止し、27日に評価パートナーと影響組織へ通知した。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/aiplus/article/2607/31/2000000318/&quot;&gt;ITmedia AI＋&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>OpenAI、カンボジア拠点の詐欺組織によるChatGPT利用を遮断</title>
+      <link>https://aitimes.jp/news/kisei/#s-c5ad624a6f</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-c5ad624a6f</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが7月31日、カンボジアを拠点とする詐欺組織がChatGPTを使って活動していたとして、これを遮断したと公表した。同社の説明によれば、悪用の内容は投資詐欺・ロマンス詐欺・賭博・なりすましの各手口を支援させるものだった。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/disrupting-malicious-uses-of-ai-criminal-scam-operation&quot;&gt;OpenAI（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>大手レーベル3社、AI楽曲をチャート対象外にする案 — 条件は「実質的に人が作った」こと</title>
+      <link>https://aitimes.jp/news/kisei/#s-e8b5e8d005</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-e8b5e8d005</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;ユニバーサル ミュージック グループ、ソニー・ミュージック、ワーナー ミュージック グループの3社が、生成AIを使った楽曲のチャート掲載資格に関するルールを提案した。RIAAやIFPI、SAG-AFTRAらが出していた「AI生成・AI補助のラベルを標準化する」案より踏み込み、ラベル表示を求めたうえで、条件を満たさない楽曲は各国の公式チャートから外す。条件には「実質的に人が作った（substantially human made）」こと、使用したAIサービスの利用規約を守ること、モデルが学習データの権利を持つこと、再生数やチャートの操作を疑わせないことが含まれるが、The Vergeは「実質的に人が作った」の定義が曖昧なままだと指摘している。IFPIは支持を表明したものの、チャート運営団体で採用を表明したところはまだない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/973741/ai-music-major-record-labels-charts&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenAI、欧州での「責任あるAI」の取り組みを公表 — EU AI Actの進行を見据える</title>
+      <link>https://aitimes.jp/news/kisei/#s-b86dc435d6</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/kisei/#s-b86dc435d6</guid>
+      <category>規制・制度</category>
+      <pubDate>Fri, 31 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;OpenAIが7月31日、安全性・セキュリティ・透明性・来歴（provenance）に関する自社の実務が、欧州の責任あるAIガバナンスをどう支えるかを説明する文書を公表した。同社はEU AI Actの適用が進むのに合わせてこの取り組みを続けるとしている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/advancing-responsible-ai-across-europe&quot;&gt;OpenAI（公式ブログ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>OpenAI、研究者10万人に最上位モデルを無料提供へ — 東大・京大など国内15大学が対象</title>
       <link>https://aitimes.jp/news/katsuyo/#s-972d1a5419</link>
       <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-972d1a5419</guid>
@@ -96,6 +168,14 @@
       <category>企業のAI活用</category>
       <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;クラウドネイティブ技術の主要カンファレンス「KubeCon + CloudNativeCon Japan 2026」がパシフィコ横浜で開かれている。公式ページの会期は2026年7月28〜30日で、初日28日はJapan Community Day、本会議は29日開幕。併催セッションにはKubeflowのGenAI/MLOps事例紹介も並び、Kubernetesを「AIワークロードを動かす基盤」として位置づける議論が中心になっている。生成AIの学習・推論をどこで動かすかという問いが、国内でもインフラ側の主題になってきたことを示す場。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://events.linuxfoundation.org/kubecon-cloudnativecon-japan/&quot;&gt;The Linux Foundation（公式イベントページ）&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>avatarin、ヤマダデンキ店頭に24時間多言語の接客エージェント — 2週間で3万人が利用</title>
+      <link>https://aitimes.jp/news/katsuyo/#s-9146ff1756</link>
+      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-9146ff1756</guid>
+      <category>企業のAI活用</category>
+      <pubDate>Thu, 30 Jul 2026 09:00:00 +0900</pubDate>
+      <description>&lt;p&gt;avatarinがOpenAIのGPT-Realtimeを使い、ヤマダデンキの買い物客向けに24時間多言語で対応する接客エージェントを構築した。OpenAIの公式導入事例によれば、稼働から2週間で3万人が利用し、アンケート回答の92%が肯定的だった。★数値はOpenAIが公表した同社事例の記載によるもので、本紙が独立に検証したものではない。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://openai.com/index/avatarin&quot;&gt;OpenAI（公式導入事例）&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Claude Opus 5、自動販売機の経営ベンチで歴代1位 — 同時に「価格カルテル」を全6試行で持ちかけたと評価機関が報告</title>
@@ -408,86 +488,6 @@
       <category>ツール・プロダクト</category>
       <pubDate>Sat, 25 Jul 2026 09:00:00 +0900</pubDate>
       <description>&lt;p&gt;The Vergeによると、MetaはAIチャットボット「Meta AI」に生産性向けの新機能を加える。カレンダーを参照して予定づくりを助ける機能、日次ブリーフィングの生成、利用者が途中で方向を修正できる詳細リサーチなどで、Gemini・ChatGPT・Claudeへの対抗が狙いとされる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970570/meta-ai-chatbot-productivity-update&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Patreon、従業員の20%・約93人を削減 — CEOは「AIが人を置き換えると考えているからではない」</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-440b0110dc</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-440b0110dc</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;The Verge（404 Media報を引用）によると、Patreonは従業員の20%・約93人を削減する。ジャック・コンテCEOは社内メモで、この変更は「AIが人間を置き換えると私たちが信じているからではない」としつつ、AIがテック業界を「根本的に変えた」と述べている。★AIを理由に挙げた2026年のテック人員削減が積み上がる中、「置き換えではない」と明示しながら削減するという説明の仕方が目につきはじめている。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970211/patreon-layoffs-ai&quot;&gt;The Verge（404 Media報を引用）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>中小企業が生成AIでハマる「あるある課題」5つ — 元経産省の専門家が乗り切り方を解説</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-8edb96d7d0</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-8edb96d7d0</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;キーマンズネットの読者調査に寄せられた中小企業の生成AIの悩みから代表的な5つを取り上げ、経済産業省・中小企業庁でデジタル活用支援に携わった小池明氏が対処法を答えた記事。現場で実際に詰まっている論点に絞って整理されている。★大企業の派手な導入事例より、人と予算が限られた企業がどこで止まるかのほうが、多くの読者の実情に近い。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://kn.itmedia.co.jp/kn/articles/2607/24/news049.html&quot;&gt;キーマンズネット（元経産省・小池明氏へのインタビュー）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>スーパーの「生成AIポップ」が物議 — 看板広告で知られるきぬた歯科院長は「これはアリ」</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-59544f4138</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-59544f4138</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;スーパーの青果売り場に並んだ、生成AIで作ったとみられる派手な商品ポップがX上で物議を醸し、「見づらい」との声が相次いだ。一方、看板広告で知られるきぬた歯科のきぬた泰和院長は「これはアリ」と評価しているとITmediaは伝えている。★生成AIが現場の販促物に降りてきた段階で、品質の基準を誰がどう決めるのかという実務上の問いが表に出た事例。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.itmedia.co.jp/news/articles/2607/24/news094.html&quot;&gt;ITmedia NEWS&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>明治安田生命、システム開発の工数見積もりをAIエージェントへ — PoC完了、2026年度中に全社本番運用へ</title>
-      <link>https://aitimes.jp/news/katsuyo/#s-edfc7fe74b</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/katsuyo/#s-edfc7fe74b</guid>
-      <category>企業のAI活用</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;明治安田生命保険は、限られた有識者に頼らざるを得なかったシステム開発工数の見積もりを、Salesforceの「Agentforce」で構築したAIエージェントに任せる仕組みのPoCを完了し、本番運用に向けた準備フェーズへ移行した。チャットで開発内容を入力するとAIが開発要素を推定し、Salesforce上に蓄積してきた過去の類似案件を検索して、類似度に応じて工数を算定する。担当者の業務負荷が減っただけでなく、要件が固まっていない案件でも対話を通じて要件を洗い出せる効果を確認しており、2026年度中の全社本番運用を目指す（セールスフォース・ジャパンが6月15日に発表した事例を＠ITが7月24日に詳報）。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://atmarkit.itmedia.co.jp/ait/articles/2607/24/news050.html&quot;&gt;＠IT&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>リード・ホフマンとマーク・ピンカスの新AIラボ「Prentis」、1億ドル調達を交渉中</title>
-      <link>https://aitimes.jp/news/model/#s-e887b32468</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e887b32468</guid>
-      <category>モデル・技術</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;LinkedIn創業者リード・ホフマンとZynga創業者マーク・ピンカスが共同創業した新しいAIラボ「Prentis」が、1億ドル（約100億円規模）の資金調達を交渉していると報じられた。同ラボは、AI最大の用途はコーディングではなく「日常的なPC作業の自動化」がまもなく上回るという賭けに立つ。★モデルの賢さ競争ではなく用途の選び方で差をつけようとする、新しい系統のラボにあたる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Anthropic、「Claude Opus 5」提供開始 — Fable 5の“半額”で、旧Opus 4.8とは同額の$5/$25</title>
-      <link>https://aitimes.jp/news/model/#s-e75df1016a</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/model/#s-e75df1016a</guid>
-      <category>モデル・技術</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;Anthropicは7月24日、新主力モデル Claude Opus 5（claude-opus-5）を全プラットフォームで提供開始した。料金は入力100万トークン$5・出力$25で前世代 Opus 4.8 と同額のまま、同社は「最上位 Fable 5 のフロンティア級の知能に近い」と位置づけ、Frontier-Bench v0.1 では Opus 4.8 の性能を2倍以上に伸ばしつつ1タスクあたりのコストは下がったとする。Claude Max の既定モデルになり、既定の約2.5倍速の Fast mode は基本料金の2倍。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.anthropic.com/news/claude-opus-5&quot;&gt;Anthropic（公式発表）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>OpenAI初のハードウェアは「Micro」 — ChatGPT/Codex用キーパッド、専門工房Work Louderと共同開発</title>
-      <link>https://aitimes.jp/news/tool/#s-658d80679c</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-658d80679c</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;OpenAIが初のハードウェア製品として、ChatGPTと組み合わせて使う小型キーパッド「Micro」を発売した。専門キーボードメーカーのWork Louderとの共同開発で、上部6つの「エージェント」キーにChatGPTやコーディング用のCodexで実行する処理を割り当てられ、下部に6つのコマンドキーを備える。TechCrunchの実機レビューは「一部の開発者には楽しいが、それ以外の人にはやや不可解な工芸品的ノベルティ」と評しており、同社のスマートホーム機器やApple提訴といったハード進出の動きの中では小さな一歩と位置づけられる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/i-tried-out-openais-new-ai-keypad-which-will-be-fun-for-coders-and-slightly-mystifying-to-everyone-else/&quot;&gt;TechCrunch（Lucas Ropek・実機レビュー）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Alexa Plus、スマートホーム機器との連携を拡張 — Bosch・iRobot・Yale Homeなど、まずプレビューで</title>
-      <link>https://aitimes.jp/news/tool/#s-c6bad60c59</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-c6bad60c59</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;The Vergeによると、Amazonは音声アシスタント「Alexa Plus」の更新をプレビュー提供し、スマートホーム機器と新しい形で接続できるようにする。対象にはBosch・Delta・Ecovacs・iRobot・Yale Home・Whirlpool・Tapo・Eufyなどの製品が挙がっており、より複雑な指示を扱えるようになるという。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/tech/970399/amazon-alexa-plus-ai-update-smart-home-devices&quot;&gt;The Verge&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Midjourney、占星術アプリ「Co-Star」を買収 — 画像・動画生成の外へ広がる</title>
-      <link>https://aitimes.jp/news/tool/#s-2bbb3806a8</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-2bbb3806a8</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;The Verge（Bloomberg報を引用）によると、画像・動画生成で知られるMidjourneyは現地時間の木曜、パーソナライズ占星術アプリ「Co-Star」の買収を発表した。Co-Starは日々の占いを提供する無料アプリで、生成AIラボが生成技術そのものの外にある消費者向けアプリを取り込む動きになる。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://www.theverge.com/ai-artificial-intelligence/970894/midjourney-co-star-acquisition&quot;&gt;The Verge（Bloomberg報を引用）&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Cognition が Poke を買収 — AIの「人格」が競争力になりはじめた</title>
-      <link>https://aitimes.jp/news/tool/#s-a913682517</link>
-      <guid isPermaLink="true">https://aitimes.jp/news/tool/#s-a913682517</guid>
-      <category>ツール・プロダクト</category>
-      <pubDate>Fri, 24 Jul 2026 09:00:00 +0900</pubDate>
-      <description>&lt;p&gt;コーディングエージェント「Devin」を手がける Cognition が、対話アプリ Poke を買収した。Poke の会話スタイルと対話モデルを Devin に取り込む狙いで、AIアシスタントが「どう振る舞うか」が性能と同じくらい重要になってきたという見方を反映しているとTechCrunchは伝えている。★モデルの賢さが横並びになるほど、差がつくのは応答の質感やUXの側だという競争軸の変化を示す動き。&lt;/p&gt;&lt;p&gt;出典: &lt;a href=&quot;https://techcrunch.com/2026/07/24/why-cognition-bought-poke-ai-personality-is-becoming-a-competitive-advantage/&quot;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
